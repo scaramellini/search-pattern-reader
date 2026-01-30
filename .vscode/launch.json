@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "it.davide.xml.Main",
+            "projectName": "search-pattern-reader",
+            "args": [
+                "C:/Users/scd2/GIT/algo-dashboardsocialmedia",
+                "C:/Users/scd2/GIT/algo-marketplace",
+                "C:/Users/scd2/GIT/algo-adminconsole",
+                "C:/Users/scd2/GIT/politecnico-9"
+            ]
+            /*"args": [
+                "C:/Users/scd2/GIT/algo-adminconsole",
+            ]*/
+        },
+    ]
+}
