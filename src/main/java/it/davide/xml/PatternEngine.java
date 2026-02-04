@@ -11,7 +11,10 @@ import it.davide.xml.JsonPatternStructure.PagePatterns;
 public class PatternEngine {
     //list of pattern to search from
     private final List<GenericPattern> rules = List.of(
-            new SearchPattern(),
+            new basicSearchPattern(),
+            new multicriteriaSearchPattern(),
+            new facetedSearchPattern(),
+            new quickSearchPattern(),
             new MasterDetailPattern());
 
     public List<GenericPattern> detectPatterns(List<NavigationFlow> flows, PagePatterns page) {
@@ -19,11 +22,13 @@ public class PatternEngine {
 
         for (NavigationFlow flow : flows) {
             for (GenericPattern rule : rules) {
-                if (rule.matches(flows, flow)) { //check if the pattern matches
+                //check if the pattern matches
+                List<NavigationFlow> matchingFlows = rule.matches(flows, flow);
+                if (matchingFlows != null && !matchingFlows.isEmpty()) { 
                     try {
                         GenericPattern pattern = rule.getClass().getDeclaredConstructor().newInstance();
 
-                        pattern.setFlows(List.of(flow));
+                        pattern.setFlows(matchingFlows);
                         pattern.createJsonPattern(page);
 
                         result.add(pattern);

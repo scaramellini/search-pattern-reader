@@ -6,18 +6,23 @@ import IFMLElements.Binding;
 import IFMLElements.NavigationFlow;
 import it.davide.xml.JsonPatternStructure;
 import it.davide.xml.JsonPatternStructure.FilterBinding;
+import it.davide.xml.JsonPatternStructure.Flow;
 import it.davide.xml.JsonPatternStructure.PagePatterns;
 
-public class SearchPattern extends GenericPattern {
+public class basicSearchPattern extends GenericPattern {
 
-    public SearchPattern() {
-        this.name = "searchPattern";
+    public basicSearchPattern() {
+        this.name = "Basic search pattern";
     }
 
     @Override
-    public boolean matches(List<NavigationFlow> flows, NavigationFlow current) {
-        return current.getFromElement().equals("Form")
-                && current.getToElement().equals("List");
+    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current) {
+        if (current.getFromElement().equals("Form") && current.getToElement().equals("List")) {
+            if (current.getBindings().size() == 1) {
+                return List.of(current);
+            }
+        }
+        return null;
     }
 
     @Override
@@ -34,8 +39,10 @@ public class SearchPattern extends GenericPattern {
         JsonPatternStructure.Endpoint to = new JsonPatternStructure.Endpoint();
         to.id = flow.getToId();
         to.type = flow.getToElement();
-        pattern.from = from;
-        pattern.to = to;
+
+        Flow f = new Flow();
+        f.from = from;
+        f.to = to;
 
         for (Binding binding : flow.getBindings()) {
             FilterBinding b = new FilterBinding();
@@ -47,8 +54,10 @@ public class SearchPattern extends GenericPattern {
                 b.target = binding.getToAttribute();
             }
 
-            pattern.bindings.add(b);
+            f.bindings.add(b);
         }
+
+        pattern.flows.add(f);
 
         page.patterns.add(pattern);
     }

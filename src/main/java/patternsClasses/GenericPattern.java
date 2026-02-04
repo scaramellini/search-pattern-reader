@@ -21,7 +21,7 @@ public abstract class GenericPattern {
         this.flows = flows;
     }
 
-    public abstract boolean matches(List<NavigationFlow> flows, NavigationFlow current);
+    public abstract List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current);
 
     public abstract void createJsonPattern(JsonPatternStructure.PagePatterns page);
 }

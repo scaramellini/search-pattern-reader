@@ -2,27 +2,29 @@
   "pages" : [ {
     "pageId" : "page5w.wr",
     "patterns" : [ {
-      "patternType" : "searchPattern",
-      "from" : {
-        "id" : "wv1w#page5w#frm2j",
-        "type" : "Form"
-      },
-      "to" : {
-        "id" : "wv1w#page5w#lst2w",
-        "type" : "List"
-      },
-      "bindings" : [ {
-        "source" : "{wv1w#page5w#frm2j#fld2j}value",
-        "target" : "wv1w#page5w#lst2w#sc10w#acond1j",
-        "automaticCoupling" : null
-      }, {
-        "source" : "{wv1w#page5w#frm2j#sfld1j}value._be_att37",
-        "target" : "wv1w#page5w#lst2w#sc10w#acond13w",
-        "automaticCoupling" : null
-      }, {
-        "source" : "{wv1w#page5w#frm2j#fld3j}value",
-        "target" : "wv1w#page5w#lst2w#sc10w#acond2j",
-        "automaticCoupling" : null
+      "patternType" : "Multicriteria search pattern",
+      "flows" : [ {
+        "from" : {
+          "id" : "wv1w#page5w#frm2j",
+          "type" : "Form"
+        },
+        "to" : {
+          "id" : "wv1w#page5w#lst2w",
+          "type" : "List"
+        },
+        "bindings" : [ {
+          "source" : "{wv1w#page5w#frm2j#fld2j}value",
+          "target" : "wv1w#page5w#lst2w#sc10w#acond1j",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv1w#page5w#frm2j#sfld1j}value._be_att37",
+          "target" : "wv1w#page5w#lst2w#sc10w#acond13w",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv1w#page5w#frm2j#fld3j}value",
+          "target" : "wv1w#page5w#lst2w#sc10w#acond2j",
+          "automaticCoupling" : null
+        } ]
       } ]
     } ]
   } ]

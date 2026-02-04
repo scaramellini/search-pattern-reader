@@ -12,10 +12,8 @@ public class Main {
         //return all files .wr in the directory starting with "page"
         List<String> filesInFolder = Files.walk(Paths.get(folderPath))
                 .filter(Files::isRegularFile)
-                // .peek(p -> System.out.println("Found: " + p.getFileName()))
                 .filter(file -> file.getFileName().toString().startsWith("page"))
                 .filter(file -> file.getFileName().toString().endsWith(".wr"))
-                // .peek(p -> System.out.println("TTTT: " + p.toString()))
                 .map(Path::toString)
                 .collect(Collectors.toList());
 

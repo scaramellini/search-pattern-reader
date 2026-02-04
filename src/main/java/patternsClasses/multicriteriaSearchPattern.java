@@ -9,16 +9,18 @@ import it.davide.xml.JsonPatternStructure.FilterBinding;
 import it.davide.xml.JsonPatternStructure.Flow;
 import it.davide.xml.JsonPatternStructure.PagePatterns;
 
-public class MasterDetailPattern extends GenericPattern {
-    public MasterDetailPattern() {
-        this.name = "masterDetailPattern";
+public class multicriteriaSearchPattern extends GenericPattern {
+
+    public multicriteriaSearchPattern() {
+        this.name = "Multicriteria search pattern";
     }
 
     @Override
     public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current) {
-        if (current.getFromElement().equals("List")
-                && current.getToElement().equals("Details")) {
-            return List.of(current);
+        if (current.getFromElement().equals("Form") && current.getToElement().equals("List")) {
+            if (current.getBindings().size() > 1) {
+                return List.of(current);
+            }
         }
         return null;
     }

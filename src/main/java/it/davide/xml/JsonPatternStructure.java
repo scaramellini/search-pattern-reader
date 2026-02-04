@@ -9,6 +9,12 @@ public class JsonPatternStructure {
         public List<PagePatterns> pages = new ArrayList<>();
     }
 
+    public static class Flow {
+        public Endpoint from;
+        public Endpoint to;
+        public List<FilterBinding> bindings = new ArrayList<>();
+    }
+
     public static class FilterBinding {
         public String source;
         public String target;
@@ -22,9 +28,7 @@ public class JsonPatternStructure {
 
     public static class FlowPattern {
         public String patternType;
-        public Endpoint from;
-        public Endpoint to;
-        public List<FilterBinding> bindings = new ArrayList<>();
+        public List<Flow> flows = new ArrayList<>();
     }
 
     public static class PagePatterns {
