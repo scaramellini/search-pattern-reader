@@ -3,10 +3,11 @@ package patternsClasses;
 import java.util.List;
 
 import IFMLElements.NavigationFlow;
+import it.davide.xml.JsonPatternStructure;
 
 public abstract class GenericPattern {
     String name;
-    private List<NavigationFlow> flows;
+    List<NavigationFlow> flows;
 
     public String getName() {
         return this.name;
@@ -21,4 +22,6 @@ public abstract class GenericPattern {
     }
 
     public abstract boolean matches(List<NavigationFlow> flows, NavigationFlow current);
+
+    public abstract void createJsonPattern(JsonPatternStructure.PagePatterns page);
 }
