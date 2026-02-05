@@ -15,7 +15,7 @@ public class MasterDetailPattern extends GenericPattern {
     }
 
     @Override
-    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current) {
+    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current, List<NavigationFlow> propertiesFlows) {
         if (current.getFromElement().equals("List")
                 && current.getToElement().equals("Details")) {
             return List.of(current);

@@ -15,24 +15,45 @@ import java.util.*;
 
 public class IFMLPatternExtractor {
 
-    /* private static int searchPatternCounter = 0;
-    private static int masterDetailCounter = 0; */
+    /*
+     * private static int searchPatternCounter = 0;
+     * private static int masterDetailCounter = 0;
+     */
 
-    private static List<String> navFlowParentElements = Arrays.asList("Form", "List", "Details");
+    private static List<String> navFlowParentElements = Arrays.asList("Form", "List", "Details", "Action",
+            "ViewComponent");
 
     public record PatternDef(
             String sourceType,
             String targetType) {
     }
 
+    private static final List<String> SOURCE_ATTRS = List.of(
+            "source",
+            "sourceValue",
+            "sourceParameter",
+            "sourceImplicitParameter",
+            "sourceParameterBinding",
+            "blank");
+
+    private static final List<String> TARGET_ATTRS = List.of(
+            "target",
+            "targetValue",
+            "targetParameter",
+            "targetImplicitParameter",
+            "targetParameterBinding",
+            "targetExpressionVariable",
+            "blank");
+
     private static void identifyPattern(
             JsonPatternStructure.JsonReport report,
             JsonPatternStructure.PagePatterns page,
-            List<NavigationFlow> flows) throws Exception {
+            List<NavigationFlow> flows,
+            List<NavigationFlow> propertiesFlows) throws Exception {
         try {
             PatternEngine engine = new PatternEngine();
             // for each flow found in page, detect if there is a pattern
-            engine.detectPatterns(flows, page);
+            engine.detectPatterns(flows, page, propertiesFlows);
 
             if (page.patterns.size() > 0) {
                 report.pages.add(page);
@@ -78,18 +99,109 @@ public class IFMLPatternExtractor {
         return null;
     }
 
-    public void patternFinder(JsonPatternStructure.JsonReport report, String filePath, String directory)
+    private static boolean isPassing(Element el) {
+        String val = el.getAttribute("passing");
+        return "true".equals(val);
+    }
+
+    private static String resolveAttribute(Element el, List<String> candidates) {
+        NamedNodeMap attrs = el.getAttributes();
+
+        for (String name : candidates) {
+            Node attr = attrs.getNamedItem(name);
+            if (attr != null) {
+                return attr.getNodeValue();
+            }
+        }
+        return null;
+    }
+
+    public List<NavigationFlow> extractFlows(String filePath) throws Exception {
+        //System.out.println(filePath);
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(true);
+        DocumentBuilder builder = factory.newDocumentBuilder();
+
+        Document doc = builder.parse(new File(filePath));
+
+        NodeList documentFlows = doc.getElementsByTagNameNS("*", "NavigationFlow");
+
+        List<NavigationFlow> navFlows = new ArrayList<>();
+
+        // check every flow in page
+        for (int i = 0; i < documentFlows.getLength(); i++) {
+
+            Element flow = (Element) documentFlows.item(i);
+
+            // get starting and target component ID
+            String toID = flow.getAttribute("to");
+            String fromID = findSource(flow);
+
+            if (fromID == null || toID == null) {
+                continue; // skip if source or target not found
+            }
+
+            Element toElement = findElementById(doc, toID);
+            String toElementName = "";
+            if (toElement == null) {
+                toElementName = "externalElement";
+            } else {
+                toElementName = toElement.getTagName();
+            }
+
+            Element fromElement = findElementById(doc, fromID);
+            String fromElementName = "";
+            if (fromElement == null) {
+                fromElementName = "externalElement";
+            } else {
+                fromElementName = fromElement.getTagName();
+            }
+
+            if (fromID == null || toID == null || fromElementName == null || toElementName == null) {
+                continue; // skip if source or target not found
+            }
+
+            NodeList params = flow.getElementsByTagNameNS("*", "ParameterBinding");
+            List<Binding> bindings = new ArrayList<>();
+
+            if ("true".equals(flow.getAttribute("automaticCoupling"))) {
+                bindings.add(new Binding(null, null, true));
+            } else {
+
+                for (int j = 0; j < params.getLength(); j++) {
+                    Element param = (Element) params.item(j);
+
+                    if (isPassing(param)) {
+                        continue;
+                    }
+
+                    String source = resolveAttribute(param, SOURCE_ATTRS);
+                    String target = resolveAttribute(param, TARGET_ATTRS);
+
+                    bindings.add(new Binding(source, target, false));
+                }
+            }
+
+            NavigationFlow navFlow = new NavigationFlow(
+                    fromID,
+                    fromElementName,
+                    toID,
+                    toElementName,
+                    bindings,
+                    flow.getAttribute("automaticCoupling").equals("true"));
+
+            navFlows.add(navFlow);
+        }
+        return navFlows;
+    }
+
+    public void patternFinder(JsonPatternStructure.JsonReport report, String filePath, String directory,
+            List<NavigationFlow> propertiesFlows)
             throws Exception {
         // works on the single page
         try {
 
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            factory.setNamespaceAware(true);
-            DocumentBuilder builder = factory.newDocumentBuilder();
-
-            Document doc = builder.parse(new File(filePath));
-
-            NodeList documentFlows = doc.getElementsByTagNameNS("*", "NavigationFlow");
+            List<NavigationFlow> navFlows = extractFlows(filePath);
 
             File file = new File(filePath);
             String pageId = FilenameUtils.removeExtension(file.getName()) + ".wr";
@@ -97,71 +209,8 @@ public class IFMLPatternExtractor {
             JsonPatternStructure.PagePatterns page = new JsonPatternStructure.PagePatterns();
             page.pageId = pageId;
 
-            List<NavigationFlow> navFlows = new ArrayList<>();
-
-            // check every flow in page
-            for (int i = 0; i < documentFlows.getLength(); i++) {
-
-                Element flow = (Element) documentFlows.item(i);
-
-                // get starting and target component ID
-                String toID = flow.getAttribute("to");
-                Element toElement = findElementById(doc, toID);
-                String fromID = findSource(flow);
-                if (fromID == null) {
-                    continue;
-                }
-                Element fromElement = findElementById(doc, fromID);
-
-                if (fromID == null || toID == null || fromElement == null || toElement == null) {
-                    continue; // skip if source or target not found
-                }
-
-                NodeList params = flow.getElementsByTagNameNS("*", "ParameterBinding");
-
-                List<Binding> bindings = new ArrayList<>();
-
-                if (flow.getAttribute("automaticCoupling").equals("true")) {
-                    bindings.add(new Binding(null, null, true));
-                } else {
-                    // add bindings to a list
-                    for (int j = 0; j < params.getLength(); j++) {
-                        String bindingSource;
-                        String bindingTarget;
-
-                        if (params.item(j).getAttributes().getNamedItem("source") != null) {
-                            bindingSource = params.item(j).getAttributes().getNamedItem("source").getNodeValue();
-                        } else if (params.item(j).getAttributes().getNamedItem("sourceValue") != null) {
-                            bindingSource = params.item(j).getAttributes().getNamedItem("sourceValue").getNodeValue();
-                        } else {
-                            bindingSource = params.item(j).getAttributes().getNamedItem("sourceParameter").getNodeValue();
-                        }
-
-                        if (params.item(j).getAttributes().getNamedItem("target") != null) {
-                            bindingTarget = params.item(j).getAttributes().getNamedItem("target").getNodeValue();
-                        } else if (params.item(j).getAttributes().getNamedItem("targetValue") != null) {
-                            bindingTarget = params.item(j).getAttributes().getNamedItem("targetValue").getNodeValue();
-                        } else {
-                            bindingTarget = params.item(j).getAttributes().getNamedItem("targetParameter").getNodeValue();
-                        }
-
-                        bindings.add(new Binding(bindingSource, bindingTarget, false));
-
-                    }
-                }
-
-                NavigationFlow navFlow = new NavigationFlow(
-                        fromID,
-                        fromElement.getLocalName(),
-                        toID, toElement.getLocalName(),
-                        bindings,
-                        flow.getAttribute("automaticCoupling").equals("true"));
-
-                navFlows.add(navFlow);
-            }
-
             // create an element in the xml to identify the pattern
-            identifyPattern(report, page, navFlows);
+            identifyPattern(report, page, navFlows, propertiesFlows);
 
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -179,9 +228,11 @@ public class IFMLPatternExtractor {
                     outputFile,
                     report);
 
-            /* System.out.println("Patterns found summary " + pageId + ":");
-            System.out.println("SearchPattern: " + searchPatternCounter);
-            System.out.println("MasterDetail: " + masterDetailCounter); */
+            /*
+             * System.out.println("Patterns found summary " + pageId + ":");
+             * System.out.println("SearchPattern: " + searchPatternCounter);
+             * System.out.println("MasterDetail: " + masterDetailCounter);
+             */
         } catch (Exception e) {
             System.err.println(e.toString());
             e.printStackTrace();

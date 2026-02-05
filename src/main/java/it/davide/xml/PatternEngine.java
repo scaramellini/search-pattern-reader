@@ -15,15 +15,16 @@ public class PatternEngine {
             new multicriteriaSearchPattern(),
             new facetedSearchPattern(),
             new quickSearchPattern(),
+            new searchWithResetPattern(),
             new MasterDetailPattern());
 
-    public List<GenericPattern> detectPatterns(List<NavigationFlow> flows, PagePatterns page) {
+    public List<GenericPattern> detectPatterns(List<NavigationFlow> flows, PagePatterns page, List<NavigationFlow> propertiesFlows) {
         List<GenericPattern> result = new ArrayList<>();
 
         for (NavigationFlow flow : flows) {
             for (GenericPattern rule : rules) {
                 //check if the pattern matches
-                List<NavigationFlow> matchingFlows = rule.matches(flows, flow);
+                List<NavigationFlow> matchingFlows = rule.matches(flows, flow, propertiesFlows);
                 if (matchingFlows != null && !matchingFlows.isEmpty()) { 
                     try {
                         GenericPattern pattern = rule.getClass().getDeclaredConstructor().newInstance();

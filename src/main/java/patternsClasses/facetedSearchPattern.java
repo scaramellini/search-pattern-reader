@@ -16,7 +16,7 @@ public class facetedSearchPattern extends GenericPattern {
     }
 
     @Override
-    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current) {
+    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current, List<NavigationFlow> propertiesFlows) {
 
         List<NavigationFlow> matchingFlows = new ArrayList<NavigationFlow>();
 

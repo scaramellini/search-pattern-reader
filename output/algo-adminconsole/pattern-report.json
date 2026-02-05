@@ -3384,6 +3384,79 @@
           "automaticCoupling" : null
         } ]
       } ]
+    }, {
+      "patternType" : "Search with reset pattern",
+      "flows" : [ {
+        "from" : {
+          "id" : "wv1w#area5z#page6z#frm8z",
+          "type" : "Form"
+        },
+        "to" : {
+          "id" : "wv1w#area5z#page6z#lst1z",
+          "type" : "List"
+        },
+        "bindings" : [ {
+          "source" : "{wv1w#area5z#page6z#frm8z#sfld54z}value._be_att55x",
+          "target" : "wv1w#area5z#page6z#lst1z#sc11z#rcond5z._be_att55x",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv1w#area5z#page6z#frm8z#fld140z}value",
+          "target" : "wv1w#area5z#page6z#lst1z#sc11z#acond8z",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv1w#area5z#page6z#frm8z#fld139z}value",
+          "target" : "wv1w#area5z#page6z#lst1z#sc11z#acond7z",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv1w#area5z#page6z#frm8z#sfld54z}value._be_att55x",
+          "target" : "wv1w#area5z#page6z#prd6z",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv1w#area5z#page6z#frm8z#fld140z}value",
+          "target" : "wv1w#area5z#page6z#prd4z",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv1w#area5z#page6z#frm8z#fld139z}value",
+          "target" : "wv1w#area5z#page6z#prd3z",
+          "automaticCoupling" : null
+        } ]
+      }, {
+        "from" : {
+          "id" : "wv1w#area5z#page6z#frm8z",
+          "type" : "Form"
+        },
+        "to" : {
+          "id" : "wv1w#area5z#act31z",
+          "type" : "Action"
+        },
+        "bindings" : [ {
+          "source" : null,
+          "target" : null,
+          "automaticCoupling" : true
+        } ]
+      }, {
+        "from" : {
+          "id" : "wv1w#area5z#act31z",
+          "type" : "Action"
+        },
+        "to" : {
+          "id" : "wv1w#area5z#page6z#lst1z",
+          "type" : "List"
+        },
+        "bindings" : [ {
+          "source" : "$$NULL$$",
+          "target" : "wv1w#area5z#page6z#lst1z#sc11z#rcond5z._be_att55x",
+          "automaticCoupling" : null
+        }, {
+          "source" : "$$NULL$$",
+          "target" : "wv1w#area5z#page6z#lst1z#sc11z#acond8z",
+          "automaticCoupling" : null
+        }, {
+          "source" : "$$NULL$$",
+          "target" : "wv1w#area5z#page6z#lst1z#sc11z#acond7z",
+          "automaticCoupling" : null
+        } ]
+      } ]
     } ]
   }, {
     "pageId" : "page12s.wr",

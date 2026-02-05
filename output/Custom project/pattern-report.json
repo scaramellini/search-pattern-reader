@@ -30,6 +30,75 @@
           "automaticCoupling" : null
         } ]
       } ]
+    }, {
+      "patternType" : "Search with reset pattern",
+      "flows" : [ {
+        "from" : {
+          "id" : "wv2#area1#page10#frm10",
+          "type" : "Form"
+        },
+        "to" : {
+          "id" : "wv2#area1#page10#lst8",
+          "type" : "List"
+        },
+        "bindings" : [ {
+          "source" : "{wv2#area1#page10#frm10#fld26}value",
+          "target" : "wv2#area1#page10#lst8#sc7#acond20",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv2#area1#page10#frm10#fld29}value",
+          "target" : "wv2#area1#page10#lst8#sc7#acond23",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv2#area1#page10#frm10#fld28}value",
+          "target" : "wv2#area1#page10#lst8#sc7#acond21",
+          "automaticCoupling" : null
+        }, {
+          "source" : "{wv2#area1#page10#frm10#fld27}value",
+          "target" : "wv2#area1#page10#lst8#sc7#acond22",
+          "automaticCoupling" : null
+        } ]
+      }, {
+        "from" : {
+          "id" : "wv2#area1#page10#frm10",
+          "type" : "Form"
+        },
+        "to" : {
+          "id" : "wv2#act4",
+          "type" : "Action"
+        },
+        "bindings" : [ {
+          "source" : null,
+          "target" : null,
+          "automaticCoupling" : true
+        } ]
+      }, {
+        "from" : {
+          "id" : "wv2#act4",
+          "type" : "Action"
+        },
+        "to" : {
+          "id" : "wv2#area1#page10#lst8",
+          "type" : "List"
+        },
+        "bindings" : [ {
+          "source" : "$$NULL$$",
+          "target" : "wv2#area1#page10#lst8#sc7#acond20",
+          "automaticCoupling" : null
+        }, {
+          "source" : "$$NULL$$",
+          "target" : "wv2#area1#page10#lst8#sc7#acond23",
+          "automaticCoupling" : null
+        }, {
+          "source" : "$$NULL$$",
+          "target" : "wv2#area1#page10#lst8#sc7#acond21",
+          "automaticCoupling" : null
+        }, {
+          "source" : "$$NULL$$",
+          "target" : "wv2#area1#page10#lst8#sc7#acond22",
+          "automaticCoupling" : null
+        } ]
+      } ]
     } ]
   }, {
     "pageId" : "page4.wr",

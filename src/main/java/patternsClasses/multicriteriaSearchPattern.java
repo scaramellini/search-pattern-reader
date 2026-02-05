@@ -16,7 +16,7 @@ public class multicriteriaSearchPattern extends GenericPattern {
     }
 
     @Override
-    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current) {
+    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current, List<NavigationFlow> propertiesFlows) {
         if (current.getFromElement().equals("Form") && current.getToElement().equals("List")) {
             if (current.getBindings().size() > 1) {
                 return List.of(current);
