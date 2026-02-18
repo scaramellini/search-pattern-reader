@@ -124,14 +124,23 @@ public class IFMLPatternExtractor {
 
         Document doc = builder.parse(new File(filePath));
 
-        NodeList documentFlows = doc.getElementsByTagNameNS("*", "NavigationFlow");
+        NodeList navNodeList = doc.getElementsByTagNameNS("*", "NavigationFlow");
+        NodeList dataNodeList = doc.getElementsByTagNameNS("*", "DataFlow");
+
+        List<Element> documentFlows = new ArrayList<>();
+        for (int i = 0; i < navNodeList.getLength(); i++) {
+            documentFlows.add((Element) navNodeList.item(i));
+        }
+        for (int i = 0; i < dataNodeList.getLength(); i++) {
+            documentFlows.add((Element) dataNodeList.item(i));
+        }
 
         List<NavigationFlow> navFlows = new ArrayList<>();
 
         // check every flow in page
-        for (int i = 0; i < documentFlows.getLength(); i++) {
+        for (int i = 0; i < documentFlows.size(); i++) {
 
-            Element flow = (Element) documentFlows.item(i);
+            Element flow = documentFlows.get(i);
 
             // get starting and target component ID
             String toID = flow.getAttribute("to");

@@ -16,7 +16,8 @@ public class PatternEngine {
             new facetedSearchPattern(),
             new quickSearchPattern(),
             new searchWithResetPattern(),
-            new MasterDetailPattern());
+            new MasterDetailPattern(),
+            new MasterMultidetailPattern());
 
     public List<GenericPattern> detectPatterns(List<NavigationFlow> flows, PagePatterns page, List<NavigationFlow> propertiesFlows) {
         List<GenericPattern> result = new ArrayList<>();

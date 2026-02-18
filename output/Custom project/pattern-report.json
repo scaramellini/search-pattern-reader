@@ -385,6 +385,57 @@
           "automaticCoupling" : null
         } ]
       } ]
+    }, {
+      "patternType" : "Master multidetail pattern",
+      "flows" : [ {
+        "from" : {
+          "id" : "wv2#area2#page12#lst10",
+          "type" : "List"
+        },
+        "to" : {
+          "id" : "wv2#area2#page12#dtl2",
+          "type" : "Details"
+        },
+        "bindings" : [ {
+          "source" : "data._be_role1$_be_att7",
+          "target" : "wv2#area2#page12#dtl2#sc9#kcond2._be_att7",
+          "automaticCoupling" : null
+        } ]
+      }, {
+        "from" : {
+          "id" : "wv2#area2#page12#dtl2",
+          "type" : "Details"
+        },
+        "to" : {
+          "id" : "wv2#area2#page12#dtl3",
+          "type" : "Details"
+        },
+        "bindings" : [ {
+          "source" : "data._be_att7",
+          "target" : "wv2#area2#page12#dtl3#sc10#rcond2._be_att7",
+          "automaticCoupling" : null
+        } ]
+      } ]
+    } ]
+  }, {
+    "pageId" : "page14.wr",
+    "patterns" : [ {
+      "patternType" : "masterDetailPattern",
+      "flows" : [ {
+        "from" : {
+          "id" : "wv2#area2#page14#lst14",
+          "type" : "List"
+        },
+        "to" : {
+          "id" : "wv2#area2#page14#dtl6",
+          "type" : "Details"
+        },
+        "bindings" : [ {
+          "source" : "data._be_role9$_be_att13",
+          "target" : "wv2#area2#page14#dtl6#sc18#kcond7._be_att13",
+          "automaticCoupling" : null
+        } ]
+      } ]
     } ]
   }, {
     "pageId" : "page16.wr",
@@ -406,6 +457,23 @@
         }, {
           "source" : "$$NULL$$",
           "target" : "wv2#area2#page16#dtl7#sc20#acond25",
+          "automaticCoupling" : null
+        } ]
+      } ]
+    }, {
+      "patternType" : "masterDetailPattern",
+      "flows" : [ {
+        "from" : {
+          "id" : "wv2#area2#page16#lst16",
+          "type" : "List"
+        },
+        "to" : {
+          "id" : "wv2#area2#page16#dtl7",
+          "type" : "Details"
+        },
+        "bindings" : [ {
+          "source" : "stephen king",
+          "target" : "language",
           "automaticCoupling" : null
         } ]
       } ]
