@@ -29,7 +29,7 @@ public class MultiPageMasterDetailPattern extends GenericGraphPattern {
 
         for (List<GraphNode> path : allPaths) {
 
-            if (path.size() < 2)
+            if (path.size() < 3)
                 continue;
 
             if (!isValidPath(path))
