@@ -1,4 +1,4 @@
-package patternsClasses;
+package patternsClasses.old_pattern;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import it.davide.xml.JsonPatternStructure.FilterBinding;
 import it.davide.xml.JsonPatternStructure.Flow;
 import it.davide.xml.JsonPatternStructure.PagePatterns;
 
-public class MasterMultidetailPattern extends GenericPattern {
-    public MasterMultidetailPattern() {
+public class old_MasterMultidetailPattern extends GenericPattern {
+    public old_MasterMultidetailPattern() {
         this.name = "Master multidetail pattern";
     }
 

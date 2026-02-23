@@ -1,4 +1,4 @@
-package patternsClasses;
+package patternsClasses.old_pattern;
 
 import java.util.List;
 

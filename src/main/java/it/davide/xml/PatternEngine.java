@@ -1,6 +1,6 @@
 package it.davide.xml;
 
-import patternsClasses.*;
+import patternsClasses.old_pattern.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +16,8 @@ public class PatternEngine {
             new facetedSearchPattern(),
             new quickSearchPattern(),
             new searchWithResetPattern(),
-            new MasterDetailPattern(),
-            new MasterMultidetailPattern());
+            new old_MasterDetailPattern(),
+            new old_MasterMultidetailPattern());
 
     public List<GenericPattern> detectPatterns(List<NavigationFlow> flows, PagePatterns page, List<NavigationFlow> propertiesFlows) {
         List<GenericPattern> result = new ArrayList<>();

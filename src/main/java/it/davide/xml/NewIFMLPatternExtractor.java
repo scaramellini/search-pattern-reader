@@ -1,7 +1,6 @@
 package it.davide.xml;
 
 import java.io.File;
-import java.text.Normalizer.Form;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -11,8 +10,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.*;
 
-import IFMLElements.NavigationFlow;
 import globalGraph.Edge;
+import globalGraph.EdgeBinding;
 import globalGraph.FlowType;
 import globalGraph.IFMLGraph;
 import globalGraph.GraphNode;
@@ -37,6 +36,23 @@ public class NewIFMLPatternExtractor {
             return type;
         }
     }
+
+    private static final List<String> SOURCE_ATTRS = List.of(
+            "source",
+            "sourceValue",
+            "sourceParameter",
+            "sourceImplicitParameter",
+            "sourceParameterBinding",
+            "blank");
+
+    private static final List<String> TARGET_ATTRS = List.of(
+            "target",
+            "targetValue",
+            "targetParameter",
+            "targetImplicitParameter",
+            "targetParameterBinding",
+            "targetExpressionVariable",
+            "blank");
 
     private static List<String> navFlowParentElements = Arrays.asList("Form", "List", "Details", "Action",
             "ViewComponent");
@@ -109,7 +125,7 @@ public class NewIFMLPatternExtractor {
 
         for (String pagePath : pagePaths) {
 
-            String pageId = pagePath.substring(pagePath.lastIndexOf("/") + 1);
+            String pageId = pagePath.substring(pagePath.lastIndexOf("\\") + 1);
 
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
@@ -155,6 +171,23 @@ public class NewIFMLPatternExtractor {
         return null;
     }
 
+    private static boolean isPassing(Element el) {
+        String val = el.getAttribute("passing");
+        return "true".equals(val);
+    }
+
+    private static String resolveAttribute(Element el, List<String> candidates) {
+        NamedNodeMap attrs = el.getAttributes();
+
+        for (String name : candidates) {
+            Node attr = attrs.getNamedItem(name);
+            if (attr != null) {
+                return attr.getNodeValue();
+            }
+        }
+        return null;
+    }
+
     private void extractEdges(List<String> pagePaths, IFMLGraph graph) throws Exception {
 
         for (String pagePath : pagePaths) {
@@ -175,20 +208,56 @@ public class NewIFMLPatternExtractor {
                 for (int i = 0; i < dataNodeList.getLength(); i++) {
                     documentFlows.add((Element) dataNodeList.item(i));
                 }
-                
+
                 for (int i = 0; i < documentFlows.size(); i++) {
+
                     Element flowElement = documentFlows.get(i);
 
                     String sourceId = findSource(flowElement);
                     String targetId = flowElement.getAttribute("to");
 
+                    FlowType type = flowElement.getLocalName().equals("DataFlow")
+                            ? FlowType.DATA_FLOW
+                            : FlowType.NAVIGATION;
+
                     Edge edge = new Edge(
                             sourceId,
                             targetId,
-                            FlowType.NAVIGATION);
+                            type);
+
+                    // 🔹 AGGIUNTA: parsing Binding
+                    NodeList bindingNodes = flowElement.getElementsByTagNameNS("*", "ParameterBinding");
+
+                    for (int j = 0; j < bindingNodes.getLength(); j++) {
+
+                        Element bindingEl = (Element) bindingNodes.item(j);
+
+                        boolean automatic = Boolean.parseBoolean(
+                                bindingEl.getAttribute("automaticCoupling"));
+
+                        if (automatic) {
+                            edge.addBinding(new EdgeBinding(true, null, null));
+                            continue;
+                        }
+
+                        if (isPassing(bindingEl)) {
+                            continue;
+                        }
+
+                        String sourceAttr = resolveAttribute(bindingEl, SOURCE_ATTRS);
+                        String targetAttr = resolveAttribute(bindingEl, TARGET_ATTRS);
+
+                        EdgeBinding binding = new EdgeBinding(
+                                automatic,
+                                sourceAttr,
+                                targetAttr);
+
+                        edge.addBinding(binding);
+                    }
 
                     graph.addEdge(edge);
                 }
+
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }

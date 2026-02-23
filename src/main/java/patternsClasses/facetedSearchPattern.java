@@ -1,77 +1,108 @@
 package patternsClasses;
 
+import globalGraph.*;
+import it.davide.xml.PatternInstance;
+import it.davide.xml.ProjectPatternsJson;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import IFMLElements.Binding;
-import IFMLElements.NavigationFlow;
-import it.davide.xml.JsonPatternStructure;
-import it.davide.xml.JsonPatternStructure.FilterBinding;
-import it.davide.xml.JsonPatternStructure.Flow;
-import it.davide.xml.JsonPatternStructure.PagePatterns;
+public class FacetedSearchPattern extends GenericGraphPattern {
 
-public class facetedSearchPattern extends GenericPattern {
-    public facetedSearchPattern() {
-        this.name = "Faceted search pattern";
+    public FacetedSearchPattern() {
+        this.name = "Faceted Search Pattern";
     }
 
     @Override
-    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current, List<NavigationFlow> propertiesFlows) {
+    public List<PatternInstance> matches(IFMLGraph graph,
+            GraphNode startNode) {
 
-        List<NavigationFlow> matchingFlows = new ArrayList<NavigationFlow>();
+        if (startNode.getType() != NodeType.FORM)
+            return null;
 
-        if (current.getFromElement().equals("Form") && current.getToElement().equals("List")) {
-            flows.stream()
-                    .filter(flow -> (flow.getFromElement().equals("List")
-                            && flow.getToElement().equals("List")
-                            && flow.getToId().equals(current.getToId())))
-                    .findAny()
-                    .ifPresent(flow -> {
-                        matchingFlows.add(current);
-                        matchingFlows.add(flow);
-                    });
-            if (matchingFlows != null && !matchingFlows.isEmpty()) {
-                return matchingFlows;
+        List<PatternInstance> instances = new ArrayList<>();
+
+        // 1️⃣ FORM → LIST₁
+        for (Edge formToList : graph.getOutgoing(startNode.getId())) {
+
+            GraphNode list1 = graph.getNode(formToList.getTargetId());
+
+            if (list1 == null ||
+                    list1.getType() != NodeType.LIST)
+                continue;
+
+            // 2️⃣ LIST₂ → LIST₁ (usiamo incoming)
+            for (Edge incoming : graph.getIncoming(list1.getId())) {
+
+                GraphNode source = graph.getNode(incoming.getSourceId());
+
+                if (source == null)
+                    continue;
+
+                // Deve essere una LIST diversa da LIST₁
+                if (source.getType() == NodeType.LIST &&
+                        !source.getId().equals(list1.getId())) {
+
+                    List<Edge> matched = new ArrayList<>();
+                    matched.add(formToList);
+                    matched.add(incoming);
+
+                    instances.add(new PatternInstance(matched));
+                }
             }
         }
-        return null;
+
+        return instances.isEmpty() ? null : instances;
     }
 
     @Override
-    public void createJsonPattern(PagePatterns page) {
-        JsonPatternStructure.FlowPattern pattern = new JsonPatternStructure.FlowPattern();
-        pattern.patternType = name;
+    public void createJsonPattern(ProjectPatternsJson projectJson,
+            PatternInstance instance,
+            IFMLGraph graph) {
 
-        getFlows().forEach(flow -> {
-            JsonPatternStructure.Endpoint from = new JsonPatternStructure.Endpoint();
-            from.id = flow.getFromId();
-            from.type = flow.getFromElement();
+        ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
-            JsonPatternStructure.Endpoint to = new JsonPatternStructure.Endpoint();
-            to.id = flow.getToId();
-            to.type = flow.getToElement();
+        entry.patternType = name;
 
-            Flow f = new Flow();
-            f.from = from;
-            f.to = to;
+        for (Edge edge : instance.getEdges()) {
 
-            for (Binding binding : flow.getBindings()) {
-                FilterBinding b = new FilterBinding();
+            GraphNode from = graph.getNode(edge.getSourceId());
+            GraphNode to = graph.getNode(edge.getTargetId());
 
-                if (binding.isAutomaticCoupling()) {
-                    b.automaticCoupling = true;
-                } else {
-                    b.source = binding.getFromAttribute();
-                    b.target = binding.getToAttribute();
+            ProjectPatternsJson.FlowEntry flow = new ProjectPatternsJson.FlowEntry();
+
+            flow.from = buildEndpoint(from);
+            flow.to = buildEndpoint(to);
+
+            // Esportazione bindings
+            for (EdgeBinding b : edge.getBindings()) {
+
+                ProjectPatternsJson.BindingEntry jb = new ProjectPatternsJson.BindingEntry();
+
+                jb.automaticCoupling = b.isAutomaticCoupling();
+
+                if (!b.isAutomaticCoupling()) {
+                    jb.source = b.getSourceAttribute();
+                    jb.target = b.getTargetAttribute();
                 }
 
-                f.bindings.add(b);
+                flow.bindings.add(jb);
             }
 
-            pattern.flows.add(f);
-        });
+            entry.flows.add(flow);
+        }
 
-        page.patterns.add(pattern);
+        projectJson.patterns.add(entry);
     }
 
+    private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
+
+        ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
+
+        ep.id = node.getId();
+        ep.type = node.getType().name();
+        ep.pageId = node.getPageId();
+
+        return ep;
+    }
 }

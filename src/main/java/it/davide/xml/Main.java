@@ -12,8 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import IFMLElements.NavigationFlow;
-import patternsClasses.MultiPageMasterDetailPattern;
-import patternsClasses.NewBasicSearchPattern;
+import patternsClasses.*;
 
 public class Main {
 
@@ -62,8 +61,12 @@ public class Main {
 
             GlobalPatternEngine patternEngine = new GlobalPatternEngine(
                     List.of(
-                            //new NewBasicSearchPattern(),
-                            new MultiPageMasterDetailPattern()
+                            new BasicSearchPattern(),
+                            new MulticriteriaSearchPattern(),
+                            new FacetedSearchPattern(),
+                            new QuickSearchPattern(),
+                            new MasterDetailPattern(),
+                            new MultiLevelMasterDetailPattern()
                     )
             );
 

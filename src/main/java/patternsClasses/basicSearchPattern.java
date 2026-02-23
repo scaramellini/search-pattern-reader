@@ -1,64 +1,94 @@
 package patternsClasses;
 
+import globalGraph.*;
+import it.davide.xml.PatternInstance;
+import it.davide.xml.ProjectPatternsJson;
+
+import java.util.ArrayList;
 import java.util.List;
 
-import IFMLElements.Binding;
-import IFMLElements.NavigationFlow;
-import it.davide.xml.JsonPatternStructure;
-import it.davide.xml.JsonPatternStructure.FilterBinding;
-import it.davide.xml.JsonPatternStructure.Flow;
-import it.davide.xml.JsonPatternStructure.PagePatterns;
+public class BasicSearchPattern extends GenericGraphPattern {
 
-public class basicSearchPattern extends GenericPattern {
-
-    public basicSearchPattern() {
-        this.name = "Basic search pattern";
+    public BasicSearchPattern() {
+        this.name = "Basic Search Pattern";
     }
 
     @Override
-    public List<NavigationFlow> matches(List<NavigationFlow> flows, NavigationFlow current, List<NavigationFlow> propertiesFlows) {
-        if (current.getFromElement().equals("Form") && current.getToElement().equals("List")) {
-            if (current.getBindings().size() == 1) {
-                return List.of(current);
+    public List<PatternInstance> matches(IFMLGraph graph,
+            GraphNode startNode) {
+
+        if (startNode.getType() != NodeType.FORM)
+            return null;
+
+        List<Edge> matched = new ArrayList<>();
+
+        for (Edge edge : graph.getOutgoing(startNode.getId())) {
+
+            GraphNode target = graph.getNode(edge.getTargetId());
+
+            if (target != null && target.getType() == NodeType.LIST) {
+
+                // 🔹 Nuova condizione: massimo un binding
+                if (edge.getBindings().size() <= 1) {
+                    matched.add(edge);
+                }
             }
         }
-        return null;
+
+        if (matched.isEmpty())
+            return null;
+
+        return List.of(new PatternInstance(matched));
     }
 
     @Override
-    public void createJsonPattern(PagePatterns page) {
-        JsonPatternStructure.FlowPattern pattern = new JsonPatternStructure.FlowPattern();
-        pattern.patternType = name;
+    public void createJsonPattern(ProjectPatternsJson projectJson,
+            PatternInstance instance,
+            IFMLGraph graph) {
 
-        NavigationFlow flow = flows.get(0);
+        ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
-        JsonPatternStructure.Endpoint from = new JsonPatternStructure.Endpoint();
-        from.id = flow.getFromId();
-        from.type = flow.getFromElement();
+        entry.patternType = name;
 
-        JsonPatternStructure.Endpoint to = new JsonPatternStructure.Endpoint();
-        to.id = flow.getToId();
-        to.type = flow.getToElement();
+        for (Edge edge : instance.getEdges()) {
 
-        Flow f = new Flow();
-        f.from = from;
-        f.to = to;
+            GraphNode from = graph.getNode(edge.getSourceId());
+            GraphNode to = graph.getNode(edge.getTargetId());
 
-        for (Binding binding : flow.getBindings()) {
-            FilterBinding b = new FilterBinding();
+            ProjectPatternsJson.FlowEntry flow = new ProjectPatternsJson.FlowEntry();
 
-            if (binding.isAutomaticCoupling()) {
-                b.automaticCoupling = true;
-            } else {
-                b.source = binding.getFromAttribute();
-                b.target = binding.getToAttribute();
+            flow.from = buildEndpoint(from);
+            flow.to = buildEndpoint(to);
+
+            // 🔹 AGGIUNTA: esportazione bindings
+            for (EdgeBinding b : edge.getBindings()) {
+
+                ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
+
+                jsonBinding.automaticCoupling = b.isAutomaticCoupling();
+
+                if (!b.isAutomaticCoupling()) {
+                    jsonBinding.source = b.getSourceAttribute();
+                    jsonBinding.target = b.getTargetAttribute();
+                }
+
+                flow.bindings.add(jsonBinding);
             }
 
-            f.bindings.add(b);
+            entry.flows.add(flow);
         }
 
-        pattern.flows.add(f);
+        projectJson.patterns.add(entry);
+    }
 
-        page.patterns.add(pattern);
+    private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
+
+        ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
+
+        ep.id = node.getId();
+        ep.type = node.getType().name();
+        ep.pageId = node.getPageId();
+
+        return ep;
     }
 }

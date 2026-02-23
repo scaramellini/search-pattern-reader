@@ -15,6 +15,13 @@ public class ProjectPatternsJson {
     public static class FlowEntry {
         public Endpoint from;
         public Endpoint to;
+        public List<BindingEntry> bindings = new ArrayList<>();
+    }
+
+    public static class BindingEntry {
+        public boolean automaticCoupling;
+        public String source;
+        public String target;
     }
 
     public static class Endpoint {

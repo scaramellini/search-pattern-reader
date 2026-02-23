@@ -8,10 +8,10 @@ import it.davide.xml.PatternInstance;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultiPageMasterDetailPattern extends GenericGraphPattern {
+public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
 
-    public MultiPageMasterDetailPattern() {
-        this.name = "Multi-Page List Chain Pattern";
+    public MultiLevelMasterDetailPattern() {
+        this.name = "Multilevel Master Detail Pattern";
     }
 
     @Override
@@ -119,6 +119,21 @@ public class MultiPageMasterDetailPattern extends GenericGraphPattern {
 
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
+
+            // 🔹 AGGIUNTA: esportazione bindings
+            for (EdgeBinding b : edge.getBindings()) {
+
+                ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
+
+                jsonBinding.automaticCoupling = b.isAutomaticCoupling();
+
+                if (!b.isAutomaticCoupling()) {
+                    jsonBinding.source = b.getSourceAttribute();
+                    jsonBinding.target = b.getTargetAttribute();
+                }
+
+                flow.bindings.add(jsonBinding);
+            }
 
             entry.flows.add(flow);
         }
