@@ -61,12 +61,14 @@ public class Main {
 
             GlobalPatternEngine patternEngine = new GlobalPatternEngine(
                     List.of(
-                            new BasicSearchPattern(),
+                            /* new BasicSearchPattern(),
                             new MulticriteriaSearchPattern(),
                             new FacetedSearchPattern(),
                             new QuickSearchPattern(),
                             new MasterDetailPattern(),
-                            new MultiLevelMasterDetailPattern()
+                            new MultiLevelMasterDetailPattern() */
+                            //new PreloadedFieldsPattern()
+                            new PreassignedSelectionFieldsPattern()
                     )
             );
 
