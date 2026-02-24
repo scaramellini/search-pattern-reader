@@ -10,7 +10,7 @@ import java.util.List;
 public class QuickSearchPattern extends GenericGraphPattern {
 
     public QuickSearchPattern() {
-        this.name = "Quick Search Pattern";
+        this.name = "Quick Search Pattern"; 
     }
 
     @Override

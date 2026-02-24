@@ -10,7 +10,7 @@ import java.util.List;
 public class MulticriteriaSearchPattern extends GenericGraphPattern {
 
     public MulticriteriaSearchPattern() {
-        this.name = "Multicriteria Search Pattern";
+        this.name = "Multicriteria Search Pattern"; 
     }
 
     @Override

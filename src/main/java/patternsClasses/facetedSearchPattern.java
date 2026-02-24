@@ -10,7 +10,7 @@ import java.util.List;
 public class FacetedSearchPattern extends GenericGraphPattern {
 
     public FacetedSearchPattern() {
-        this.name = "Faceted Search Pattern";
+        this.name = "Faceted Search Pattern"; 
     }
 
     @Override
