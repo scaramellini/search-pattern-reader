@@ -69,6 +69,7 @@ public class Main {
                             new MultiLevelMasterDetailPattern() */
                             //new PreloadedFieldsPattern()
                             new PreassignedSelectionFieldsPattern()
+                            
                     )
             );
 
