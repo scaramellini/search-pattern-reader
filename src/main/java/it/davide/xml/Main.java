@@ -46,33 +46,34 @@ public class Main {
         String directoryName;
 
         for (String directory : args) {
-            //JsonPatternStructure.JsonReport report = new JsonPatternStructure.JsonReport();
+            // JsonPatternStructure.JsonReport report = new
+            // JsonPatternStructure.JsonReport();
 
             List<NavigationFlow> propertiesFlows = new ArrayList<NavigationFlow>();
 
-            /* getPropertiesPaths(directory).forEach(dir -> {
-                try {
-                    propertiesFlows.addAll(extractor.extractFlows(dir));
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }); */
+            /*
+             * getPropertiesPaths(directory).forEach(dir -> {
+             * try {
+             * propertiesFlows.addAll(extractor.extractFlows(dir));
+             * } catch (Exception e) {
+             * e.printStackTrace();
+             * }
+             * });
+             */
             ProjectPatternsJson report = new ProjectPatternsJson();
 
             GlobalPatternEngine patternEngine = new GlobalPatternEngine(
                     List.of(
-                            /* new BasicSearchPattern(),
+                            new BasicSearchPattern(),
                             new MulticriteriaSearchPattern(),
                             new FacetedSearchPattern(),
                             new QuickSearchPattern(),
                             new MasterDetailPattern(),
-                            new MultiLevelMasterDetailPattern() */
-                            //new PreloadedFieldsPattern()
-                            //new PreassignedSelectionFieldsPattern()
-                            new WizardPattern()
-                            
-                    )
-            );
+                            new MultiLevelMasterDetailPattern(),
+                            new PreloadedFieldsPattern(),
+                            new PreassignedSelectionFieldsPattern(),
+                            new WizardPattern(),
+                            new DataLookupPattern()));
 
             patternEngine.detect(extractor.buildGraph(getPagesPaths(directory)), report);
 
@@ -92,13 +93,16 @@ public class Main {
                     outputFile,
                     report);
 
-            /*for (String pathToFile : getPagesPaths(directory)) { // for each file in the directory
-
-                directoryName = directory.endsWith("\\")
-                        ? Paths.get(directory).toString().substring(directory.lastIndexOf("\\") + 1)
-                        : Paths.get(directory).toString().substring(directory.lastIndexOf("/") + 1);
-                extractor.patternFinder(report, pathToFile, directoryName, propertiesFlows);
-            }*/
+            /*
+             * for (String pathToFile : getPagesPaths(directory)) { // for each file in the
+             * directory
+             * 
+             * directoryName = directory.endsWith("\\")
+             * ? Paths.get(directory).toString().substring(directory.lastIndexOf("\\") + 1)
+             * : Paths.get(directory).toString().substring(directory.lastIndexOf("/") + 1);
+             * extractor.patternFinder(report, pathToFile, directoryName, propertiesFlows);
+             * }
+             */
         }
     }
 }
