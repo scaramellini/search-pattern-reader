@@ -1,33 +1,212 @@
 {
   "patterns" : [ {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Wizard Pattern",
     "flows" : [ {
       "from" : {
-        "id" : "wv2#area3#page19#lst18",
-        "type" : "LIST",
-        "pageId" : "page19.wr"
+        "id" : "wv2#area3#page20#frm15",
+        "type" : "FORM",
+        "pageId" : "page20.wr"
       },
       "to" : {
-        "id" : "wv2#area3#page19#frm14",
+        "id" : "wv2#area3#page24#frm20",
         "type" : "FORM",
-        "pageId" : "page19.wr"
+        "pageId" : "page24.wr"
       },
       "bindings" : [ {
         "automaticCoupling" : false,
-        "source" : "prova price",
-        "target" : "{wv2#area3#page19#frm14#fld41}value"
+        "source" : "{wv2#area3#page20#frm15#fld50}value",
+        "target" : "{wv2#area3#page24#frm20#fld61}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "data._be_att3",
-        "target" : "{wv2#area3#page19#frm14#fld40}value"
+        "source" : "{wv2#area3#page20#frm15#fld42}value",
+        "target" : "{wv2#area3#page24#frm20#fld60}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "data._be_att2",
-        "target" : "{wv2#area3#page19#frm14#fld39}value"
+        "source" : "{wv2#area3#page20#frm15#fld55}value",
+        "target" : "{wv2#area3#page24#frm20#fld62}value"
+      } ]
+    } ]
+  }, {
+    "patternType" : "Wizard Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area3#page20#frm15",
+        "type" : "FORM",
+        "pageId" : "page20.wr"
+      },
+      "to" : {
+        "id" : "wv2#area3#page24#frm20",
+        "type" : "FORM",
+        "pageId" : "page24.wr"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page20#frm15#fld50}value",
+        "target" : "{wv2#area3#page24#frm20#fld61}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "data._be_att3",
-        "target" : "{wv2#area3#page19#frm14#sfld4}presel._be_att1"
+        "source" : "{wv2#area3#page20#frm15#fld42}value",
+        "target" : "{wv2#area3#page24#frm20#fld60}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page20#frm15#fld55}value",
+        "target" : "{wv2#area3#page24#frm20#fld62}value"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv2#area3#page24#frm20",
+        "type" : "FORM",
+        "pageId" : "page24.wr"
+      },
+      "to" : {
+        "id" : "wv2#area3#page25#frm21",
+        "type" : "FORM",
+        "pageId" : "page25.wr"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld60}value",
+        "target" : "{wv2#area3#page25#frm21#fld65}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld62}value",
+        "target" : "{wv2#area3#page25#frm21#fld63}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld61}value",
+        "target" : "{wv2#area3#page25#frm21#fld64}value"
+      } ]
+    } ]
+  }, {
+    "patternType" : "Wizard Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area3#page24#frm20",
+        "type" : "FORM",
+        "pageId" : "page24.wr"
+      },
+      "to" : {
+        "id" : "wv2#area3#page20#frm15",
+        "type" : "FORM",
+        "pageId" : "page20.wr"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld60}value",
+        "target" : "{wv2#area3#page20#frm15#fld42}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld61}value",
+        "target" : "{wv2#area3#page20#frm15#fld50}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld62}value",
+        "target" : "{wv2#area3#page20#frm15#fld55}value"
+      } ]
+    } ]
+  }, {
+    "patternType" : "Wizard Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area3#page24#frm20",
+        "type" : "FORM",
+        "pageId" : "page24.wr"
+      },
+      "to" : {
+        "id" : "wv2#area3#page25#frm21",
+        "type" : "FORM",
+        "pageId" : "page25.wr"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld60}value",
+        "target" : "{wv2#area3#page25#frm21#fld65}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld62}value",
+        "target" : "{wv2#area3#page25#frm21#fld63}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld61}value",
+        "target" : "{wv2#area3#page25#frm21#fld64}value"
+      } ]
+    } ]
+  }, {
+    "patternType" : "Wizard Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area3#page25#frm21",
+        "type" : "FORM",
+        "pageId" : "page25.wr"
+      },
+      "to" : {
+        "id" : "wv2#area3#page24#frm20",
+        "type" : "FORM",
+        "pageId" : "page24.wr"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page25#frm21#fld65}value",
+        "target" : "{wv2#area3#page24#frm20#fld60}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page25#frm21#fld63}value",
+        "target" : "{wv2#area3#page24#frm20#fld62}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page25#frm21#fld64}value",
+        "target" : "{wv2#area3#page24#frm20#fld61}value"
+      } ]
+    } ]
+  }, {
+    "patternType" : "Wizard Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area3#page25#frm21",
+        "type" : "FORM",
+        "pageId" : "page25.wr"
+      },
+      "to" : {
+        "id" : "wv2#area3#page24#frm20",
+        "type" : "FORM",
+        "pageId" : "page24.wr"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page25#frm21#fld65}value",
+        "target" : "{wv2#area3#page24#frm20#fld60}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page25#frm21#fld63}value",
+        "target" : "{wv2#area3#page24#frm20#fld62}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page25#frm21#fld64}value",
+        "target" : "{wv2#area3#page24#frm20#fld61}value"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv2#area3#page24#frm20",
+        "type" : "FORM",
+        "pageId" : "page24.wr"
+      },
+      "to" : {
+        "id" : "wv2#area3#page20#frm15",
+        "type" : "FORM",
+        "pageId" : "page20.wr"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld60}value",
+        "target" : "{wv2#area3#page20#frm15#fld42}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld61}value",
+        "target" : "{wv2#area3#page20#frm15#fld50}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area3#page24#frm20#fld62}value",
+        "target" : "{wv2#area3#page20#frm15#fld55}value"
       } ]
     } ]
   } ]
