@@ -68,7 +68,8 @@ public class Main {
                             new MasterDetailPattern(),
                             new MultiLevelMasterDetailPattern() */
                             //new PreloadedFieldsPattern()
-                            new PreassignedSelectionFieldsPattern()
+                            //new PreassignedSelectionFieldsPattern()
+                            new WizardPattern()
                             
                     )
             );
