@@ -69,6 +69,7 @@ public class Main {
                             new FacetedSearchPattern(),
                             new QuickSearchPattern(),
                             new MasterDetailPattern(),
+                            new MasterMultiDetailsPattern(),
                             new MultiLevelMasterDetailPattern(),
                             new PreloadedFieldsPattern(),
                             new PreassignedSelectionFieldsPattern(),
