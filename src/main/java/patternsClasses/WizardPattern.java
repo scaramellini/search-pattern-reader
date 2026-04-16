@@ -14,9 +14,14 @@ public class WizardPattern extends GenericGraphPattern {
         this.name = "Wizard Pattern";
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
-                                         GraphNode startNode) {
+            GraphNode startNode) {
 
         if (startNode.getType() != NodeType.FORM)
             return null;
@@ -51,10 +56,10 @@ public class WizardPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
-    // =====================================================
-    // VALIDAZIONI STRUTTURALI
-    // =====================================================
-
+    /** 
+     * @param path
+     * @return boolean
+     */
     private boolean isValidWizardPath(List<GraphNode> path) {
 
         for (GraphNode node : path) {
@@ -65,6 +70,10 @@ public class WizardPattern extends GenericGraphPattern {
         return true;
     }
 
+    /** 
+     * @param path
+     * @return boolean
+     */
     private boolean isMultiPage(List<GraphNode> path) {
 
         return path.stream()
@@ -73,8 +82,13 @@ public class WizardPattern extends GenericGraphPattern {
                 .count() == path.size();
     }
 
+    /** 
+     * @param graph
+     * @param path
+     * @return boolean
+     */
     private boolean hasValidForwardBackward(IFMLGraph graph,
-                                            List<GraphNode> path) {
+            List<GraphNode> path) {
 
         for (int i = 0; i < path.size() - 1; i++) {
 
@@ -94,12 +108,13 @@ public class WizardPattern extends GenericGraphPattern {
         return true;
     }
 
-    // =====================================================
-    // 🔥 NUOVA REGOLA: ultimo nodo ha almeno 1 flow NON wizard
-    // =====================================================
-
+    /** 
+     * @param graph
+     * @param path
+     * @return boolean
+     */
     private boolean lastNodeHasFinalOutgoing(IFMLGraph graph,
-                                             List<GraphNode> path) {
+            List<GraphNode> path) {
 
         GraphNode last = path.get(path.size() - 1);
 
@@ -107,30 +122,30 @@ public class WizardPattern extends GenericGraphPattern {
 
             GraphNode target = graph.getNode(outgoing.getTargetId());
 
-            // Se è un FORM con backward valido → è wizard edge
             if (target.getType() == NodeType.FORM) {
 
                 Edge backward = findEdge(graph, target, last);
 
                 if (backward != null && sameBindings(outgoing, backward)) {
-                    continue; // è wizard edge → ignoralo
+                    continue;
                 }
             }
 
-            // Qualunque altro outgoing è considerato "finale"
             return true;
         }
 
         return false;
     }
 
-    // =====================================================
-    // LOGICA EDGE
-    // =====================================================
-
+    /** 
+     * @param graph
+     * @param from
+     * @param to
+     * @return Edge
+     */
     private Edge findEdge(IFMLGraph graph,
-                          GraphNode from,
-                          GraphNode to) {
+            GraphNode from,
+            GraphNode to) {
 
         for (Edge edge : graph.getOutgoing(from.getId())) {
             if (edge.getTargetId().equals(to.getId()))
@@ -140,8 +155,13 @@ public class WizardPattern extends GenericGraphPattern {
         return null;
     }
 
+    /** 
+     * @param forward
+     * @param backward
+     * @return boolean
+     */
     private boolean sameBindings(Edge forward,
-                                 Edge backward) {
+            Edge backward) {
 
         if (forward.getBindings().size() != backward.getBindings().size())
             return false;
@@ -149,31 +169,31 @@ public class WizardPattern extends GenericGraphPattern {
         Set<String> forwardSources = extractFieldIds(
                 forward.getBindings().stream()
                         .map(EdgeBinding::getSourceAttribute)
-                        .collect(Collectors.toList())
-        );
+                        .collect(Collectors.toList()));
 
         Set<String> forwardTargets = extractFieldIds(
                 forward.getBindings().stream()
                         .map(EdgeBinding::getTargetAttribute)
-                        .collect(Collectors.toList())
-        );
+                        .collect(Collectors.toList()));
 
         Set<String> backwardSources = extractFieldIds(
                 backward.getBindings().stream()
                         .map(EdgeBinding::getSourceAttribute)
-                        .collect(Collectors.toList())
-        );
+                        .collect(Collectors.toList()));
 
         Set<String> backwardTargets = extractFieldIds(
                 backward.getBindings().stream()
                         .map(EdgeBinding::getTargetAttribute)
-                        .collect(Collectors.toList())
-        );
+                        .collect(Collectors.toList()));
 
         return forwardSources.equals(backwardTargets)
                 && forwardTargets.equals(backwardSources);
     }
 
+    /** 
+     * @param attributes
+     * @return Set<String>
+     */
     private Set<String> extractFieldIds(List<String> attributes) {
 
         return attributes.stream()
@@ -183,20 +203,28 @@ public class WizardPattern extends GenericGraphPattern {
                 .collect(Collectors.toSet());
     }
 
+    /** 
+     * @param value
+     * @return String
+     */
     private String extractBetweenBraces(String value) {
 
         if (value.contains("{") && value.contains("}")) {
             return value.substring(
                     value.indexOf("{") + 1,
-                    value.indexOf("}")
-            );
+                    value.indexOf("}"));
         }
 
         return null;
     }
 
+    /** 
+     * @param graph
+     * @param path
+     * @return List<Edge>
+     */
     private List<Edge> extractForwardEdges(IFMLGraph graph,
-                                           List<GraphNode> path) {
+            List<GraphNode> path) {
 
         List<Edge> edges = new ArrayList<>();
 
@@ -213,17 +241,17 @@ public class WizardPattern extends GenericGraphPattern {
         return edges;
     }
 
-    // =====================================================
-    // JSON EXPORT (forward + backward)
-    // =====================================================
-
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
-                                  PatternInstance instance,
-                                  IFMLGraph graph) {
+            PatternInstance instance,
+            IFMLGraph graph) {
 
-        ProjectPatternsJson.PatternEntry entry =
-                new ProjectPatternsJson.PatternEntry();
+        ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
 
@@ -245,10 +273,16 @@ public class WizardPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param entry
+     * @param edge
+     * @param graph
+     * @param alreadyAdded
+     */
     private void addFlowToJson(ProjectPatternsJson.PatternEntry entry,
-                               Edge edge,
-                               IFMLGraph graph,
-                               Set<String> alreadyAdded) {
+            Edge edge,
+            IFMLGraph graph,
+            Set<String> alreadyAdded) {
 
         String key = edge.getSourceId() + "->" + edge.getTargetId();
 
@@ -260,19 +294,16 @@ public class WizardPattern extends GenericGraphPattern {
         GraphNode from = graph.getNode(edge.getSourceId());
         GraphNode to = graph.getNode(edge.getTargetId());
 
-        ProjectPatternsJson.FlowEntry flow =
-                new ProjectPatternsJson.FlowEntry();
+        ProjectPatternsJson.FlowEntry flow = new ProjectPatternsJson.FlowEntry();
 
         flow.from = buildEndpoint(from);
         flow.to = buildEndpoint(to);
 
         for (EdgeBinding b : edge.getBindings()) {
 
-            ProjectPatternsJson.BindingEntry jsonBinding =
-                    new ProjectPatternsJson.BindingEntry();
+            ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
 
-            jsonBinding.automaticCoupling =
-                    b.isAutomaticCoupling();
+            jsonBinding.automaticCoupling = b.isAutomaticCoupling();
 
             if (!b.isAutomaticCoupling()) {
                 jsonBinding.source = b.getSourceAttribute();
@@ -285,10 +316,13 @@ public class WizardPattern extends GenericGraphPattern {
         entry.flows.add(flow);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
-        ProjectPatternsJson.Endpoint ep =
-                new ProjectPatternsJson.Endpoint();
+        ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
 
         ep.id = node.getId();
         ep.type = node.getType().name();

@@ -14,6 +14,11 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         this.name = "Multilevel Master Detail Pattern";
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
             GraphNode startNode) {
@@ -46,12 +51,9 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
-    /**
-     * Regole:
-     * - primo nodo: LIST
-     * - intermedi: solo LIST
-     * - ultimo: LIST o DETAILS
-     * - tutti i nodi: solo LIST o DETAILS
+    /** 
+     * @param path
+     * @return boolean
      */
     private boolean isValidPath(List<GraphNode> path) {
 
@@ -74,6 +76,10 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         return true;
     }
 
+    /** 
+     * @param path
+     * @return boolean
+     */
     private boolean isMultiPage(List<GraphNode> path) {
 
         return path.stream()
@@ -82,6 +88,11 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
                 .count() == path.size();
     }
 
+    /** 
+     * @param graph
+     * @param path
+     * @return List<Edge>
+     */
     private List<Edge> extractEdgesFromPath(IFMLGraph graph, List<GraphNode> path) {
 
         List<Edge> edges = new ArrayList<>();
@@ -101,6 +112,11 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         return edges;
     }
 
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
             PatternInstance instance,
@@ -120,7 +136,6 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
-            // 🔹 AGGIUNTA: esportazione bindings
             for (EdgeBinding b : edge.getBindings()) {
 
                 ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
@@ -141,6 +156,10 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
         ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();

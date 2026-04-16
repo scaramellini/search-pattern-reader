@@ -17,6 +17,7 @@ import globalGraph.IFMLGraph;
 import globalGraph.GraphNode;
 import globalGraph.NodeType;
 
+//class responsible for extracting the components and flows from the IFML model to build the global graph that will be used for pattern detection
 public class NewIFMLPatternExtractor {
 
     public class ComponentInfo {
@@ -57,6 +58,11 @@ public class NewIFMLPatternExtractor {
     private static List<String> navFlowParentElements = Arrays.asList("Form", "List", "Details", "Action",
             "ViewComponent");
 
+    /**
+     * collect the direct components under a view component
+     * @param viewComponents
+     * @param components
+     */
     private void collectDirectComponents(Element viewComponents, List<ComponentInfo> components) {
 
         NodeList children = viewComponents.getChildNodes();
@@ -68,9 +74,6 @@ public class NewIFMLPatternExtractor {
 
                 Element element = (Element) child;
 
-                // Qui prendiamo solo i componenti diretti
-                // NON scendiamo nei figli
-
                 String id = element.getAttribute("id");
 
                 if (id != null && !id.isEmpty()) {
@@ -80,15 +83,21 @@ public class NewIFMLPatternExtractor {
         }
     }
 
+    /**
+     * extract the view components as couples of (id, type) from the IFML document
+     * @param document
+     * @return List<ComponentInfo>
+     */
     public List<ComponentInfo> getViewComponents(Document document) {
 
         List<ComponentInfo> components = new ArrayList<>();
 
         Element root = document.getDocumentElement(); // <Page>
 
-        // 1️⃣ ViewComponents della Page principale
+        //get view components directly under the page tag
         NodeList pageChildren = root.getChildNodes();
 
+        //for each viewcomponent tag it gets the actual components (Form, List...) directly under it and adds them to the list of components
         for (int i = 0; i < pageChildren.getLength(); i++) {
             Node node = pageChildren.item(i);
 
@@ -99,7 +108,7 @@ public class NewIFMLPatternExtractor {
             }
         }
 
-        // 2️⃣ DialogPage → ViewComponents
+        // also get the components inside dialog pages, they are not directly under the page tag but they are still part of the model and can be involved in patterns
         NodeList dialogPages = root.getElementsByTagName("DialogPage");
 
         for (int i = 0; i < dialogPages.getLength(); i++) {
@@ -121,6 +130,12 @@ public class NewIFMLPatternExtractor {
         return components;
     }
 
+    /**
+     * read the page files and extract the components to create the nodes of the global graph
+     * @param pagePaths
+     * @param graph
+     * @throws Exception
+     */
     private void extractNodes(List<String> pagePaths, IFMLGraph graph) throws Exception {
 
         for (String pagePath : pagePaths) {
@@ -141,6 +156,11 @@ public class NewIFMLPatternExtractor {
         }
     }
 
+    /**
+     * resolve the type of the component to create the node of the graph, if the component is not recognized it will be classified as UNKNOWN
+     * @param component
+     * @return NodeType
+     */
     private NodeType resolveNodeType(String component) {
 
         if (component.equals("Form"))
@@ -155,6 +175,12 @@ public class NewIFMLPatternExtractor {
         return NodeType.UNKNOWN;
     }
 
+    /**
+     * retrieve the source component id of a flow by traversing upward the parent nodes of the flow element until it finds a node that is a direct child of a view component
+     * if it doesn't find it returns null
+     * @param flow
+     * @return String
+     */
     private static String findSource(Element flow) {
         Node current = flow.getParentNode();
 
@@ -171,11 +197,22 @@ public class NewIFMLPatternExtractor {
         return null;
     }
 
+    /**
+     * check if the parameter binding is a passing binding
+     * @param el
+     * @return boolean
+     */
     private static boolean isPassing(Element el) {
         String val = el.getAttribute("passing");
         return "true".equals(val);
     }
 
+    /**
+     * gets the name of the source and target attributes of a parameter binding
+     * @param el element representing the parameter binding
+     * @param candidates list of possible attribute names for the source and target attributes of the parameter binding
+     * @return String
+     */
     private static String resolveAttribute(Element el, List<String> candidates) {
         NamedNodeMap attrs = el.getAttributes();
 
@@ -188,6 +225,12 @@ public class NewIFMLPatternExtractor {
         return null;
     }
 
+    /**
+     * read the page files and extract the flows to create the edges of the global graph
+     * @param pagePaths
+     * @param graph
+     * @throws Exception
+     */
     private void extractEdges(List<String> pagePaths, IFMLGraph graph) throws Exception {
 
         for (String pagePath : pagePaths) {
@@ -198,6 +241,7 @@ public class NewIFMLPatternExtractor {
             try {
                 Document doc = builder.parse(new File(pagePath));
 
+                //gets all the navigation and data flows in the page
                 NodeList navNodeList = doc.getElementsByTagNameNS("*", "NavigationFlow");
                 NodeList dataNodeList = doc.getElementsByTagNameNS("*", "DataFlow");
 
@@ -213,6 +257,7 @@ public class NewIFMLPatternExtractor {
 
                     Element flowElement = documentFlows.get(i);
 
+                    //gets source and target components id
                     String sourceId = findSource(flowElement);
                     String targetId = flowElement.getAttribute("to");
 
@@ -225,9 +270,11 @@ public class NewIFMLPatternExtractor {
                             targetId,
                             type);
 
-                    // 🔹 AGGIUNTA: parsing Binding
+                   
                     NodeList bindingNodes = flowElement.getElementsByTagNameNS("*", "ParameterBinding");
 
+                    // for each flow it gets the parameter bindings, if the binding is automatic it creates an edge binding with only the automatic flag set to true
+                    // otherwise it resolves the source and target attributes and creates an edge binding with all the information that will be used for pattern detection
                     for (int j = 0; j < bindingNodes.getLength(); j++) {
 
                         Element bindingEl = (Element) bindingNodes.item(j);
@@ -244,6 +291,7 @@ public class NewIFMLPatternExtractor {
                             continue;
                         }
 
+                        //simply gets the source and target name attributes of the parameter binding
                         String sourceAttr = resolveAttribute(bindingEl, SOURCE_ATTRS);
                         String targetAttr = resolveAttribute(bindingEl, TARGET_ATTRS);
 
@@ -264,6 +312,12 @@ public class NewIFMLPatternExtractor {
         }
     }
 
+    /**
+     * create the global graph
+     * @param pagePaths
+     * @return IFMLGraph
+     * @throws Exception
+     */
     public IFMLGraph buildGraph(List<String> pagePaths) throws Exception {
         IFMLGraph graph = new IFMLGraph();
 
@@ -273,6 +327,10 @@ public class NewIFMLPatternExtractor {
         return graph;
     }
 
+    /**
+     * validate the graph by checking that all the edges reference existing nodes
+     * @param graph
+     */
     private void validateGraph(IFMLGraph graph) {
 
         for (Edge edge : graph.getAllEdges()) {

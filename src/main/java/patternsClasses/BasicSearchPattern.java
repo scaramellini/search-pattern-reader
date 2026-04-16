@@ -13,6 +13,11 @@ public class BasicSearchPattern extends GenericGraphPattern {
         this.name = "Basic Search Pattern"; 
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
             GraphNode startNode) {
@@ -28,7 +33,6 @@ public class BasicSearchPattern extends GenericGraphPattern {
 
             if (target != null && target.getType() == NodeType.LIST) {
 
-                // 🔹 Nuova condizione: massimo un binding
                 if (edge.getBindings().size() <= 1) {
                     matched.add(edge);
                 }
@@ -41,6 +45,11 @@ public class BasicSearchPattern extends GenericGraphPattern {
         return List.of(new PatternInstance(matched));
     }
 
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
             PatternInstance instance,
@@ -60,7 +69,6 @@ public class BasicSearchPattern extends GenericGraphPattern {
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
-            // 🔹 AGGIUNTA: esportazione bindings
             for (EdgeBinding b : edge.getBindings()) {
 
                 ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
@@ -81,6 +89,10 @@ public class BasicSearchPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
         ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();

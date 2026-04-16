@@ -4,6 +4,9 @@ import globalGraph.*;
 
 import java.util.*;
 
+
+//class responsible for traversing the global graph, it is used by the patterns rules to explore the graph and find the nodes and edges that match the patterns
+//it is used for multipage patterns
 public class GraphTraversal {
 
     private final IFMLGraph graph;
@@ -12,9 +15,10 @@ public class GraphTraversal {
         this.graph = graph;
     }
 
-    /**
-     * Trova tutti i percorsi partendo da startNode.
-     * Nessun limite di profondità se maxDepth = 0.
+    /** 
+     * @param startNode node from which the traversal starts
+     * @param maxDepth maximum depth of the traversal, if 0 it will traverse the entire graph
+     * @return List<List<GraphNode>>
      */
     public List<List<GraphNode>> dfsPaths(GraphNode startNode, int maxDepth) {
 
@@ -26,6 +30,13 @@ public class GraphTraversal {
         return results;
     }
 
+    /** 
+     * @param current current node being visited
+     * @param maxDepth maximum depth of the traversal
+     * @param depth current depth of the traversal
+     * @param currentPath list of nodes representing the current path being explored
+     * @param results list of paths found during the traversal
+     */
     private void dfsRecursive(GraphNode current,
                               int maxDepth,
                               int depth,

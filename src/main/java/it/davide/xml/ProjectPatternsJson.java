@@ -3,6 +3,9 @@ package it.davide.xml;
 import java.util.ArrayList;
 import java.util.List;
 
+
+// class representing the json object that will be used to store the detected patterns in the IFML model
+// it contains a list of pattern entries, each entry represents a detected pattern and contains the information about the flows and bindings that matched the pattern rules
 public class ProjectPatternsJson {
 
     public List<PatternEntry> patterns = new ArrayList<>();

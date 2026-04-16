@@ -13,6 +13,11 @@ public class FacetedSearchPattern extends GenericGraphPattern {
         this.name = "Faceted Search Pattern"; 
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
             GraphNode startNode) {
@@ -22,7 +27,6 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         List<PatternInstance> instances = new ArrayList<>();
 
-        // 1️⃣ FORM → LIST₁
         for (Edge formToList : graph.getOutgoing(startNode.getId())) {
 
             GraphNode list1 = graph.getNode(formToList.getTargetId());
@@ -31,7 +35,6 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                     list1.getType() != NodeType.LIST)
                 continue;
 
-            // 2️⃣ LIST₂ → LIST₁ (usiamo incoming)
             for (Edge incoming : graph.getIncoming(list1.getId())) {
 
                 GraphNode source = graph.getNode(incoming.getSourceId());
@@ -39,7 +42,6 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                 if (source == null)
                     continue;
 
-                // Deve essere una LIST diversa da LIST₁
                 if (source.getType() == NodeType.LIST &&
                         !source.getId().equals(list1.getId())) {
 
@@ -55,6 +57,11 @@ public class FacetedSearchPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
             PatternInstance instance,
@@ -74,7 +81,6 @@ public class FacetedSearchPattern extends GenericGraphPattern {
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
-            // Esportazione bindings
             for (EdgeBinding b : edge.getBindings()) {
 
                 ProjectPatternsJson.BindingEntry jb = new ProjectPatternsJson.BindingEntry();
@@ -95,6 +101,10 @@ public class FacetedSearchPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
         ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();

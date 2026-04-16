@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Collections;
 import java.util.Collection;
 
+//class representing the global graph, it contains all the nodes and edges of the graph, reconstructing the IFML model
 public class IFMLGraph {
 
     private final Map<String, GraphNode> nodes = new HashMap<>();
@@ -15,12 +16,18 @@ public class IFMLGraph {
     private final Map<String, List<Edge>> outgoing = new HashMap<>();
     private final Map<String, List<Edge>> incoming = new HashMap<>();
 
+    /** 
+     * @param node
+     */
     public void addNode(GraphNode node) {
         nodes.put(node.getId(), node);
         outgoing.putIfAbsent(node.getId(), new ArrayList<>());
         incoming.putIfAbsent(node.getId(), new ArrayList<>());
     }
 
+    /** 
+     * @param edge
+     */
     public void addEdge(Edge edge) {
         if (!nodes.containsKey(edge.getSourceId()) ||
             !nodes.containsKey(edge.getTargetId())) {
@@ -32,22 +39,40 @@ public class IFMLGraph {
         incoming.get(edge.getTargetId()).add(edge);
     }
 
+    /** 
+     * @param id
+     * @return GraphNode
+     */
     public GraphNode getNode(String id) {
         return nodes.get(id);
     }
 
+    /** 
+     * @param nodeId
+     * @return List<Edge>
+     */
     public List<Edge> getOutgoing(String nodeId) {
         return outgoing.getOrDefault(nodeId, Collections.emptyList());
     }
 
+    /** 
+     * @param nodeId
+     * @return List<Edge>
+     */
     public List<Edge> getIncoming(String nodeId) {
         return incoming.getOrDefault(nodeId, Collections.emptyList());
     }
 
+    /** 
+     * @return Collection<GraphNode>
+     */
     public Collection<GraphNode> getAllNodes() {
         return nodes.values();
     }
 
+    /** 
+     * @return List<Edge>
+     */
     public List<Edge> getAllEdges() {
         return edges;
     }

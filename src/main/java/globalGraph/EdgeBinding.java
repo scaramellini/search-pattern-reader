@@ -1,5 +1,6 @@
 package globalGraph;
 
+//class representing the binding between two attributes of the source and target components
 public class EdgeBinding {
 
     private final boolean automaticCoupling;
@@ -15,14 +16,23 @@ public class EdgeBinding {
         this.targetAttribute = targetAttribute;
     }
 
+    /** 
+     * @return boolean
+     */
     public boolean isAutomaticCoupling() {
         return automaticCoupling;
     }
 
+    /** 
+     * @return String
+     */
     public String getSourceAttribute() {
         return sourceAttribute;
     }
 
+    /** 
+     * @return String
+     */
     public String getTargetAttribute() {
         return targetAttribute;
     }

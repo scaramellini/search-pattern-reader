@@ -16,6 +16,11 @@ public class DataLookupPattern extends GenericGraphPattern {
         this.name = "Data Lookup Pattern";
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
                                          GraphNode startNode) {
@@ -25,7 +30,6 @@ public class DataLookupPattern extends GenericGraphPattern {
 
         List<PatternInstance> instances = new ArrayList<>();
 
-        // FORM → LIST
         for (Edge formToList : graph.getOutgoing(startNode.getId())) {
 
             GraphNode listNode =
@@ -35,12 +39,10 @@ public class DataLookupPattern extends GenericGraphPattern {
                 listNode.getType() != NodeType.LIST)
                 continue;
 
-            // FORM e LIST devono essere su pagine diverse
             if (startNode.getPageId()
                     .equals(listNode.getPageId()))
                 continue;
 
-            // 🔥 Riutilizzo MasterDetailPattern
             List<PatternInstance> mdInstances =
                     masterDetailPattern.matches(graph, listNode);
 
@@ -49,7 +51,6 @@ public class DataLookupPattern extends GenericGraphPattern {
 
             for (PatternInstance mdInstance : mdInstances) {
 
-                // MasterDetail ha un solo edge LIST → DETAILS
                 Edge listToDetails =
                         mdInstance.getEdges().get(0);
 
@@ -60,12 +61,10 @@ public class DataLookupPattern extends GenericGraphPattern {
                 if (detailsNode == null)
                     continue;
 
-                // LIST e DETAILS devono stare sulla stessa pagina
                 if (!listNode.getPageId()
                         .equals(detailsNode.getPageId()))
                     continue;
 
-                // DETAILS → FORM (ritorno lookup)
                 for (Edge detailsToForm :
                         graph.getOutgoing(detailsNode.getId())) {
 
@@ -80,7 +79,6 @@ public class DataLookupPattern extends GenericGraphPattern {
                             .equals(startNode.getId()))
                         continue;
 
-                    // Deve valorizzare almeno un campo
                     if (!hasNonAutomaticBinding(detailsToForm))
                         continue;
 
@@ -98,6 +96,10 @@ public class DataLookupPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
+    /** 
+     * @param edge
+     * @return boolean
+     */
     private boolean hasNonAutomaticBinding(Edge edge) {
 
         for (EdgeBinding b : edge.getBindings()) {
@@ -108,10 +110,11 @@ public class DataLookupPattern extends GenericGraphPattern {
         return false;
     }
 
-    // =====================================================
-    // JSON EXPORT
-    // =====================================================
-
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
                                   PatternInstance instance,
@@ -159,6 +162,10 @@ public class DataLookupPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
         ProjectPatternsJson.Endpoint ep =

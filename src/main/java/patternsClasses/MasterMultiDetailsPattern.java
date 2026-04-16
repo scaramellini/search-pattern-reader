@@ -13,17 +13,20 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
         this.name = "Master MultiDetails Pattern";
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
             GraphNode startNode) {
 
-        // Il pattern parte da una LIST
         if (startNode.getType() != NodeType.LIST)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
 
-        // Cerco navigation flow LIST → DETAILS
         for (Edge navEdge : graph.getOutgoing(startNode.getId())) {
 
             if (navEdge.getType() != FlowType.NAVIGATION)
@@ -36,10 +39,6 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
 
             if (detailsNode.getType() != NodeType.DETAILS)
                 continue;
-
-            // Ora verifico che nella pagina della DETAILS
-            // esistano altri componenti (LIST o DETAILS)
-            // collegati con DATA FLOW dalla DETAILS
 
             List<Edge> matchedEdges = new ArrayList<>();
             matchedEdges.add(navEdge);
@@ -56,11 +55,9 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
                 if (target == null)
                     continue;
 
-                // Deve essere nella stessa pagina della DETAILS
                 if (!detailsNode.getPageId().equals(target.getPageId()))
                     continue;
 
-                // Deve essere LIST o DETAILS
                 if (target.getType() == NodeType.LIST ||
                         target.getType() == NodeType.DETAILS) {
 
@@ -77,6 +74,11 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
             PatternInstance instance,
@@ -116,6 +118,10 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
         ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();

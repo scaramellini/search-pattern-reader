@@ -13,26 +13,30 @@ public class PreassignedSelectionFieldsPattern extends GenericGraphPattern {
         this.name = "Preassigned SelectionFields Pattern";
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
-                                         GraphNode startNode) {
+            GraphNode startNode) {
 
         if (startNode.getType() != NodeType.LIST)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
 
-        // LIST → FORM
         for (Edge edge : graph.getOutgoing(startNode.getId())) {
 
             if (edge.getType() != FlowType.NAVIGATION &&
-                edge.getType() != FlowType.DATA_FLOW)
+                    edge.getType() != FlowType.DATA_FLOW)
                 continue;
 
             GraphNode target = graph.getNode(edge.getTargetId());
 
             if (target == null ||
-                target.getType() != NodeType.FORM)
+                    target.getType() != NodeType.FORM)
                 continue;
 
             if (edge.getBindings().isEmpty())
@@ -50,18 +54,15 @@ public class PreassignedSelectionFieldsPattern extends GenericGraphPattern {
                     break;
                 }
 
-                // Caso {id}presel.qualcosa
                 if (targetAttr.contains("presel.")) {
                     hasPresel = true;
                     continue;
                 }
 
-                // Caso {id}value
                 if (targetAttr.endsWith("value")) {
                     continue;
                 }
 
-                // Qualsiasi altra cosa invalida il pattern
                 allValid = false;
                 break;
             }
@@ -78,13 +79,17 @@ public class PreassignedSelectionFieldsPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
-                                  PatternInstance instance,
-                                  IFMLGraph graph) {
+            PatternInstance instance,
+            IFMLGraph graph) {
 
-        ProjectPatternsJson.PatternEntry entry =
-                new ProjectPatternsJson.PatternEntry();
+        ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
 
@@ -93,16 +98,14 @@ public class PreassignedSelectionFieldsPattern extends GenericGraphPattern {
             GraphNode from = graph.getNode(edge.getSourceId());
             GraphNode to = graph.getNode(edge.getTargetId());
 
-            ProjectPatternsJson.FlowEntry flow =
-                    new ProjectPatternsJson.FlowEntry();
+            ProjectPatternsJson.FlowEntry flow = new ProjectPatternsJson.FlowEntry();
 
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
             for (EdgeBinding b : edge.getBindings()) {
 
-                ProjectPatternsJson.BindingEntry jsonBinding =
-                        new ProjectPatternsJson.BindingEntry();
+                ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
 
                 jsonBinding.automaticCoupling = b.isAutomaticCoupling();
 
@@ -120,10 +123,13 @@ public class PreassignedSelectionFieldsPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
-        ProjectPatternsJson.Endpoint ep =
-                new ProjectPatternsJson.Endpoint();
+        ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
 
         ep.id = node.getId();
         ep.type = node.getType().name();

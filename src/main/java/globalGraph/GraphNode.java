@@ -1,5 +1,6 @@
 package globalGraph;
 
+//class representing a node in the global graph, it corresponds to a viewcomponent
 public class GraphNode {
 
     private final String id;
@@ -12,7 +13,24 @@ public class GraphNode {
         this.pageId = pageId;
     }
 
-    public String getId() { return id; }
-    public NodeType getType() { return type; }
-    public String getPageId() { return pageId; }
+    /** 
+     * @return String
+     */
+    public String getId() {
+        return id;
+    }
+
+    /** 
+     * @return NodeType
+     */
+    public NodeType getType() {
+        return type;
+    }
+
+    /** 
+     * @return String
+     */
+    public String getPageId() {
+        return pageId;
+    }
 }

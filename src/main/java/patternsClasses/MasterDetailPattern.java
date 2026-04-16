@@ -13,17 +13,20 @@ public class MasterDetailPattern extends GenericGraphPattern {
         this.name = "Master Detail Pattern";
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
                                          GraphNode startNode) {
 
-        // Il pattern parte da una LIST
         if (startNode.getType() != NodeType.LIST)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
 
-        // Lista delle uscite LIST → DETAILS
         for (Edge edge : graph.getOutgoing(startNode.getId())) {
 
             GraphNode target = graph.getNode(edge.getTargetId());
@@ -43,6 +46,11 @@ public class MasterDetailPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
                                   PatternInstance instance,
@@ -64,7 +72,6 @@ public class MasterDetailPattern extends GenericGraphPattern {
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
-            // Copia dei bindings
             for (EdgeBinding b : edge.getBindings()) {
                 ProjectPatternsJson.BindingEntry jsonBinding =
                         new ProjectPatternsJson.BindingEntry();
@@ -85,6 +92,10 @@ public class MasterDetailPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
         ProjectPatternsJson.Endpoint ep =

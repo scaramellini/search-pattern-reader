@@ -10,20 +10,23 @@ import java.util.List;
 public class MulticriteriaSearchPattern extends GenericGraphPattern {
 
     public MulticriteriaSearchPattern() {
-        this.name = "Multicriteria Search Pattern"; 
+        this.name = "Multicriteria Search Pattern";
     }
 
+    /**
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
-                                         GraphNode startNode) {
+            GraphNode startNode) {
 
-        // Deve partire da un FORM
         if (startNode.getType() != NodeType.FORM)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
 
-        // FORM → LIST
         for (Edge edge : graph.getOutgoing(startNode.getId())) {
 
             GraphNode target = graph.getNode(edge.getTargetId());
@@ -31,11 +34,9 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
             if (target == null)
                 continue;
 
-            // Solo LIST
             if (target.getType() != NodeType.LIST)
                 continue;
 
-            // Deve avere più di un binding → multicriteria
             if (edge.getBindings().size() > 1) {
 
                 List<Edge> matched = new ArrayList<>();
@@ -48,13 +49,17 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
+    /**
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
-                                  PatternInstance instance,
-                                  IFMLGraph graph) {
+            PatternInstance instance,
+            IFMLGraph graph) {
 
-        ProjectPatternsJson.PatternEntry entry =
-                new ProjectPatternsJson.PatternEntry();
+        ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
 
@@ -63,16 +68,13 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
             GraphNode from = graph.getNode(edge.getSourceId());
             GraphNode to = graph.getNode(edge.getTargetId());
 
-            ProjectPatternsJson.FlowEntry flow =
-                    new ProjectPatternsJson.FlowEntry();
+            ProjectPatternsJson.FlowEntry flow = new ProjectPatternsJson.FlowEntry();
 
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
-            // Copia dei bindings
             for (EdgeBinding b : edge.getBindings()) {
-                ProjectPatternsJson.BindingEntry jsonBinding =
-                        new ProjectPatternsJson.BindingEntry();
+                ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
 
                 jsonBinding.automaticCoupling = b.isAutomaticCoupling();
 
@@ -90,10 +92,13 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /**
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
-        ProjectPatternsJson.Endpoint ep =
-                new ProjectPatternsJson.Endpoint();
+        ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
 
         ep.id = node.getId();
         ep.type = node.getType().name();
@@ -102,4 +107,3 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
         return ep;
     }
 }
-

@@ -10,26 +10,29 @@ import java.util.List;
 public class QuickSearchPattern extends GenericGraphPattern {
 
     public QuickSearchPattern() {
-        this.name = "Quick Search Pattern"; 
+        this.name = "Quick Search Pattern";
     }
 
+    /** 
+     * @param graph
+     * @param startNode
+     * @return List<PatternInstance>
+     */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
-                                         GraphNode startNode) {
+            GraphNode startNode) {
 
         if (startNode.getType() != NodeType.FORM)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
 
-        // FORM → LIST
         for (Edge formToList : graph.getOutgoing(startNode.getId())) {
 
             GraphNode listNode = graph.getNode(formToList.getTargetId());
             if (listNode == null || listNode.getType() != NodeType.LIST)
                 continue;
 
-            // Cercare FORM → startNode (inverse)
             for (Edge incoming : graph.getIncoming(startNode.getId())) {
 
                 GraphNode source = graph.getNode(incoming.getSourceId());
@@ -50,13 +53,17 @@ public class QuickSearchPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
+    /** 
+     * @param projectJson
+     * @param instance
+     * @param graph
+     */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
-                                  PatternInstance instance,
-                                  IFMLGraph graph) {
+            PatternInstance instance,
+            IFMLGraph graph) {
 
-        ProjectPatternsJson.PatternEntry entry =
-                new ProjectPatternsJson.PatternEntry();
+        ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
 
@@ -65,16 +72,13 @@ public class QuickSearchPattern extends GenericGraphPattern {
             GraphNode from = graph.getNode(edge.getSourceId());
             GraphNode to = graph.getNode(edge.getTargetId());
 
-            ProjectPatternsJson.FlowEntry flow =
-                    new ProjectPatternsJson.FlowEntry();
+            ProjectPatternsJson.FlowEntry flow = new ProjectPatternsJson.FlowEntry();
 
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
-            // Copia dei bindings
             for (EdgeBinding b : edge.getBindings()) {
-                ProjectPatternsJson.BindingEntry jsonBinding =
-                        new ProjectPatternsJson.BindingEntry();
+                ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
 
                 jsonBinding.automaticCoupling = b.isAutomaticCoupling();
 
@@ -92,10 +96,13 @@ public class QuickSearchPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
+    /** 
+     * @param node
+     * @return Endpoint
+     */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
-        ProjectPatternsJson.Endpoint ep =
-                new ProjectPatternsJson.Endpoint();
+        ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
 
         ep.id = node.getId();
         ep.type = node.getType().name();
