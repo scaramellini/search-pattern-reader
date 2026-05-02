@@ -3,9 +3,11 @@ package patternsClasses;
 import globalGraph.*;
 import it.davide.xml.PatternInstance;
 import it.davide.xml.ProjectPatternsJson;
+import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class MulticriteriaSearchPattern extends GenericGraphPattern {
 
@@ -19,34 +21,44 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
      * @return List<PatternInstance>
      */
     @Override
-    public List<PatternInstance> matches(IFMLGraph graph,
-            GraphNode startNode) {
+    public List<PatternInstance> matches(IFMLGraph graph, GraphNode startNode) {
 
         if (startNode.getType() != NodeType.FORM)
             return null;
 
-        List<PatternInstance> instances = new ArrayList<>();
+        Set<String> fields = utilityTools.extractAllFields(startNode);
+
+        if (fields.size() <= 1)
+            return null;
+
+        List<Edge> matched = new ArrayList<>();
 
         for (Edge edge : graph.getOutgoing(startNode.getId())) {
 
             GraphNode target = graph.getNode(edge.getTargetId());
 
-            if (target == null)
+            if (target == null || target.getType() != NodeType.LIST)
                 continue;
 
-            if (target.getType() != NodeType.LIST)
+            Set<String> conditions = utilityTools.extractAllConditions(target);
+
+            if (conditions.isEmpty())
                 continue;
 
-            if (edge.getBindings().size() > 1) {
+            boolean valid = utilityTools.checkFieldsAndConditions(
+                    fields,
+                    conditions,
+                    edge.getBindings());
 
-                List<Edge> matched = new ArrayList<>();
+            if (valid) {
                 matched.add(edge);
-
-                instances.add(new PatternInstance(matched));
             }
         }
 
-        return instances.isEmpty() ? null : instances;
+        if (matched.isEmpty())
+            return null;
+
+        return List.of(new PatternInstance(matched));
     }
 
     /**

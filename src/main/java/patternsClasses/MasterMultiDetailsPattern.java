@@ -3,9 +3,12 @@ package patternsClasses;
 import globalGraph.*;
 import it.davide.xml.PatternInstance;
 import it.davide.xml.ProjectPatternsJson;
+import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class MasterMultiDetailsPattern extends GenericGraphPattern {
 
@@ -13,16 +16,10 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
         this.name = "Master MultiDetails Pattern";
     }
 
-    /** 
-     * @param graph
-     * @param startNode
-     * @return List<PatternInstance>
-     */
     @Override
-    public List<PatternInstance> matches(IFMLGraph graph,
-            GraphNode startNode) {
+    public List<PatternInstance> matches(IFMLGraph graph, GraphNode startNode) {
 
-        if (startNode.getType() != NodeType.LIST)
+        if (startNode.getType() != NodeType.LIST && startNode.getType() != NodeType.HIERARCHY)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
@@ -32,49 +29,77 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
             if (navEdge.getType() != FlowType.NAVIGATION)
                 continue;
 
-            GraphNode detailsNode = graph.getNode(navEdge.getTargetId());
+            GraphNode firstDetails = graph.getNode(navEdge.getTargetId());
 
-            if (detailsNode == null)
+            if (firstDetails == null || firstDetails.getType() != NodeType.DETAILS)
                 continue;
 
-            if (detailsNode.getType() != NodeType.DETAILS)
+            if (startNode.getObjectId() == null || firstDetails.getObjectId() == null
+                    || !startNode.getObjectId().equals(firstDetails.getObjectId()))
                 continue;
 
-            List<Edge> matchedEdges = new ArrayList<>();
-            matchedEdges.add(navEdge);
+            Set<String> visitedNodes = new HashSet<>();
+            List<Edge> collectedEdges = new ArrayList<>();
 
-            boolean hasAtLeastOneDataFlow = false;
+            // add the initial navigation edge
+            collectedEdges.add(navEdge);
 
-            for (Edge outgoing : graph.getOutgoing(detailsNode.getId())) {
+            collectSubgraph(
+                    graph,
+                    firstDetails,
+                    visitedNodes,
+                    collectedEdges);
 
-                if (outgoing.getType() != FlowType.DATA_FLOW)
-                    continue;
-
-                GraphNode target = graph.getNode(outgoing.getTargetId());
-
-                if (target == null)
-                    continue;
-
-                if (!detailsNode.getPageId().equals(target.getPageId()))
-                    continue;
-
-                if (target.getType() == NodeType.LIST ||
-                        target.getType() == NodeType.DETAILS) {
-
-                    hasAtLeastOneDataFlow = true;
-                    matchedEdges.add(outgoing);
-                }
+            // at least one additional details page must be found to consider it a master
+            // multi details pattern, otherwise it would be a simple master detail pattern
+            if (collectedEdges.size() > 1) {
+                instances.add(new PatternInstance(collectedEdges));
             }
 
-            if (hasAtLeastOneDataFlow) {
-                instances.add(new PatternInstance(matchedEdges));
-            }
         }
 
         return instances.isEmpty() ? null : instances;
     }
 
-    /** 
+    private void collectSubgraph(IFMLGraph graph,
+            GraphNode current,
+            Set<String> visitedNodes,
+            List<Edge> collectedEdges) {
+
+        visitedNodes.add(current.getId());
+
+        for (Edge edge : graph.getOutgoing(current.getId())) {
+
+            if (edge.getType() != FlowType.DATA_FLOW)
+                continue;
+
+            GraphNode target = graph.getNode(edge.getTargetId());
+
+            if (!utilityTools.hasMatchingCondition(edge, target))
+                continue;
+
+            if (target == null)
+                continue;
+
+            if (!current.getPageId().equals(target.getPageId()))
+                continue;
+
+            if (target.getType() != NodeType.LIST &&
+                    target.getType() != NodeType.DETAILS)
+                continue;
+
+            // evita duplicati di archi
+            if (!collectedEdges.contains(edge)) {
+                collectedEdges.add(edge);
+            }
+
+            if (!visitedNodes.contains(target.getId())) {
+                collectSubgraph(graph, target, visitedNodes, collectedEdges);
+            }
+        }
+    }
+
+    /**
      * @param projectJson
      * @param instance
      * @param graph
@@ -118,7 +143,7 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
-    /** 
+    /**
      * @param node
      * @return Endpoint
      */
@@ -132,4 +157,5 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
 
         return ep;
     }
+
 }

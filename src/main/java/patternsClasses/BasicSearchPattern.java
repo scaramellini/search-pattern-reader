@@ -3,26 +3,32 @@ package patternsClasses;
 import globalGraph.*;
 import it.davide.xml.PatternInstance;
 import it.davide.xml.ProjectPatternsJson;
+import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class BasicSearchPattern extends GenericGraphPattern {
 
     public BasicSearchPattern() {
-        this.name = "Basic Search Pattern"; 
+        this.name = "Basic Search Pattern";
     }
 
-    /** 
+    /**
      * @param graph
      * @param startNode
      * @return List<PatternInstance>
      */
     @Override
-    public List<PatternInstance> matches(IFMLGraph graph,
-            GraphNode startNode) {
+    public List<PatternInstance> matches(IFMLGraph graph, GraphNode startNode) {
 
         if (startNode.getType() != NodeType.FORM)
+            return null;
+
+        Set<String> fields = utilityTools.extractSimpleFields(startNode);
+
+        if (fields.size() != 1)
             return null;
 
         List<Edge> matched = new ArrayList<>();
@@ -31,11 +37,21 @@ public class BasicSearchPattern extends GenericGraphPattern {
 
             GraphNode target = graph.getNode(edge.getTargetId());
 
-            if (target != null && target.getType() == NodeType.LIST) {
+            if (target == null || target.getType() != NodeType.LIST)
+                continue;
 
-                if (edge.getBindings().size() <= 1) {
-                    matched.add(edge);
-                }
+            Set<String> conditions = utilityTools.extractAllConditions(target);
+
+            if (conditions.isEmpty())
+                continue;
+
+            boolean valid = utilityTools.checkFieldsAndConditions(
+                    fields,
+                    conditions,
+                    edge.getBindings());
+
+            if (valid) {
+                matched.add(edge);
             }
         }
 
@@ -45,7 +61,7 @@ public class BasicSearchPattern extends GenericGraphPattern {
         return List.of(new PatternInstance(matched));
     }
 
-    /** 
+    /**
      * @param projectJson
      * @param instance
      * @param graph
@@ -89,7 +105,7 @@ public class BasicSearchPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
-    /** 
+    /**
      * @param node
      * @return Endpoint
      */

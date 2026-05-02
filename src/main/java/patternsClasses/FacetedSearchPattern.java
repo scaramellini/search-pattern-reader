@@ -3,17 +3,20 @@ package patternsClasses;
 import globalGraph.*;
 import it.davide.xml.PatternInstance;
 import it.davide.xml.ProjectPatternsJson;
+import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 
 public class FacetedSearchPattern extends GenericGraphPattern {
 
     public FacetedSearchPattern() {
-        this.name = "Faceted Search Pattern"; 
+        this.name = "Faceted Search Pattern";
     }
 
-    /** 
+    /**
      * @param graph
      * @param startNode
      * @return List<PatternInstance>
@@ -27,15 +30,22 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         List<PatternInstance> instances = new ArrayList<>();
 
+        int valorizedMasterListConditions = 0;
+
         for (Edge formToList : graph.getOutgoing(startNode.getId())) {
 
-            GraphNode list1 = graph.getNode(formToList.getTargetId());
+            GraphNode masterList = graph.getNode(formToList.getTargetId());
 
-            if (list1 == null ||
-                    list1.getType() != NodeType.LIST)
+            if (masterList == null || masterList.getType() != NodeType.LIST)
                 continue;
 
-            for (Edge incoming : graph.getIncoming(list1.getId())) {
+            valorizedMasterListConditions += utilityTools.getConditionCount(formToList, masterList);
+
+            List<GraphNode> supportingLists = new ArrayList<>();
+            List<Edge> matched = new ArrayList<>();
+            matched.add(formToList);
+
+            for (Edge incoming : graph.getIncoming(masterList.getId())) {
 
                 GraphNode source = graph.getNode(incoming.getSourceId());
 
@@ -43,21 +53,32 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                     continue;
 
                 if (source.getType() == NodeType.LIST &&
-                        !source.getId().equals(list1.getId())) {
+                        !source.getId().equals(masterList.getId())) {
 
-                    List<Edge> matched = new ArrayList<>();
-                    matched.add(formToList);
+                    valorizedMasterListConditions += utilityTools.getConditionCount(incoming, masterList);
+                    supportingLists.add(source);
                     matched.add(incoming);
-
-                    instances.add(new PatternInstance(matched));
                 }
             }
+
+            if (supportingLists.isEmpty())
+                continue;
+
+            // if the total number of conditions in the master list is greater than the number of valorized conditions, then the pattern is not valid
+            if (valorizedMasterListConditions < masterList.getConditionalExpressions().values()
+                    .stream()
+                    .filter(Objects::nonNull)
+                    .mapToInt(Set::size)
+                    .sum())
+                continue;
+
+            instances.add(new PatternInstance(matched));
         }
 
         return instances.isEmpty() ? null : instances;
     }
 
-    /** 
+    /**
      * @param projectJson
      * @param instance
      * @param graph
@@ -101,7 +122,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
-    /** 
+    /**
      * @param node
      * @return Endpoint
      */

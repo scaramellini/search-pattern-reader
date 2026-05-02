@@ -13,16 +13,16 @@ public class MasterDetailPattern extends GenericGraphPattern {
         this.name = "Master Detail Pattern";
     }
 
-    /** 
+    /**
      * @param graph
      * @param startNode
      * @return List<PatternInstance>
      */
     @Override
     public List<PatternInstance> matches(IFMLGraph graph,
-                                         GraphNode startNode) {
+            GraphNode startNode) {
 
-        if (startNode.getType() != NodeType.LIST)
+        if (startNode.getType() != NodeType.LIST && startNode.getType() != NodeType.HIERARCHY)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
@@ -32,6 +32,10 @@ public class MasterDetailPattern extends GenericGraphPattern {
             GraphNode target = graph.getNode(edge.getTargetId());
 
             if (target == null)
+                continue;
+
+            if (startNode.getObjectId() == null || target.getObjectId() == null
+                    || !startNode.getObjectId().equals(target.getObjectId()))
                 continue;
 
             if (target.getType() == NodeType.DETAILS) {
@@ -46,18 +50,17 @@ public class MasterDetailPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
-    /** 
+    /**
      * @param projectJson
      * @param instance
      * @param graph
      */
     @Override
     public void createJsonPattern(ProjectPatternsJson projectJson,
-                                  PatternInstance instance,
-                                  IFMLGraph graph) {
+            PatternInstance instance,
+            IFMLGraph graph) {
 
-        ProjectPatternsJson.PatternEntry entry =
-                new ProjectPatternsJson.PatternEntry();
+        ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
 
@@ -66,15 +69,13 @@ public class MasterDetailPattern extends GenericGraphPattern {
             GraphNode from = graph.getNode(edge.getSourceId());
             GraphNode to = graph.getNode(edge.getTargetId());
 
-            ProjectPatternsJson.FlowEntry flow =
-                    new ProjectPatternsJson.FlowEntry();
+            ProjectPatternsJson.FlowEntry flow = new ProjectPatternsJson.FlowEntry();
 
             flow.from = buildEndpoint(from);
             flow.to = buildEndpoint(to);
 
             for (EdgeBinding b : edge.getBindings()) {
-                ProjectPatternsJson.BindingEntry jsonBinding =
-                        new ProjectPatternsJson.BindingEntry();
+                ProjectPatternsJson.BindingEntry jsonBinding = new ProjectPatternsJson.BindingEntry();
 
                 jsonBinding.automaticCoupling = b.isAutomaticCoupling();
 
@@ -92,14 +93,13 @@ public class MasterDetailPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
-    /** 
+    /**
      * @param node
      * @return Endpoint
      */
     private ProjectPatternsJson.Endpoint buildEndpoint(GraphNode node) {
 
-        ProjectPatternsJson.Endpoint ep =
-                new ProjectPatternsJson.Endpoint();
+        ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
 
         ep.id = node.getId();
         ep.type = node.getType().name();

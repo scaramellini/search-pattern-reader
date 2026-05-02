@@ -18,38 +18,40 @@ public class Edge {
         this.type = type;
     }
 
-    /** 
+    /**
      * @return String
      */
     public String getSourceId() {
         return sourceId;
     }
 
-    /** 
+    /**
      * @return String
      */
     public String getTargetId() {
         return targetId;
     }
 
-    /** 
+    /**
      * @return FlowType
      */
     public FlowType getType() {
         return type;
     }
 
-    /** 
+    /**
      * @return List<EdgeBinding>
      */
     public List<EdgeBinding> getBindings() {
         return bindings;
     }
 
-    /** 
+    /**
      * @param binding
      */
     public void addBinding(EdgeBinding binding) {
         bindings.add(binding);
     }
+
+    
 }

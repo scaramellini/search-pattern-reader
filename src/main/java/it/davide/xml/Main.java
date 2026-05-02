@@ -12,12 +12,14 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import patternsClasses.*;
 
-
 //main class of the application, responsible for entire process of pattern detection
 public class Main {
 
-    /** 
-     * function that returns the paths of all the files in the directory that start with "page" and end with ".wr", which are the files that represent the pages of the IFML model
+    /**
+     * function that returns the paths of all the files in the directory that start
+     * with "page" and end with ".wr", which are the files that represent the pages
+     * of the IFML model
+     * 
      * @param folderPath
      * @return List<String>
      * @throws Exception
@@ -34,7 +36,7 @@ public class Main {
         return filesInFolder;
     }
 
-    /** 
+    /**
      * @param args
      * @throws Exception
      */
@@ -51,7 +53,6 @@ public class Main {
                             new BasicSearchPattern(),
                             new MulticriteriaSearchPattern(),
                             new FacetedSearchPattern(),
-                            new QuickSearchPattern(),
                             new MasterDetailPattern(),
                             new MasterMultiDetailsPattern(),
                             new MultiLevelMasterDetailPattern(),
@@ -60,7 +61,8 @@ public class Main {
                             new WizardPattern(),
                             new DataLookupPattern()));
 
-            // build the global graph from the pages files and apply the patterns rules on it
+            // build the global graph from the pages files and apply the patterns rules on
+            // it
             patternEngine.detect(extractor.buildGraph(getPagesPaths(directory)), report);
 
             ObjectMapper mapper = new ObjectMapper();

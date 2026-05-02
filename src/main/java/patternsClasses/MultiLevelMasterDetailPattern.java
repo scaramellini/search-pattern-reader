@@ -2,6 +2,7 @@ package patternsClasses;
 
 import globalGraph.*;
 import it.davide.xml.ProjectPatternsJson;
+import it.davide.xml.utilityTools;
 import it.davide.xml.GraphTraversal;
 import it.davide.xml.PatternInstance;
 
@@ -14,7 +15,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         this.name = "Multilevel Master Detail Pattern";
     }
 
-    /** 
+    /**
      * @param graph
      * @param startNode
      * @return List<PatternInstance>
@@ -23,7 +24,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
     public List<PatternInstance> matches(IFMLGraph graph,
             GraphNode startNode) {
 
-        if (startNode.getType() != NodeType.LIST)
+        if (startNode.getType() != NodeType.LIST && startNode.getType() != NodeType.HIERARCHY)
             return null;
 
         GraphTraversal traversal = new GraphTraversal(graph);
@@ -34,16 +35,22 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
 
         for (List<GraphNode> path : allPaths) {
 
+            // the path must have at least 3 nodes to be a valid multi level master detail
+            // pattern, otherwise it would be a simple master detail pattern
             if (path.size() < 3)
                 continue;
 
             if (!isValidPath(path))
                 continue;
 
-            if (!isMultiPage(path))
+            // considering only single page patterns
+            if (isMultiPage(path))
                 continue;
 
             List<Edge> edges = extractEdgesFromPath(graph, path);
+
+            if(edges.size() != path.size() - 1)
+                continue;
 
             instances.add(new PatternInstance(edges));
         }
@@ -51,7 +58,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         return instances.isEmpty() ? null : instances;
     }
 
-    /** 
+    /**
      * @param path
      * @return boolean
      */
@@ -64,6 +71,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
 
             NodeType type = path.get(i).getType();
 
+            // last node must be details or list, all the others must be list
             if (i == path.size() - 1) {
                 if (type != NodeType.LIST && type != NodeType.DETAILS)
                     return false;
@@ -76,7 +84,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         return true;
     }
 
-    /** 
+    /**
      * @param path
      * @return boolean
      */
@@ -88,7 +96,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
                 .count() == path.size();
     }
 
-    /** 
+    /**
      * @param graph
      * @param path
      * @return List<Edge>
@@ -104,7 +112,9 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
 
             for (Edge edge : graph.getOutgoing(from.getId())) {
                 if (edge.getTargetId().equals(to.getId())) {
-                    edges.add(edge);
+                    if (utilityTools.hasMatchingCondition(edge, to)) {
+                        edges.add(edge);
+                    }
                 }
             }
         }
@@ -112,7 +122,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         return edges;
     }
 
-    /** 
+    /**
      * @param projectJson
      * @param instance
      * @param graph
@@ -156,7 +166,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         projectJson.patterns.add(entry);
     }
 
-    /** 
+    /**
      * @param node
      * @return Endpoint
      */

@@ -4,7 +4,7 @@ public enum NodeType {
     FORM,
     DETAILS,
     LIST,
+    HIERARCHY,
     VIEW_CONTAINER,
-    ACTION,
     UNKNOWN
 }
