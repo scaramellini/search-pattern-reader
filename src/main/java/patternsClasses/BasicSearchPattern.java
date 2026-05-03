@@ -1,11 +1,13 @@
 package patternsClasses;
 
 import globalGraph.*;
+import globalGraph.GraphNode.FieldInfo;
 import it.davide.xml.PatternInstance;
 import it.davide.xml.ProjectPatternsJson;
 import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -26,7 +28,17 @@ public class BasicSearchPattern extends GenericGraphPattern {
         if (startNode.getType() != NodeType.FORM)
             return null;
 
-        Set<String> fields = utilityTools.extractSimpleFields(startNode);
+        Set<GraphNode.FieldInfo> fields = new HashSet<>();
+
+        if (startNode != null && startNode.getFieldElementIds() != null) {
+            for (Set<GraphNode.FieldInfo> set : startNode.getFieldElementIds().values()) {
+                if (set != null) {
+                    fields.addAll(set);
+                }
+            }
+        }
+
+        Set<String> fieldIds = utilityTools.extractSimpleFields(startNode);
 
         if (fields.size() != 1)
             return null;
@@ -46,7 +58,7 @@ public class BasicSearchPattern extends GenericGraphPattern {
                 continue;
 
             boolean valid = utilityTools.checkFieldsAndConditions(
-                    fields,
+                    fieldIds,
                     conditions,
                     edge.getBindings());
 
@@ -58,7 +70,7 @@ public class BasicSearchPattern extends GenericGraphPattern {
         if (matched.isEmpty())
             return null;
 
-        return List.of(new PatternInstance(matched));
+        return List.of(new PatternInstance(matched, fields, null));
     }
 
     /**
@@ -74,6 +86,8 @@ public class BasicSearchPattern extends GenericGraphPattern {
         ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
+
+        entry.fields = buildFieldsEndpoint(instance.getFields());
 
         for (Edge edge : instance.getEdges()) {
 
@@ -116,7 +130,29 @@ public class BasicSearchPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
+    }
+
+    /**
+     * @param node
+     * @return Endpoint
+     */
+    private List<ProjectPatternsJson.FieldEndpoint> buildFieldsEndpoint(Set<FieldInfo> fields) {
+
+        List<ProjectPatternsJson.FieldEndpoint> fieldEndpoints = new ArrayList<ProjectPatternsJson.FieldEndpoint>();
+
+        for (FieldInfo field : fields) {
+
+            ProjectPatternsJson.FieldEndpoint ep = new ProjectPatternsJson.FieldEndpoint();
+
+            ep.fieldId = field.getId();
+            ep.valueAttribute = field.getValueAttribute();
+            ep.valueAssociationRole = field.getValueAssociationAttribute();
+            fieldEndpoints.add(ep);
+        }
+
+        return fieldEndpoints;
     }
 }

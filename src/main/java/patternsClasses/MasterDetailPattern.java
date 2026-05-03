@@ -43,7 +43,7 @@ public class MasterDetailPattern extends GenericGraphPattern {
                 List<Edge> matched = new ArrayList<>();
                 matched.add(edge);
 
-                instances.add(new PatternInstance(matched));
+                instances.add(new PatternInstance(matched, null, null));
             }
         }
 
@@ -104,6 +104,7 @@ public class MasterDetailPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
     }

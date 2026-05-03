@@ -28,12 +28,12 @@ public class NewIFMLPatternExtractor {
         private String id;
         private String type;
         private String objectId;
-        private Map<GraphNode.FieldElementCategory, Set<String>> fieldElementIds = new HashMap<>();
+        private Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> fieldElementIds = new HashMap<>();
         private Map<GraphNode.ConditionalExpressionCategory, Set<String>> conditionalExpressions = new HashMap<>();
 
 
         public ComponentInfo(String id, String type, String objectId,
-                Map<GraphNode.FieldElementCategory, Set<String>> fieldElementIds,
+                Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> fieldElementIds,
                 Map<GraphNode.ConditionalExpressionCategory, Set<String>> conditionalExpressions) {
             this.id = id;
             this.type = type;
@@ -54,7 +54,7 @@ public class NewIFMLPatternExtractor {
             return objectId;
         }
 
-        public Map<GraphNode.FieldElementCategory, Set<String>> getFieldElementIds() {
+        public Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> getFieldElementIds() {
             return fieldElementIds;
         }
 
@@ -112,7 +112,7 @@ public class NewIFMLPatternExtractor {
 
                 String objectId = dataBindingEl != null ? resolveAttribute(dataBindingEl, DATA_BINDINGS) : null;
 
-                Map<GraphNode.FieldElementCategory, Set<String>> fieldElementIds = new HashMap<>();
+                Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> fieldElementIds = new HashMap<>();
                 Map<GraphNode.ConditionalExpressionCategory, Set<String>> conditionalExpressions = new HashMap<>();
 
                 fieldElementIds.put(GraphNode.FieldElementCategory.Field, extractFieldIds(element, "Field"));
@@ -311,23 +311,37 @@ public class NewIFMLPatternExtractor {
         return conditionIds;
     }
 
-    private Set<String> extractFieldIds(Element componentElement, String tagName) {
+    private Set<GraphNode.FieldInfo> extractFieldIds(Element componentElement, String tagName) {
         NodeList fieldNodes = componentElement.getElementsByTagNameNS("*", tagName);
 
         if (fieldNodes.getLength() == 0)
             return null;
 
-        Set<String> fieldIds = new HashSet<>();
+        Set<GraphNode.FieldInfo> fieldInfos = new HashSet<>();
 
         for (int i = 0; i < fieldNodes.getLength(); i++) {
             Element fieldEl = (Element) fieldNodes.item(i);
             String fieldId = fieldEl.getAttribute("id");
             if (fieldId != null && !fieldId.isEmpty()) {
-                fieldIds.add(fieldId);
+                // Check for ValueAttribute
+                NodeList valueAttrNodes = fieldEl.getElementsByTagNameNS("*", "ValueAttribute");
+                String valueAttr = null;
+                String valueAssocAttr = null;
+                if (valueAttrNodes.getLength() > 0) {
+                    Element valueAttrEl = (Element) valueAttrNodes.item(0);
+                    valueAttr = resolveAttribute(valueAttrEl, Arrays.asList("classServiceAttribute", "classServiceRole"));
+                } else {
+                    NodeList valueAssocAttrNodes = fieldEl.getElementsByTagNameNS("*", "ValueAssociationRole");
+                    if (valueAssocAttrNodes.getLength() > 0) {
+                        Element valueAttrEl = (Element) valueAssocAttrNodes.item(0);
+                        valueAssocAttr = resolveAttribute(valueAttrEl, Arrays.asList("classServiceAttribute", "classServiceRole"));
+                    }
+                }
+                fieldInfos.add(new GraphNode.FieldInfo(fieldId, valueAttr, valueAssocAttr));
             }
         }
 
-        return fieldIds.isEmpty() ? null : fieldIds;
+        return fieldInfos.isEmpty() ? null : fieldInfos;
     }
 
     /**

@@ -1,11 +1,13 @@
 package patternsClasses;
 
 import globalGraph.*;
+import globalGraph.GraphNode.FieldInfo;
 import it.davide.xml.PatternInstance;
 import it.davide.xml.ProjectPatternsJson;
 import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -26,9 +28,19 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
         if (startNode.getType() != NodeType.FORM)
             return null;
 
-        Set<String> fields = utilityTools.extractAllFields(startNode);
+        Set<GraphNode.FieldInfo> fields = new HashSet<>();
 
-        if (fields.size() <= 1)
+        if (startNode != null && startNode.getFieldElementIds() != null) {
+            for (Set<GraphNode.FieldInfo> set : startNode.getFieldElementIds().values()) {
+                if (set != null) {
+                    fields.addAll(set);
+                }
+            }
+        }
+
+        Set<String> fieldIds = utilityTools.extractAllFields(startNode);
+
+        if (fieldIds.size() <= 1)
             return null;
 
         List<Edge> matched = new ArrayList<>();
@@ -46,7 +58,7 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
                 continue;
 
             boolean valid = utilityTools.checkFieldsAndConditions(
-                    fields,
+                    fieldIds,
                     conditions,
                     edge.getBindings());
 
@@ -58,7 +70,7 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
         if (matched.isEmpty())
             return null;
 
-        return List.of(new PatternInstance(matched));
+        return List.of(new PatternInstance(matched, fields, null));
     }
 
     /**
@@ -74,6 +86,8 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
         ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
+
+        entry.fields = buildFieldsEndpoint(instance.getFields());
 
         for (Edge edge : instance.getEdges()) {
 
@@ -115,7 +129,29 @@ public class MulticriteriaSearchPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
+    }
+
+    /**
+     * @param node
+     * @return Endpoint
+     */
+    private List<ProjectPatternsJson.FieldEndpoint> buildFieldsEndpoint(Set<FieldInfo> fields) {
+
+        List<ProjectPatternsJson.FieldEndpoint> fieldEndpoints = new ArrayList<ProjectPatternsJson.FieldEndpoint>();
+
+        for (FieldInfo field : fields) {
+
+            ProjectPatternsJson.FieldEndpoint ep = new ProjectPatternsJson.FieldEndpoint();
+
+            ep.fieldId = field.getId();
+            ep.valueAttribute = field.getValueAttribute();
+            ep.valueAssociationRole = field.getValueAssociationAttribute();
+            fieldEndpoints.add(ep);
+        }
+
+        return fieldEndpoints;
     }
 }

@@ -53,7 +53,7 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
             // at least one additional details page must be found to consider it a master
             // multi details pattern, otherwise it would be a simple master detail pattern
             if (collectedEdges.size() > 1) {
-                instances.add(new PatternInstance(collectedEdges));
+                instances.add(new PatternInstance(collectedEdges, null, null));
             }
 
         }
@@ -154,6 +154,7 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
     }

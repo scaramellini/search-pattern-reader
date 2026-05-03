@@ -50,7 +50,7 @@ public class WizardPattern extends GenericGraphPattern {
 
             List<Edge> forwardEdges = extractForwardEdges(graph, path);
 
-            instances.add(new PatternInstance(forwardEdges));
+            instances.add(new PatternInstance(forwardEdges, null, null));
         }
 
         return instances.isEmpty() ? null : instances;
@@ -327,6 +327,7 @@ public class WizardPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
     }

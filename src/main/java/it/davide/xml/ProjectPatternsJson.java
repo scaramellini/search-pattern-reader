@@ -13,6 +13,13 @@ public class ProjectPatternsJson {
     public static class PatternEntry {
         public String patternType;
         public List<FlowEntry> flows = new ArrayList<>();
+        public List<FieldEndpoint> fields;
+    }
+
+    public static class SingleComponentPatternEntry extends PatternEntry {
+        public String patternType;
+        public Endpoint component;
+        public List<FieldEndpoint> fields;
     }
 
     public static class FlowEntry {
@@ -31,5 +38,12 @@ public class ProjectPatternsJson {
         public String id;
         public String type;
         public String pageId;
+        public String dataBinding;
+    }
+
+    public static class FieldEndpoint {
+        public String fieldId;
+        public String valueAttribute;
+        public String valueAssociationRole;
     }
 }

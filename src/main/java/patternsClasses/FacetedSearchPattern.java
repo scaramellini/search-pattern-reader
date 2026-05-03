@@ -1,11 +1,13 @@
 package patternsClasses;
 
 import globalGraph.*;
+import globalGraph.GraphNode.FieldInfo;
 import it.davide.xml.PatternInstance;
 import it.davide.xml.ProjectPatternsJson;
 import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -27,6 +29,16 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         if (startNode.getType() != NodeType.FORM)
             return null;
+        
+        Set<GraphNode.FieldInfo> fields = new HashSet<>();
+
+        if (startNode != null && startNode.getFieldElementIds() != null) {
+            for (Set<GraphNode.FieldInfo> set : startNode.getFieldElementIds().values()) {
+                if (set != null) {
+                    fields.addAll(set);
+                }
+            }
+        }
 
         List<PatternInstance> instances = new ArrayList<>();
 
@@ -72,7 +84,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                     .sum())
                 continue;
 
-            instances.add(new PatternInstance(matched));
+            instances.add(new PatternInstance(matched, fields, null));
         }
 
         return instances.isEmpty() ? null : instances;
@@ -91,6 +103,8 @@ public class FacetedSearchPattern extends GenericGraphPattern {
         ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
         entry.patternType = name;
+
+        entry.fields = buildFieldsEndpoint(instance.getFields());
 
         for (Edge edge : instance.getEdges()) {
 
@@ -133,7 +147,29 @@ public class FacetedSearchPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
+    }
+
+    /**
+     * @param node
+     * @return Endpoint
+     */
+    private List<ProjectPatternsJson.FieldEndpoint> buildFieldsEndpoint(Set<FieldInfo> fields) {
+
+        List<ProjectPatternsJson.FieldEndpoint> fieldEndpoints = new ArrayList<ProjectPatternsJson.FieldEndpoint>();
+
+        for (FieldInfo field : fields) {
+
+            ProjectPatternsJson.FieldEndpoint ep = new ProjectPatternsJson.FieldEndpoint();
+
+            ep.fieldId = field.getId();
+            ep.valueAttribute = field.getValueAttribute();
+            ep.valueAssociationRole = field.getValueAssociationAttribute();
+            fieldEndpoints.add(ep);
+        }
+
+        return fieldEndpoints;
     }
 }

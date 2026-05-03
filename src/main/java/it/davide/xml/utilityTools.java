@@ -3,6 +3,7 @@ package it.davide.xml;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -62,7 +63,7 @@ public class utilityTools {
     }
 
     public static boolean checkFieldsAndConditions(
-            Set<String> fields,
+            Set<String> fieldIds,
             Set<String> conditions,
             List<EdgeBinding> bindings) {
 
@@ -78,7 +79,7 @@ public class utilityTools {
             String target = extractConditionId(binding.getTargetAttribute());
 
             // source parameter has to be a field of the source node
-            if (fieldId == null || !fields.contains(fieldId)) {
+            if (fieldId == null || !fieldIds.contains(fieldId)) {
                 return false;
             }
 
@@ -92,7 +93,7 @@ public class utilityTools {
         }
 
         // each field has to be used to valorize at least one condition
-        if (!boundFields.containsAll(fields))
+        if (!boundFields.containsAll(fieldIds))
             return false;
 
         // each condition has to be satisfied
@@ -119,7 +120,7 @@ public class utilityTools {
                 count++;
             }
         }
-        
+
         return count;
     }
 
@@ -174,11 +175,26 @@ public class utilityTools {
                 .filter(Objects::nonNull)
                 .flatMap(Set::stream)
                 .filter(Objects::nonNull)
+                .map(GraphNode.FieldInfo::getId)
                 .collect(Collectors.toSet());
     }
 
     public static Set<String> extractSimpleFields(GraphNode node) {
-        return node.getFieldElementIds()
-                .getOrDefault(GraphNode.FieldElementCategory.Field, Collections.emptySet());
+        if (node == null)
+            return Collections.emptySet();
+
+        Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> map = node.getFieldElementIds();
+
+        if (map == null)
+            return Collections.emptySet();
+
+        Set<GraphNode.FieldInfo> fields = map.get(GraphNode.FieldElementCategory.Field);
+
+        if (fields == null)
+            return Collections.emptySet();
+
+        return fields.stream()
+                .map(GraphNode.FieldInfo::getId)
+                .collect(Collectors.toSet());
     }
 }

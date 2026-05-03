@@ -52,7 +52,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
             if(edges.size() != path.size() - 1)
                 continue;
 
-            instances.add(new PatternInstance(edges));
+            instances.add(new PatternInstance(edges, null, null));
         }
 
         return instances.isEmpty() ? null : instances;
@@ -177,6 +177,7 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
     }

@@ -88,7 +88,7 @@ public class DataLookupPattern extends GenericGraphPattern {
                     matched.add(listToDetails);
                     matched.add(detailsToForm);
 
-                    instances.add(new PatternInstance(matched));
+                    instances.add(new PatternInstance(matched, null, null));
                 }
             }
         }
@@ -174,6 +174,7 @@ public class DataLookupPattern extends GenericGraphPattern {
         ep.id = node.getId();
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
+        ep.dataBinding = node.getObjectId();
 
         return ep;
     }

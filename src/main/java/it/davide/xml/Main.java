@@ -50,6 +50,7 @@ public class Main {
             // initialize the pattern engine with the rules of the patterns to be detected
             GlobalPatternEngine patternEngine = new GlobalPatternEngine(
                     List.of(
+                            new MultiFieldFormPattern(),
                             new BasicSearchPattern(),
                             new MulticriteriaSearchPattern(),
                             new FacetedSearchPattern(),
