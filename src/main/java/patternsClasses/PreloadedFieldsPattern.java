@@ -61,7 +61,7 @@ public class PreloadedFieldsPattern extends GenericGraphPattern {
 
             boolean valid = true;
 
-            Set<String> fieldIds = utilityTools.extractSimpleFields(startNode);
+            Set<String> fieldIds = utilityTools.extractSimpleFields(target);
 
             for (EdgeBinding binding : edge.getBindings()) {
 
@@ -80,7 +80,7 @@ public class PreloadedFieldsPattern extends GenericGraphPattern {
                     break;
                 }
 
-                if (!fieldIds.contains(utilityTools.extractFieldId(targetAttr))) {
+                if (fieldIds.contains(utilityTools.extractFieldId(targetAttr))) {
                     preloadedFieldsCount++;
                 }
             }

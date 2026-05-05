@@ -61,7 +61,7 @@ public class PreassignedSelectionFieldsPattern extends GenericGraphPattern {
 
             boolean valid = true;
 
-            Set<String> fieldIds = utilityTools.extractSimpleFields(startNode);
+            Set<String> fieldIds = utilityTools.extractSimpleFields(target);
 
             for (EdgeBinding binding : edge.getBindings()) {
 
@@ -70,7 +70,7 @@ public class PreassignedSelectionFieldsPattern extends GenericGraphPattern {
                 if (targetAttr == null)
                     continue;
 
-                if (!fieldIds.contains(utilityTools.extractFieldId(targetAttr))) {
+                if (fieldIds.contains(utilityTools.extractFieldId(targetAttr))) {
                     preloadedFieldsCount++;
                 }
             }

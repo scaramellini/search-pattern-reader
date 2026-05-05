@@ -59,6 +59,9 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
             for (Edge incoming : graph.getIncoming(masterList.getId())) {
 
+                if(!incoming.getType().equals(FlowType.NAVIGATION))
+                    continue;
+
                 GraphNode source = graph.getNode(incoming.getSourceId());
 
                 if (source == null)

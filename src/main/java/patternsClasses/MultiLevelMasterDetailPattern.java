@@ -35,9 +35,8 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
 
         for (List<GraphNode> path : allPaths) {
 
-            // the path must have at least 3 nodes to be a valid multi level master detail
-            // pattern, otherwise it would be a simple master detail pattern
-            if (path.size() < 3)
+            // the path must have at least 2 nodes to be a valid multi level master detail
+            if (path.size() < 2)
                 continue;
 
             if (!isValidPath(path))
