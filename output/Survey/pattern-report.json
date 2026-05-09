@@ -1,0 +1,183 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld18",
+      "valueAttribute" : "SurveyServices$email",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu10",
+      "type" : "FORM",
+      "pageId" : "page12.wr",
+      "dataBinding" : "SurveyServices$User"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld31f",
+      "valueAttribute" : "SurveyServices$att2",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu17f",
+      "type" : "FORM",
+      "pageId" : "page20f.wr",
+      "dataBinding" : "SurveyServices$ent1"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld23",
+      "valueAttribute" : "SurveyServices$att14",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu14",
+      "type" : "FORM",
+      "pageId" : "page16.wr",
+      "dataBinding" : "SurveyServices$ent7"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu4f",
+        "type" : "LIST",
+        "pageId" : "page10f.wr",
+        "dataBinding" : "SurveyServices$ent12"
+      },
+      "to" : {
+        "id" : "dau2f",
+        "type" : "DETAILS",
+        "pageId" : "page10f.wr",
+        "dataBinding" : "SurveyServices$ent12"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att26",
+        "target" : "kcond6f._be_att26"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu10f",
+        "type" : "FORM",
+        "pageId" : "page13f.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu6f",
+        "type" : "LIST",
+        "pageId" : "page13f.wr",
+        "dataBinding" : "SurveyServices$ent8"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld12f}value",
+        "target" : "acond4f"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld12f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu16f",
+        "type" : "FORM",
+        "pageId" : "page19f.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu9f",
+        "type" : "LIST",
+        "pageId" : "page19f.wr",
+        "dataBinding" : "SurveyServices$ent1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld32f}value",
+        "target" : "acond6f"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld32f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld4f",
+      "valueAttribute" : "SurveyServices$ent16$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3f",
+      "valueAttribute" : "SurveyServices$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2f",
+      "valueAttribute" : "SurveyServices$att38",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3f",
+      "type" : "FORM",
+      "pageId" : "page3f.wr",
+      "dataBinding" : "SurveyServices$ent16"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu5f",
+        "type" : "FORM",
+        "pageId" : "page7f.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu3f",
+        "type" : "LIST",
+        "pageId" : "page7f.wr",
+        "dataBinding" : "SurveyServices$ent16"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld6f}value",
+        "target" : "acond2f"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld5f}value",
+        "target" : "acond3f"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld7f}value",
+        "target" : "acond1f"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld5f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

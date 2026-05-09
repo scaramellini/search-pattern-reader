@@ -1,0 +1,231 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld10t",
+      "valueAttribute" : "NovartisLearnServices$att3t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1t",
+      "valueAttribute" : "NovartisLearnServices$att7t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9t",
+      "valueAttribute" : "NovartisLearnServices$att2t",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu1t",
+      "type" : "FORM",
+      "pageId" : "page3t.wr",
+      "dataBinding" : "NovartisLearnServices$ent1t"
+    }
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu20x",
+        "type" : "LIST",
+        "pageId" : "page24x.wr",
+        "dataBinding" : "NovartisLearnServices$ent1u"
+      },
+      "to" : {
+        "id" : "enu1x",
+        "type" : "FORM",
+        "pageId" : "page24x.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu20x",
+        "type" : "LIST",
+        "pageId" : "page24x.wr",
+        "dataBinding" : "NovartisLearnServices$ent1u"
+      },
+      "to" : {
+        "id" : "enu1x",
+        "type" : "FORM",
+        "pageId" : "page24x.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu27x",
+        "type" : "LIST",
+        "pageId" : "page37x.wr",
+        "dataBinding" : "NovartisLearnServices$ent1u"
+      },
+      "to" : {
+        "id" : "enu27x",
+        "type" : "FORM",
+        "pageId" : "page37x.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu27x",
+        "type" : "LIST",
+        "pageId" : "page37x.wr",
+        "dataBinding" : "NovartisLearnServices$ent1u"
+      },
+      "to" : {
+        "id" : "enu27x",
+        "type" : "FORM",
+        "pageId" : "page37x.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld57x",
+      "valueAttribute" : "NovartisLearnServices$att37ae",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld56x",
+      "valueAttribute" : "NovartisLearnServices$att38ae",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld55x",
+      "valueAttribute" : "NovartisLearnServices$att36ae",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld58x",
+      "valueAttribute" : "NovartisLearnServices$att39ae",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "NovartisLearnServices$role14ae"
+    } ],
+    "component" : {
+      "id" : "enu37x",
+      "type" : "FORM",
+      "pageId" : "page46x.wr",
+      "dataBinding" : "NovartisLearnServices$ent7ae"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu12ae",
+        "type" : "FORM",
+        "pageId" : "page30ae.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1ae",
+        "type" : "LIST",
+        "pageId" : "page30ae.wr",
+        "dataBinding" : "NovartisLearnServices$User"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld37ae}value",
+        "target" : "acond149ae"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld31ae}value",
+        "target" : "acond147ae"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld36ae}value",
+        "target" : "acond148ae"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld38ae}value",
+        "target" : "acond150ae"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld36ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld37ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld38ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu25x",
+        "type" : "LIST",
+        "pageId" : "page36x.wr",
+        "dataBinding" : "NovartisLearnServices$ent1u"
+      },
+      "to" : {
+        "id" : "enu26x",
+        "type" : "FORM",
+        "pageId" : "page36x.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu25x",
+        "type" : "LIST",
+        "pageId" : "page36x.wr",
+        "dataBinding" : "NovartisLearnServices$ent1u"
+      },
+      "to" : {
+        "id" : "enu26x",
+        "type" : "FORM",
+        "pageId" : "page36x.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld9x",
+      "valueAttribute" : "NovartisLearnServices$att13t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13x",
+      "valueAttribute" : "NovartisLearnServices$att27t",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu23x",
+      "type" : "FORM",
+      "pageId" : "page31x.wr",
+      "dataBinding" : "NovartisLearnServices$ent3t"
+    }
+  } ]
+}

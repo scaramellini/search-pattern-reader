@@ -1,0 +1,315 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld53a",
+      "valueAttribute" : "AlidaysServices$att130a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu29a",
+      "type" : "FORM",
+      "pageId" : "page21a.wr",
+      "dataBinding" : "AlidaysServices$ent32a"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld84a",
+      "valueAttribute" : "AlidaysServices$att100a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld146a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AlidaysServices$role434a"
+    } ],
+    "component" : {
+      "id" : "enu270a",
+      "type" : "FORM",
+      "pageId" : "page188a.wr",
+      "dataBinding" : "AlidaysServices$ent27a"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld85a",
+      "valueAttribute" : "AlidaysServices$att113a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu271a",
+      "type" : "FORM",
+      "pageId" : "page188a.wr",
+      "dataBinding" : "AlidaysServices$ent29a"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld223b",
+      "valueAttribute" : "AlidaysServices$att195a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld222b",
+      "valueAttribute" : "AlidaysServices$att194a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld224b",
+      "valueAttribute" : "AlidaysServices$att196a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld227b",
+      "valueAttribute" : "AlidaysServices$att185a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld225b",
+      "valueAttribute" : "AlidaysServices$att197a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld226b",
+      "valueAttribute" : "AlidaysServices$att2a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu40b",
+      "type" : "FORM",
+      "pageId" : "page28b.wr",
+      "dataBinding" : "AlidaysServices$ent46a"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu269a",
+        "type" : "FORM",
+        "pageId" : "page187a.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu39a",
+        "type" : "LIST",
+        "pageId" : "page187a.wr",
+        "dataBinding" : "AlidaysServices$ent27a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld83a}value",
+        "target" : "acond112a"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld145a}value._be_att115a",
+        "target" : "rcond136a._be_att115a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld145a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld214a",
+      "valueAttribute" : "AlidaysServices$ent382a$att1490a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld155a",
+      "valueAttribute" : "AlidaysServices$ent382a$att1048a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld379a",
+      "valueAttribute" : "AlidaysServices$ent382a$att1491a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu48a",
+      "type" : "FORM",
+      "pageId" : "page94a.wr",
+      "dataBinding" : "AlidaysServices$ent382a"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau23b",
+        "type" : "DETAILS",
+        "pageId" : "page28b.wr",
+        "dataBinding" : "AlidaysServices$ent190a"
+      },
+      "to" : {
+        "id" : "enu39b",
+        "type" : "FORM",
+        "pageId" : "page28b.wr",
+        "dataBinding" : "AlidaysServices$ent190a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_ent190a$att506a",
+        "target" : "kcond161._be_ent190a$att506a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld217b",
+      "valueAttribute" : "AlidaysServices$ent190a$att508a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld218b",
+      "valueAttribute" : "AlidaysServices$ent190a$att224a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld221b",
+      "valueAttribute" : "AlidaysServices$ent190a$att26a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld219b",
+      "valueAttribute" : "AlidaysServices$ent190a$att225a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld220b",
+      "valueAttribute" : "AlidaysServices$ent190a$att25a",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau23b",
+        "type" : "DETAILS",
+        "pageId" : "page28b.wr",
+        "dataBinding" : "AlidaysServices$ent190a"
+      },
+      "to" : {
+        "id" : "enu40b",
+        "type" : "FORM",
+        "pageId" : "page28b.wr",
+        "dataBinding" : "AlidaysServices$ent46a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_ent190a$role121a$_be_att193a",
+        "target" : "kcond162._be_att193a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld223b",
+      "valueAttribute" : "AlidaysServices$att195a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld222b",
+      "valueAttribute" : "AlidaysServices$att194a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld224b",
+      "valueAttribute" : "AlidaysServices$att196a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld227b",
+      "valueAttribute" : "AlidaysServices$att185a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld225b",
+      "valueAttribute" : "AlidaysServices$att197a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld226b",
+      "valueAttribute" : "AlidaysServices$att2a",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld85r",
+      "valueAttribute" : "AlidaysServices$att149r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld93r",
+      "valueAttribute" : "AlidaysServices$att151r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld88r",
+      "valueAttribute" : "AlidaysServices$att150r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu100r",
+      "type" : "FORM",
+      "pageId" : "page110r.wr",
+      "dataBinding" : "AlidaysServices$ent21r"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld217b",
+      "valueAttribute" : "AlidaysServices$ent190a$att508a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld218b",
+      "valueAttribute" : "AlidaysServices$ent190a$att224a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld221b",
+      "valueAttribute" : "AlidaysServices$ent190a$att26a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld219b",
+      "valueAttribute" : "AlidaysServices$ent190a$att225a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld220b",
+      "valueAttribute" : "AlidaysServices$ent190a$att25a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu39b",
+      "type" : "FORM",
+      "pageId" : "page28b.wr",
+      "dataBinding" : "AlidaysServices$ent190a"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld76a",
+      "valueAttribute" : "AlidaysServices$att140a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu264a",
+      "type" : "FORM",
+      "pageId" : "page183a.wr",
+      "dataBinding" : "AlidaysServices$ent4"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld105r",
+      "valueAttribute" : "AlidaysServices$att150r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld115r",
+      "valueAttribute" : "AlidaysServices$att151r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld94r",
+      "valueAttribute" : "AlidaysServices$att149r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu102r",
+      "type" : "FORM",
+      "pageId" : "page111r.wr",
+      "dataBinding" : "AlidaysServices$ent21r"
+    }
+  } ]
+}

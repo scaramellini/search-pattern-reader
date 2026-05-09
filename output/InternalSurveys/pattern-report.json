@@ -1,0 +1,101 @@
+{
+  "patterns" : [ {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu10f",
+        "type" : "FORM",
+        "pageId" : "page13f.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu6f",
+        "type" : "LIST",
+        "pageId" : "page13f.wr",
+        "dataBinding" : "InternalSurveysServices$ent8"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld12f}value",
+        "target" : "acond4"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld12f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld13f",
+      "valueAttribute" : "InternalSurveysServices$att11",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu11f",
+      "type" : "FORM",
+      "pageId" : "page14f.wr",
+      "dataBinding" : "InternalSurveysServices$ent8"
+    }
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu16f",
+        "type" : "FORM",
+        "pageId" : "page19f.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu9f",
+        "type" : "LIST",
+        "pageId" : "page19f.wr",
+        "dataBinding" : "InternalSurveysServices$ent1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld32f}value",
+        "target" : "acond6f"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld32f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld31f",
+      "valueAttribute" : "InternalSurveysServices$att2",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1l",
+      "valueAttribute" : "InternalSurveysServices$att9l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu17f",
+      "type" : "FORM",
+      "pageId" : "page20f.wr",
+      "dataBinding" : "InternalSurveysServices$ent1"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld1u",
+      "valueAttribute" : "InternalSurveysServices$att14",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu2u",
+      "type" : "FORM",
+      "pageId" : "page2u.wr",
+      "dataBinding" : "InternalSurveysServices$ent7"
+    }
+  } ]
+}

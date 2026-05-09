@@ -1,0 +1,233 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multilevel Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst3j",
+        "type" : "LIST",
+        "pageId" : "page3j.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst6j",
+        "type" : "LIST",
+        "pageId" : "page3j.wr",
+        "dataBinding" : "PasswordManagerServices$cls2l"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp110l",
+        "target" : "rcond3j._be_att1l"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp110l",
+        "target" : "prd5j"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst11j",
+        "type" : "LIST",
+        "pageId" : "page6j.wr",
+        "dataBinding" : "PasswordManagerServices$cls2"
+      },
+      "to" : {
+        "id" : "frm7j",
+        "type" : "FORM",
+        "pageId" : "page6j.wr",
+        "dataBinding" : "PasswordManagerServices$cls2"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld14j",
+      "valueAttribute" : "PasswordManagerServices$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18j",
+      "valueAttribute" : "PasswordManagerServices$att13l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst11j",
+        "type" : "LIST",
+        "pageId" : "page6j.wr",
+        "dataBinding" : "PasswordManagerServices$cls2"
+      },
+      "to" : {
+        "id" : "frm7j",
+        "type" : "FORM",
+        "pageId" : "page6j.wr",
+        "dataBinding" : "PasswordManagerServices$cls2"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld14j",
+      "valueAttribute" : "PasswordManagerServices$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18j",
+      "valueAttribute" : "PasswordManagerServices$att13l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld14j",
+      "valueAttribute" : "PasswordManagerServices$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18j",
+      "valueAttribute" : "PasswordManagerServices$att13l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm7j",
+      "type" : "FORM",
+      "pageId" : "page6j.wr",
+      "dataBinding" : "PasswordManagerServices$cls2"
+    }
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst12j",
+        "type" : "LIST",
+        "pageId" : "page7j.wr",
+        "dataBinding" : "PasswordManagerServices$cls3"
+      },
+      "to" : {
+        "id" : "frm10j",
+        "type" : "FORM",
+        "pageId" : "page7j.wr",
+        "dataBinding" : "PasswordManagerServices$cls3"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld4j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PasswordManagerServices$role12l"
+    }, {
+      "fieldId" : "fld24j",
+      "valueAttribute" : "PasswordManagerServices$att18",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld23j",
+      "valueAttribute" : "PasswordManagerServices$att15l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst12j",
+        "type" : "LIST",
+        "pageId" : "page7j.wr",
+        "dataBinding" : "PasswordManagerServices$cls3"
+      },
+      "to" : {
+        "id" : "frm10j",
+        "type" : "FORM",
+        "pageId" : "page7j.wr",
+        "dataBinding" : "PasswordManagerServices$cls3"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld4j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PasswordManagerServices$role12l"
+    }, {
+      "fieldId" : "fld24j",
+      "valueAttribute" : "PasswordManagerServices$att18",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld23j",
+      "valueAttribute" : "PasswordManagerServices$att15l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl2j",
+        "type" : "DETAILS",
+        "pageId" : "page1j.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "frm5j",
+        "type" : "FORM",
+        "pageId" : "page1j.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp8l",
+        "target" : "{fld13j}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld13j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl2j",
+        "type" : "DETAILS",
+        "pageId" : "page1j.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "frm5j",
+        "type" : "FORM",
+        "pageId" : "page1j.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp8l",
+        "target" : "{fld13j}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld13j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld4j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PasswordManagerServices$role12l"
+    }, {
+      "fieldId" : "fld24j",
+      "valueAttribute" : "PasswordManagerServices$att18",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld23j",
+      "valueAttribute" : "PasswordManagerServices$att15l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm10j",
+      "type" : "FORM",
+      "pageId" : "page7j.wr",
+      "dataBinding" : "PasswordManagerServices$cls3"
+    }
+  } ]
+}

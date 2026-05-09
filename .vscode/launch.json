@@ -8,19 +8,22 @@
             "request": "launch",
             "mainClass": "it.davide.xml.Main",
             "projectName": "search-pattern-reader",
-            "args": [
+            /* "args": [
                 "C:/Users/scd2/GIT/algo-dashboardsocialmedia",
                 "C:/Users/scd2/GIT/algo-marketplace",
                 "C:/Users/scd2/GIT/algo-adminconsole",
                 "C:/Users/scd2/GIT/politecnico-9",
                 "C:/WebRatio/WebRatio Enterprise Platform 9.3.0/Workspaces/Workspace ALGO/Custom project"
-            ]
+            ] */
             /* "args": [
                 "C:/WebRatio/WebRatio Enterprise Platform 9.3.0/Workspaces/Workspace ALGO/Custom project",
             ] */
             /* "args": [
                 "C:/WebRatio/WebRatio Enterprise Platform 9.3.0/Workspaces/Workspace ALGO/Custom project/Model/WebModel/wv2/area3/page21.wr",
             ] */
+            "args": [
+                "C:/Users/scd2/GIT/data-set/data-set",
+            ]
         },
     ]
 }

@@ -1,0 +1,369 @@
+{
+  "patterns" : [ {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst42y",
+        "type" : "LIST",
+        "pageId" : "page6y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls24r"
+      },
+      "to" : {
+        "id" : "dtl13y",
+        "type" : "DETAILS",
+        "pageId" : "page6y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls24r"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld19y",
+      "valueAttribute" : "AppOfficinaDataService$att61r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld9y",
+      "valueAttribute" : "AppOfficinaDataService$att60r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18y",
+      "valueAttribute" : "AppOfficinaDataService$att62r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm12y",
+      "type" : "FORM",
+      "pageId" : "page16y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls14r"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst39y",
+        "type" : "LIST",
+        "pageId" : "page3y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls12r"
+      },
+      "to" : {
+        "id" : "dtl9y",
+        "type" : "DETAILS",
+        "pageId" : "page3y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls12r"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld7y",
+      "valueAttribute" : "AppOfficinaDataService$att12r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm6y",
+      "type" : "FORM",
+      "pageId" : "page11y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls4r"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst43y",
+        "type" : "LIST",
+        "pageId" : "page7y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls26r"
+      },
+      "to" : {
+        "id" : "dtl15y",
+        "type" : "DETAILS",
+        "pageId" : "page7y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls26r"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst40y",
+        "type" : "LIST",
+        "pageId" : "page4y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls13r"
+      },
+      "to" : {
+        "id" : "dtl11y",
+        "type" : "DETAILS",
+        "pageId" : "page4y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls13r"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst5y",
+        "type" : "LIST",
+        "pageId" : "page16y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls14r"
+      },
+      "to" : {
+        "id" : "frm12y",
+        "type" : "FORM",
+        "pageId" : "page16y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls14r"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att62r",
+        "target" : "{fld18y}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att59r",
+        "target" : "kcond6y._be_att59r"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att61r",
+        "target" : "{fld19y}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att95a",
+        "target" : "{sfld9y}presel._be_att93a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld19y",
+      "valueAttribute" : "AppOfficinaDataService$att61r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld9y",
+      "valueAttribute" : "AppOfficinaDataService$att60r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18y",
+      "valueAttribute" : "AppOfficinaDataService$att62r",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld5y",
+      "valueAttribute" : "AppOfficinaDataService$att9r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6y",
+      "valueAttribute" : "AppOfficinaDataService$att10r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm4y",
+      "type" : "FORM",
+      "pageId" : "page10y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls3r"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst41y",
+        "type" : "LIST",
+        "pageId" : "page5y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls20r"
+      },
+      "to" : {
+        "id" : "dtl12y",
+        "type" : "DETAILS",
+        "pageId" : "page5y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls20r"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst7y",
+        "type" : "LIST",
+        "pageId" : "page2y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls11r"
+      },
+      "to" : {
+        "id" : "dtl10y",
+        "type" : "DETAILS",
+        "pageId" : "page2y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls11r"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld13y",
+      "valueAttribute" : "AppOfficinaDataService$att23r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12y",
+      "valueAttribute" : "AppOfficinaDataService$att22r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AppOfficinaDataService$role11r"
+    } ],
+    "component" : {
+      "id" : "frm9y",
+      "type" : "FORM",
+      "pageId" : "page9y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls9r"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld1y",
+      "valueAttribute" : "AppOfficinaDataService$att58r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm1y",
+      "type" : "FORM",
+      "pageId" : "page16y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls1r"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst6y",
+        "type" : "LIST",
+        "pageId" : "page17y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls15r"
+      },
+      "to" : {
+        "id" : "frm2y",
+        "type" : "FORM",
+        "pageId" : "page17y.wr",
+        "dataBinding" : "AppOfficinaDataService$cls15r"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att63r",
+        "target" : "kcond2y._be_att63r"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att64r",
+        "target" : "{fld2y}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att65r",
+        "target" : "{fld3y}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att92a",
+        "target" : "{sfld1y}presel._be_att66r"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld3y",
+      "valueAttribute" : "AppOfficinaDataService$att65r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1y",
+      "valueAttribute" : "AppOfficinaDataService$att68r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2y",
+      "valueAttribute" : "AppOfficinaDataService$att64r",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld3y",
+      "valueAttribute" : "AppOfficinaDataService$att65r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1y",
+      "valueAttribute" : "AppOfficinaDataService$att68r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2y",
+      "valueAttribute" : "AppOfficinaDataService$att64r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm2y",
+      "type" : "FORM",
+      "pageId" : "page17y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls15r"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld8y",
+      "valueAttribute" : "AppOfficinaDataService$att67r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm7y",
+      "type" : "FORM",
+      "pageId" : "page18y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls16r"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld9y",
+      "valueAttribute" : "AppOfficinaDataService$att18r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10y",
+      "valueAttribute" : "AppOfficinaDataService$att19r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AppOfficinaDataService$role6r"
+    } ],
+    "component" : {
+      "id" : "frm8y",
+      "type" : "FORM",
+      "pageId" : "page1y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls7r"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld15y",
+      "valueAttribute" : "AppOfficinaDataService$att84r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AppOfficinaDataService$role53r"
+    } ],
+    "component" : {
+      "id" : "frm10y",
+      "type" : "FORM",
+      "pageId" : "page14y.wr",
+      "dataBinding" : "AppOfficinaDataService$cls23r"
+    }
+  } ]
+}

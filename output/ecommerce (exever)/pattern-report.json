@@ -1,0 +1,439 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu9v",
+        "type" : "FORM",
+        "pageId" : "page8v.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "to" : {
+        "id" : "pwu2v",
+        "type" : "LIST",
+        "pageId" : "page8v.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld35v}value",
+        "target" : "acond26v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld34v}value",
+        "target" : "acond27v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld42v}value",
+        "target" : "acond28v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld36v}value",
+        "target" : "acond29v"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu9v",
+        "type" : "FORM",
+        "pageId" : "page8v.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "to" : {
+        "id" : "pwu2v",
+        "type" : "LIST",
+        "pageId" : "page8v.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld35v}value",
+        "target" : "acond26v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld34v}value",
+        "target" : "acond27v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld42v}value",
+        "target" : "acond28v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld36v}value",
+        "target" : "acond29v"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld35v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld42v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld34v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu2f",
+        "type" : "FORM",
+        "pageId" : "page2f.wr",
+        "dataBinding" : "ecommerceServices$ent1f"
+      },
+      "to" : {
+        "id" : "pwu3f",
+        "type" : "LIST",
+        "pageId" : "page2f.wr",
+        "dataBinding" : "ecommerceServices$ent1f"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld1f}value.0",
+        "target" : "acond14f"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld8f}value",
+        "target" : "acond11f"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld11f}value",
+        "target" : "acond12f"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld3f}value.0",
+        "target" : "acond16f"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld12f}value",
+        "target" : "acond13f"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld16f}value",
+        "target" : "acond26f"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld1f",
+      "valueAttribute" : "ecommerceServices$att6f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3f",
+      "valueAttribute" : "ecommerceServices$att2f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu6y",
+        "type" : "FORM",
+        "pageId" : "page11y.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu4y",
+        "type" : "LIST",
+        "pageId" : "page11y.wr",
+        "dataBinding" : "ecommerceServices$ent2y"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld18y}value",
+        "target" : "acond51y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld27y}value",
+        "target" : "acond52y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld10v}value._be_att1j",
+        "target" : "rcond28v._be_att1j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld18y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau13j",
+        "type" : "DETAILS",
+        "pageId" : "page18j.wr",
+        "dataBinding" : "ecommerceServices$ent7j"
+      },
+      "to" : {
+        "id" : "enu16j",
+        "type" : "FORM",
+        "pageId" : "page18j.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att109j",
+        "target" : "{fld64j}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att110j",
+        "target" : "{fld65j}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att103j",
+        "target" : "{fld63j}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld65j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau13j",
+        "type" : "DETAILS",
+        "pageId" : "page18j.wr",
+        "dataBinding" : "ecommerceServices$ent7j"
+      },
+      "to" : {
+        "id" : "enu16j",
+        "type" : "FORM",
+        "pageId" : "page18j.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att109j",
+        "target" : "{fld64j}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att110j",
+        "target" : "{fld65j}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att103j",
+        "target" : "{fld63j}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld65j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu22v",
+        "type" : "FORM",
+        "pageId" : "page31v.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu14v",
+        "type" : "LIST",
+        "pageId" : "page31v.wr",
+        "dataBinding" : "ecommerceServices$ent8v"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld2v}value._be_att1j",
+        "target" : "rcond52v._be_att1j"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld1v}value._be_att94c",
+        "target" : "rcond50v._be_att94c"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld2v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld2q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "ecommerceServices$role5q"
+    }, {
+      "fieldId" : "fld21f",
+      "valueAttribute" : "ecommerceServices$att112p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26f",
+      "valueAttribute" : "ecommerceServices$att268",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20f",
+      "valueAttribute" : "ecommerceServices$att111p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22f",
+      "valueAttribute" : "ecommerceServices$att113p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld24f",
+      "valueAttribute" : "ecommerceServices$att266",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59j",
+      "valueAttribute" : "ecommerceServices$att44j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39j",
+      "valueAttribute" : "ecommerceServices$att10j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43j",
+      "valueAttribute" : "ecommerceServices$att11j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld19v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "ecommerceServices$role9v"
+    } ],
+    "component" : {
+      "id" : "enu12f",
+      "type" : "FORM",
+      "pageId" : "page12f.wr",
+      "dataBinding" : "ecommerceServices$ent11p"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu32c",
+        "type" : "FORM",
+        "pageId" : "page34c.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "to" : {
+        "id" : "pwu22c",
+        "type" : "LIST",
+        "pageId" : "page34c.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld56c}value",
+        "target" : "acond4c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld55c}value",
+        "target" : "acond10c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld58c}value",
+        "target" : "acond11c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld57c}value",
+        "target" : "acond12c"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu32c",
+        "type" : "FORM",
+        "pageId" : "page34c.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "to" : {
+        "id" : "pwu22c",
+        "type" : "LIST",
+        "pageId" : "page34c.wr",
+        "dataBinding" : "ecommerceServices$ent9c"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld56c}value",
+        "target" : "acond4c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld55c}value",
+        "target" : "acond10c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld58c}value",
+        "target" : "acond11c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld57c}value",
+        "target" : "acond12c"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld58c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld56c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld55c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld57c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

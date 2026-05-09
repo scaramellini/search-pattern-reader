@@ -1,0 +1,125 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu5",
+        "type" : "LIST",
+        "pageId" : "page10.wr",
+        "dataBinding" : "AcmeServices$ent1"
+      },
+      "to" : {
+        "id" : "enu7",
+        "type" : "FORM",
+        "pageId" : "page10.wr",
+        "dataBinding" : "AcmeServices$ent1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1",
+        "target" : "kcond9._be_att1"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld12",
+      "valueAttribute" : "AcmeServices$att2",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld12",
+      "valueAttribute" : "AcmeServices$att2",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu7",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "AcmeServices$ent1"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld5",
+      "valueAttribute" : "AcmeServices$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6",
+      "valueAttribute" : "AcmeServices$password",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu4",
+      "type" : "FORM",
+      "pageId" : "page11.wr",
+      "dataBinding" : "AcmeServices$User"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu18",
+        "type" : "LIST",
+        "pageId" : "page25.wr",
+        "dataBinding" : "AcmeServices$ent5"
+      },
+      "to" : {
+        "id" : "enu11",
+        "type" : "FORM",
+        "pageId" : "page25.wr",
+        "dataBinding" : "AcmeServices$ent5"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att28",
+        "target" : "kcond7._be_att28"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld44",
+      "valueAttribute" : "AcmeServices$att14",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43",
+      "valueAttribute" : "AcmeServices$att13",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46",
+      "valueAttribute" : "AcmeServices$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld45",
+      "valueAttribute" : "AcmeServices$att15",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld44",
+      "valueAttribute" : "AcmeServices$att14",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43",
+      "valueAttribute" : "AcmeServices$att13",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46",
+      "valueAttribute" : "AcmeServices$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld45",
+      "valueAttribute" : "AcmeServices$att15",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu11",
+      "type" : "FORM",
+      "pageId" : "page25.wr",
+      "dataBinding" : "AcmeServices$ent5"
+    }
+  } ]
+}

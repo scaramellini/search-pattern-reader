@@ -1,0 +1,53 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu1v",
+        "type" : "FORM",
+        "pageId" : "page7v.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu3v",
+        "type" : "LIST",
+        "pageId" : "page7v.wr",
+        "dataBinding" : "PayCityServices$ent1v"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld22v}value",
+        "target" : "acond37v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld21v}value",
+        "target" : "acond30v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld7v}value._be_att3v",
+        "target" : "rcond4v._be_att3v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld5v}value._be_att16v",
+        "target" : "rcond17v._be_att16v"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld22v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

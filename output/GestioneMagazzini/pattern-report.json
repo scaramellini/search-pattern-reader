@@ -1,0 +1,113 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu6b",
+        "type" : "FORM",
+        "pageId" : "page6b.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu9b",
+        "type" : "LIST",
+        "pageId" : "page6b.wr",
+        "dataBinding" : "GestioneMagazziniServices$ent3b"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld6d}value._be_att83lv",
+        "target" : "rcond4d._be_att83lv"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld19d}value",
+        "target" : "acond27d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld20d}value",
+        "target" : "acond53d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld21d}value",
+        "target" : "acond24d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld22d}value",
+        "target" : "acond12d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld17d}value",
+        "target" : "acond3d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld18d}value",
+        "target" : "acond4d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld15x}value",
+        "target" : "acond9x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld15x}value",
+        "target" : "acond10x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld4ah}value.0",
+        "target" : "acond26ah"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld3ah}value.0",
+        "target" : "acond35ah"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld2ah}value",
+        "target" : "acond27ah"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld4ah",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3ah",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2ah",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

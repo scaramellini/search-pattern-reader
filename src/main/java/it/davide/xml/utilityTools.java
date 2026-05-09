@@ -49,7 +49,9 @@ public class utilityTools {
 
             for (String condId : targetConditions) {
 
-                if (bindingConditionId.endsWith(condId.substring(condId.lastIndexOf("#")))) {
+                if (condId.contains("#") &&
+                        bindingConditionId.endsWith(
+                                condId.substring(condId.lastIndexOf("#")))) {
                     return true;
                 }
 

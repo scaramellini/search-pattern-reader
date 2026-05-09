@@ -1,0 +1,119 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu12v",
+        "type" : "LIST",
+        "pageId" : "page10v.wr",
+        "dataBinding" : "GSEGOServices$ent12v"
+      },
+      "to" : {
+        "id" : "enu24v",
+        "type" : "FORM",
+        "pageId" : "page10v.wr",
+        "dataBinding" : "GSEGOServices$ent12v"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att96v",
+        "target" : "kcond5._be_att96v"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld67v",
+      "valueAttribute" : "GSEGOServices$att97v",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld69v",
+      "valueAttribute" : "GSEGOServices$att99v",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld68v",
+      "valueAttribute" : "GSEGOServices$att98v",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld19v",
+      "valueAttribute" : "GSEGOServices$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22v",
+      "valueAttribute" : "GSEGOServices$att243v",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu30v",
+      "type" : "FORM",
+      "pageId" : "page27v.wr",
+      "dataBinding" : "GSEGOServices$User"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld67v",
+      "valueAttribute" : "GSEGOServices$att97v",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld69v",
+      "valueAttribute" : "GSEGOServices$att99v",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld68v",
+      "valueAttribute" : "GSEGOServices$att98v",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu24v",
+      "type" : "FORM",
+      "pageId" : "page10v.wr",
+      "dataBinding" : "GSEGOServices$ent12v"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu29v",
+        "type" : "FORM",
+        "pageId" : "page11v.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu17v",
+        "type" : "LIST",
+        "pageId" : "page11v.wr",
+        "dataBinding" : "GSEGOServices$User"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld31v}value._be_roleOID",
+        "target" : "rcond36v._be_roleOID"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld18v}value",
+        "target" : "acond90v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld17v}value",
+        "target" : "acond91v"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld17v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld31v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

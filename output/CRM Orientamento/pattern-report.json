@@ -1,0 +1,423 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld96as",
+      "valueAttribute" : "CRMOrientamentoServices$att140as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu23as",
+      "type" : "FORM",
+      "pageId" : "page14as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent27as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld102as",
+      "valueAttribute" : "CRMOrientamentoServices$att29as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu34as",
+      "type" : "FORM",
+      "pageId" : "page31as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent6as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld80as",
+      "valueAttribute" : "CRMOrientamentoServices$att84as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu11as",
+      "type" : "FORM",
+      "pageId" : "page13as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent16as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld100as",
+      "valueAttribute" : "CRMOrientamentoServices$att31as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu32as",
+      "type" : "FORM",
+      "pageId" : "page29as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent7as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld98as",
+      "valueAttribute" : "CRMOrientamentoServices$att136as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu25as",
+      "type" : "FORM",
+      "pageId" : "page27as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent25as"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu18as",
+        "type" : "LIST",
+        "pageId" : "page29as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent7as"
+      },
+      "to" : {
+        "id" : "enu28as",
+        "type" : "FORM",
+        "pageId" : "page29as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent7as"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att31as",
+        "target" : "{fld99as}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att30as",
+        "target" : "kcond14._be_att30as"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld99as",
+      "valueAttribute" : "CRMOrientamentoServices$att31as",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu6as",
+        "type" : "LIST",
+        "pageId" : "page12as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent15as"
+      },
+      "to" : {
+        "id" : "enu2as",
+        "type" : "FORM",
+        "pageId" : "page12as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent15as"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att83as",
+        "target" : "{fld78as}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att79as",
+        "target" : "kcond18._be_att79as"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld78as",
+      "valueAttribute" : "CRMOrientamentoServices$att83as",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld82as",
+      "valueAttribute" : "CRMOrientamentoServices$att140as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu22as",
+      "type" : "FORM",
+      "pageId" : "page14as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent27as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld69as",
+      "valueAttribute" : "CRMOrientamentoServices$att106as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu20as",
+      "type" : "FORM",
+      "pageId" : "page22as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent19as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld68as",
+      "valueAttribute" : "CRMOrientamentoServices$att106as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu19as",
+      "type" : "FORM",
+      "pageId" : "page22as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent19as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld78as",
+      "valueAttribute" : "CRMOrientamentoServices$att83as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu2as",
+      "type" : "FORM",
+      "pageId" : "page12as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent15as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld66as",
+      "valueAttribute" : "CRMOrientamentoServices$att190as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu56as",
+      "type" : "FORM",
+      "pageId" : "page64as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent42as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld101as",
+      "valueAttribute" : "CRMOrientamentoServices$att29as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu33as",
+      "type" : "FORM",
+      "pageId" : "page31as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent6as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld81as",
+      "valueAttribute" : "CRMOrientamentoServices$att84as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu12as",
+      "type" : "FORM",
+      "pageId" : "page13as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent16as"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld79as",
+      "valueAttribute" : "CRMOrientamentoServices$att83as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu10as",
+      "type" : "FORM",
+      "pageId" : "page12as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent15as"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu11as",
+        "type" : "LIST",
+        "pageId" : "page14as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent27as"
+      },
+      "to" : {
+        "id" : "enu22as",
+        "type" : "FORM",
+        "pageId" : "page14as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent27as"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att140as",
+        "target" : "{fld82as}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att139as",
+        "target" : "kcond10._be_att139as"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld82as",
+      "valueAttribute" : "CRMOrientamentoServices$att140as",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld97as",
+      "valueAttribute" : "CRMOrientamentoServices$att136as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu24as",
+      "type" : "FORM",
+      "pageId" : "page27as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent25as"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu17as",
+        "type" : "LIST",
+        "pageId" : "page27as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent25as"
+      },
+      "to" : {
+        "id" : "enu24as",
+        "type" : "FORM",
+        "pageId" : "page27as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent25as"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att136as",
+        "target" : "{fld97as}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att135as",
+        "target" : "kcond12._be_att135as"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld97as",
+      "valueAttribute" : "CRMOrientamentoServices$att136as",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld99as",
+      "valueAttribute" : "CRMOrientamentoServices$att31as",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu28as",
+      "type" : "FORM",
+      "pageId" : "page29as.wr",
+      "dataBinding" : "CRMOrientamentoServices$ent7as"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu15as",
+        "type" : "LIST",
+        "pageId" : "page22as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent19as"
+      },
+      "to" : {
+        "id" : "enu19as",
+        "type" : "FORM",
+        "pageId" : "page22as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent19as"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att106as",
+        "target" : "{fld68as}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att105as",
+        "target" : "kcond22._be_att105as"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld68as",
+      "valueAttribute" : "CRMOrientamentoServices$att106as",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu19as",
+        "type" : "LIST",
+        "pageId" : "page31as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent6as"
+      },
+      "to" : {
+        "id" : "enu33as",
+        "type" : "FORM",
+        "pageId" : "page31as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent6as"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att29as",
+        "target" : "{fld101as}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att28as",
+        "target" : "kcond16._be_att28as"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld101as",
+      "valueAttribute" : "CRMOrientamentoServices$att29as",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu7as",
+        "type" : "LIST",
+        "pageId" : "page13as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent16as"
+      },
+      "to" : {
+        "id" : "enu11as",
+        "type" : "FORM",
+        "pageId" : "page13as.wr",
+        "dataBinding" : "CRMOrientamentoServices$ent16as"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att84as",
+        "target" : "{fld80as}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att80as",
+        "target" : "kcond20._be_att80as"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld80as",
+      "valueAttribute" : "CRMOrientamentoServices$att84as",
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

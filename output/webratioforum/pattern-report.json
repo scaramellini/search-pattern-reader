@@ -1,0 +1,33 @@
+{
+  "patterns" : [ {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu6d",
+        "type" : "FORM",
+        "pageId" : "page7d.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu5d",
+        "type" : "LIST",
+        "pageId" : "page7d.wr",
+        "dataBinding" : "webratioforumServices$ent4"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld3d}value",
+        "target" : "acond5d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld3d}value",
+        "target" : "acond6d"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld3d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

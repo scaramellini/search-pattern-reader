@@ -1,0 +1,157 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl3t",
+        "type" : "DETAILS",
+        "pageId" : "page7t.wr",
+        "dataBinding" : "AppOfficinaDataService$cls12r"
+      },
+      "to" : {
+        "id" : "frm10t",
+        "type" : "FORM",
+        "pageId" : "page7t.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att54a",
+        "target" : "{fld19t}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld19t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl3t",
+        "type" : "DETAILS",
+        "pageId" : "page7t.wr",
+        "dataBinding" : "AppOfficinaDataService$cls12r"
+      },
+      "to" : {
+        "id" : "frm10t",
+        "type" : "FORM",
+        "pageId" : "page7t.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att54a",
+        "target" : "{fld19t}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld19t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld21j",
+      "valueAttribute" : "AppOfficinaDataService$att74a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19j",
+      "valueAttribute" : "AppOfficinaDataService$att72a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14j",
+      "valueAttribute" : "AppOfficinaDataService$att70a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22j",
+      "valueAttribute" : "AppOfficinaDataService$att75a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12j",
+      "valueAttribute" : "AppOfficinaDataService$att76a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18j",
+      "valueAttribute" : "AppOfficinaDataService$att67a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15j",
+      "valueAttribute" : "AppOfficinaDataService$att69a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20j",
+      "valueAttribute" : "AppOfficinaDataService$att73a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16j",
+      "valueAttribute" : "AppOfficinaDataService$att70a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17j",
+      "valueAttribute" : "AppOfficinaDataService$att71a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm9j",
+      "type" : "FORM",
+      "pageId" : "page6t.wr",
+      "dataBinding" : "AppOfficinaDataService$cls24r"
+    }
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl2t",
+        "type" : "DETAILS",
+        "pageId" : "page4t.wr",
+        "dataBinding" : "AppOfficinaDataService$cls11r"
+      },
+      "to" : {
+        "id" : "frm7t",
+        "type" : "FORM",
+        "pageId" : "page4t.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att51a",
+        "target" : "{fld17t}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld17t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl2t",
+        "type" : "DETAILS",
+        "pageId" : "page4t.wr",
+        "dataBinding" : "AppOfficinaDataService$cls11r"
+      },
+      "to" : {
+        "id" : "frm7t",
+        "type" : "FORM",
+        "pageId" : "page4t.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att51a",
+        "target" : "{fld17t}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld17t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

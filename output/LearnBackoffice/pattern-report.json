@@ -1,0 +1,269 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm17y",
+        "type" : "FORM",
+        "pageId" : "page26y.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst2y",
+        "type" : "LIST",
+        "pageId" : "page26y.wr",
+        "dataBinding" : "LearnServices$cls5q"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld181y}value",
+        "target" : "acond7y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld16y}value._be_pdp110a",
+        "target" : "rcond12y._be_userName"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld172y}value",
+        "target" : "acond8y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld18y}value._be_att4q",
+        "target" : "rcond11y._be_att4q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld7y}value._be_att15q",
+        "target" : "acond6y"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld172y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld181y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld16y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld18y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst24y",
+        "type" : "LIST",
+        "pageId" : "page57y.wr",
+        "dataBinding" : "LearnServices$cls39q"
+      },
+      "to" : {
+        "id" : "frm44y",
+        "type" : "FORM",
+        "pageId" : "page57y.wr",
+        "dataBinding" : "LearnServices$cls39q"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld208y",
+      "valueAttribute" : "LearnServices$att187q",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst24y",
+        "type" : "LIST",
+        "pageId" : "page57y.wr",
+        "dataBinding" : "LearnServices$cls39q"
+      },
+      "to" : {
+        "id" : "frm44y",
+        "type" : "FORM",
+        "pageId" : "page57y.wr",
+        "dataBinding" : "LearnServices$cls39q"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld208y",
+      "valueAttribute" : "LearnServices$att187q",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm46y",
+        "type" : "FORM",
+        "pageId" : "page57y.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst24y",
+        "type" : "LIST",
+        "pageId" : "page57y.wr",
+        "dataBinding" : "LearnServices$cls39q"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld212y}value",
+        "target" : "acond35y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld25y}value._be_att187q",
+        "target" : "acond36y"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld212y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld25y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm16y",
+        "type" : "FORM",
+        "pageId" : "page24y.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst11y",
+        "type" : "LIST",
+        "pageId" : "page24y.wr",
+        "dataBinding" : "LearnServices$cls4q"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld156y}value",
+        "target" : "acond26y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld183y}value",
+        "target" : "acond32y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld19y}value._be_att4q",
+        "target" : "rcond54y._be_att4q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld5y}value._be_att85q",
+        "target" : "acond13y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld15y}value._be_pdp110a",
+        "target" : "rcond42y._be_userName"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld15y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld183y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld19y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld156y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm18y",
+        "type" : "FORM",
+        "pageId" : "page27y.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst14y",
+        "type" : "LIST",
+        "pageId" : "page27y.wr",
+        "dataBinding" : "LearnServices$cls3q"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld12y}value._be_att107q",
+        "target" : "rcond32y._be_att107q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld154y}value",
+        "target" : "acond25y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld14y}value._be_pdp110a",
+        "target" : "rcond43y._be_userName"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld182y}value",
+        "target" : "acond31y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld4y}value._be_att8q",
+        "target" : "acond18y"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld154y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld14y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld182y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld208y",
+      "valueAttribute" : "LearnServices$att187q",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm44y",
+      "type" : "FORM",
+      "pageId" : "page57y.wr",
+      "dataBinding" : "LearnServices$cls39q"
+    }
+  } ]
+}

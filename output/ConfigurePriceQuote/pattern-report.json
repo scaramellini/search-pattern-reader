@@ -1,0 +1,739 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld69a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att752a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att753a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld99a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att761a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld71a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att751a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu65a",
+      "type" : "FORM",
+      "pageId" : "page62a.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent57a"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu65a",
+        "type" : "FORM",
+        "pageId" : "page62a.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent57a"
+      },
+      "to" : {
+        "id" : "pwu34a",
+        "type" : "LIST",
+        "pageId" : "page62a.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent57a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld69a}value",
+        "target" : "acond239a"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld71a}value",
+        "target" : "acond238a"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld99a}value",
+        "target" : "acond241a"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld83a}value",
+        "target" : "acond240a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld69a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att752a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att753a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld99a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att761a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld71a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att751a",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld5m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att497w",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6ai",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att14ai",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att496w",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att498w",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu1m",
+      "type" : "FORM",
+      "pageId" : "page2m.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent7w"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu1z",
+        "type" : "FORM",
+        "pageId" : "page1z.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1z",
+        "type" : "LIST",
+        "pageId" : "page1z.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent4z"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld22z}value",
+        "target" : "acond4z"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld21z}value",
+        "target" : "acond5z"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld19z}value",
+        "target" : "acond6z"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld20z}value",
+        "target" : "acond9z"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu1z",
+        "type" : "FORM",
+        "pageId" : "page1z.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1z",
+        "type" : "LIST",
+        "pageId" : "page1z.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent4z"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld22z}value",
+        "target" : "acond4z"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld21z}value",
+        "target" : "acond5z"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld19z}value",
+        "target" : "acond6z"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld20z}value",
+        "target" : "acond9z"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld20z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu20k",
+        "type" : "FORM",
+        "pageId" : "page19k.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu11k",
+        "type" : "LIST",
+        "pageId" : "page19k.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$User"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld36k}value",
+        "target" : "acond43k"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld36k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu32k",
+        "type" : "FORM",
+        "pageId" : "page32k.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu27k",
+        "type" : "LIST",
+        "pageId" : "page32k.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent76"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld105k}value",
+        "target" : "acond108k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld106k}value",
+        "target" : "acond109k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld108k}value",
+        "target" : "acond111k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld107k}value",
+        "target" : "acond110k"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld107k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld105k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld108k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld106k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld1av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att17av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att23av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att22av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att24av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2669",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3av",
+      "type" : "FORM",
+      "pageId" : "page3av.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent226"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu6k",
+        "type" : "FORM",
+        "pageId" : "page6k.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu4k",
+        "type" : "LIST",
+        "pageId" : "page6k.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$User"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld4k}value._be_roleOID",
+        "target" : "rcond1k._be_roleOID"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld21k}value",
+        "target" : "acond20k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld20k}value",
+        "target" : "acond18k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld22k}value",
+        "target" : "acond19k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld19k}value",
+        "target" : "acond17k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld7k}value.0",
+        "target" : "acond21k"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu6k",
+        "type" : "FORM",
+        "pageId" : "page6k.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu4k",
+        "type" : "LIST",
+        "pageId" : "page6k.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$User"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld4k}value._be_roleOID",
+        "target" : "rcond1k._be_roleOID"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld21k}value",
+        "target" : "acond20k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld20k}value",
+        "target" : "acond18k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld22k}value",
+        "target" : "acond19k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld19k}value",
+        "target" : "acond17k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld7k}value.0",
+        "target" : "acond21k"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld20k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu26k",
+        "type" : "FORM",
+        "pageId" : "page26k.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu21k",
+        "type" : "LIST",
+        "pageId" : "page26k.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent219"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld85k}value",
+        "target" : "acond86k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld86k}value",
+        "target" : "acond87k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld87k}value",
+        "target" : "acond88k"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld86k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld87k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld85k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld9av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att20av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att21av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att19av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att25av",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu1av",
+      "type" : "FORM",
+      "pageId" : "page1av.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent1av"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld3r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu2r",
+      "type" : "FORM",
+      "pageId" : "page2r.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent1r"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau2r",
+        "type" : "DETAILS",
+        "pageId" : "page2r.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent1r"
+      },
+      "to" : {
+        "id" : "enu2r",
+        "type" : "FORM",
+        "pageId" : "page2r.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent1r"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1r",
+        "target" : "kcond61._be_att1r"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld3r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2r",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau2m",
+        "type" : "DETAILS",
+        "pageId" : "page2m.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent7w"
+      },
+      "to" : {
+        "id" : "enu1m",
+        "type" : "FORM",
+        "pageId" : "page2m.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent7w"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att495w",
+        "target" : "kcond50._be_att495w"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld5m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att497w",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6ai",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att14ai",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att496w",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att498w",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld5r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att11r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att12r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att10r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3r",
+      "type" : "FORM",
+      "pageId" : "page2r.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent4r"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld66s",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att116s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63s",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att114s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62s",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att113s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65s",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att115s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld61s",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att110s",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu7s",
+      "type" : "FORM",
+      "pageId" : "page4s.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent21"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu1r",
+        "type" : "LIST",
+        "pageId" : "page2r.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent4r"
+      },
+      "to" : {
+        "id" : "enu3r",
+        "type" : "FORM",
+        "pageId" : "page2r.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent4r"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att9r",
+        "target" : "kcond62._be_att9r"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld5r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att11r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att12r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att10r",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "msfld3k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "ConfigurePriceQuoteServices$Role2ModelElement"
+    }, {
+      "fieldId" : "sfld9k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "ConfigurePriceQuoteServices$Role2DefaultModelElement"
+    }, {
+      "fieldId" : "fld24k",
+      "valueAttribute" : "ConfigurePriceQuoteServices$roleName",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu8k",
+      "type" : "FORM",
+      "pageId" : "page8k.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$Role"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu60a",
+        "type" : "FORM",
+        "pageId" : "page81a.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu40a",
+        "type" : "LIST",
+        "pageId" : "page81a.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent117"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld349a}value",
+        "target" : "acond195a"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld350a}value",
+        "target" : "acond202a"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld50a}value._be_att1781",
+        "target" : "acond210a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld350a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld50a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld349a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld7a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2644",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2642",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2643",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu12a",
+      "type" : "FORM",
+      "pageId" : "page10a.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent219"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld413a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att108k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld411a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att105k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld414a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att109k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld415a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att45h",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu68a",
+      "type" : "FORM",
+      "pageId" : "page66a.wr",
+      "dataBinding" : "ConfigurePriceQuoteServices$ent4k"
+    }
+  } ]
+}

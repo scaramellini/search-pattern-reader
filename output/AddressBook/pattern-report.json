@@ -1,0 +1,55 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld3",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AddressBookServices$role13"
+    }, {
+      "fieldId" : "fld7",
+      "valueAttribute" : "AddressBookServices$att2",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3",
+      "type" : "FORM",
+      "pageId" : "page4.wr",
+      "dataBinding" : "AddressBookServices$ent1"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu3",
+        "type" : "FORM",
+        "pageId" : "page4.wr",
+        "dataBinding" : "AddressBookServices$ent1"
+      },
+      "to" : {
+        "id" : "inu1",
+        "type" : "LIST",
+        "pageId" : "page4.wr",
+        "dataBinding" : "AddressBookServices$ent1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld7}value",
+        "target" : "acond2"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld3}value._be_att29",
+        "target" : "rcond1._be_att29"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld3",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AddressBookServices$role13"
+    }, {
+      "fieldId" : "fld7",
+      "valueAttribute" : "AddressBookServices$att2",
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

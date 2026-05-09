@@ -1,0 +1,311 @@
+{
+  "patterns" : [ {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "inu5q",
+        "type" : "LIST",
+        "pageId" : "page1q.wr",
+        "dataBinding" : "OriginalSkillsServices$ent13"
+      },
+      "to" : {
+        "id" : "dau3q",
+        "type" : "DETAILS",
+        "pageId" : "page1q.wr",
+        "dataBinding" : "OriginalSkillsServices$ent13"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att69",
+        "target" : "kcond9q._be_att69"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master MultiDetails Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "inu5q",
+        "type" : "LIST",
+        "pageId" : "page1q.wr",
+        "dataBinding" : "OriginalSkillsServices$ent13"
+      },
+      "to" : {
+        "id" : "dau3q",
+        "type" : "DETAILS",
+        "pageId" : "page1q.wr",
+        "dataBinding" : "OriginalSkillsServices$ent13"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att69",
+        "target" : "kcond9q._be_att69"
+      } ]
+    }, {
+      "from" : {
+        "id" : "dau3q",
+        "type" : "DETAILS",
+        "pageId" : "page1q.wr",
+        "dataBinding" : "OriginalSkillsServices$ent13"
+      },
+      "to" : {
+        "id" : "inu6q",
+        "type" : "LIST",
+        "pageId" : "page1q.wr",
+        "dataBinding" : "OriginalSkillsServices$ent10"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att69",
+        "target" : "rcond17q._be_att69"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu23j",
+        "type" : "FORM",
+        "pageId" : "page27j.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu7j",
+        "type" : "LIST",
+        "pageId" : "page27j.wr",
+        "dataBinding" : "OriginalSkillsServices$ent5j"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld56j}value",
+        "target" : "acond119j"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld55j}value",
+        "target" : "acond118j"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld11j}value._be_att128",
+        "target" : "acond117j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld56j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld11j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld55j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu1z",
+        "type" : "LIST",
+        "pageId" : "page2z.wr",
+        "dataBinding" : "OriginalSkillsServices$ent4z"
+      },
+      "to" : {
+        "id" : "enu1z",
+        "type" : "FORM",
+        "pageId" : "page2z.wr",
+        "dataBinding" : "OriginalSkillsServices$ent4z"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att20z",
+        "target" : "kcond4._be_att20z"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld4z",
+      "valueAttribute" : "OriginalSkillsServices$att5z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4z",
+      "valueAttribute" : "OriginalSkillsServices$att22z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6z",
+      "valueAttribute" : "OriginalSkillsServices$att23z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5z",
+      "valueAttribute" : "OriginalSkillsServices$att24z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3z",
+      "valueAttribute" : "OriginalSkillsServices$att21z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "OriginalSkillsServices$role13z"
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau1l",
+        "type" : "DETAILS",
+        "pageId" : "page4l.wr",
+        "dataBinding" : "OriginalSkillsServices$ent20"
+      },
+      "to" : {
+        "id" : "enu1l",
+        "type" : "FORM",
+        "pageId" : "page4l.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8l",
+        "target" : "{fld3l}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1l",
+        "target" : "{fld4l}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att3y",
+        "target" : "{fld4y}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld4l",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3l",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau1l",
+        "type" : "DETAILS",
+        "pageId" : "page4l.wr",
+        "dataBinding" : "OriginalSkillsServices$ent20"
+      },
+      "to" : {
+        "id" : "enu1l",
+        "type" : "FORM",
+        "pageId" : "page4l.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8l",
+        "target" : "{fld3l}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1l",
+        "target" : "{fld4l}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att3y",
+        "target" : "{fld4y}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld4l",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3l",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld85af",
+      "valueAttribute" : "OriginalSkillsServices$att100af",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu25af",
+      "type" : "FORM",
+      "pageId" : "page25af.wr",
+      "dataBinding" : "OriginalSkillsServices$ent20"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld4z",
+      "valueAttribute" : "OriginalSkillsServices$att5z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4z",
+      "valueAttribute" : "OriginalSkillsServices$att22z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6z",
+      "valueAttribute" : "OriginalSkillsServices$att23z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5z",
+      "valueAttribute" : "OriginalSkillsServices$att24z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3z",
+      "valueAttribute" : "OriginalSkillsServices$att21z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "OriginalSkillsServices$role13z"
+    } ],
+    "component" : {
+      "id" : "enu1z",
+      "type" : "FORM",
+      "pageId" : "page2z.wr",
+      "dataBinding" : "OriginalSkillsServices$ent4z"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld1z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "OriginalSkillsServices$role7z"
+    }, {
+      "fieldId" : "fld10z",
+      "valueAttribute" : "OriginalSkillsServices$att16z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7z",
+      "valueAttribute" : "OriginalSkillsServices$att13z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8z",
+      "valueAttribute" : "OriginalSkillsServices$att14z",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu2z",
+      "type" : "FORM",
+      "pageId" : "page3z.wr",
+      "dataBinding" : "OriginalSkillsServices$ent1z"
+    }
+  } ]
+}

@@ -1,0 +1,315 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu1z",
+        "type" : "FORM",
+        "pageId" : "page1z.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1z",
+        "type" : "LIST",
+        "pageId" : "page1z.wr",
+        "dataBinding" : "EventOmetersBOServices$ent3"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld1z}value",
+        "target" : "acond1z"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld4z}value._be_att12i",
+        "target" : "acond2z"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld4z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu2k",
+        "type" : "FORM",
+        "pageId" : "page2k.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu2k",
+        "type" : "LIST",
+        "pageId" : "page2k.wr",
+        "dataBinding" : "EventOmetersBOServices$ent4u"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld7k}value.0",
+        "target" : "acond24k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld6k}value.0",
+        "target" : "acond27k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld10k}value",
+        "target" : "acond23k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld12k}value",
+        "target" : "acond21k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld14k}value",
+        "target" : "acond25k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld11k}value",
+        "target" : "acond22k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld13k}value",
+        "target" : "acond26k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld9k}value",
+        "target" : "acond28k"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld8k}value._be_att2",
+        "target" : "rcond15k._be_att2"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld15k}value",
+        "target" : "acond29k"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld9k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu18i",
+        "type" : "FORM",
+        "pageId" : "page1i.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1i",
+        "type" : "LIST",
+        "pageId" : "page1i.wr",
+        "dataBinding" : "EventOmetersBOServices$ent5"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld37i}value",
+        "target" : "acond1i"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu18i",
+        "type" : "FORM",
+        "pageId" : "page1i.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1i",
+        "type" : "LIST",
+        "pageId" : "page1i.wr",
+        "dataBinding" : "EventOmetersBOServices$ent5"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld37i}value",
+        "target" : "acond1i"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld37i",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld2z",
+      "valueAttribute" : "EventOmetersBOServices$att22z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3z",
+      "valueAttribute" : "EventOmetersBOServices$att23z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4z",
+      "valueAttribute" : "EventOmetersBOServices$att24z",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu13z",
+      "type" : "FORM",
+      "pageId" : "page13z.wr",
+      "dataBinding" : "EventOmetersBOServices$ent4z"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld51z",
+      "valueAttribute" : "EventOmetersBOServices$att40z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50z",
+      "valueAttribute" : "EventOmetersBOServices$att39z",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu37z",
+      "type" : "FORM",
+      "pageId" : "page21z.wr",
+      "dataBinding" : "EventOmetersBOServices$ent7z"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu13u",
+        "type" : "FORM",
+        "pageId" : "page21u.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu7u",
+        "type" : "LIST",
+        "pageId" : "page21u.wr",
+        "dataBinding" : "EventOmetersBOServices$ent5u"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld9u}value._be_att1",
+        "target" : "acond127u"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld45u}value",
+        "target" : "acond118u"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld46u}value",
+        "target" : "acond119u"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld42u}value",
+        "target" : "acond114u"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld32u}value",
+        "target" : "acond115u"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld44u}value",
+        "target" : "acond116u"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld43u}value",
+        "target" : "acond117u"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld46u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld42u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld9u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld45u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld85z",
+      "valueAttribute" : "EventOmetersBOServices$att20z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld84z",
+      "valueAttribute" : "EventOmetersBOServices$att14z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83z",
+      "valueAttribute" : "EventOmetersBOServices$att11z",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu35z",
+      "type" : "FORM",
+      "pageId" : "page23z.wr",
+      "dataBinding" : "EventOmetersBOServices$ent3z"
+    }
+  } ]
+}

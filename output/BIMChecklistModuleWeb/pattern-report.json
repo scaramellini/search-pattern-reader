@@ -1,0 +1,1285 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl5p",
+        "type" : "DETAILS",
+        "pageId" : "page6p.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "frm5p",
+        "type" : "FORM",
+        "pageId" : "page6p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls4"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "prd24p",
+        "target" : "{sfld4p}rcond7p._be_att3"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp57j",
+        "target" : "{sfld4p}presel._be_att6"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp57j",
+        "target" : "{clc7n}rcond15n._be_att6"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "prd24p",
+        "target" : "{sfld5p}presel._be_att3"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "prd7p",
+        "target" : "kcond5p._be_att9"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "prd7p",
+        "target" : "{clc7n}kcond13n._be_att9"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "prd26p",
+        "target" : "{sfld24p}presel._be_att124o"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "prd27p",
+        "target" : "{sfld25p}presel._be_att124o"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "prd25p",
+        "target" : "{sfld26p}presel._be_att124o"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld24p",
+      "valueAttribute" : "BIMChecklistModuleDS$att133",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9p",
+      "valueAttribute" : "BIMChecklistModuleDS$att11",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld26p",
+      "valueAttribute" : "BIMChecklistModuleDS$att132",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8p",
+      "valueAttribute" : "BIMChecklistModuleDS$att10",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld18p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role13"
+    }, {
+      "fieldId" : "sfld4p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role12"
+    }, {
+      "fieldId" : "sfld5p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role1o"
+    }, {
+      "fieldId" : "sfld25p",
+      "valueAttribute" : "BIMChecklistModuleDS$att134",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10p",
+      "valueAttribute" : "BIMChecklistModuleDS$att13",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl5n",
+        "type" : "DETAILS",
+        "pageId" : "page6p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls41j"
+      },
+      "to" : {
+        "id" : "frm5p",
+        "type" : "FORM",
+        "pageId" : "page6p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls4"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att227j",
+        "target" : "{sfld5p}rcond14n._be_att227j"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att227j",
+        "target" : "{sfld24p}rcond41p._be_att227j"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att227j",
+        "target" : "{sfld25p}rcond42p._be_att227j"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att227j",
+        "target" : "{sfld26p}rcond43p._be_att227j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld24p",
+      "valueAttribute" : "BIMChecklistModuleDS$att133",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9p",
+      "valueAttribute" : "BIMChecklistModuleDS$att11",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld26p",
+      "valueAttribute" : "BIMChecklistModuleDS$att132",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8p",
+      "valueAttribute" : "BIMChecklistModuleDS$att10",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld18p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role13"
+    }, {
+      "fieldId" : "sfld4p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role12"
+    }, {
+      "fieldId" : "sfld5p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role1o"
+    }, {
+      "fieldId" : "sfld25p",
+      "valueAttribute" : "BIMChecklistModuleDS$att134",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10p",
+      "valueAttribute" : "BIMChecklistModuleDS$att13",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld14p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role44"
+    }, {
+      "fieldId" : "fld25p",
+      "valueAttribute" : "BIMChecklistModuleDS$att30",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm11p",
+      "type" : "FORM",
+      "pageId" : "page17p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls11"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld71p",
+      "valueAttribute" : "BIMChecklistModuleDS$att90",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld14n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role137j"
+    }, {
+      "fieldId" : "sfld13n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role17"
+    }, {
+      "fieldId" : "fld70p",
+      "valueAttribute" : "BIMChecklistModuleDS$att91",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm11n",
+      "type" : "FORM",
+      "pageId" : "page15n.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls5"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst30n",
+        "type" : "LIST",
+        "pageId" : "page8p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls14o"
+      },
+      "to" : {
+        "id" : "dtl31n",
+        "type" : "DETAILS",
+        "pageId" : "page8p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls14o"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att124o",
+        "target" : "kcond48n._be_att124o"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst14p",
+        "type" : "LIST",
+        "pageId" : "page8p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls20"
+      },
+      "to" : {
+        "id" : "dtl4p",
+        "type" : "DETAILS",
+        "pageId" : "page8p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls20"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att64",
+        "target" : "kcond19p._be_att64"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "false",
+        "target" : "prd23p"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "prd22p"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl4n",
+        "type" : "DETAILS",
+        "pageId" : "page16p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls41j"
+      },
+      "to" : {
+        "id" : "frm9p",
+        "type" : "FORM",
+        "pageId" : "page16p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls3"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att227j",
+        "target" : "{sfld12p}rcond11n._be_att227j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld22p",
+      "valueAttribute" : "BIMChecklistModuleDS$att7",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role10"
+    }, {
+      "fieldId" : "fld21p",
+      "valueAttribute" : "BIMChecklistModuleDS$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld26p",
+      "valueAttribute" : "BIMChecklistModuleDS$att51",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm12p",
+      "type" : "FORM",
+      "pageId" : "page5p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls16"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld18n",
+      "valueAttribute" : "BIMChecklistModuleDS$att32",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role84"
+    }, {
+      "fieldId" : "fld16n",
+      "valueAttribute" : "BIMChecklistModuleDS$att28",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17n",
+      "valueAttribute" : "BIMChecklistModuleDS$att31",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm7n",
+      "type" : "FORM",
+      "pageId" : "page11n.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls10"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld2n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role41"
+    }, {
+      "fieldId" : "fld9n",
+      "valueAttribute" : "BIMChecklistModuleDS$att31",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role84"
+    }, {
+      "fieldId" : "fld8n",
+      "valueAttribute" : "BIMChecklistModuleDS$att28",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role21"
+    }, {
+      "fieldId" : "fld10n",
+      "valueAttribute" : "BIMChecklistModuleDS$att32",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm4n",
+      "type" : "FORM",
+      "pageId" : "page10p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls10"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld31p",
+      "valueAttribute" : "BIMChecklistModuleDS$att44",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld34p",
+      "valueAttribute" : "BIMChecklistModuleDS$att47",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44p",
+      "valueAttribute" : "BIMChecklistModuleDS$att112o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32p",
+      "valueAttribute" : "BIMChecklistModuleDS$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36p",
+      "valueAttribute" : "BIMChecklistModuleDS$att45",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld28p",
+      "valueAttribute" : "BIMChecklistModuleDS$att73",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld33p",
+      "valueAttribute" : "BIMChecklistModuleDS$att42",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld29p",
+      "valueAttribute" : "BIMChecklistModuleDS$att163o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld68p",
+      "valueAttribute" : "BIMChecklistModuleDS$att233o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29p",
+      "valueAttribute" : "BIMChecklistModuleDS$att43",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm13p",
+      "type" : "FORM",
+      "pageId" : "page8p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls14"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld21p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role23"
+    }, {
+      "fieldId" : "fld39p",
+      "valueAttribute" : "BIMChecklistModuleDS$att35",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm4p",
+      "type" : "FORM",
+      "pageId" : "page3p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls12"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl30n",
+        "type" : "DETAILS",
+        "pageId" : "page18n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls4"
+      },
+      "to" : {
+        "id" : "frm20p",
+        "type" : "FORM",
+        "pageId" : "page18n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls8"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "$$NULL$$",
+        "target" : "kcond41p._be_att21"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att9",
+        "target" : "{sfld32p}rcond33p._be_att9"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld60p",
+      "valueAttribute" : "BIMChecklistModuleDS$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld32p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role26"
+    }, {
+      "fieldId" : "fld58p",
+      "valueAttribute" : "BIMChecklistModuleDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62p",
+      "valueAttribute" : "BIMChecklistModuleDS$att195o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65p",
+      "valueAttribute" : "BIMChecklistModuleDS$att156o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld33p",
+      "valueAttribute" : "BIMChecklistModuleDS$att56",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63p",
+      "valueAttribute" : "BIMChecklistModuleDS$att158o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59p",
+      "valueAttribute" : "BIMChecklistModuleDS$att55",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64p",
+      "valueAttribute" : "BIMChecklistModuleDS$att53",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld24p",
+      "valueAttribute" : "BIMChecklistModuleDS$att133",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9p",
+      "valueAttribute" : "BIMChecklistModuleDS$att11",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld26p",
+      "valueAttribute" : "BIMChecklistModuleDS$att132",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8p",
+      "valueAttribute" : "BIMChecklistModuleDS$att10",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld18p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role13"
+    }, {
+      "fieldId" : "sfld4p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role12"
+    }, {
+      "fieldId" : "sfld5p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role1o"
+    }, {
+      "fieldId" : "sfld25p",
+      "valueAttribute" : "BIMChecklistModuleDS$att134",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10p",
+      "valueAttribute" : "BIMChecklistModuleDS$att13",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm5p",
+      "type" : "FORM",
+      "pageId" : "page6p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls4"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld40p",
+      "valueAttribute" : "BIMChecklistModuleDS$att38o",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm15p",
+      "type" : "FORM",
+      "pageId" : "page21p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls5o"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst19n",
+        "type" : "LIST",
+        "pageId" : "page5p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls54j"
+      },
+      "to" : {
+        "id" : "frm9n",
+        "type" : "FORM",
+        "pageId" : "page5p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls54j"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att308j",
+        "target" : "kcond15n._be_att308j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld11n",
+      "valueAttribute" : "BIMChecklistModuleDS$att311j",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst19p",
+        "type" : "LIST",
+        "pageId" : "page21p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls58j"
+      },
+      "to" : {
+        "id" : "dtl20n",
+        "type" : "DETAILS",
+        "pageId" : "page21p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls58j"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "prd18p"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att368j",
+        "target" : "kcond36n._be_att368j"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst6n",
+        "type" : "LIST",
+        "pageId" : "page11n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls5"
+      },
+      "to" : {
+        "id" : "dtl23p",
+        "type" : "DETAILS",
+        "pageId" : "page11n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls5"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst11p",
+        "type" : "LIST",
+        "pageId" : "page17p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls11"
+      },
+      "to" : {
+        "id" : "frm11p",
+        "type" : "FORM",
+        "pageId" : "page17p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls11"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att29",
+        "target" : "kcond14p._be_att29"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld14p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role44"
+    }, {
+      "fieldId" : "fld25p",
+      "valueAttribute" : "BIMChecklistModuleDS$att30",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld60p",
+      "valueAttribute" : "BIMChecklistModuleDS$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld32p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role26"
+    }, {
+      "fieldId" : "fld58p",
+      "valueAttribute" : "BIMChecklistModuleDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62p",
+      "valueAttribute" : "BIMChecklistModuleDS$att195o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65p",
+      "valueAttribute" : "BIMChecklistModuleDS$att156o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld33p",
+      "valueAttribute" : "BIMChecklistModuleDS$att56",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63p",
+      "valueAttribute" : "BIMChecklistModuleDS$att158o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59p",
+      "valueAttribute" : "BIMChecklistModuleDS$att55",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64p",
+      "valueAttribute" : "BIMChecklistModuleDS$att53",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm20p",
+      "type" : "FORM",
+      "pageId" : "page18n.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls8"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld33n",
+      "valueAttribute" : "BIMChecklistModuleDS$att377j",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm17n",
+      "type" : "FORM",
+      "pageId" : "page11n.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls5"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst9p",
+        "type" : "LIST",
+        "pageId" : "page16p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls3"
+      },
+      "to" : {
+        "id" : "frm9p",
+        "type" : "FORM",
+        "pageId" : "page16p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls3"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6",
+        "target" : "kcond12p._be_att6"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6",
+        "target" : "{clc4n}kcond10n._be_att6"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role10$_be_att3",
+        "target" : "{clc4n}rcond9n._be_att3"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld22p",
+      "valueAttribute" : "BIMChecklistModuleDS$att7",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role10"
+    }, {
+      "fieldId" : "fld21p",
+      "valueAttribute" : "BIMChecklistModuleDS$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multilevel Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst1p",
+        "type" : "LIST",
+        "pageId" : "page1p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls5o"
+      },
+      "to" : {
+        "id" : "lst16p",
+        "type" : "LIST",
+        "pageId" : "page1p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls40j"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att37o",
+        "target" : "rcond11p._be_att37o"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "prd13p"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att37o",
+        "target" : "prd20p"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld20p",
+      "valueAttribute" : "BIMChecklistModuleDS$att4",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19p",
+      "valueAttribute" : "BIMChecklistModuleDS$att5",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm8p",
+      "type" : "FORM",
+      "pageId" : "page15p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls2"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl3p",
+        "type" : "DETAILS",
+        "pageId" : "page8p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls14"
+      },
+      "to" : {
+        "id" : "frm13p",
+        "type" : "FORM",
+        "pageId" : "page8p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls14"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att40",
+        "target" : "kcond16p._be_att40"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att40",
+        "target" : "{clc2p}kcond42p._be_att40"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld31p",
+      "valueAttribute" : "BIMChecklistModuleDS$att44",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld34p",
+      "valueAttribute" : "BIMChecklistModuleDS$att47",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44p",
+      "valueAttribute" : "BIMChecklistModuleDS$att112o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32p",
+      "valueAttribute" : "BIMChecklistModuleDS$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36p",
+      "valueAttribute" : "BIMChecklistModuleDS$att45",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld28p",
+      "valueAttribute" : "BIMChecklistModuleDS$att73",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld33p",
+      "valueAttribute" : "BIMChecklistModuleDS$att42",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld29p",
+      "valueAttribute" : "BIMChecklistModuleDS$att163o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld68p",
+      "valueAttribute" : "BIMChecklistModuleDS$att233o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29p",
+      "valueAttribute" : "BIMChecklistModuleDS$att43",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst29n",
+        "type" : "LIST",
+        "pageId" : "page18n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls8"
+      },
+      "to" : {
+        "id" : "frm20p",
+        "type" : "FORM",
+        "pageId" : "page18n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls8"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld60p",
+      "valueAttribute" : "BIMChecklistModuleDS$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld32p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role26"
+    }, {
+      "fieldId" : "fld58p",
+      "valueAttribute" : "BIMChecklistModuleDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62p",
+      "valueAttribute" : "BIMChecklistModuleDS$att195o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65p",
+      "valueAttribute" : "BIMChecklistModuleDS$att156o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld33p",
+      "valueAttribute" : "BIMChecklistModuleDS$att56",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63p",
+      "valueAttribute" : "BIMChecklistModuleDS$att158o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59p",
+      "valueAttribute" : "BIMChecklistModuleDS$att55",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64p",
+      "valueAttribute" : "BIMChecklistModuleDS$att53",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst29n",
+        "type" : "LIST",
+        "pageId" : "page18n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls8"
+      },
+      "to" : {
+        "id" : "frm20p",
+        "type" : "FORM",
+        "pageId" : "page18n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls8"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld60p",
+      "valueAttribute" : "BIMChecklistModuleDS$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld32p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role26"
+    }, {
+      "fieldId" : "fld58p",
+      "valueAttribute" : "BIMChecklistModuleDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62p",
+      "valueAttribute" : "BIMChecklistModuleDS$att195o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65p",
+      "valueAttribute" : "BIMChecklistModuleDS$att156o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld33p",
+      "valueAttribute" : "BIMChecklistModuleDS$att56",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63p",
+      "valueAttribute" : "BIMChecklistModuleDS$att158o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59p",
+      "valueAttribute" : "BIMChecklistModuleDS$att55",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64p",
+      "valueAttribute" : "BIMChecklistModuleDS$att53",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl19n",
+        "type" : "DETAILS",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls27"
+      },
+      "to" : {
+        "id" : "frm15n",
+        "type" : "FORM",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls30"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att330j",
+        "target" : "{fld16m}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld31n",
+      "valueAttribute" : "BIMChecklistModuleDS$att160",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl19n",
+        "type" : "DETAILS",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls27"
+      },
+      "to" : {
+        "id" : "frm15n",
+        "type" : "FORM",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls30"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att330j",
+        "target" : "{fld16m}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld31n",
+      "valueAttribute" : "BIMChecklistModuleDS$att160",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst20n",
+        "type" : "LIST",
+        "pageId" : "page5p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls52j"
+      },
+      "to" : {
+        "id" : "frm10n",
+        "type" : "FORM",
+        "pageId" : "page5p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls52j"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att300j",
+        "target" : "kcond16n._be_att300j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld25n",
+      "valueAttribute" : "BIMChecklistModuleDS$att301j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27n",
+      "valueAttribute" : "BIMChecklistModuleDS$att303j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26n",
+      "valueAttribute" : "BIMChecklistModuleDS$att302j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld36p",
+      "valueAttribute" : "BIMChecklistModuleDS$att260o",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst8p",
+        "type" : "LIST",
+        "pageId" : "page15p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls2"
+      },
+      "to" : {
+        "id" : "frm8p",
+        "type" : "FORM",
+        "pageId" : "page15p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls2"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att3",
+        "target" : "kcond11p._be_att3"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att3",
+        "target" : "{clc1n}kcond9n._be_att3"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld20p",
+      "valueAttribute" : "BIMChecklistModuleDS$att4",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19p",
+      "valueAttribute" : "BIMChecklistModuleDS$att5",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld11n",
+      "valueAttribute" : "BIMChecklistModuleDS$att311j",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm9n",
+      "type" : "FORM",
+      "pageId" : "page5p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls54j"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld25n",
+      "valueAttribute" : "BIMChecklistModuleDS$att301j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27n",
+      "valueAttribute" : "BIMChecklistModuleDS$att303j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26n",
+      "valueAttribute" : "BIMChecklistModuleDS$att302j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld36p",
+      "valueAttribute" : "BIMChecklistModuleDS$att260o",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm10n",
+      "type" : "FORM",
+      "pageId" : "page5p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls52j"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld22p",
+      "valueAttribute" : "BIMChecklistModuleDS$att7",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BIMChecklistModuleDS$role10"
+    }, {
+      "fieldId" : "fld21p",
+      "valueAttribute" : "BIMChecklistModuleDS$att24",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm9p",
+      "type" : "FORM",
+      "pageId" : "page16p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls3"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst18n",
+        "type" : "LIST",
+        "pageId" : "page5p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls54j"
+      },
+      "to" : {
+        "id" : "frm9n",
+        "type" : "FORM",
+        "pageId" : "page5p.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls54j"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att308j",
+        "target" : "kcond15n._be_att308j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld11n",
+      "valueAttribute" : "BIMChecklistModuleDS$att311j",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld55p",
+      "valueAttribute" : "BIMChecklistModuleDS$att19",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm18p",
+      "type" : "FORM",
+      "pageId" : "page24p.wr",
+      "dataBinding" : "BIMChecklistModuleDS$cls7"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst21n",
+        "type" : "LIST",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls27"
+      },
+      "to" : {
+        "id" : "dtl8n",
+        "type" : "DETAILS",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls27"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att135",
+        "target" : "kcond18n._be_att135"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "prd33p"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master MultiDetails Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst21n",
+        "type" : "LIST",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls27"
+      },
+      "to" : {
+        "id" : "dtl8n",
+        "type" : "DETAILS",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls27"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att135",
+        "target" : "kcond18n._be_att135"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "prd33p"
+      } ]
+    }, {
+      "from" : {
+        "id" : "dtl8n",
+        "type" : "DETAILS",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls27"
+      },
+      "to" : {
+        "id" : "lst22n",
+        "type" : "LIST",
+        "pageId" : "page15n.wr",
+        "dataBinding" : "BIMChecklistModuleDS$cls22"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att135",
+        "target" : "rcond41n._be_att135"
+      } ]
+    } ],
+    "fields" : null
+  } ]
+}

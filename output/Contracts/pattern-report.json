@@ -1,0 +1,73 @@
+{
+  "patterns" : [ {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst7",
+        "type" : "LIST",
+        "pageId" : "page16.wr",
+        "dataBinding" : "CustomersData$cls3w"
+      },
+      "to" : {
+        "id" : "dtl24",
+        "type" : "DETAILS",
+        "pageId" : "page16.wr",
+        "dataBinding" : "CustomersData$cls3w"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm16",
+        "type" : "FORM",
+        "pageId" : "page22.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst11",
+        "type" : "LIST",
+        "pageId" : "page22.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld12}value.0",
+        "target" : "acond13"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld11}value._user__process_definition_$name",
+        "target" : "acond14"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld11",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld10",
+      "valueAttribute" : "CustomersData$att31",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2",
+      "valueAttribute" : "CustomersData$att32",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm17",
+      "type" : "FORM",
+      "pageId" : "page25.wr",
+      "dataBinding" : "CustomersData$cls3w"
+    }
+  } ]
+}

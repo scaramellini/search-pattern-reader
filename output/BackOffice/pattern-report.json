@@ -1,0 +1,435 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld47",
+      "valueAttribute" : "StarhotelsDS$att47",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld42",
+      "valueAttribute" : "StarhotelsDS$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46",
+      "valueAttribute" : "StarhotelsDS$att48",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2s",
+      "valueAttribute" : "StarhotelsDS$att45",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48",
+      "valueAttribute" : "StarhotelsDS$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44",
+      "valueAttribute" : "StarhotelsDS$att42",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43",
+      "valueAttribute" : "StarhotelsDS$att43",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm1",
+      "type" : "FORM",
+      "pageId" : "page8.wr",
+      "dataBinding" : "StarhotelsDS$cls3"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld23",
+      "valueAttribute" : "StarhotelsDS$att35",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3s",
+      "valueAttribute" : "StarhotelsDS$att12h",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16",
+      "valueAttribute" : "StarhotelsDS$att12",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2g",
+      "valueAttribute" : "StarhotelsDS$att31k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3s",
+      "valueAttribute" : "StarhotelsDS$att38",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1g",
+      "valueAttribute" : "StarhotelsDS$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32",
+      "valueAttribute" : "StarhotelsDS$att20",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14",
+      "valueAttribute" : "StarhotelsDS$att32",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12",
+      "valueAttribute" : "StarhotelsDS$att7",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17",
+      "valueAttribute" : "StarhotelsDS$att34",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26",
+      "valueAttribute" : "StarhotelsDS$att37",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11",
+      "valueAttribute" : "StarhotelsDS$att19",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6g",
+      "valueAttribute" : "StarhotelsDS$att29k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21",
+      "valueAttribute" : "StarhotelsDS$att36",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2s",
+      "valueAttribute" : "StarhotelsDS$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld34",
+      "valueAttribute" : "StarhotelsDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4g",
+      "valueAttribute" : "StarhotelsDS$att27k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19",
+      "valueAttribute" : "StarhotelsDS$att33",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld25",
+      "valueAttribute" : "StarhotelsDS$att15",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2",
+      "valueAttribute" : "StarhotelsDS$att17",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld30",
+      "valueAttribute" : "StarhotelsDS$att8",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31",
+      "valueAttribute" : "StarhotelsDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29",
+      "valueAttribute" : "StarhotelsDS$att9",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5g",
+      "valueAttribute" : "StarhotelsDS$att28k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4s",
+      "valueAttribute" : "StarhotelsDS$att32k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1g",
+      "valueAttribute" : "StarhotelsDS$att30k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1",
+      "valueAttribute" : "StarhotelsDS$att18",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18",
+      "valueAttribute" : "StarhotelsDS$att11",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1s",
+      "valueAttribute" : "StarhotelsDS$att10",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3g",
+      "valueAttribute" : "StarhotelsDS$att34k",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm5",
+      "type" : "FORM",
+      "pageId" : "page9.wr",
+      "dataBinding" : "StarhotelsDS$cls2"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld55",
+      "valueAttribute" : "StarhotelsDS$att54",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9g",
+      "valueAttribute" : "StarhotelsDS$att21k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2g",
+      "valueAttribute" : "StarhotelsDS$att18k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54",
+      "valueAttribute" : "StarhotelsDS$att53",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm6",
+      "type" : "FORM",
+      "pageId" : "page8.wr",
+      "dataBinding" : "StarhotelsDS$cls5"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst3",
+        "type" : "LIST",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls5"
+      },
+      "to" : {
+        "id" : "dtl2",
+        "type" : "DETAILS",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls5"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst3",
+        "type" : "LIST",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls5"
+      },
+      "to" : {
+        "id" : "dtl3u",
+        "type" : "DETAILS",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls5"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst2",
+        "type" : "LIST",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls3"
+      },
+      "to" : {
+        "id" : "frm1",
+        "type" : "FORM",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls3"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att40",
+        "target" : "kcond3._be_att40"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att40",
+        "target" : "prd1s"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld47",
+      "valueAttribute" : "StarhotelsDS$att47",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld42",
+      "valueAttribute" : "StarhotelsDS$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46",
+      "valueAttribute" : "StarhotelsDS$att48",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2s",
+      "valueAttribute" : "StarhotelsDS$att45",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48",
+      "valueAttribute" : "StarhotelsDS$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44",
+      "valueAttribute" : "StarhotelsDS$att42",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43",
+      "valueAttribute" : "StarhotelsDS$att43",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm41b",
+        "type" : "FORM",
+        "pageId" : "page3.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst19b",
+        "type" : "LIST",
+        "pageId" : "page3.wr",
+        "dataBinding" : "StarhotelsDS$User"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld226b}value",
+        "target" : "acond54b"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld226b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl1",
+        "type" : "DETAILS",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls2"
+      },
+      "to" : {
+        "id" : "frm6",
+        "type" : "FORM",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls5"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld55",
+      "valueAttribute" : "StarhotelsDS$att54",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9g",
+      "valueAttribute" : "StarhotelsDS$att21k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2g",
+      "valueAttribute" : "StarhotelsDS$att18k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54",
+      "valueAttribute" : "StarhotelsDS$att53",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl1",
+        "type" : "DETAILS",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls2"
+      },
+      "to" : {
+        "id" : "frm1",
+        "type" : "FORM",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls3"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "$$NULL$$",
+        "target" : "kcond3._be_att40"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "$$NULL$$",
+        "target" : "prd1s"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld47",
+      "valueAttribute" : "StarhotelsDS$att47",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld42",
+      "valueAttribute" : "StarhotelsDS$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46",
+      "valueAttribute" : "StarhotelsDS$att48",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2s",
+      "valueAttribute" : "StarhotelsDS$att45",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48",
+      "valueAttribute" : "StarhotelsDS$att46",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44",
+      "valueAttribute" : "StarhotelsDS$att42",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43",
+      "valueAttribute" : "StarhotelsDS$att43",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl1",
+        "type" : "DETAILS",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls2"
+      },
+      "to" : {
+        "id" : "frm6",
+        "type" : "FORM",
+        "pageId" : "page8.wr",
+        "dataBinding" : "StarhotelsDS$cls5"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld55",
+      "valueAttribute" : "StarhotelsDS$att54",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9g",
+      "valueAttribute" : "StarhotelsDS$att21k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2g",
+      "valueAttribute" : "StarhotelsDS$att18k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54",
+      "valueAttribute" : "StarhotelsDS$att53",
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

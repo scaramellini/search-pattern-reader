@@ -1,0 +1,103 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm3",
+        "type" : "FORM",
+        "pageId" : "page7.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst8",
+        "type" : "LIST",
+        "pageId" : "page7.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld2}value.0",
+        "target" : "acond3"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld8}value",
+        "target" : "acond4"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld7}value",
+        "target" : "acond5"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fldw7h}value",
+        "target" : "acondw9h"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld2",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fldw7h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frmw4h",
+        "type" : "FORM",
+        "pageId" : "pagew7h.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lstw6h",
+        "type" : "LIST",
+        "pageId" : "pagew7h.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfldw2h}value.0",
+        "target" : "acondw10h"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fldw9h}value",
+        "target" : "acondw11h"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fldw8h}value",
+        "target" : "acondw12h"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fldw10h}value",
+        "target" : "acondw13h"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fldw10h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfldw2h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fldw8h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fldw9h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

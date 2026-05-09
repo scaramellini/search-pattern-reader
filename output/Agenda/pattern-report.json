@@ -1,0 +1,51 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld12",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AgendaServices$User2DefaultRole"
+    }, {
+      "fieldId" : "fld48",
+      "valueAttribute" : "AgendaServices$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld49",
+      "valueAttribute" : "AgendaServices$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46",
+      "valueAttribute" : "AgendaServices$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47",
+      "valueAttribute" : "AgendaServices$password",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu1",
+      "type" : "FORM",
+      "pageId" : "page3.wr",
+      "dataBinding" : "AgendaServices$User"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld13",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AgendaServices$Role2DefaultModelElement"
+    }, {
+      "fieldId" : "fld50",
+      "valueAttribute" : "AgendaServices$roleName",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu14",
+      "type" : "FORM",
+      "pageId" : "page19.wr",
+      "dataBinding" : "AgendaServices$Role"
+    }
+  } ]
+}

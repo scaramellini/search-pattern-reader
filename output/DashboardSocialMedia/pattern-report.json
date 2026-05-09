@@ -1,0 +1,483 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst15b",
+        "type" : "LIST",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls9x"
+      },
+      "to" : {
+        "id" : "frm6b",
+        "type" : "FORM",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls9x"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld16b",
+      "valueAttribute" : "DashboardSocialMediaDS$att3x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15b",
+      "valueAttribute" : "DashboardSocialMediaDS$att31x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst15b",
+        "type" : "LIST",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls9x"
+      },
+      "to" : {
+        "id" : "frm6b",
+        "type" : "FORM",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls9x"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld16b",
+      "valueAttribute" : "DashboardSocialMediaDS$att3x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15b",
+      "valueAttribute" : "DashboardSocialMediaDS$att31x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld16b",
+      "valueAttribute" : "DashboardSocialMediaDS$att3x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15b",
+      "valueAttribute" : "DashboardSocialMediaDS$att31x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm6b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls9x"
+    }
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst16b",
+        "type" : "LIST",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls4"
+      },
+      "to" : {
+        "id" : "frm7b",
+        "type" : "FORM",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls4"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld17b",
+      "valueAttribute" : "DashboardSocialMediaDS$att17",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst16b",
+        "type" : "LIST",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls4"
+      },
+      "to" : {
+        "id" : "frm7b",
+        "type" : "FORM",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls4"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld17b",
+      "valueAttribute" : "DashboardSocialMediaDS$att17",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst3b",
+        "type" : "LIST",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls5"
+      },
+      "to" : {
+        "id" : "frm9b",
+        "type" : "FORM",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls5"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att22",
+        "target" : "{fld31b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att23",
+        "target" : "{fld29b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att18",
+        "target" : "kcond7b._be_att18"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att24",
+        "target" : "{fld30b}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld31b",
+      "valueAttribute" : "DashboardSocialMediaDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29b",
+      "valueAttribute" : "DashboardSocialMediaDS$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld30b",
+      "valueAttribute" : "DashboardSocialMediaDS$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld17b",
+      "valueAttribute" : "DashboardSocialMediaDS$att17",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm7b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls4"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst13b",
+        "type" : "LIST",
+        "pageId" : "page21b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1"
+      },
+      "to" : {
+        "id" : "dtl9b",
+        "type" : "DETAILS",
+        "pageId" : "page21b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1",
+        "target" : "kcond26b._be_att1"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld20b",
+      "valueAttribute" : "DashboardSocialMediaDS$att6x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27b",
+      "valueAttribute" : "DashboardSocialMediaDS$att38x",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm8b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls12x"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst2b",
+        "type" : "LIST",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls12x"
+      },
+      "to" : {
+        "id" : "frm8b",
+        "type" : "FORM",
+        "pageId" : "page10.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls12x"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6x",
+        "target" : "{fld20b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att37x",
+        "target" : "kcond6b._be_att37x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att38x",
+        "target" : "{fld27b}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld20b",
+      "valueAttribute" : "DashboardSocialMediaDS$att6x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27b",
+      "valueAttribute" : "DashboardSocialMediaDS$att38x",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld46b",
+      "valueAttribute" : "DashboardSocialMediaDS$att28",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld41b",
+      "valueAttribute" : "DashboardSocialMediaDS$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "DashboardSocialMediaDS$role16"
+    }, {
+      "fieldId" : "fld45b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm18b",
+      "type" : "FORM",
+      "pageId" : "page25b.wr",
+      "dataBinding" : "DashboardSocialMediaDS$User"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm18b",
+        "type" : "FORM",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User"
+      },
+      "to" : {
+        "id" : "lst1b",
+        "type" : "LIST",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld50b}value",
+        "target" : "acond19b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld45b}value",
+        "target" : "acond16b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld8b}value._be_att31",
+        "target" : "rcond1b._be_att31"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld43b}value",
+        "target" : "acond15b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld41b}value",
+        "target" : "acond20b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld46b}value",
+        "target" : "acond38b"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld46b",
+      "valueAttribute" : "DashboardSocialMediaDS$att28",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld41b",
+      "valueAttribute" : "DashboardSocialMediaDS$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "DashboardSocialMediaDS$role16"
+    }, {
+      "fieldId" : "fld45b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld85b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld84b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm30b",
+      "type" : "FORM",
+      "pageId" : "page25b.wr",
+      "dataBinding" : "DashboardSocialMediaDS$User"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld31b",
+      "valueAttribute" : "DashboardSocialMediaDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29b",
+      "valueAttribute" : "DashboardSocialMediaDS$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld30b",
+      "valueAttribute" : "DashboardSocialMediaDS$att24",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm9b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls5"
+    }
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst1b",
+        "type" : "LIST",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User"
+      },
+      "to" : {
+        "id" : "frm30b",
+        "type" : "FORM",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld85b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld84b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst1b",
+        "type" : "LIST",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User"
+      },
+      "to" : {
+        "id" : "frm30b",
+        "type" : "FORM",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld85b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld84b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

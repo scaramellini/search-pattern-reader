@@ -1,0 +1,45 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu26r",
+        "type" : "FORM",
+        "pageId" : "page48r.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu20r",
+        "type" : "LIST",
+        "pageId" : "page48r.wr",
+        "dataBinding" : "IntranetGVPMServices$ent10r"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld87r}value",
+        "target" : "acond137r"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld88r}value",
+        "target" : "acond138r"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld8r}value._be_att4r",
+        "target" : "rcond10r._be_att4r"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld88r",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8r",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld87r",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

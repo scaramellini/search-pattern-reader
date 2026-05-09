@@ -1,0 +1,133 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "msfld1f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "GestioneRicorsiServices$role99i"
+    }, {
+      "fieldId" : "fld185f",
+      "valueAttribute" : "GestioneRicorsiServices$att193i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld186f",
+      "valueAttribute" : "GestioneRicorsiServices$att203i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld187f",
+      "valueAttribute" : "GestioneRicorsiServices$att204i",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu65f",
+      "type" : "FORM",
+      "pageId" : "page77f.wr",
+      "dataBinding" : "GestioneRicorsiServices$ent27i"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld206f",
+      "valueAttribute" : "GestioneRicorsiServices$att256i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld203f",
+      "valueAttribute" : "GestioneRicorsiServices$att240i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld204f",
+      "valueAttribute" : "GestioneRicorsiServices$att241i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld202f",
+      "valueAttribute" : "GestioneRicorsiServices$att239i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld201f",
+      "valueAttribute" : "GestioneRicorsiServices$att267i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld205f",
+      "valueAttribute" : "GestioneRicorsiServices$att255i",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu80f",
+      "type" : "FORM",
+      "pageId" : "page80f.wr",
+      "dataBinding" : "GestioneRicorsiServices$ent32i"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld191f",
+      "valueAttribute" : "GestioneRicorsiServices$att266i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld193f",
+      "valueAttribute" : "GestioneRicorsiServices$att199i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld227f",
+      "valueAttribute" : "GestioneRicorsiServices$att230f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld192f",
+      "valueAttribute" : "GestioneRicorsiServices$att198i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld194f",
+      "valueAttribute" : "GestioneRicorsiServices$att202i",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu78f",
+      "type" : "FORM",
+      "pageId" : "page78f.wr",
+      "dataBinding" : "GestioneRicorsiServices$ent28i"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld195f",
+      "valueAttribute" : "GestioneRicorsiServices$att230i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld196f",
+      "valueAttribute" : "GestioneRicorsiServices$att231i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld2f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "GestioneRicorsiServices$role97i"
+    }, {
+      "fieldId" : "fld197f",
+      "valueAttribute" : "GestioneRicorsiServices$att232i",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu79f",
+      "type" : "FORM",
+      "pageId" : "page79f.wr",
+      "dataBinding" : "GestioneRicorsiServices$ent31i"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld10f",
+      "valueAttribute" : "GestioneRicorsiServices$att49",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu5f",
+      "type" : "FORM",
+      "pageId" : "page5f.wr",
+      "dataBinding" : "GestioneRicorsiServices$ent8"
+    }
+  } ]
+}

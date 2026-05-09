@@ -1,0 +1,463 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst16h",
+        "type" : "LIST",
+        "pageId" : "page17h.wr",
+        "dataBinding" : "gsatron$cls43j"
+      },
+      "to" : {
+        "id" : "frm13h",
+        "type" : "FORM",
+        "pageId" : "page17h.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att288j",
+        "target" : "{fld50h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att291j",
+        "target" : "{fld49h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att290j",
+        "target" : "{fld47h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "{fld48h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att292j",
+        "target" : "{fld45h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att280j",
+        "target" : "{fld46h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role167j$_be_userName",
+        "target" : "{fld51h}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld48h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld51h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld45h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld49h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst16h",
+        "type" : "LIST",
+        "pageId" : "page17h.wr",
+        "dataBinding" : "gsatron$cls43j"
+      },
+      "to" : {
+        "id" : "frm13h",
+        "type" : "FORM",
+        "pageId" : "page17h.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att288j",
+        "target" : "{fld50h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att291j",
+        "target" : "{fld49h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att290j",
+        "target" : "{fld47h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "{fld48h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att292j",
+        "target" : "{fld45h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att280j",
+        "target" : "{fld46h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role167j$_be_userName",
+        "target" : "{fld51h}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld48h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld51h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld45h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld49h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst13h",
+        "type" : "LIST",
+        "pageId" : "page17h.wr",
+        "dataBinding" : "gsatron$cls52j"
+      },
+      "to" : {
+        "id" : "frm12h",
+        "type" : "FORM",
+        "pageId" : "page17h.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att354j",
+        "target" : "{fld56h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att432j",
+        "target" : "{fld60h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att359j",
+        "target" : "{fld59h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att345j",
+        "target" : "{fld54h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "{fld57h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att344j",
+        "target" : "{fld55h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att433j",
+        "target" : "{fld61h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att343j",
+        "target" : "{fld52h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att360j",
+        "target" : "{fld58h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role191j$_be_userName",
+        "target" : "{fld53h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role14j$_be_att280j",
+        "target" : "{fld62h}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld62h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld52h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld61h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld57h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld55h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld53h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld58h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld56h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld60h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst13h",
+        "type" : "LIST",
+        "pageId" : "page17h.wr",
+        "dataBinding" : "gsatron$cls52j"
+      },
+      "to" : {
+        "id" : "frm12h",
+        "type" : "FORM",
+        "pageId" : "page17h.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att354j",
+        "target" : "{fld56h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att432j",
+        "target" : "{fld60h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att359j",
+        "target" : "{fld59h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att345j",
+        "target" : "{fld54h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "true",
+        "target" : "{fld57h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att344j",
+        "target" : "{fld55h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att433j",
+        "target" : "{fld61h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att343j",
+        "target" : "{fld52h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att360j",
+        "target" : "{fld58h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role191j$_be_userName",
+        "target" : "{fld53h}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role14j$_be_att280j",
+        "target" : "{fld62h}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld62h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld52h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld61h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld57h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld55h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld53h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld58h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld56h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld60h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst1a",
+        "type" : "LIST",
+        "pageId" : "page21h.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "frm3a",
+        "type" : "FORM",
+        "pageId" : "page21h.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp930j",
+        "target" : "{fld12a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp920j",
+        "target" : "{fld10a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp929j",
+        "target" : "{fld9a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp923j",
+        "target" : "{fld11a}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld11a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst1a",
+        "type" : "LIST",
+        "pageId" : "page21h.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "frm3a",
+        "type" : "FORM",
+        "pageId" : "page21h.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp930j",
+        "target" : "{fld12a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp920j",
+        "target" : "{fld10a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp929j",
+        "target" : "{fld9a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp923j",
+        "target" : "{fld11a}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld11a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

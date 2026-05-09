@@ -1,0 +1,55 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau29e",
+        "type" : "DETAILS",
+        "pageId" : "page11e.wr",
+        "dataBinding" : "TitanoAdminliteServices$ent31e"
+      },
+      "to" : {
+        "id" : "enu14e",
+        "type" : "FORM",
+        "pageId" : "page11e.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att210e",
+        "target" : "{fld83e}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld83e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau29e",
+        "type" : "DETAILS",
+        "pageId" : "page11e.wr",
+        "dataBinding" : "TitanoAdminliteServices$ent31e"
+      },
+      "to" : {
+        "id" : "enu14e",
+        "type" : "FORM",
+        "pageId" : "page11e.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att210e",
+        "target" : "{fld83e}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld83e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

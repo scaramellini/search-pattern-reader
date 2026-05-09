@@ -1,0 +1,147 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu74e",
+        "type" : "FORM",
+        "pageId" : "page119e.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "inu88e",
+        "type" : "LIST",
+        "pageId" : "page119e.wr",
+        "dataBinding" : "TitanoServices$ent53e"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld124e}value",
+        "target" : "acond774e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld123e}value",
+        "target" : "acond772e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld122e}value",
+        "target" : "acond760e"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld123e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld122e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld124e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu75e",
+        "type" : "FORM",
+        "pageId" : "page114e.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "inu89e",
+        "type" : "LIST",
+        "pageId" : "page114e.wr",
+        "dataBinding" : "TitanoServices$ent58e"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld125e}value",
+        "target" : "acond1001e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld126e}value",
+        "target" : "acond12e"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld125e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld126e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu76e",
+        "type" : "FORM",
+        "pageId" : "page120e.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "inu93e",
+        "type" : "LIST",
+        "pageId" : "page120e.wr",
+        "dataBinding" : "TitanoServices$ent54e"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld127e}value",
+        "target" : "acond15e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld128e}value",
+        "target" : "acond18e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld135e}value",
+        "target" : "acond20e"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld128e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld127e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld135e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu70e",
+        "type" : "FORM",
+        "pageId" : "page103e.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "inu73e",
+        "type" : "LIST",
+        "pageId" : "page103e.wr",
+        "dataBinding" : "TitanoServices$ent48e"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld117e}value",
+        "target" : "acond562e"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld117e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

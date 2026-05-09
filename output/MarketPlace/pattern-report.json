@@ -1,0 +1,199 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm2j",
+        "type" : "FORM",
+        "pageId" : "page5w.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst2w",
+        "type" : "LIST",
+        "pageId" : "page5w.wr",
+        "dataBinding" : "MarketPlaceData$cls5"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld2j}value",
+        "target" : "acond1j"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld1j}value._be_att37",
+        "target" : "acond13w"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld3j}value",
+        "target" : "acond2j"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld1j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst5",
+        "type" : "LIST",
+        "pageId" : "page7.wr",
+        "dataBinding" : "MarketPlaceData$cls17"
+      },
+      "to" : {
+        "id" : "frm4w",
+        "type" : "FORM",
+        "pageId" : "page7.wr",
+        "dataBinding" : "MarketPlaceData$cls17"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld11w",
+      "valueAttribute" : "MarketPlaceData$att125",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9w",
+      "valueAttribute" : "MarketPlaceData$att119",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3w",
+      "valueAttribute" : "MarketPlaceData$att121",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7w",
+      "valueAttribute" : "MarketPlaceData$att131",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4w",
+      "valueAttribute" : "MarketPlaceData$att123",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2w",
+      "valueAttribute" : "MarketPlaceData$att122",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5w",
+      "valueAttribute" : "MarketPlaceData$att124",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8w",
+      "valueAttribute" : "MarketPlaceData$att118",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10w",
+      "valueAttribute" : "MarketPlaceData$att120",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst5",
+        "type" : "LIST",
+        "pageId" : "page7.wr",
+        "dataBinding" : "MarketPlaceData$cls17"
+      },
+      "to" : {
+        "id" : "frm4w",
+        "type" : "FORM",
+        "pageId" : "page7.wr",
+        "dataBinding" : "MarketPlaceData$cls17"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld11w",
+      "valueAttribute" : "MarketPlaceData$att125",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9w",
+      "valueAttribute" : "MarketPlaceData$att119",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3w",
+      "valueAttribute" : "MarketPlaceData$att121",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7w",
+      "valueAttribute" : "MarketPlaceData$att131",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4w",
+      "valueAttribute" : "MarketPlaceData$att123",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2w",
+      "valueAttribute" : "MarketPlaceData$att122",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5w",
+      "valueAttribute" : "MarketPlaceData$att124",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8w",
+      "valueAttribute" : "MarketPlaceData$att118",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10w",
+      "valueAttribute" : "MarketPlaceData$att120",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld11w",
+      "valueAttribute" : "MarketPlaceData$att125",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9w",
+      "valueAttribute" : "MarketPlaceData$att119",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3w",
+      "valueAttribute" : "MarketPlaceData$att121",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7w",
+      "valueAttribute" : "MarketPlaceData$att131",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4w",
+      "valueAttribute" : "MarketPlaceData$att123",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2w",
+      "valueAttribute" : "MarketPlaceData$att122",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5w",
+      "valueAttribute" : "MarketPlaceData$att124",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8w",
+      "valueAttribute" : "MarketPlaceData$att118",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10w",
+      "valueAttribute" : "MarketPlaceData$att120",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm4w",
+      "type" : "FORM",
+      "pageId" : "page7.wr",
+      "dataBinding" : "MarketPlaceData$cls17"
+    }
+  } ]
+}

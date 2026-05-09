@@ -1,0 +1,135 @@
+{
+  "patterns" : [ {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu4i",
+        "type" : "LIST",
+        "pageId" : "page89.wr",
+        "dataBinding" : "contabilitaServices$ent47"
+      },
+      "to" : {
+        "id" : "dau47",
+        "type" : "DETAILS",
+        "pageId" : "page89.wr",
+        "dataBinding" : "contabilitaServices$ent47"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att209",
+        "target" : "dau47key._be_att209"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu7i",
+        "type" : "LIST",
+        "pageId" : "page11.wr",
+        "dataBinding" : "contabilitaServices$ent46a"
+      },
+      "to" : {
+        "id" : "dau6",
+        "type" : "DETAILS",
+        "pageId" : "page11.wr",
+        "dataBinding" : "contabilitaServices$ent46a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att197a",
+        "target" : "kcond33._be_att197a"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu7",
+        "type" : "FORM",
+        "pageId" : "page8.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu2",
+        "type" : "LIST",
+        "pageId" : "page8.wr",
+        "dataBinding" : "contabilitaServices$ent3"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld26}value",
+        "target" : "acond2"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{msfld5i}value._be_att135",
+        "target" : "acond8i"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld33s}value",
+        "target" : "acond80s"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld24c}value",
+        "target" : "acond13c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld23c}value",
+        "target" : "acond12c"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld1c}value.0",
+        "target" : "acond14c"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld33s",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld24c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld5i",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld23c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu3i",
+        "type" : "LIST",
+        "pageId" : "page64a.wr",
+        "dataBinding" : "contabilitaServices$ent45"
+      },
+      "to" : {
+        "id" : "dau33",
+        "type" : "DETAILS",
+        "pageId" : "page64a.wr",
+        "dataBinding" : "contabilitaServices$ent45"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att193",
+        "target" : "dau33key._be_att193"
+      } ]
+    } ],
+    "fields" : null
+  } ]
+}

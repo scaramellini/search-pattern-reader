@@ -1,0 +1,467 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm11b",
+        "type" : "FORM",
+        "pageId" : "page11b.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst6b",
+        "type" : "LIST",
+        "pageId" : "page11b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls1l"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld31b}value",
+        "target" : "acond42b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld5b}value._be_cls14l$userName",
+        "target" : "rcond8b._be_userName"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld33b}value",
+        "target" : "acond41b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld55b}value",
+        "target" : "acond43b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld73b}value",
+        "target" : "acond49b"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld73b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld33b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld55b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst4b",
+        "type" : "LIST",
+        "pageId" : "page3b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "to" : {
+        "id" : "frm5b",
+        "type" : "FORM",
+        "pageId" : "page3b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld4b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst4b",
+        "type" : "LIST",
+        "pageId" : "page3b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "to" : {
+        "id" : "frm5b",
+        "type" : "FORM",
+        "pageId" : "page3b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld4b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld12b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att45l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld11b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att43l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld80b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att144l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm32b",
+      "type" : "FORM",
+      "pageId" : "page16b.wr",
+      "dataBinding" : "MSGestioneDerogheQGBE$cls12l"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld60b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att42l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att164l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm26b",
+      "type" : "FORM",
+      "pageId" : "page10b.wr",
+      "dataBinding" : "MSGestioneDerogheQGBE$cls21l"
+    }
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst17b",
+        "type" : "LIST",
+        "pageId" : "page4b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls1"
+      },
+      "to" : {
+        "id" : "dtl2b",
+        "type" : "DETAILS",
+        "pageId" : "page4b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att5",
+        "target" : "acond32b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att167l",
+        "target" : "acond33b"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld37b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm18b",
+      "type" : "FORM",
+      "pageId" : "page6b.wr",
+      "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst10b",
+        "type" : "LIST",
+        "pageId" : "page16b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls12l"
+      },
+      "to" : {
+        "id" : "frm32b",
+        "type" : "FORM",
+        "pageId" : "page16b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls12l"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att43l",
+        "target" : "{sfld11b}presel._be_att87l"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att45l",
+        "target" : "{sfld12b}presel._be_att87l"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att143l",
+        "target" : "kcond10b._be_att143l"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "false",
+        "target" : "prd13b"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld12b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att45l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld11b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att43l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld80b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att144l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld13b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att220l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att33l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att31l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att90l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att153l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld66b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att157l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att88l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att103l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld86b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att206l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld49b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att34l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att32l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld40b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att37l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld34b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att29l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att13l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld58b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att41l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld84b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att91l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld35b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att30l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm10b",
+      "type" : "FORM",
+      "pageId" : "page9b.wr",
+      "dataBinding" : "MSGestioneDerogheQGBE$cls7l"
+    }
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst14b",
+        "type" : "LIST",
+        "pageId" : "page6b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "to" : {
+        "id" : "frm18b",
+        "type" : "FORM",
+        "pageId" : "page6b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld37b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst14b",
+        "type" : "LIST",
+        "pageId" : "page6b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "to" : {
+        "id" : "frm18b",
+        "type" : "FORM",
+        "pageId" : "page6b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld37b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst9b",
+        "type" : "LIST",
+        "pageId" : "page10b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls21l"
+      },
+      "to" : {
+        "id" : "frm26b",
+        "type" : "FORM",
+        "pageId" : "page10b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls21l"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld60b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att42l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att164l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst9b",
+        "type" : "LIST",
+        "pageId" : "page10b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls21l"
+      },
+      "to" : {
+        "id" : "frm26b",
+        "type" : "FORM",
+        "pageId" : "page10b.wr",
+        "dataBinding" : "MSGestioneDerogheQGBE$cls21l"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld60b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att42l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att164l",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld4b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm5b",
+      "type" : "FORM",
+      "pageId" : "page3b.wr",
+      "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
+    }
+  } ]
+}

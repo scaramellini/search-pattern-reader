@@ -1,0 +1,311 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu7q",
+        "type" : "FORM",
+        "pageId" : "page12q.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu7q",
+        "type" : "LIST",
+        "pageId" : "page12q.wr",
+        "dataBinding" : "ManutenzioneParcheggiServices$ent2q"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld7q}value._be_att41",
+        "target" : "acond54q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld2q}value._be_att27",
+        "target" : "acond53q"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu7q",
+        "type" : "FORM",
+        "pageId" : "page12q.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu7q",
+        "type" : "LIST",
+        "pageId" : "page12q.wr",
+        "dataBinding" : "ManutenzioneParcheggiServices$ent2q"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld7q}value._be_att41",
+        "target" : "acond54q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld2q}value._be_att27",
+        "target" : "acond53q"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld7q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu5q",
+        "type" : "FORM",
+        "pageId" : "page8q.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu5q",
+        "type" : "LIST",
+        "pageId" : "page8q.wr",
+        "dataBinding" : "ManutenzioneParcheggiServices$ent10"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld37q}value",
+        "target" : "acond12q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld38q}value",
+        "target" : "acond14q"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld38q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld37q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld9",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att40",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54m",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att44m",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att41",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu12",
+      "type" : "FORM",
+      "pageId" : "page15.wr",
+      "dataBinding" : "ManutenzioneParcheggiServices$ent13"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu1q",
+        "type" : "FORM",
+        "pageId" : "page4q.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu2q",
+        "type" : "LIST",
+        "pageId" : "page4q.wr",
+        "dataBinding" : "ManutenzioneParcheggiServices$ent10"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld16q}value",
+        "target" : "acond9q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld17q}value",
+        "target" : "acond10q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld45q}value",
+        "target" : "acond20q"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld45q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld51q",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att30q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50q",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att29q",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu10q",
+      "type" : "FORM",
+      "pageId" : "page14q.wr",
+      "dataBinding" : "ManutenzioneParcheggiServices$ent4q"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld14m",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att26m",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu6m",
+      "type" : "FORM",
+      "pageId" : "page7m.wr",
+      "dataBinding" : "ManutenzioneParcheggiServices$ent6"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu45",
+        "type" : "FORM",
+        "pageId" : "page43.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu20",
+        "type" : "LIST",
+        "pageId" : "page43.wr",
+        "dataBinding" : "ManutenzioneParcheggiServices$ent2"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld53m}value.0",
+        "target" : "acond26"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld108}value",
+        "target" : "acond46"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld109}value",
+        "target" : "acond40"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld111}value",
+        "target" : "acond37"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld110}value",
+        "target" : "acond43"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld62m}value",
+        "target" : "acond113m"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu45",
+        "type" : "FORM",
+        "pageId" : "page43.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu20",
+        "type" : "LIST",
+        "pageId" : "page43.wr",
+        "dataBinding" : "ManutenzioneParcheggiServices$ent2"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld53m}value.0",
+        "target" : "acond26"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld108}value",
+        "target" : "acond46"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld109}value",
+        "target" : "acond40"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld111}value",
+        "target" : "acond37"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld110}value",
+        "target" : "acond43"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld62m}value",
+        "target" : "acond113m"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld62m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld108",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld111",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld53m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld109",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld110",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld81",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att6",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld82",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att1",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu22",
+      "type" : "FORM",
+      "pageId" : "page24.wr",
+      "dataBinding" : "ManutenzioneParcheggiServices$ent1"
+    }
+  } ]
+}

@@ -1,0 +1,191 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu11e",
+        "type" : "FORM",
+        "pageId" : "page29e.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu16e",
+        "type" : "LIST",
+        "pageId" : "page29e.wr",
+        "dataBinding" : "DashboardServices$ent41e"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld6e}value",
+        "target" : "acond114e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld15e}value",
+        "target" : "acond115e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld18e}value",
+        "target" : "acond116e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld18e}value.0",
+        "target" : "acond117e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld16e}value.0",
+        "target" : "rcond89e._be_att28o"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld17e}value._be_att27o",
+        "target" : "rcond88e._be_att27o"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu11e",
+        "type" : "FORM",
+        "pageId" : "page29e.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu16e",
+        "type" : "LIST",
+        "pageId" : "page29e.wr",
+        "dataBinding" : "DashboardServices$ent41e"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld6e}value",
+        "target" : "acond114e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld15e}value",
+        "target" : "acond115e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld18e}value",
+        "target" : "acond116e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld18e}value.0",
+        "target" : "acond117e"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld16e}value.0",
+        "target" : "rcond89e._be_att28o"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld17e}value._be_att27o",
+        "target" : "rcond88e._be_att27o"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld18e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld16e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld17e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld28e",
+      "valueAttribute" : "DashboardServices$att115e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1c",
+      "valueAttribute" : "DashboardServices$att8c",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29e",
+      "valueAttribute" : "DashboardServices$att116e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld23e",
+      "valueAttribute" : "DashboardServices$att48e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld24e",
+      "valueAttribute" : "DashboardServices$att49e",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu15e",
+      "type" : "FORM",
+      "pageId" : "page18e.wr",
+      "dataBinding" : "DashboardServices$ent6e"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld21e",
+      "valueAttribute" : "DashboardServices$att31o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39e",
+      "valueAttribute" : "DashboardServices$att7e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld40e",
+      "valueAttribute" : "DashboardServices$att8e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld41e",
+      "valueAttribute" : "DashboardServices$att50e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld67e",
+      "valueAttribute" : "DashboardServices$att360e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld88e",
+      "valueAttribute" : "DashboardServices$att355e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20e",
+      "valueAttribute" : "DashboardServices$att30o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld91e",
+      "valueAttribute" : "DashboardServices$att410e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44e",
+      "valueAttribute" : "DashboardServices$att323e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8e",
+      "valueAttribute" : "DashboardServices$att127e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld85e",
+      "valueAttribute" : "DashboardServices$att351e",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu16e",
+      "type" : "FORM",
+      "pageId" : "page19e.wr",
+      "dataBinding" : "DashboardServices$ent5o"
+    }
+  } ]
+}

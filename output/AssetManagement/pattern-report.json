@@ -1,0 +1,153 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld118x",
+      "valueAttribute" : "AssetManagementServices$att35",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld120x",
+      "valueAttribute" : "AssetManagementServices$att37",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld117x",
+      "valueAttribute" : "AssetManagementServices$att34",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld119x",
+      "valueAttribute" : "AssetManagementServices$att36",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu32x",
+      "type" : "FORM",
+      "pageId" : "page36x.wr",
+      "dataBinding" : "AssetManagementServices$ent6"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld30x",
+      "valueAttribute" : "AssetManagementServices$att5",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27x",
+      "valueAttribute" : "AssetManagementServices$att6",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3x",
+      "type" : "FORM",
+      "pageId" : "page9x.wr",
+      "dataBinding" : "AssetManagementServices$ent1"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu3x",
+        "type" : "FORM",
+        "pageId" : "page9x.wr",
+        "dataBinding" : "AssetManagementServices$ent1"
+      },
+      "to" : {
+        "id" : "pwu4x",
+        "type" : "LIST",
+        "pageId" : "page9x.wr",
+        "dataBinding" : "AssetManagementServices$ent1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld27x}value",
+        "target" : "acond22x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld30x}value",
+        "target" : "acond31x"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu3x",
+        "type" : "FORM",
+        "pageId" : "page9x.wr",
+        "dataBinding" : "AssetManagementServices$ent1"
+      },
+      "to" : {
+        "id" : "pwu4x",
+        "type" : "LIST",
+        "pageId" : "page9x.wr",
+        "dataBinding" : "AssetManagementServices$ent1"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld27x}value",
+        "target" : "acond22x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld30x}value",
+        "target" : "acond31x"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld30x",
+      "valueAttribute" : "AssetManagementServices$att5",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27x",
+      "valueAttribute" : "AssetManagementServices$att6",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld18x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "AssetManagementServices$role1x"
+    }, {
+      "fieldId" : "fld62x",
+      "valueAttribute" : "AssetManagementServices$att29x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld126x",
+      "valueAttribute" : "AssetManagementServices$att45",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld125x",
+      "valueAttribute" : "AssetManagementServices$att44",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld123x",
+      "valueAttribute" : "AssetManagementServices$att42",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld124x",
+      "valueAttribute" : "AssetManagementServices$att43",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld129x",
+      "valueAttribute" : "AssetManagementServices$att48",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld122x",
+      "valueAttribute" : "AssetManagementServices$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld128x",
+      "valueAttribute" : "AssetManagementServices$att47",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld127x",
+      "valueAttribute" : "AssetManagementServices$att46",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu34x",
+      "type" : "FORM",
+      "pageId" : "page37x.wr",
+      "dataBinding" : "AssetManagementServices$ent7"
+    }
+  } ]
+}

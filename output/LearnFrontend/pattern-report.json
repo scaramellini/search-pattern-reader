@@ -1,0 +1,73 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld5c",
+      "valueAttribute" : "LearnServices$att2",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm2c",
+      "type" : "FORM",
+      "pageId" : "page16z.wr",
+      "dataBinding" : "LearnServices$cls9q"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "frm5",
+        "type" : "FORM",
+        "pageId" : "page15z.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "lst8z",
+        "type" : "LIST",
+        "pageId" : "page15z.wr",
+        "dataBinding" : "LearnServices$cls3q"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{sfld11}value._be_att107q",
+        "target" : "rcond13._be_att107q"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld13}value",
+        "target" : "acond23"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld13}value",
+        "target" : "acond14c"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld13",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld11",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst4",
+        "type" : "LIST",
+        "pageId" : "page14z.wr",
+        "dataBinding" : "LearnServices$cls3q"
+      },
+      "to" : {
+        "id" : "dtl2z",
+        "type" : "DETAILS",
+        "pageId" : "page14z.wr",
+        "dataBinding" : "LearnServices$cls3q"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  } ]
+}

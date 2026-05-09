@@ -1,0 +1,713 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multilevel Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu3g",
+        "type" : "LIST",
+        "pageId" : "page2g.wr",
+        "dataBinding" : "sportelloServices$ent1g"
+      },
+      "to" : {
+        "id" : "pwu4g",
+        "type" : "LIST",
+        "pageId" : "page2g.wr",
+        "dataBinding" : "sportelloServices$ent6g"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4g",
+        "target" : "rcond1g._be_att4g"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld8n",
+      "valueAttribute" : "sportelloServices$att5n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1n",
+      "valueAttribute" : "sportelloServices$att7n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5n",
+      "valueAttribute" : "sportelloServices$att2n",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu5n",
+      "type" : "FORM",
+      "pageId" : "page5n.wr",
+      "dataBinding" : "sportelloServices$ent2n"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu5n",
+        "type" : "FORM",
+        "pageId" : "page5n.wr",
+        "dataBinding" : "sportelloServices$ent2n"
+      },
+      "to" : {
+        "id" : "pwu3n",
+        "type" : "LIST",
+        "pageId" : "page5n.wr",
+        "dataBinding" : "sportelloServices$ent2n"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld8n}value",
+        "target" : "acond10n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld5n}value",
+        "target" : "kcond6n._be_att2n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld1n}value.0",
+        "target" : "acond9n"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu5n",
+        "type" : "FORM",
+        "pageId" : "page5n.wr",
+        "dataBinding" : "sportelloServices$ent2n"
+      },
+      "to" : {
+        "id" : "pwu3n",
+        "type" : "LIST",
+        "pageId" : "page5n.wr",
+        "dataBinding" : "sportelloServices$ent2n"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld8n}value",
+        "target" : "acond10n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld5n}value",
+        "target" : "kcond6n._be_att2n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld1n}value.0",
+        "target" : "acond9n"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld8n",
+      "valueAttribute" : "sportelloServices$att5n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1n",
+      "valueAttribute" : "sportelloServices$att7n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5n",
+      "valueAttribute" : "sportelloServices$att2n",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau43t",
+        "type" : "DETAILS",
+        "pageId" : "page25t.wr",
+        "dataBinding" : "sportelloServices$ent2o"
+      },
+      "to" : {
+        "id" : "enu14t",
+        "type" : "FORM",
+        "pageId" : "page25t.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att39e",
+        "target" : "{fld23t}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld23t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau43t",
+        "type" : "DETAILS",
+        "pageId" : "page25t.wr",
+        "dataBinding" : "sportelloServices$ent2o"
+      },
+      "to" : {
+        "id" : "enu14t",
+        "type" : "FORM",
+        "pageId" : "page25t.wr",
+        "dataBinding" : null
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att39e",
+        "target" : "{fld23t}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld23t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multilevel Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu27t",
+        "type" : "LIST",
+        "pageId" : "page27t.wr",
+        "dataBinding" : "sportelloServices$ent14t"
+      },
+      "to" : {
+        "id" : "pwu28t",
+        "type" : "LIST",
+        "pageId" : "page27t.wr",
+        "dataBinding" : "sportelloServices$ent30t"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att54t",
+        "target" : "rcond16t._be_att54t"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld6af",
+      "valueAttribute" : "sportelloServices$att9ai",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2af",
+      "valueAttribute" : "sportelloServices$att8ai",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5af",
+      "valueAttribute" : "sportelloServices$att3af",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1af",
+      "valueAttribute" : "sportelloServices$att3ai",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1af",
+      "valueAttribute" : "sportelloServices$att1af",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3af",
+      "valueAttribute" : "sportelloServices$att9ai",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu1af",
+      "type" : "FORM",
+      "pageId" : "page1af.wr",
+      "dataBinding" : "sportelloServices$ent1ai"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld7n",
+      "valueAttribute" : "sportelloServices$att9n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6n",
+      "valueAttribute" : "sportelloServices$att4n",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3n",
+      "type" : "FORM",
+      "pageId" : "page3n.wr",
+      "dataBinding" : "sportelloServices$ent1n"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu3n",
+        "type" : "FORM",
+        "pageId" : "page3n.wr",
+        "dataBinding" : "sportelloServices$ent1n"
+      },
+      "to" : {
+        "id" : "pwu2n",
+        "type" : "LIST",
+        "pageId" : "page3n.wr",
+        "dataBinding" : "sportelloServices$ent1n"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld7n}value",
+        "target" : "acond5n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld6n}value",
+        "target" : "kcond3n._be_att4n"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu3n",
+        "type" : "FORM",
+        "pageId" : "page3n.wr",
+        "dataBinding" : "sportelloServices$ent1n"
+      },
+      "to" : {
+        "id" : "pwu2n",
+        "type" : "LIST",
+        "pageId" : "page3n.wr",
+        "dataBinding" : "sportelloServices$ent1n"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld7n}value",
+        "target" : "acond5n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld6n}value",
+        "target" : "kcond3n._be_att4n"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld7n",
+      "valueAttribute" : "sportelloServices$att9n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6n",
+      "valueAttribute" : "sportelloServices$att4n",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu1v",
+        "type" : "FORM",
+        "pageId" : "page3v.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1v",
+        "type" : "LIST",
+        "pageId" : "page3v.wr",
+        "dataBinding" : "sportelloServices$ent7v"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld10v}value",
+        "target" : "acond11v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld2v}value",
+        "target" : "acond10v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld5v}value",
+        "target" : "acond9v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld6v}value",
+        "target" : "acond8v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld4v}value",
+        "target" : "acond12v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld3v}value",
+        "target" : "acond13v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld1v}value.0",
+        "target" : "acond15v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld3v}value.0",
+        "target" : "acond17v"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu1v",
+        "type" : "FORM",
+        "pageId" : "page3v.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu1v",
+        "type" : "LIST",
+        "pageId" : "page3v.wr",
+        "dataBinding" : "sportelloServices$ent7v"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld10v}value",
+        "target" : "acond11v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld2v}value",
+        "target" : "acond10v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld5v}value",
+        "target" : "acond9v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld6v}value",
+        "target" : "acond8v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld4v}value",
+        "target" : "acond12v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld3v}value",
+        "target" : "acond13v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld1v}value.0",
+        "target" : "acond15v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld3v}value.0",
+        "target" : "acond17v"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld3v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu14ar",
+        "type" : "FORM",
+        "pageId" : "page9ar.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu14ar",
+        "type" : "LIST",
+        "pageId" : "page9ar.wr",
+        "dataBinding" : "sportelloServices$ent12a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld39ar}value",
+        "target" : "acond67ar"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld40ar}value",
+        "target" : "acond68ar"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld19ar}value._be_ent9q$userOID",
+        "target" : "rcond17ar._be_ent9q$userOID"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld20ar}value._be_att126w",
+        "target" : "acond75ar"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld20ar",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39ar",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld19ar",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld40ar",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu14n",
+        "type" : "FORM",
+        "pageId" : "page16n.wr",
+        "dataBinding" : "sportelloServices$ent3n"
+      },
+      "to" : {
+        "id" : "pwu9n",
+        "type" : "LIST",
+        "pageId" : "page16n.wr",
+        "dataBinding" : "sportelloServices$ent3n"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld56n}value",
+        "target" : "acond29n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld10n}value._be_att170a",
+        "target" : "acond35n"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu14n",
+        "type" : "FORM",
+        "pageId" : "page16n.wr",
+        "dataBinding" : "sportelloServices$ent3n"
+      },
+      "to" : {
+        "id" : "pwu9n",
+        "type" : "LIST",
+        "pageId" : "page16n.wr",
+        "dataBinding" : "sportelloServices$ent3n"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld56n}value",
+        "target" : "acond29n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld10n}value._be_att170a",
+        "target" : "acond35n"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld56n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu8am",
+        "type" : "LIST",
+        "pageId" : "page31am.wr",
+        "dataBinding" : "sportelloServices$ent14am"
+      },
+      "to" : {
+        "id" : "dau12am",
+        "type" : "DETAILS",
+        "pageId" : "page31am.wr",
+        "dataBinding" : "sportelloServices$ent14am"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att156am",
+        "target" : "kcond57am._be_att156am"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld24n",
+      "valueAttribute" : "sportelloServices$att41a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6n",
+      "valueAttribute" : "sportelloServices$att45a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld25n",
+      "valueAttribute" : "sportelloServices$att43a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu7n",
+      "type" : "FORM",
+      "pageId" : "page9n.wr",
+      "dataBinding" : "sportelloServices$ent6a"
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu7n",
+        "type" : "FORM",
+        "pageId" : "page9n.wr",
+        "dataBinding" : "sportelloServices$ent6a"
+      },
+      "to" : {
+        "id" : "pwu5n",
+        "type" : "LIST",
+        "pageId" : "page9n.wr",
+        "dataBinding" : "sportelloServices$ent6a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld25n}value",
+        "target" : "acond22n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld24n}value",
+        "target" : "acond19n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld6n}value._be_att170a",
+        "target" : "rcond8n._be_att170a"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu7n",
+        "type" : "FORM",
+        "pageId" : "page9n.wr",
+        "dataBinding" : "sportelloServices$ent6a"
+      },
+      "to" : {
+        "id" : "pwu5n",
+        "type" : "LIST",
+        "pageId" : "page9n.wr",
+        "dataBinding" : "sportelloServices$ent6a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld25n}value",
+        "target" : "acond22n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{fld24n}value",
+        "target" : "acond19n"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld6n}value._be_att170a",
+        "target" : "rcond8n._be_att170a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld24n",
+      "valueAttribute" : "sportelloServices$att41a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6n",
+      "valueAttribute" : "sportelloServices$att45a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld25n",
+      "valueAttribute" : "sportelloServices$att43a",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Basic Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu16a",
+        "type" : "FORM",
+        "pageId" : "page19a.wr",
+        "dataBinding" : null
+      },
+      "to" : {
+        "id" : "pwu50a",
+        "type" : "LIST",
+        "pageId" : "page19a.wr",
+        "dataBinding" : "sportelloServices$ent2a"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld156a}value",
+        "target" : "acond228a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld156a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu9am",
+        "type" : "LIST",
+        "pageId" : "page32am.wr",
+        "dataBinding" : "sportelloServices$ent16am"
+      },
+      "to" : {
+        "id" : "dau13am",
+        "type" : "DETAILS",
+        "pageId" : "page32am.wr",
+        "dataBinding" : "sportelloServices$ent16am"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att214am",
+        "target" : "kcond59am._be_att214am"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multilevel Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "pwu1aw",
+        "type" : "LIST",
+        "pageId" : "page1aw.wr",
+        "dataBinding" : "sportelloServices$ent1aw"
+      },
+      "to" : {
+        "id" : "pwu2aw",
+        "type" : "LIST",
+        "pageId" : "page1aw.wr",
+        "dataBinding" : "sportelloServices$ent2aw"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1aw",
+        "target" : "rcond1aw._be_att1aw"
+      } ]
+    } ],
+    "fields" : null
+  } ]
+}

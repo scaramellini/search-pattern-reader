@@ -1,0 +1,123 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld81",
+      "valueAttribute" : "zelServices$att63",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld82",
+      "valueAttribute" : "zelServices$att64",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld98",
+      "valueAttribute" : "zelServices$att61",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld80",
+      "valueAttribute" : "zelServices$att62",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu38",
+      "type" : "FORM",
+      "pageId" : "page103.wr",
+      "dataBinding" : "zelServices$ent9"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld27",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "zelServices$rel82"
+    }, {
+      "fieldId" : "fld100",
+      "valueAttribute" : "zelServices$att24",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu37",
+      "type" : "FORM",
+      "pageId" : "page106.wr",
+      "dataBinding" : "zelServices$ent13"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld21",
+      "valueAttribute" : "zelServices$att115",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20",
+      "valueAttribute" : "zelServices$att116",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu6",
+      "type" : "FORM",
+      "pageId" : "page13.wr",
+      "dataBinding" : "zelServices$ent20"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld3",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "zelServices$rel107"
+    }, {
+      "fieldId" : "fld71",
+      "valueAttribute" : "zelServices$att2",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu25",
+      "type" : "FORM",
+      "pageId" : "page46.wr",
+      "dataBinding" : "zelServices$ent1"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld2",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "zelServices$rel107"
+    }, {
+      "fieldId" : "fld70",
+      "valueAttribute" : "zelServices$att2",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu23",
+      "type" : "FORM",
+      "pageId" : "page35.wr",
+      "dataBinding" : "zelServices$ent1"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld67",
+      "valueAttribute" : "zelServices$att135",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld68",
+      "valueAttribute" : "zelServices$att136",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld69",
+      "valueAttribute" : "zelServices$att151",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu22",
+      "type" : "FORM",
+      "pageId" : "page31.wr",
+      "dataBinding" : "zelServices$ent22"
+    }
+  } ]
+}

@@ -1,0 +1,265 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preloaded Fields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl9x",
+        "type" : "DETAILS",
+        "pageId" : "page1x.wr",
+        "dataBinding" : "BioscalinDataService$cls1"
+      },
+      "to" : {
+        "id" : "frm1x",
+        "type" : "FORM",
+        "pageId" : "page1x.wr",
+        "dataBinding" : "BioscalinDataService$cls4"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att19s",
+        "target" : "{fld33x}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld33x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1x",
+      "valueAttribute" : "BioscalinDataService$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3x",
+      "valueAttribute" : "BioscalinDataService$att15",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4x",
+      "valueAttribute" : "BioscalinDataService$att14",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5x",
+      "valueAttribute" : "BioscalinDataService$att13",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2x",
+      "valueAttribute" : "BioscalinDataService$att27",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl9x",
+        "type" : "DETAILS",
+        "pageId" : "page1x.wr",
+        "dataBinding" : "BioscalinDataService$cls1"
+      },
+      "to" : {
+        "id" : "frm1x",
+        "type" : "FORM",
+        "pageId" : "page1x.wr",
+        "dataBinding" : "BioscalinDataService$cls4"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att19s",
+        "target" : "{fld33x}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld33x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1x",
+      "valueAttribute" : "BioscalinDataService$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3x",
+      "valueAttribute" : "BioscalinDataService$att15",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4x",
+      "valueAttribute" : "BioscalinDataService$att14",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5x",
+      "valueAttribute" : "BioscalinDataService$att13",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2x",
+      "valueAttribute" : "BioscalinDataService$att27",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld27x",
+      "valueAttribute" : "BioscalinDataService$att25",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld28x",
+      "valueAttribute" : "BioscalinDataService$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26x",
+      "valueAttribute" : "BioscalinDataService$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld9x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BioscalinDataService$role7"
+    }, {
+      "fieldId" : "fld25x",
+      "valueAttribute" : "BioscalinDataService$att26",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm7x",
+      "type" : "FORM",
+      "pageId" : "page5.wr",
+      "dataBinding" : "BioscalinDataService$cls5"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst1x",
+        "type" : "LIST",
+        "pageId" : "page2x.wr",
+        "dataBinding" : "BioscalinDataService$cls5"
+      },
+      "to" : {
+        "id" : "frm8x",
+        "type" : "FORM",
+        "pageId" : "page2x.wr",
+        "dataBinding" : "BioscalinDataService$cls5"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att22",
+        "target" : "kcond9x._be_att22"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role7$_be_att12",
+        "target" : "{sfld10x}presel._be_att12"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld29x",
+      "valueAttribute" : "BioscalinDataService$att26",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31x",
+      "valueAttribute" : "BioscalinDataService$att25",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32x",
+      "valueAttribute" : "BioscalinDataService$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BioscalinDataService$role7"
+    }, {
+      "fieldId" : "fld30x",
+      "valueAttribute" : "BioscalinDataService$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld29x",
+      "valueAttribute" : "BioscalinDataService$att26",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31x",
+      "valueAttribute" : "BioscalinDataService$att25",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32x",
+      "valueAttribute" : "BioscalinDataService$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BioscalinDataService$role7"
+    }, {
+      "fieldId" : "fld30x",
+      "valueAttribute" : "BioscalinDataService$att24",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm8x",
+      "type" : "FORM",
+      "pageId" : "page2x.wr",
+      "dataBinding" : "BioscalinDataService$cls5"
+    }
+  }, {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl1x",
+        "type" : "DETAILS",
+        "pageId" : "page2x.wr",
+        "dataBinding" : "BioscalinDataService$cls4"
+      },
+      "to" : {
+        "id" : "frm8x",
+        "type" : "FORM",
+        "pageId" : "page2x.wr",
+        "dataBinding" : "BioscalinDataService$cls5"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "$$NULL$$",
+        "target" : "kcond9x._be_att22"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att12",
+        "target" : "{sfld10x}presel._be_att12"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld29x",
+      "valueAttribute" : "BioscalinDataService$att26",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31x",
+      "valueAttribute" : "BioscalinDataService$att25",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32x",
+      "valueAttribute" : "BioscalinDataService$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "BioscalinDataService$role7"
+    }, {
+      "fieldId" : "fld30x",
+      "valueAttribute" : "BioscalinDataService$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Master Detail Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "lst2x",
+        "type" : "LIST",
+        "pageId" : "page5.wr",
+        "dataBinding" : "BioscalinDataService$cls5"
+      },
+      "to" : {
+        "id" : "dtl7x",
+        "type" : "DETAILS",
+        "pageId" : "page5.wr",
+        "dataBinding" : "BioscalinDataService$cls5"
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : null
+  } ]
+}

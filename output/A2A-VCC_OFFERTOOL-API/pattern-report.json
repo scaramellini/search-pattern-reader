@@ -1,0 +1,43 @@
+{
+  "patterns" : [ {
+    "patternType" : "Preassigned SelectionFields Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau1ai",
+        "type" : "DETAILS",
+        "pageId" : "page2ai.wr",
+        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x"
+      },
+      "to" : {
+        "id" : "enu1ai",
+        "type" : "FORM",
+        "pageId" : "page2ai.wr",
+        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x"
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att24x",
+        "target" : "kcond1._be_att24x"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld1ai",
+      "valueAttribute" : "A2AVCCOFFERTOOLAPIServices$att56x",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld1ai",
+      "valueAttribute" : "A2AVCCOFFERTOOLAPIServices$att56x",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu1ai",
+      "type" : "FORM",
+      "pageId" : "page2ai.wr",
+      "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x"
+    }
+  } ]
+}

@@ -1,0 +1,39 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld20j",
+      "valueAttribute" : "gpackServices$att27j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19j",
+      "valueAttribute" : "gpackServices$att28j",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu10j",
+      "type" : "FORM",
+      "pageId" : "page16j.wr",
+      "dataBinding" : "gpackServices$ent2j"
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld16j",
+      "valueAttribute" : "gpackServices$att25j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15j",
+      "valueAttribute" : "gpackServices$att29j",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu9j",
+      "type" : "FORM",
+      "pageId" : "page15j.wr",
+      "dataBinding" : "gpackServices$ent1j"
+    }
+  } ]
+}
