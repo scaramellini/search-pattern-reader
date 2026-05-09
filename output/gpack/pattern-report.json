@@ -3,12 +3,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld20j",
-      "valueAttribute" : "gpackServices$att27j",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld19j",
       "valueAttribute" : "gpackServices$att28j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20j",
+      "valueAttribute" : "gpackServices$att27j",
       "valueAssociationRole" : null
     } ],
     "component" : {

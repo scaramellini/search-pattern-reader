@@ -91,27 +91,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld12k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld9k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld7k",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld11k",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld6k",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld10k",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld8k",
+      "fieldId" : "fld14k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -119,7 +107,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld12k",
+      "fieldId" : "sfld6k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -127,31 +119,21 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld14k",
+      "fieldId" : "sfld7k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Basic Search Pattern",
     "flows" : [ {
-      "from" : {
-        "id" : "enu18i",
-        "type" : "FORM",
-        "pageId" : "page1i.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu1i",
-        "type" : "LIST",
-        "pageId" : "page1i.wr",
-        "dataBinding" : "EventOmetersBOServices$ent5"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld37i}value",
-        "target" : "acond1i"
-      } ]
-    }, {
       "from" : {
         "id" : "enu18i",
         "type" : "FORM",
@@ -183,12 +165,12 @@
       "valueAttribute" : "EventOmetersBOServices$att22z",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld3z",
-      "valueAttribute" : "EventOmetersBOServices$att23z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld4z",
       "valueAttribute" : "EventOmetersBOServices$att24z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3z",
+      "valueAttribute" : "EventOmetersBOServices$att23z",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -265,15 +247,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld43u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld42u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld44u",
+      "fieldId" : "fld45u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -281,11 +255,19 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld45u",
+      "fieldId" : "fld42u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld32u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -293,16 +275,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld85z",
-      "valueAttribute" : "EventOmetersBOServices$att20z",
+      "fieldId" : "fld83z",
+      "valueAttribute" : "EventOmetersBOServices$att11z",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld84z",
       "valueAttribute" : "EventOmetersBOServices$att14z",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld83z",
-      "valueAttribute" : "EventOmetersBOServices$att11z",
+      "fieldId" : "fld85z",
+      "valueAttribute" : "EventOmetersBOServices$att20z",
       "valueAssociationRole" : null
     } ],
     "component" : {

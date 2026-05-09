@@ -310,40 +310,6 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dtl1",
-        "type" : "DETAILS",
-        "pageId" : "page8.wr",
-        "dataBinding" : "StarhotelsDS$cls2"
-      },
-      "to" : {
-        "id" : "frm6",
-        "type" : "FORM",
-        "pageId" : "page8.wr",
-        "dataBinding" : "StarhotelsDS$cls5"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld55",
-      "valueAttribute" : "StarhotelsDS$att54",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld9g",
-      "valueAttribute" : "StarhotelsDS$att21k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld2g",
-      "valueAttribute" : "StarhotelsDS$att18k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld54",
-      "valueAttribute" : "StarhotelsDS$att53",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {

@@ -31,43 +31,13 @@
         "source" : "{sfld16}value.0",
         "target" : "acond78"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu24",
-        "type" : "FORM",
-        "pageId" : "page23.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu16",
-        "type" : "LIST",
-        "pageId" : "page23.wr",
-        "dataBinding" : "ManagementOSDMServices$User"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{sfld15}value._be_roleOID",
-        "target" : "rcond16._be_roleOID"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld88}value",
-        "target" : "acond77"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld86}value",
-        "target" : "acond74"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld16}value.0",
-        "target" : "acond78"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld16",
+      "fieldId" : "fld86",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld86",
+      "fieldId" : "sfld16",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -91,24 +61,12 @@
       "valueAttribute" : "ManagementOSDMServices$email",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld80",
-      "valueAttribute" : "ManagementOSDMServices$userName",
+      "fieldId" : "fld84",
+      "valueAttribute" : "ManagementOSDMServices$att14k",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld81",
-      "valueAttribute" : "ManagementOSDMServices$att25a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "msfld5s",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "ManagementOSDMServices$User2Role"
     }, {
       "fieldId" : "fld82",
       "valueAttribute" : "ManagementOSDMServices$att26a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld84",
-      "valueAttribute" : "ManagementOSDMServices$att14k",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld14",
@@ -117,6 +75,18 @@
     }, {
       "fieldId" : "fld85",
       "valueAttribute" : "ManagementOSDMServices$att16k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld5s",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "ManagementOSDMServices$User2Role"
+    }, {
+      "fieldId" : "fld81",
+      "valueAttribute" : "ManagementOSDMServices$att25a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld80",
+      "valueAttribute" : "ManagementOSDMServices$userName",
       "valueAssociationRole" : null
     } ],
     "component" : {

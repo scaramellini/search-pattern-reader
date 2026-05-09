@@ -3,20 +3,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld10",
-      "valueAttribute" : "WebOrderData$att21",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld7",
       "valueAttribute" : "WebOrderData$att15",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6",
+      "valueAttribute" : "WebOrderData$att16",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld1",
       "valueAttribute" : null,
       "valueAssociationRole" : "WebOrderData$role25"
     }, {
-      "fieldId" : "fld6",
-      "valueAttribute" : "WebOrderData$att16",
+      "fieldId" : "fld10",
+      "valueAttribute" : "WebOrderData$att21",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -67,15 +67,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld11u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld14u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld16u",
+      "fieldId" : "fld18u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -83,11 +75,19 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld18u",
+      "fieldId" : "fld14u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld13u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

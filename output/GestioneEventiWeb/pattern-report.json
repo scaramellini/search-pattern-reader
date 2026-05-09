@@ -1,39 +1,5 @@
 {
   "patterns" : [ {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "inu1",
-        "type" : "LIST",
-        "pageId" : "page1.wr",
-        "dataBinding" : "GestioneEventiWebServices$User"
-      },
-      "to" : {
-        "id" : "enu1",
-        "type" : "FORM",
-        "pageId" : "page1.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_userName",
-        "target" : "{fld1}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_password",
-        "target" : "{fld2}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld1",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld2",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -59,11 +25,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld1",
+      "fieldId" : "fld2",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld2",
+      "fieldId" : "fld1",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

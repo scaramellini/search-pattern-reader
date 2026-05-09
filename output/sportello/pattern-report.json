@@ -25,12 +25,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld8n",
-      "valueAttribute" : "sportelloServices$att5n",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld1n",
       "valueAttribute" : "sportelloServices$att7n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8n",
+      "valueAttribute" : "sportelloServices$att5n",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld5n",
@@ -71,40 +71,14 @@
         "source" : "{sfld1n}value.0",
         "target" : "acond9n"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu5n",
-        "type" : "FORM",
-        "pageId" : "page5n.wr",
-        "dataBinding" : "sportelloServices$ent2n"
-      },
-      "to" : {
-        "id" : "pwu3n",
-        "type" : "LIST",
-        "pageId" : "page5n.wr",
-        "dataBinding" : "sportelloServices$ent2n"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld8n}value",
-        "target" : "acond10n"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld5n}value",
-        "target" : "kcond6n._be_att2n"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld1n}value.0",
-        "target" : "acond9n"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld8n",
-      "valueAttribute" : "sportelloServices$att5n",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld1n",
       "valueAttribute" : "sportelloServices$att7n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8n",
+      "valueAttribute" : "sportelloServices$att5n",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld5n",
@@ -193,20 +167,20 @@
       "valueAttribute" : "sportelloServices$att9ai",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld2af",
-      "valueAttribute" : "sportelloServices$att8ai",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld5af",
       "valueAttribute" : "sportelloServices$att3af",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld1af",
-      "valueAttribute" : "sportelloServices$att3ai",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld1af",
       "valueAttribute" : "sportelloServices$att1af",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2af",
+      "valueAttribute" : "sportelloServices$att8ai",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1af",
+      "valueAttribute" : "sportelloServices$att3ai",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld3af",
@@ -223,12 +197,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld7n",
-      "valueAttribute" : "sportelloServices$att9n",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld6n",
       "valueAttribute" : "sportelloServices$att4n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7n",
+      "valueAttribute" : "sportelloServices$att9n",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -261,36 +235,14 @@
         "source" : "{fld6n}value",
         "target" : "kcond3n._be_att4n"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu3n",
-        "type" : "FORM",
-        "pageId" : "page3n.wr",
-        "dataBinding" : "sportelloServices$ent1n"
-      },
-      "to" : {
-        "id" : "pwu2n",
-        "type" : "LIST",
-        "pageId" : "page3n.wr",
-        "dataBinding" : "sportelloServices$ent1n"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld7n}value",
-        "target" : "acond5n"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld6n}value",
-        "target" : "kcond3n._be_att4n"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld7n",
-      "valueAttribute" : "sportelloServices$att9n",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld6n",
       "valueAttribute" : "sportelloServices$att4n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7n",
+      "valueAttribute" : "sportelloServices$att9n",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -341,67 +293,9 @@
         "source" : "{sfld3v}value.0",
         "target" : "acond17v"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu1v",
-        "type" : "FORM",
-        "pageId" : "page3v.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu1v",
-        "type" : "LIST",
-        "pageId" : "page3v.wr",
-        "dataBinding" : "sportelloServices$ent7v"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld10v}value",
-        "target" : "acond11v"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld2v}value",
-        "target" : "acond10v"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld5v}value",
-        "target" : "acond9v"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld6v}value",
-        "target" : "acond8v"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld4v}value",
-        "target" : "acond12v"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld3v}value",
-        "target" : "acond13v"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld1v}value.0",
-        "target" : "acond15v"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld3v}value.0",
-        "target" : "acond17v"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld3v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld5v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld1v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld3v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -409,15 +303,27 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld10v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld4v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld3v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld6v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -459,10 +365,6 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld39ar",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld19ar",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -470,32 +372,14 @@
       "fieldId" : "fld40ar",
       "valueAttribute" : null,
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39ar",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
-      "from" : {
-        "id" : "enu14n",
-        "type" : "FORM",
-        "pageId" : "page16n.wr",
-        "dataBinding" : "sportelloServices$ent3n"
-      },
-      "to" : {
-        "id" : "pwu9n",
-        "type" : "LIST",
-        "pageId" : "page16n.wr",
-        "dataBinding" : "sportelloServices$ent3n"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld56n}value",
-        "target" : "acond29n"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld10n}value._be_att170a",
-        "target" : "acond35n"
-      } ]
-    }, {
       "from" : {
         "id" : "enu14n",
         "type" : "FORM",
@@ -557,12 +441,12 @@
       "valueAttribute" : "sportelloServices$att41a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld6n",
-      "valueAttribute" : "sportelloServices$att45a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld25n",
       "valueAttribute" : "sportelloServices$att43a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6n",
+      "valueAttribute" : "sportelloServices$att45a",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -599,44 +483,18 @@
         "source" : "{sfld6n}value._be_att170a",
         "target" : "rcond8n._be_att170a"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu7n",
-        "type" : "FORM",
-        "pageId" : "page9n.wr",
-        "dataBinding" : "sportelloServices$ent6a"
-      },
-      "to" : {
-        "id" : "pwu5n",
-        "type" : "LIST",
-        "pageId" : "page9n.wr",
-        "dataBinding" : "sportelloServices$ent6a"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld25n}value",
-        "target" : "acond22n"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld24n}value",
-        "target" : "acond19n"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld6n}value._be_att170a",
-        "target" : "rcond8n._be_att170a"
-      } ]
     } ],
     "fields" : [ {
       "fieldId" : "fld24n",
       "valueAttribute" : "sportelloServices$att41a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld6n",
-      "valueAttribute" : "sportelloServices$att45a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld25n",
       "valueAttribute" : "sportelloServices$att43a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6n",
+      "valueAttribute" : "sportelloServices$att45a",
       "valueAssociationRole" : null
     } ]
   }, {

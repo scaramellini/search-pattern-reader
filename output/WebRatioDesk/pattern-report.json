@@ -21,24 +21,24 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld21h",
-      "valueAttribute" : "WebRatioDeskServices$att10y",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld20h",
       "valueAttribute" : "WebRatioDeskServices$att9y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21h",
+      "valueAttribute" : "WebRatioDeskServices$att10y",
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld21h",
-      "valueAttribute" : "WebRatioDeskServices$att10y",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld20h",
       "valueAttribute" : "WebRatioDeskServices$att9y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21h",
+      "valueAttribute" : "WebRatioDeskServices$att10y",
       "valueAssociationRole" : null
     } ],
     "component" : {

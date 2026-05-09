@@ -29,15 +29,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld87r",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld88r",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld8r",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld87r",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

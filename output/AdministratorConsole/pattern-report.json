@@ -18,56 +18,6 @@
     } ],
     "fields" : null
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst41i",
-        "type" : "LIST",
-        "pageId" : "page15i.wr",
-        "dataBinding" : "AdministratorConsoleDS$cls23x"
-      },
-      "to" : {
-        "id" : "frm29i",
-        "type" : "FORM",
-        "pageId" : "page15i.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att245x",
-        "target" : "{fld254i}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att244x",
-        "target" : "{fld258i}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att246x",
-        "target" : "{fld255i}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att247x",
-        "target" : "{fld256i}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld254i",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld258i",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld256i",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld255i",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -1210,72 +1160,6 @@
         "automaticCoupling" : false,
         "source" : "{sfld21ah}value.0",
         "target" : "acond19ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld37ah}value",
-        "target" : "acond26ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld38ah}value",
-        "target" : "acond27ah"
-      } ]
-    }, {
-      "from" : {
-        "id" : "frm2ah",
-        "type" : "FORM",
-        "pageId" : "page2ah.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "lst3ah",
-        "type" : "LIST",
-        "pageId" : "page2ah.wr",
-        "dataBinding" : "AdministratorConsoleDS$cls9ai"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{sfld21ah}value.0",
-        "target" : "acond19ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld8ah}value._be_att2ai",
-        "target" : "acond12ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld19ah}value.0",
-        "target" : "acond8ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld9ah}value._be_att55x",
-        "target" : "acond10ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld10ah}value",
-        "target" : "acond4ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld10ah}value._be_att40ai",
-        "target" : "acond11ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld13ah}value",
-        "target" : "acond9ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld12ah}value",
-        "target" : "acond5ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld19ah}value",
-        "target" : "acond7ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld15ah}value",
-        "target" : "acond6ah"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld20ah}value._be_att54ai",
-        "target" : "acond13ah"
       }, {
         "automaticCoupling" : false,
         "source" : "{fld37ah}value",

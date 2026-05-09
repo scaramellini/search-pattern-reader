@@ -19,24 +19,6 @@
         "source" : "{fld23v}value",
         "target" : "acond122v"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu9v",
-        "type" : "FORM",
-        "pageId" : "page16v.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu4v",
-        "type" : "LIST",
-        "pageId" : "page16v.wr",
-        "dataBinding" : "PortaleTLCServices$ent21"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld23v}value",
-        "target" : "acond122v"
-      } ]
     } ],
     "fields" : [ {
       "fieldId" : "fld23v",
@@ -46,24 +28,6 @@
   }, {
     "patternType" : "Basic Search Pattern",
     "flows" : [ {
-      "from" : {
-        "id" : "enu36",
-        "type" : "FORM",
-        "pageId" : "page29.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu9",
-        "type" : "LIST",
-        "pageId" : "page29.wr",
-        "dataBinding" : "PortaleTLCServices$ent22"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld47}value",
-        "target" : "acond66"
-      } ]
-    }, {
       "from" : {
         "id" : "enu36",
         "type" : "FORM",
@@ -91,10 +55,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld12",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleTLCServices$role22"
-    }, {
       "fieldId" : "fld80",
       "valueAttribute" : "PortaleTLCServices$att4d",
       "valueAssociationRole" : null
@@ -102,6 +62,10 @@
       "fieldId" : "sfld58",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleTLCServices$role17"
+    }, {
+      "fieldId" : "sfld12",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleTLCServices$role22"
     } ],
     "component" : {
       "id" : "enu34",
@@ -141,51 +105,21 @@
         "source" : "{sfld1v}value._be_att26",
         "target" : "rcond3v._be_att26"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu33",
-        "type" : "FORM",
-        "pageId" : "page69.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu23",
-        "type" : "LIST",
-        "pageId" : "page69.wr",
-        "dataBinding" : "PortaleTLCServices$ent2d"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld77}value",
-        "target" : "acond227"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld78}value",
-        "target" : "acond228"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld11}value.0",
-        "target" : "acond229"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld1v}value._be_att26",
-        "target" : "rcond3v._be_att26"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld78",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld11",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld1v",
+      "fieldId" : "fld77",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld77",
+      "fieldId" : "fld78",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -213,35 +147,13 @@
         "source" : "{sfld14}value.0",
         "target" : "acond82v"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu7",
-        "type" : "FORM",
-        "pageId" : "page14.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu5",
-        "type" : "LIST",
-        "pageId" : "page14.wr",
-        "dataBinding" : "PortaleTLCServices$ent10"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld16}value",
-        "target" : "acond21"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld14}value.0",
-        "target" : "acond82v"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld16",
+      "fieldId" : "sfld14",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld14",
+      "fieldId" : "fld16",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -249,28 +161,24 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld18v",
-      "valueAttribute" : "PortaleTLCServices$att49v",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld24",
-      "valueAttribute" : "PortaleTLCServices$att54",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15v",
-      "valueAttribute" : "PortaleTLCServices$att86v",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld25",
-      "valueAttribute" : "PortaleTLCServices$att55",
+      "fieldId" : "fld24v",
+      "valueAttribute" : "PortaleTLCServices$att88v",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld27",
       "valueAttribute" : "PortaleTLCServices$att57",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld26",
-      "valueAttribute" : "PortaleTLCServices$att56",
+      "fieldId" : "fld18v",
+      "valueAttribute" : "PortaleTLCServices$att49v",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18",
+      "valueAttribute" : "PortaleTLCServices$att49",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15v",
+      "valueAttribute" : "PortaleTLCServices$att86v",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld14v",
@@ -281,28 +189,32 @@
       "valueAttribute" : "PortaleTLCServices$att89v",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld24v",
-      "valueAttribute" : "PortaleTLCServices$att88v",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18",
-      "valueAttribute" : "PortaleTLCServices$att49",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld21",
-      "valueAttribute" : "PortaleTLCServices$att51",
+      "fieldId" : "fld19",
+      "valueAttribute" : "PortaleTLCServices$att50",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld22",
       "valueAttribute" : "PortaleTLCServices$att52",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld24",
+      "valueAttribute" : "PortaleTLCServices$att54",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld25",
+      "valueAttribute" : "PortaleTLCServices$att55",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26",
+      "valueAttribute" : "PortaleTLCServices$att56",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld23",
       "valueAttribute" : "PortaleTLCServices$att53",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld19",
-      "valueAttribute" : "PortaleTLCServices$att50",
+      "fieldId" : "fld21",
+      "valueAttribute" : "PortaleTLCServices$att51",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -335,35 +247,13 @@
         "source" : "{sfld17}value.0",
         "target" : "acond17"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu5",
-        "type" : "FORM",
-        "pageId" : "page12.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu3",
-        "type" : "LIST",
-        "pageId" : "page12.wr",
-        "dataBinding" : "PortaleTLCServices$ent8"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld12}value",
-        "target" : "acond16"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld17}value.0",
-        "target" : "acond17"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld12",
+      "fieldId" : "sfld17",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld17",
+      "fieldId" : "fld12",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -371,20 +261,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld7p",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleTLCServices$role11p"
-    }, {
       "fieldId" : "fld20p",
       "valueAttribute" : "PortaleTLCServices$att21p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld11p",
-      "valueAttribute" : "PortaleTLCServices$att18p",
-      "valueAssociationRole" : null
+      "fieldId" : "sfld7p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleTLCServices$role11p"
     }, {
       "fieldId" : "fld19p",
       "valueAttribute" : "PortaleTLCServices$att20p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11p",
+      "valueAttribute" : "PortaleTLCServices$att18p",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -443,13 +333,13 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld31v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleTLCServices$role1v"
-    }, {
       "fieldId" : "fld114",
       "valueAttribute" : "PortaleTLCServices$att131",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld31v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleTLCServices$role1v"
     } ],
     "component" : {
       "id" : "enu25",
@@ -489,51 +379,21 @@
         "source" : "{fld17}value",
         "target" : "acond1"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu26",
-        "type" : "FORM",
-        "pageId" : "page65.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu21",
-        "type" : "LIST",
-        "pageId" : "page65.wr",
-        "dataBinding" : "PortaleTLCServices$ent2"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{sfld10}value.0",
-        "target" : "acond221"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld64}value",
-        "target" : "acond219"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld65}value",
-        "target" : "acond220"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld17}value",
-        "target" : "acond1"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld10",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld65",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld64",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "sfld10",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld17",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

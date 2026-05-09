@@ -119,16 +119,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld2f",
+      "valueAttribute" : "SurveyServices$att38",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld4f",
       "valueAttribute" : "SurveyServices$ent16$email",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld3f",
       "valueAttribute" : "SurveyServices$att46",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld2f",
-      "valueAttribute" : "SurveyServices$att38",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -167,7 +167,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld5f",
+      "fieldId" : "fld7f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -175,7 +175,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld7f",
+      "fieldId" : "fld5f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

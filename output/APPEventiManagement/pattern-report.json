@@ -103,32 +103,6 @@
         "source" : "{fld20q}value",
         "target" : "acond15q"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu6q",
-        "type" : "FORM",
-        "pageId" : "page9q.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu11q",
-        "type" : "LIST",
-        "pageId" : "page9q.wr",
-        "dataBinding" : "APPEventiManagementServices$User"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld19q}value",
-        "target" : "acond14q"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld21q}value",
-        "target" : "acond16q"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld20q}value",
-        "target" : "acond15q"
-      } ]
     } ],
     "fields" : [ {
       "fieldId" : "fld20q",

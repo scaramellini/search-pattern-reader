@@ -39,24 +39,24 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld70z",
-      "valueAttribute" : "JoinOnWebServices$att4g",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld71z",
-      "valueAttribute" : "JoinOnWebServices$att3g",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld72z",
       "valueAttribute" : "JoinOnWebServices$att9g",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld73z",
+      "valueAttribute" : "JoinOnWebServices$att7g",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld74z",
       "valueAttribute" : "JoinOnWebServices$att8g",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld73z",
-      "valueAttribute" : "JoinOnWebServices$att7g",
+      "fieldId" : "fld71z",
+      "valueAttribute" : "JoinOnWebServices$att3g",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld70z",
+      "valueAttribute" : "JoinOnWebServices$att4g",
       "valueAssociationRole" : null
     } ],
     "component" : {

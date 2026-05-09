@@ -47,6 +47,9 @@ public class BasicSearchPattern extends GenericGraphPattern {
 
         for (Edge edge : graph.getOutgoing(startNode.getId())) {
 
+            if(edge.getType() != FlowType.NAVIGATION)
+                continue;
+
             GraphNode target = graph.getNode(edge.getTargetId());
 
             if (target == null || target.getType() != NodeType.LIST)

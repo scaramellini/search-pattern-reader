@@ -29,11 +29,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld123e",
+      "fieldId" : "fld122e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld122e",
+      "fieldId" : "fld123e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {

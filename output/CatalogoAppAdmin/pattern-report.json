@@ -96,136 +96,6 @@
       "dataBinding" : "CatalogoApplicazioniBEAdmin$cls17"
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dtl4q",
-        "type" : "DETAILS",
-        "pageId" : "page5q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls14i"
-      },
-      "to" : {
-        "id" : "frm34q",
-        "type" : "FORM",
-        "pageId" : "page5q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls14i"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld241q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att496i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld63q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att214i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld95q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att136i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld105q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att133i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld100q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att212i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld125q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att25z",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld98q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att102i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld115q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att306i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld97q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att90i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld102q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att211i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld47q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att218i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld65q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att86i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld60q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att217i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld99q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att135i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld87q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att198i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld84q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att132i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld240q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att499i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld64q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att209i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld112q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att210i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld103q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att100i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld124q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att21z",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld114q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att303i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld96q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att213i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld61q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att216i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld242q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att497i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld62q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att215i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld239q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att498i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld106q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att304i",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -626,52 +496,6 @@
       "dataBinding" : "CatalogoApplicazioniBEAdmin$cls27"
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dtl17q",
-        "type" : "DETAILS",
-        "pageId" : "page48q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls34i"
-      },
-      "to" : {
-        "id" : "frm22q",
-        "type" : "FORM",
-        "pageId" : "page48q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls34i"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld67q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att417i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld72q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att413i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld69q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att411i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld68q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att416i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld70q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att415i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld66q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att418i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld71q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att414i",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -715,40 +539,6 @@
     }, {
       "fieldId" : "fld71q",
       "valueAttribute" : "CatalogoApplicazioniBEAdmin$att414i",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst50q",
-        "type" : "LIST",
-        "pageId" : "page46q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls3"
-      },
-      "to" : {
-        "id" : "frm12q",
-        "type" : "FORM",
-        "pageId" : "page46q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls3"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld27q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att37",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld25q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att38",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld26q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att40",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld24q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att39",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -808,64 +598,6 @@
       "dataBinding" : "CatalogoApplicazioniBEAdmin$cls4"
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst51q",
-        "type" : "LIST",
-        "pageId" : "page47q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls17"
-      },
-      "to" : {
-        "id" : "frm7q",
-        "type" : "FORM",
-        "pageId" : "page47q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls17"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld13q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att190",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld14q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att193",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld16q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att191",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld11q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att187",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld20q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att189",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld10q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att186",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld17q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att192",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att440i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld12q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att188",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att194",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -881,72 +613,6 @@
         "dataBinding" : "CatalogoApplicazioniBEAdmin$cls17"
       },
       "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld13q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att190",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld14q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att193",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld16q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att191",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld11q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att187",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld20q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att189",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld10q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att186",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld17q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att192",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att440i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld12q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att188",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att194",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1q",
-        "type" : "LIST",
-        "pageId" : "page47q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls26"
-      },
-      "to" : {
-        "id" : "frm7q",
-        "type" : "FORM",
-        "pageId" : "page47q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls17"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att251",
-        "target" : "{fld14q}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att337",
-        "target" : "{fld18q}value"
-      } ]
     } ],
     "fields" : [ {
       "fieldId" : "fld13q",
@@ -1150,40 +816,6 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld17",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst24",
-        "type" : "LIST",
-        "pageId" : "page5.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls1"
-      },
-      "to" : {
-        "id" : "frm14",
-        "type" : "FORM",
-        "pageId" : "page5.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att1",
-        "target" : "{fld13}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att354",
-        "target" : "{fld12}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld12",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld13",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -1705,36 +1337,6 @@
       "pageId" : "page32q.wr",
       "dataBinding" : "CatalogoApplicazioniBEAdmin$cls25"
     }
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst49q",
-        "type" : "LIST",
-        "pageId" : "page45q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls18"
-      },
-      "to" : {
-        "id" : "frm5q",
-        "type" : "FORM",
-        "pageId" : "page45q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls18"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld8q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att199",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att200",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld7q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att201",
-      "valueAssociationRole" : null
-    } ]
   }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
@@ -2541,44 +2143,6 @@
     }, {
       "fieldId" : "fld52q",
       "valueAttribute" : "CatalogoApplicazioniBEAdmin$att60",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst20q",
-        "type" : "LIST",
-        "pageId" : "page4q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls13i"
-      },
-      "to" : {
-        "id" : "frm32q",
-        "type" : "FORM",
-        "pageId" : "page4q.wr",
-        "dataBinding" : "CatalogoApplicazioniBEAdmin$cls13i"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld45q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att33i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld42q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att30i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld46q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att65i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld41q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att64i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld38q",
-      "valueAttribute" : "CatalogoApplicazioniBEAdmin$att16i",
       "valueAssociationRole" : null
     } ]
   }, {

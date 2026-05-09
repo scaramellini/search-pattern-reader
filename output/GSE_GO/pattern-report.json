@@ -21,16 +21,16 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld68v",
+      "valueAttribute" : "GSEGOServices$att98v",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld67v",
       "valueAttribute" : "GSEGOServices$att97v",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld69v",
       "valueAttribute" : "GSEGOServices$att99v",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld68v",
-      "valueAttribute" : "GSEGOServices$att98v",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -55,16 +55,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld68v",
+      "valueAttribute" : "GSEGOServices$att98v",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld67v",
       "valueAttribute" : "GSEGOServices$att97v",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld69v",
       "valueAttribute" : "GSEGOServices$att99v",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld68v",
-      "valueAttribute" : "GSEGOServices$att98v",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -103,7 +103,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld17v",
+      "fieldId" : "sfld31v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -111,7 +111,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld31v",
+      "fieldId" : "fld17v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

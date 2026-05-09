@@ -67,28 +67,6 @@
         "source" : "{fld30x}value",
         "target" : "acond31x"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu3x",
-        "type" : "FORM",
-        "pageId" : "page9x.wr",
-        "dataBinding" : "AssetManagementServices$ent1"
-      },
-      "to" : {
-        "id" : "pwu4x",
-        "type" : "LIST",
-        "pageId" : "page9x.wr",
-        "dataBinding" : "AssetManagementServices$ent1"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld27x}value",
-        "target" : "acond22x"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld30x}value",
-        "target" : "acond31x"
-      } ]
     } ],
     "fields" : [ {
       "fieldId" : "fld30x",

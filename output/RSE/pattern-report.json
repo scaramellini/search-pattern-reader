@@ -63,6 +63,14 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld5g",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3g",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld1g",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -74,14 +82,6 @@
       "fieldId" : "fld2g",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld3g",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld5g",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -91,12 +91,12 @@
       "valueAttribute" : "RSEServices$att54",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld3",
-      "valueAttribute" : "RSEServices$att55",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld11",
       "valueAttribute" : "RSEServices$att56",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3",
+      "valueAttribute" : "RSEServices$att55",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -109,12 +109,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld39",
-      "valueAttribute" : "RSEServices$att21",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld40",
       "valueAttribute" : "RSEServices$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39",
+      "valueAttribute" : "RSEServices$att21",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld37",
@@ -157,12 +157,12 @@
       "valueAttribute" : "RSEServices$att54",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld3",
-      "valueAttribute" : "RSEServices$att55",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld11",
       "valueAttribute" : "RSEServices$att56",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3",
+      "valueAttribute" : "RSEServices$att55",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -201,12 +201,12 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld39",
-      "valueAttribute" : "RSEServices$att21",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld40",
       "valueAttribute" : "RSEServices$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39",
+      "valueAttribute" : "RSEServices$att21",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld37",

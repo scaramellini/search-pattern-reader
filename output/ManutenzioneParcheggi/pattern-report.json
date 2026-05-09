@@ -23,35 +23,13 @@
         "source" : "{sfld2q}value._be_att27",
         "target" : "acond53q"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu7q",
-        "type" : "FORM",
-        "pageId" : "page12q.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu7q",
-        "type" : "LIST",
-        "pageId" : "page12q.wr",
-        "dataBinding" : "ManutenzioneParcheggiServices$ent2q"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{sfld7q}value._be_att41",
-        "target" : "acond54q"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld2q}value._be_att27",
-        "target" : "acond53q"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld7q",
+      "fieldId" : "sfld2q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld2q",
+      "fieldId" : "sfld7q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -93,16 +71,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld9",
-      "valueAttribute" : "ManutenzioneParcheggiServices$att40",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld54m",
       "valueAttribute" : "ManutenzioneParcheggiServices$att44m",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld6",
       "valueAttribute" : "ManutenzioneParcheggiServices$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att40",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -141,7 +119,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld45q",
+      "fieldId" : "fld17q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -149,7 +127,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld17q",
+      "fieldId" : "fld45q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -157,12 +135,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld51q",
-      "valueAttribute" : "ManutenzioneParcheggiServices$att30q",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld50q",
       "valueAttribute" : "ManutenzioneParcheggiServices$att29q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld51q",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att30q",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -225,51 +203,9 @@
         "source" : "{fld62m}value",
         "target" : "acond113m"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu45",
-        "type" : "FORM",
-        "pageId" : "page43.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu20",
-        "type" : "LIST",
-        "pageId" : "page43.wr",
-        "dataBinding" : "ManutenzioneParcheggiServices$ent2"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{sfld53m}value.0",
-        "target" : "acond26"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld108}value",
-        "target" : "acond46"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld109}value",
-        "target" : "acond40"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld111}value",
-        "target" : "acond37"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld110}value",
-        "target" : "acond43"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld62m}value",
-        "target" : "acond113m"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld62m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld108",
+      "fieldId" : "fld109",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -277,15 +213,19 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld53m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld109",
+      "fieldId" : "fld108",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld110",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld53m",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

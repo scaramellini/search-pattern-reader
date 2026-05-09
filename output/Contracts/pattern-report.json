@@ -43,11 +43,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld11",
+      "fieldId" : "sfld12",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld12",
+      "fieldId" : "sfld11",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -55,12 +55,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld10",
-      "valueAttribute" : "CustomersData$att31",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld2",
       "valueAttribute" : "CustomersData$att32",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10",
+      "valueAttribute" : "CustomersData$att31",
       "valueAssociationRole" : null
     } ],
     "component" : {

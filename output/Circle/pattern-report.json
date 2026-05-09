@@ -1,39 +1,5 @@
 {
   "patterns" : [ {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst33o",
-        "type" : "LIST",
-        "pageId" : "page10o.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm27o",
-        "type" : "FORM",
-        "pageId" : "page10o.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp42j",
-        "target" : "{fld131o}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp43j",
-        "target" : "{fld132o}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld131o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld132o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {

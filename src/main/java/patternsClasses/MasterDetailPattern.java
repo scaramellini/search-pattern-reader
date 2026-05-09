@@ -29,6 +29,9 @@ public class MasterDetailPattern extends GenericGraphPattern {
 
         for (Edge edge : graph.getOutgoing(startNode.getId())) {
 
+            if(edge.getType() != FlowType.NAVIGATION)
+                continue;
+
             GraphNode target = graph.getNode(edge.getTargetId());
 
             if (target == null)

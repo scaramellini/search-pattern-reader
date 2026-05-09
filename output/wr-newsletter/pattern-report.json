@@ -3,12 +3,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld7v",
-      "valueAttribute" : "wrnewsletterServices$att66v",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld6v",
       "valueAttribute" : "wrnewsletterServices$att65v",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7v",
+      "valueAttribute" : "wrnewsletterServices$att66v",
       "valueAssociationRole" : null
     } ],
     "component" : {

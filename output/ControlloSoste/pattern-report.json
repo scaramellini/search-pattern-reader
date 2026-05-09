@@ -3,6 +3,14 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld47f",
+      "valueAttribute" : "ControlloSosteServices$att147f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12o",
+      "valueAttribute" : "ControlloSosteServices$att17o",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld53f",
       "valueAttribute" : "ControlloSosteServices$att171f",
       "valueAssociationRole" : null
@@ -11,28 +19,20 @@
       "valueAttribute" : "ControlloSosteServices$att146f",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld47f",
-      "valueAttribute" : "ControlloSosteServices$att147f",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld48f",
-      "valueAttribute" : "ControlloSosteServices$att148f",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld11o",
-      "valueAttribute" : "ControlloSosteServices$att16o",
+      "fieldId" : "fld5i",
+      "valueAttribute" : "ControlloSosteServices$att2i",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld40f",
       "valueAttribute" : "ControlloSosteServices$att4n",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld5i",
-      "valueAttribute" : "ControlloSosteServices$att2i",
+      "fieldId" : "fld11o",
+      "valueAttribute" : "ControlloSosteServices$att16o",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld12o",
-      "valueAttribute" : "ControlloSosteServices$att17o",
+      "fieldId" : "fld48f",
+      "valueAttribute" : "ControlloSosteServices$att148f",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -45,12 +45,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld2i",
-      "valueAttribute" : "ControlloSosteServices$att31i",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld10i",
       "valueAttribute" : "ControlloSosteServices$att29i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2i",
+      "valueAttribute" : "ControlloSosteServices$att31i",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld11i",
@@ -67,8 +67,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld6f",
-      "valueAttribute" : "ControlloSosteServices$att23f",
+      "fieldId" : "fld9f",
+      "valueAttribute" : "ControlloSosteServices$att26f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7f",
+      "valueAttribute" : "ControlloSosteServices$att24f",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld8f",
@@ -79,12 +83,8 @@
       "valueAttribute" : "ControlloSosteServices$att2r",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld7f",
-      "valueAttribute" : "ControlloSosteServices$att24f",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld9f",
-      "valueAttribute" : "ControlloSosteServices$att26f",
+      "fieldId" : "fld6f",
+      "valueAttribute" : "ControlloSosteServices$att23f",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -97,16 +97,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld24f",
+      "valueAttribute" : "ControlloSosteServices$att48f",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld22f",
       "valueAttribute" : "ControlloSosteServices$att10f",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld23f",
       "valueAttribute" : "ControlloSosteServices$att42f",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld24f",
-      "valueAttribute" : "ControlloSosteServices$att48f",
       "valueAssociationRole" : null
     } ],
     "component" : {

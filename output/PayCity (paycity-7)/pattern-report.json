@@ -33,19 +33,19 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld22v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld21v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld5v",
+      "fieldId" : "sfld7v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld7v",
+      "fieldId" : "fld22v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

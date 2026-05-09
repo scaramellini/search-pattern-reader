@@ -37,11 +37,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld73b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld33b",
+      "fieldId" : "fld31b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -49,42 +45,16 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld31b",
+      "fieldId" : "fld33b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld73b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld55b",
       "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst4b",
-        "type" : "LIST",
-        "pageId" : "page3b.wr",
-        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
-      },
-      "to" : {
-        "id" : "frm5b",
-        "type" : "FORM",
-        "pageId" : "page3b.wr",
-        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld4b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld5b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld9b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -105,16 +75,16 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld4b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld5b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld9b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -191,12 +161,12 @@
       "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld39b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld36b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -255,72 +225,72 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld13b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att220l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld48b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att33l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld46b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att31l",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld83b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att90l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld65b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att153l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld66b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att157l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att88l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld19b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att103l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld86b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att206l",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld49b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att34l",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld47b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att32l",
+      "fieldId" : "fld65b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att153l",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld40b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att37l",
+      "fieldId" : "sfld13b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att220l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att103l",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld34b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att29l",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld26b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att13l",
+      "fieldId" : "fld35b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att30l",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld58b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att41l",
+      "fieldId" : "fld18b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att88l",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld84b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att91l",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld35b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att30l",
+      "fieldId" : "fld58b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att41l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld86b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att206l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att32l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att13l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att31l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld40b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att37l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld66b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att157l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att33l",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -329,36 +299,6 @@
       "pageId" : "page9b.wr",
       "dataBinding" : "MSGestioneDerogheQGBE$cls7l"
     }
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst14b",
-        "type" : "LIST",
-        "pageId" : "page6b.wr",
-        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
-      },
-      "to" : {
-        "id" : "frm18b",
-        "type" : "FORM",
-        "pageId" : "page6b.wr",
-        "dataBinding" : "MSGestioneDerogheQGBE$cls10l"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld37b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld39b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld36b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
-      "valueAssociationRole" : null
-    } ]
   }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
@@ -381,38 +321,12 @@
       "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld39b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld36b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
       "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst9b",
-        "type" : "LIST",
-        "pageId" : "page10b.wr",
-        "dataBinding" : "MSGestioneDerogheQGBE$cls21l"
-      },
-      "to" : {
-        "id" : "frm26b",
-        "type" : "FORM",
-        "pageId" : "page10b.wr",
-        "dataBinding" : "MSGestioneDerogheQGBE$cls21l"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld60b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att42l",
-      "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld59b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att164l",
+      "fieldId" : "fld39b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -445,16 +359,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld4b",
-      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld5b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att138l",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld9b",
       "valueAttribute" : "MSGestioneDerogheQGBE$att136l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4b",
+      "valueAttribute" : "MSGestioneDerogheQGBE$att137l",
       "valueAssociationRole" : null
     } ],
     "component" : {

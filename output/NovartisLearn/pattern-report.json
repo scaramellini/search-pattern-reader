@@ -3,16 +3,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld10t",
-      "valueAttribute" : "NovartisLearnServices$att3t",
+      "fieldId" : "fld9t",
+      "valueAttribute" : "NovartisLearnServices$att2t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld1t",
       "valueAttribute" : "NovartisLearnServices$att7t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld9t",
-      "valueAttribute" : "NovartisLearnServices$att2t",
+      "fieldId" : "fld10t",
+      "valueAttribute" : "NovartisLearnServices$att3t",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -97,25 +97,25 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld57x",
-      "valueAttribute" : "NovartisLearnServices$att37ae",
-      "valueAssociationRole" : null
+      "fieldId" : "sfld5ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "NovartisLearnServices$role14ae"
     }, {
       "fieldId" : "fld56x",
       "valueAttribute" : "NovartisLearnServices$att38ae",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld55x",
-      "valueAttribute" : "NovartisLearnServices$att36ae",
+      "fieldId" : "fld57x",
+      "valueAttribute" : "NovartisLearnServices$att37ae",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld58x",
       "valueAttribute" : "NovartisLearnServices$att39ae",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld5ae",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "NovartisLearnServices$role14ae"
+      "fieldId" : "fld55x",
+      "valueAttribute" : "NovartisLearnServices$att36ae",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu37x",
@@ -213,12 +213,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld9x",
-      "valueAttribute" : "NovartisLearnServices$att13t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld13x",
       "valueAttribute" : "NovartisLearnServices$att27t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9x",
+      "valueAttribute" : "NovartisLearnServices$att13t",
       "valueAssociationRole" : null
     } ],
     "component" : {

@@ -3,20 +3,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld16d",
-      "valueAttribute" : "GSEServices$att18",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld9n",
-      "valueAttribute" : "GSEServices$att32n",
+      "fieldId" : "fld15d",
+      "valueAttribute" : "GSEServices$att17",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld14d",
       "valueAttribute" : "GSEServices$email",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld15d",
-      "valueAttribute" : "GSEServices$att17",
+      "fieldId" : "fld9n",
+      "valueAttribute" : "GSEServices$att32n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16d",
+      "valueAttribute" : "GSEServices$att18",
       "valueAssociationRole" : null
     } ],
     "component" : {

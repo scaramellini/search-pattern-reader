@@ -3,8 +3,8 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld24t",
-      "valueAttribute" : "RicohTerzePartiServices$att235t",
+      "fieldId" : "fld22t",
+      "valueAttribute" : "RicohTerzePartiServices$att233t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld11t",
@@ -15,8 +15,8 @@
       "valueAttribute" : "RicohTerzePartiServices$att234t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld22t",
-      "valueAttribute" : "RicohTerzePartiServices$att233t",
+      "fieldId" : "fld24t",
+      "valueAttribute" : "RicohTerzePartiServices$att235t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld3t",
@@ -51,8 +51,8 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld24t",
-      "valueAttribute" : "RicohTerzePartiServices$att235t",
+      "fieldId" : "fld22t",
+      "valueAttribute" : "RicohTerzePartiServices$att233t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld11t",
@@ -63,8 +63,8 @@
       "valueAttribute" : "RicohTerzePartiServices$att234t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld22t",
-      "valueAttribute" : "RicohTerzePartiServices$att233t",
+      "fieldId" : "fld24t",
+      "valueAttribute" : "RicohTerzePartiServices$att235t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld3t",
@@ -127,24 +127,24 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld5f",
-      "valueAttribute" : "RicohTerzePartiServices$att28f",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld14f",
       "valueAttribute" : "RicohTerzePartiServices$att29f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5f",
+      "valueAttribute" : "RicohTerzePartiServices$att28f",
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld5f",
-      "valueAttribute" : "RicohTerzePartiServices$att28f",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld14f",
       "valueAttribute" : "RicohTerzePartiServices$att29f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5f",
+      "valueAttribute" : "RicohTerzePartiServices$att28f",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -157,8 +157,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "msfld4k",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "RicohTerzePartiServices$User2Role"
+    }, {
       "fieldId" : "fld61k",
       "valueAttribute" : "RicohTerzePartiServices$att35k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld60k",
+      "valueAttribute" : "RicohTerzePartiServices$email",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld62k",
@@ -169,16 +177,8 @@
       "valueAttribute" : null,
       "valueAssociationRole" : "RicohTerzePartiServices$User2DefaultRole"
     }, {
-      "fieldId" : "msfld4k",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RicohTerzePartiServices$User2Role"
-    }, {
       "fieldId" : "fld59k",
       "valueAttribute" : "RicohTerzePartiServices$userName",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld60k",
-      "valueAttribute" : "RicohTerzePartiServices$email",
       "valueAssociationRole" : null
     } ],
     "component" : {

@@ -25,8 +25,8 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld19v",
-      "valueAttribute" : "WFDEL96Services$userName",
+      "fieldId" : "fld22t",
+      "valueAttribute" : "WFDEL96Services$att244t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld22v",
@@ -37,8 +37,8 @@
       "valueAttribute" : "WFDEL96Services$email",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld22t",
-      "valueAttribute" : "WFDEL96Services$att244t",
+      "fieldId" : "fld19v",
+      "valueAttribute" : "WFDEL96Services$userName",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -68,32 +68,6 @@
   }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
-      "from" : {
-        "id" : "enu8t",
-        "type" : "FORM",
-        "pageId" : "page4t.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu9t",
-        "type" : "LIST",
-        "pageId" : "page4t.wr",
-        "dataBinding" : "WFDEL96Services$ent3t"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld56t}value",
-        "target" : "acond6t"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld57t}value",
-        "target" : "acond7t"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld58t}value",
-        "target" : "acond8t"
-      } ]
-    }, {
       "from" : {
         "id" : "enu8t",
         "type" : "FORM",
@@ -193,15 +167,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld31v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld18v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld17v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld31v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

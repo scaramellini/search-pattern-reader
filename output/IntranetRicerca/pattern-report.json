@@ -41,15 +41,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld183as",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld181as",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld62aa",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld86aa",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -57,7 +53,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld86aa",
+      "fieldId" : "fld181as",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld183as",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -97,51 +97,21 @@
         "source" : "{fld43p}value",
         "target" : "acond9t"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu48i",
-        "type" : "FORM",
-        "pageId" : "page75i.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu25i",
-        "type" : "LIST",
-        "pageId" : "page75i.wr",
-        "dataBinding" : "IntranetRicercaServices$User"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld139i}value",
-        "target" : "acond21i"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld72h}value",
-        "target" : "acond88h"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld92f}value",
-        "target" : "acond2f"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld43p}value",
-        "target" : "acond9t"
-      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld72h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld139i",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld43p",
+      "fieldId" : "fld92f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld92f",
+      "fieldId" : "fld72h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -179,19 +149,19 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld1aq",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld87aa",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld89aa",
+      "fieldId" : "sfld1aq",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld63aa",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld89aa",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

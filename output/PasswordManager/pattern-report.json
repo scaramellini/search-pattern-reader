@@ -26,32 +26,6 @@
     } ],
     "fields" : null
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst11j",
-        "type" : "LIST",
-        "pageId" : "page6j.wr",
-        "dataBinding" : "PasswordManagerServices$cls2"
-      },
-      "to" : {
-        "id" : "frm7j",
-        "type" : "FORM",
-        "pageId" : "page6j.wr",
-        "dataBinding" : "PasswordManagerServices$cls2"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld14j",
-      "valueAttribute" : "PasswordManagerServices$att16",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18j",
-      "valueAttribute" : "PasswordManagerServices$att13l",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -69,24 +43,24 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld14j",
-      "valueAttribute" : "PasswordManagerServices$att16",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld18j",
       "valueAttribute" : "PasswordManagerServices$att13l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14j",
+      "valueAttribute" : "PasswordManagerServices$att16",
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld14j",
-      "valueAttribute" : "PasswordManagerServices$att16",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld18j",
       "valueAttribute" : "PasswordManagerServices$att13l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14j",
+      "valueAttribute" : "PasswordManagerServices$att16",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -96,36 +70,6 @@
       "dataBinding" : "PasswordManagerServices$cls2"
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst12j",
-        "type" : "LIST",
-        "pageId" : "page7j.wr",
-        "dataBinding" : "PasswordManagerServices$cls3"
-      },
-      "to" : {
-        "id" : "frm10j",
-        "type" : "FORM",
-        "pageId" : "page7j.wr",
-        "dataBinding" : "PasswordManagerServices$cls3"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "sfld4j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PasswordManagerServices$role12l"
-    }, {
-      "fieldId" : "fld24j",
-      "valueAttribute" : "PasswordManagerServices$att18",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld23j",
-      "valueAttribute" : "PasswordManagerServices$att15l",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -143,10 +87,6 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld4j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PasswordManagerServices$role12l"
-    }, {
       "fieldId" : "fld24j",
       "valueAttribute" : "PasswordManagerServices$att18",
       "valueAssociationRole" : null
@@ -154,6 +94,10 @@
       "fieldId" : "fld23j",
       "valueAttribute" : "PasswordManagerServices$att15l",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PasswordManagerServices$role12l"
     } ]
   }, {
     "patternType" : "Preloaded Fields Pattern",
@@ -211,10 +155,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld4j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PasswordManagerServices$role12l"
-    }, {
       "fieldId" : "fld24j",
       "valueAttribute" : "PasswordManagerServices$att18",
       "valueAssociationRole" : null
@@ -222,6 +162,10 @@
       "fieldId" : "fld23j",
       "valueAttribute" : "PasswordManagerServices$att15l",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PasswordManagerServices$role12l"
     } ],
     "component" : {
       "id" : "frm10j",

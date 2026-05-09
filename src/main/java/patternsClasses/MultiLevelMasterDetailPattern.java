@@ -48,7 +48,14 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
 
             List<Edge> edges = extractEdgesFromPath(graph, path);
 
-            if(edges.size() != path.size() - 1)
+            for (Edge edge : edges) {
+                if(edge.getType() != FlowType.NAVIGATION) {
+                    edges = null;
+                    break;
+                }
+            }
+
+            if(edges == null || edges.size() != path.size() - 1)
                 continue;
 
             instances.add(new PatternInstance(edges, null, null));

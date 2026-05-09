@@ -3,12 +3,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld47f",
-      "valueAttribute" : "ProximityExperienceBOServices$att4f",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld8f",
       "valueAttribute" : "ProximityExperienceBOServices$att2f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47f",
+      "valueAttribute" : "ProximityExperienceBOServices$att4f",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -43,12 +43,12 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld47f",
-      "valueAttribute" : "ProximityExperienceBOServices$att4f",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld8f",
       "valueAttribute" : "ProximityExperienceBOServices$att2f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47f",
+      "valueAttribute" : "ProximityExperienceBOServices$att4f",
       "valueAssociationRole" : null
     } ]
   } ]

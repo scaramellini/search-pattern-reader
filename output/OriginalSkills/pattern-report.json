@@ -91,15 +91,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld55j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld56j",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld11j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld55j",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -125,6 +125,14 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld5z",
+      "valueAttribute" : "OriginalSkillsServices$att24z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "OriginalSkillsServices$role13z"
+    }, {
       "fieldId" : "sfld4z",
       "valueAttribute" : "OriginalSkillsServices$att5z",
       "valueAssociationRole" : null
@@ -137,17 +145,9 @@
       "valueAttribute" : "OriginalSkillsServices$att23z",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld5z",
-      "valueAttribute" : "OriginalSkillsServices$att24z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld3z",
       "valueAttribute" : "OriginalSkillsServices$att21z",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld3z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "OriginalSkillsServices$role13z"
     } ]
   }, {
     "patternType" : "Preloaded Fields Pattern",
@@ -251,6 +251,14 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld5z",
+      "valueAttribute" : "OriginalSkillsServices$att24z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "OriginalSkillsServices$role13z"
+    }, {
       "fieldId" : "sfld4z",
       "valueAttribute" : "OriginalSkillsServices$att5z",
       "valueAssociationRole" : null
@@ -263,17 +271,9 @@
       "valueAttribute" : "OriginalSkillsServices$att23z",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld5z",
-      "valueAttribute" : "OriginalSkillsServices$att24z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld3z",
       "valueAttribute" : "OriginalSkillsServices$att21z",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld3z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "OriginalSkillsServices$role13z"
     } ],
     "component" : {
       "id" : "enu1z",
@@ -285,10 +285,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld1z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "OriginalSkillsServices$role7z"
-    }, {
       "fieldId" : "fld10z",
       "valueAttribute" : "OriginalSkillsServices$att16z",
       "valueAssociationRole" : null
@@ -296,6 +292,10 @@
       "fieldId" : "fld7z",
       "valueAttribute" : "OriginalSkillsServices$att13z",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "OriginalSkillsServices$role7z"
     }, {
       "fieldId" : "fld8z",
       "valueAttribute" : "OriginalSkillsServices$att14z",

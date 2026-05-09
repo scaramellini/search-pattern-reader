@@ -43,6 +43,9 @@ public class DataLookupPattern extends GenericGraphPattern {
 
         for (Edge formToList : graph.getOutgoing(startNode.getId())) {
 
+            if(formToList.getType() != FlowType.NAVIGATION)
+                continue;
+
             GraphNode listNode = graph.getNode(formToList.getTargetId());
 
             if (listNode == null ||
@@ -71,6 +74,9 @@ public class DataLookupPattern extends GenericGraphPattern {
                     continue;
 
                 for (Edge detailsToForm : graph.getOutgoing(detailsNode.getId())) {
+
+                    if(detailsToForm.getType() != FlowType.NAVIGATION)
+                        continue;
 
                     GraphNode returnTarget = graph.getNode(
                             detailsToForm.getTargetId());

@@ -48,28 +48,6 @@
     } ],
     "fields" : null
   }, {
-    "patternType" : "Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu1u",
-        "type" : "LIST",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1u"
-      },
-      "to" : {
-        "id" : "dau1u",
-        "type" : "DETAILS",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1u"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att1u",
-        "target" : "kcond5u._be_att1u"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Master MultiDetails Pattern",
     "flows" : [ {
       "from" : {
@@ -149,47 +127,21 @@
         "source" : "{fld71o}value",
         "target" : "acond27o"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu7f",
-        "type" : "FORM",
-        "pageId" : "page4f.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu5f",
-        "type" : "LIST",
-        "pageId" : "page4f.wr",
-        "dataBinding" : "CommercialiServices$ent9q"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld17f}value",
-        "target" : "acond15f"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld10f}value",
-        "target" : "acond14f"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld10f}value.0",
-        "target" : "rcond6f._be_roleOID"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{sfld9f}value._be_att83q",
-        "target" : "rcond7f._be_att83q"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld70o}value",
-        "target" : "acond28o"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld71o}value",
-        "target" : "acond27o"
-      } ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld9f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld10f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld71o",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -200,40 +152,6 @@
       "fieldId" : "fld70o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld9f",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld10f",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld71o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     } ]
-  }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu6f",
-        "type" : "LIST",
-        "pageId" : "page9f.wr",
-        "dataBinding" : "CommercialiServices$ent8q"
-      },
-      "to" : {
-        "id" : "pwu12o",
-        "type" : "LIST",
-        "pageId" : "page9f.wr",
-        "dataBinding" : "CommercialiServices$ent1"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att83q",
-        "target" : "rcond14o._be_att83q"
-      } ]
-    } ],
-    "fields" : null
   } ]
 }

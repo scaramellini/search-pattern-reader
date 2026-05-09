@@ -27,43 +27,17 @@
         "source" : "{msfld6u}value._be_roleOID",
         "target" : "rcond20u._be_roleOID"
       } ]
-    }, {
-      "from" : {
-        "id" : "enu7u",
-        "type" : "FORM",
-        "pageId" : "page15u.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "pwu5u",
-        "type" : "LIST",
-        "pageId" : "page15u.wr",
-        "dataBinding" : "EniReportServices$User"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld18u}value",
-        "target" : "acond10u"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld19u}value",
-        "target" : "acond13u"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{msfld6u}value._be_roleOID",
-        "target" : "rcond20u._be_roleOID"
-      } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld19u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "msfld6u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld18u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld19u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -138,40 +112,6 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "inu1",
-        "type" : "LIST",
-        "pageId" : "page1.wr",
-        "dataBinding" : "EniReportServices$User"
-      },
-      "to" : {
-        "id" : "enu1",
-        "type" : "FORM",
-        "pageId" : "page1.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_userName",
-        "target" : "{fld1}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_password",
-        "target" : "{fld2}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld1",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld2",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -197,11 +137,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld1",
+      "fieldId" : "fld2",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld2",
+      "fieldId" : "fld1",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -213,16 +153,16 @@
       "valueAttribute" : "EniReportServices$att39",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld30u",
-      "valueAttribute" : "EniReportServices$att42",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld28u",
       "valueAttribute" : "EniReportServices$att40",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld29u",
       "valueAttribute" : "EniReportServices$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld30u",
+      "valueAttribute" : "EniReportServices$att42",
       "valueAssociationRole" : null
     } ],
     "component" : {

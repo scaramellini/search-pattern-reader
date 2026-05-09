@@ -33,6 +33,9 @@ public class PreloadedFieldsPattern extends GenericGraphPattern {
 
         for (Edge edge : graph.getOutgoing(startNode.getId())) {
 
+            if (edge.getType() != FlowType.DATA_FLOW)
+                continue;
+
             int preloadedFieldsCount = 0;
 
             GraphNode target = graph.getNode(edge.getTargetId());

@@ -25,11 +25,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld16z",
+      "fieldId" : "fld17z",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld17z",
+      "fieldId" : "fld16z",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

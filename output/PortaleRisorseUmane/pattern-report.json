@@ -3,10 +3,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld210l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att15t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld118l",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role15t"
@@ -14,6 +10,10 @@
       "fieldId" : "sfld119l",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role17t"
+    }, {
+      "fieldId" : "fld210l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att15t",
+      "valueAssociationRole" : null
     }, {
       "fieldId" : "fld211l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att16t",
@@ -81,13 +81,13 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld61e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role155u"
-    }, {
       "fieldId" : "sfld113b",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role159u"
+    }, {
+      "fieldId" : "sfld61e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role155u"
     } ],
     "component" : {
       "id" : "frm66b",
@@ -99,12 +99,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld152l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att2t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld155l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att7t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld154l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att6t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld152l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att2t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld153l",
@@ -114,10 +118,6 @@
       "fieldId" : "sfld85l",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role40u"
-    }, {
-      "fieldId" : "fld154l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att6t",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm60l",
@@ -133,12 +133,12 @@
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role182z"
     }, {
-      "fieldId" : "fld418q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att581z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld416q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att584z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld418q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att581z",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -151,21 +151,21 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld195l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att7d",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld197l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att8d",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld196l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att6d",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld195l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att7d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld40ae",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role17ag"
+    }, {
+      "fieldId" : "fld197l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att8d",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm85l",
@@ -177,6 +177,26 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld208l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att188t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld202l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att245t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld206l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att170y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld209l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att187t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld204l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att38u",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld36ae",
       "valueAttribute" : "PortaleRisorseUmaneDS$att40u",
       "valueAssociationRole" : null
@@ -185,44 +205,24 @@
       "valueAttribute" : "PortaleRisorseUmaneDS$att39u",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld203l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att32u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld206l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att170y",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld201l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att90u",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld202l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att245t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld208l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att188t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld209l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att187t",
+      "fieldId" : "fld249l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att401z",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld207l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att186t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld204l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att38u",
+      "fieldId" : "fld203l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att32u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld200l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att92u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld249l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att401z",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -235,6 +235,10 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld183d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
+    }, {
       "fieldId" : "fld10n",
       "valueAttribute" : "PortaleRisorseUmaneDS$att25p",
       "valueAssociationRole" : null
@@ -242,10 +246,6 @@
       "fieldId" : "fld432d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att28u",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld183d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
     } ],
     "component" : {
       "id" : "frm124d",
@@ -253,32 +253,6 @@
       "pageId" : "page124d.wr",
       "dataBinding" : "PortaleRisorseUmaneDS$cls9u"
     }
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst115l",
-        "type" : "LIST",
-        "pageId" : "page93l.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm12g",
-        "type" : "FORM",
-        "pageId" : "page93l.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp599d",
-        "target" : "{fld61g}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld61g",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
   }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
@@ -362,40 +336,6 @@
     } ],
     "fields" : null
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst114l",
-        "type" : "LIST",
-        "pageId" : "page93l.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm11g",
-        "type" : "FORM",
-        "pageId" : "page93l.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp1328d",
-        "target" : "{fld60g}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp1333d",
-        "target" : "{fld268l}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld268l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld60g",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -421,11 +361,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld268l",
+      "fieldId" : "fld60g",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld60g",
+      "fieldId" : "fld268l",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -433,32 +373,32 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld45c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att78o",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld42c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att21n",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld46c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att75o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld44c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att22n",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld41c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att76o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld43c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att77o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld40c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att20n",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld45c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att78o",
+      "fieldId" : "fld41c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att76o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att22n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att75o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att77o",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -533,25 +473,25 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld10e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role33u"
-    }, {
       "fieldId" : "fld7e",
       "valueAttribute" : "PortaleRisorseUmaneDS$att24u",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld10e",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att23u",
+      "fieldId" : "fld9e",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att22u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld8e",
       "valueAttribute" : "PortaleRisorseUmaneDS$att21u",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld9e",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att22u",
+      "fieldId" : "fld10e",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att23u",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role33u"
     } ],
     "component" : {
       "id" : "frm5e",
@@ -571,20 +511,20 @@
       "valueAttribute" : "PortaleRisorseUmaneDS$att608a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld6d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att609a",
+      "fieldId" : "fld9d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att751a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld5d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att626a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld9d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att751a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld8d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att750a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att609a",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -616,36 +556,6 @@
     } ],
     "fields" : null
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst157d",
-        "type" : "LIST",
-        "pageId" : "page124d.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls9u"
-      },
-      "to" : {
-        "id" : "frm124d",
-        "type" : "FORM",
-        "pageId" : "page124d.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls9u"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld10n",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att25p",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld432d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att28u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld183d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -663,6 +573,10 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld183d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
+    }, {
       "fieldId" : "fld10n",
       "valueAttribute" : "PortaleRisorseUmaneDS$att25p",
       "valueAssociationRole" : null
@@ -670,10 +584,6 @@
       "fieldId" : "fld432d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att28u",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld183d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
     } ]
   }, {
     "patternType" : "Preloaded Fields Pattern",
@@ -723,13 +633,13 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld38ae",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role1w"
-    }, {
       "fieldId" : "fld122ae",
       "valueAttribute" : "PortaleRisorseUmaneDS$att2w",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld38ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role1w"
     }, {
       "fieldId" : "fld121ae",
       "valueAttribute" : "PortaleRisorseUmaneDS$att3w",
@@ -745,13 +655,13 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld1h",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att2w",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld1h",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role1w"
+    }, {
+      "fieldId" : "fld1h",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att2w",
+      "valueAssociationRole" : null
     }, {
       "fieldId" : "fld2h",
       "valueAttribute" : "PortaleRisorseUmaneDS$att3w",
@@ -793,12 +703,12 @@
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role182z"
     }, {
-      "fieldId" : "fld418q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att581z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld416q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att584z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld418q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att581z",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -827,10 +737,6 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld108l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role29u"
-    }, {
       "fieldId" : "fld186l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att108u",
       "valueAssociationRole" : null
@@ -838,63 +744,25 @@
       "fieldId" : "fld185l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att107u",
       "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multicriteria Search Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "frm92l",
-        "type" : "FORM",
-        "pageId" : "page77l.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "lst95l",
-        "type" : "LIST",
-        "pageId" : "page77l.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls4u"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "{fld221l}value",
-        "target" : "rcond165l._be_att28u"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld220l}value",
-        "target" : "rcond167l._be_att1d"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "{fld219l}value",
-        "target" : "rcond166l._be_att14t"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld220l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld219l",
+      "fieldId" : "sfld108l",
       "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld221l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role29u"
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld224l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att4d",
+      "fieldId" : "fld223l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att2d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld222l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att3d",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld223l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att2d",
+      "fieldId" : "fld224l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att4d",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -925,32 +793,32 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld395q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld398q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att136u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld396q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att138u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld399q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld394q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att127d",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld400q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
+      "fieldId" : "fld399q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld397q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att137u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld396q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att138u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld400q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld395q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -975,6 +843,10 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld183d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
+    }, {
       "fieldId" : "fld10n",
       "valueAttribute" : "PortaleRisorseUmaneDS$att25p",
       "valueAssociationRole" : null
@@ -982,10 +854,6 @@
       "fieldId" : "fld432d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att28u",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld183d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
     } ]
   }, {
     "patternType" : "Preassigned SelectionFields Pattern",
@@ -1009,6 +877,10 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld183d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
+    }, {
       "fieldId" : "fld10n",
       "valueAttribute" : "PortaleRisorseUmaneDS$att25p",
       "valueAssociationRole" : null
@@ -1016,10 +888,6 @@
       "fieldId" : "fld432d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att28u",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld183d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role190a"
     } ]
   }, {
     "patternType" : "Preassigned SelectionFields Pattern",
@@ -1059,28 +927,28 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld240l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att10u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld129l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role9u"
-    }, {
-      "fieldId" : "fld244l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att105t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld242l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att9u",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld243l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att8u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld241l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att104t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld242l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att9u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld129l",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role9u"
+    }, {
+      "fieldId" : "fld240l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att10u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld244l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att105t",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -1141,13 +1009,13 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld61e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role155u"
-    }, {
       "fieldId" : "sfld113b",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role159u"
+    }, {
+      "fieldId" : "sfld61e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role155u"
     } ]
   }, {
     "patternType" : "Master Detail Pattern",
@@ -1205,13 +1073,13 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld132b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role21u"
-    }, {
       "fieldId" : "fld198b",
       "valueAttribute" : "PortaleRisorseUmaneDS$att96t",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld132b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role21u"
     }, {
       "fieldId" : "fld197b",
       "valueAttribute" : "PortaleRisorseUmaneDS$att97t",
@@ -1224,36 +1092,6 @@
       "dataBinding" : "PortaleRisorseUmaneDS$cls5u"
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1f",
-        "type" : "LIST",
-        "pageId" : "page1f.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls1w"
-      },
-      "to" : {
-        "id" : "frm1h",
-        "type" : "FORM",
-        "pageId" : "page1f.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls1w"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld1h",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att2w",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role1w"
-    }, {
-      "fieldId" : "fld2h",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att3w",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -1271,58 +1109,16 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld1h",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att2w",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld1h",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role1w"
     }, {
+      "fieldId" : "fld1h",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att2w",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld2h",
       "valueAttribute" : "PortaleRisorseUmaneDS$att3w",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1d",
-        "type" : "LIST",
-        "pageId" : "page128d.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls41a"
-      },
-      "to" : {
-        "id" : "frm2d",
-        "type" : "FORM",
-        "pageId" : "page128d.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls41a"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld3d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att625a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld7d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att608a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld6d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att609a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld5d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att626a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld9d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att751a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld8d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att750a",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -1351,57 +1147,57 @@
       "valueAttribute" : "PortaleRisorseUmaneDS$att608a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld6d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att609a",
+      "fieldId" : "fld9d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att751a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld5d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att626a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld9d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att751a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld8d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att750a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att609a",
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld99l",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role4u"
+    }, {
       "fieldId" : "fld169l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att3u",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld99l",
+      "fieldId" : "sfld100l",
       "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role4u"
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role5u"
     }, {
       "fieldId" : "sfld101l",
       "valueAttribute" : null,
       "valueAssociationRole" : "PortaleRisorseUmaneDS$role7u"
     }, {
-      "fieldId" : "fld173b",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att188d",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld337q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att98t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld168l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att4u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld166l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att99t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld100l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role5u"
+      "fieldId" : "fld173b",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att188d",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld168l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att4u",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm73l",
@@ -1413,12 +1209,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld128l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att29u",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld238l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att28u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld128l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att29u",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -1546,64 +1342,6 @@
       "dataBinding" : "PortaleRisorseUmaneDS$cls12d"
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst15m",
-        "type" : "LIST",
-        "pageId" : "page5m.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls7y"
-      },
-      "to" : {
-        "id" : "frm17m",
-        "type" : "FORM",
-        "pageId" : "page5m.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att143y",
-        "target" : "{fld75m}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att144y",
-        "target" : "{fld76m}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att145y",
-        "target" : "{fld77m}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att146y",
-        "target" : "{fld78m}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att183x",
-        "target" : "{fld75y}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld76m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld75m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld75y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld77m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld78m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -1641,14 +1379,6 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld76m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld75m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld75y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -1660,17 +1390,45 @@
       "fieldId" : "fld78m",
       "valueAttribute" : null,
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld76m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld75m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld490d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att644a",
+      "fieldId" : "fld485d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att648a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld486d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att647a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld493d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att642a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld491d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att763a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld490d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att644a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld487d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att646a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld489d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att764a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld492d",
@@ -1679,26 +1437,6 @@
     }, {
       "fieldId" : "fld488d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att645a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld487d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att646a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld486d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att647a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld489d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att764a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld493d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att642a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld485d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att648a",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -1730,60 +1468,6 @@
     } ],
     "fields" : null
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst16c",
-        "type" : "LIST",
-        "pageId" : "page7c.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls3k"
-      },
-      "to" : {
-        "id" : "frm16c",
-        "type" : "FORM",
-        "pageId" : "page7c.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls3k"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld64c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld65c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld62c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld67c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld63c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld60c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld66c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld61c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld68c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {
@@ -1801,40 +1485,40 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld64c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld65c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld62c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld67c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld63c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld60c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld66c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
+      "fieldId" : "fld68c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld61c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld68c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
+      "fieldId" : "fld65c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld60c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld66c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -1859,13 +1543,13 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld38ae",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role1w"
-    }, {
       "fieldId" : "fld122ae",
       "valueAttribute" : "PortaleRisorseUmaneDS$att2w",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld38ae",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role1w"
     }, {
       "fieldId" : "fld121ae",
       "valueAttribute" : "PortaleRisorseUmaneDS$att3w",
@@ -1893,32 +1577,32 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld45c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att78o",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld42c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att21n",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld46c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att75o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld44c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att22n",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld41c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att76o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld43c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att77o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld40c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att20n",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld45c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att78o",
+      "fieldId" : "fld41c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att76o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att22n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att75o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld43c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att77o",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -1951,13 +1635,13 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld16h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role31aw"
-    }, {
       "fieldId" : "fld15h",
       "valueAttribute" : "PortaleRisorseUmaneDS$att20aw",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld16h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role31aw"
     } ]
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -1993,7 +1677,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld190d",
+      "fieldId" : "fld482d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -2001,11 +1685,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld483d",
+      "fieldId" : "sfld190d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld482d",
+      "fieldId" : "fld483d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -2103,8 +1787,8 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld392q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
+      "fieldId" : "fld388q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld387q",
@@ -2115,6 +1799,14 @@
       "valueAttribute" : "PortaleRisorseUmaneDS$att137u",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld393q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld392q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld389q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att138u",
       "valueAssociationRole" : null
@@ -2122,23 +1814,11 @@
       "fieldId" : "fld391q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att136u",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld393q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld388q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
-      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld108l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role29u"
-    }, {
       "fieldId" : "fld186l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att108u",
       "valueAssociationRole" : null
@@ -2146,6 +1826,10 @@
       "fieldId" : "fld185l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att107u",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld108l",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role29u"
     } ],
     "component" : {
       "id" : "frm79l",
@@ -2153,68 +1837,6 @@
       "pageId" : "page67l.wr",
       "dataBinding" : "PortaleRisorseUmaneDS$cls6u"
     }
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst12c",
-        "type" : "LIST",
-        "pageId" : "page2c.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls3k"
-      },
-      "to" : {
-        "id" : "frm17c",
-        "type" : "FORM",
-        "pageId" : "page2c.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls3k"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld88c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld90c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld83c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld82c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld84c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld85c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld89c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld105c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att154o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld104c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att153o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld86c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld87c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
-      "valueAssociationRole" : null
-    } ]
   }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
@@ -2233,61 +1855,61 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld88c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld90c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld83c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld82c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
+      "fieldId" : "fld104c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att153o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld84c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld85c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld89c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld105c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att154o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld104c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att153o",
+      "fieldId" : "fld82c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld86c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld85c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld87c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld88c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld105c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att154o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld89c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld90c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld16h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role31aw"
-    }, {
       "fieldId" : "fld15h",
       "valueAttribute" : "PortaleRisorseUmaneDS$att20aw",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld16h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role31aw"
     } ],
     "component" : {
       "id" : "frm8h",
@@ -2299,8 +1921,8 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld392q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
+      "fieldId" : "fld388q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld387q",
@@ -2311,20 +1933,20 @@
       "valueAttribute" : "PortaleRisorseUmaneDS$att137u",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld393q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld392q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld389q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att138u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld391q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att136u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld393q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld388q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -2359,12 +1981,12 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld128l",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att29u",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld238l",
       "valueAttribute" : "PortaleRisorseUmaneDS$att28u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld128l",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att29u",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -2393,32 +2015,32 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld395q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld398q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att136u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld396q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att138u",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld399q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld394q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att127d",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld400q",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
+      "fieldId" : "fld399q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att135u",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld397q",
       "valueAttribute" : "PortaleRisorseUmaneDS$att137u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld396q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att138u",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld400q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att95t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld395q",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att126d",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -2453,12 +2075,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld124ae",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att172ag",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld123ae",
       "valueAttribute" : "PortaleRisorseUmaneDS$att173ag",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld124ae",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att172ag",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -2489,40 +2111,40 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld64c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld65c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld62c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld67c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld63c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld60c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld66c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
+      "fieldId" : "fld68c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld61c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld68c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
+      "fieldId" : "fld65c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld60c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld62c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld66c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -2535,48 +2157,48 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld88c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld90c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld83c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld82c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
+      "fieldId" : "fld104c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att153o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld84c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att22k",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld85c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld89c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld105c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att154o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld104c",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att153o",
+      "fieldId" : "fld82c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att20k",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld86c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att23k",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld85c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att137o",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld87c",
       "valueAttribute" : "PortaleRisorseUmaneDS$att26k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld88c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att25k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld105c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att154o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att24p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld89c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att19k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld90c",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att134o",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -2627,7 +2249,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld545d",
+      "fieldId" : "fld550d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld544d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -2639,15 +2265,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld550d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld543d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld544d",
+      "fieldId" : "fld545d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -2693,7 +2315,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld545d",
+      "fieldId" : "fld550d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld544d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -2705,15 +2331,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld550d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld543d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld544d",
+      "fieldId" : "fld545d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -2783,12 +2405,32 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld490d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att644a",
+      "fieldId" : "fld485d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att648a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld486d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att647a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld493d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att642a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld491d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att763a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld490d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att644a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld487d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att646a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld489d",
+      "valueAttribute" : "PortaleRisorseUmaneDS$att764a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld492d",
@@ -2798,26 +2440,6 @@
       "fieldId" : "fld488d",
       "valueAttribute" : "PortaleRisorseUmaneDS$att645a",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld487d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att646a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld486d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att647a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld489d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att764a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld493d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att642a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld485d",
-      "valueAttribute" : "PortaleRisorseUmaneDS$att648a",
-      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Preloaded Fields Pattern",
@@ -2845,11 +2467,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld525d",
+      "fieldId" : "fld542d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld542d",
+      "fieldId" : "fld525d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -2879,53 +2501,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld525d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld542d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst94l",
-        "type" : "LIST",
-        "pageId" : "page77l.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls12t"
-      },
-      "to" : {
-        "id" : "frm92l",
-        "type" : "FORM",
-        "pageId" : "page77l.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att68t",
-        "target" : "{fld221l}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att65t",
-        "target" : "{fld220l}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att67t",
-        "target" : "{fld219l}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld220l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld219l",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld221l",
+      "fieldId" : "fld525d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -2959,11 +2539,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld220l",
+      "fieldId" : "fld219l",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld219l",
+      "fieldId" : "fld220l",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -2993,13 +2573,13 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld132b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PortaleRisorseUmaneDS$role21u"
-    }, {
       "fieldId" : "fld198b",
       "valueAttribute" : "PortaleRisorseUmaneDS$att96t",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld132b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "PortaleRisorseUmaneDS$role21u"
     }, {
       "fieldId" : "fld197b",
       "valueAttribute" : "PortaleRisorseUmaneDS$att97t",
