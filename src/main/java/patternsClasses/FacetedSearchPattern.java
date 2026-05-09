@@ -29,7 +29,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         if (startNode.getType() != NodeType.FORM)
             return null;
-        
+
         Set<GraphNode.FieldInfo> fields = new HashSet<>();
 
         if (startNode != null && startNode.getFieldElementIds() != null) {
@@ -46,7 +46,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         for (Edge formToList : graph.getOutgoing(startNode.getId())) {
 
-            if(formToList.getType() != FlowType.NAVIGATION)
+            if (formToList.getType() != FlowType.NAVIGATION)
                 continue;
 
             GraphNode masterList = graph.getNode(formToList.getTargetId());
@@ -62,7 +62,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
             for (Edge incoming : graph.getIncoming(masterList.getId())) {
 
-                if(!incoming.getType().equals(FlowType.NAVIGATION))
+                if (!incoming.getType().equals(FlowType.NAVIGATION))
                     continue;
 
                 GraphNode source = graph.getNode(incoming.getSourceId());
@@ -82,7 +82,8 @@ public class FacetedSearchPattern extends GenericGraphPattern {
             if (supportingLists.isEmpty())
                 continue;
 
-            // if the total number of conditions in the master list is greater than the number of valorized conditions, then the pattern is not valid
+            // if the total number of conditions in the master list is greater than the
+            // number of valorized conditions, then the pattern is not valid
             if (valorizedMasterListConditions < masterList.getConditionalExpressions().values()
                     .stream()
                     .filter(Objects::nonNull)
@@ -90,6 +91,9 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                     .sum())
                 continue;
 
+            if (matched.size() < 2)
+                continue;
+            
             instances.add(new PatternInstance(matched, fields, null));
         }
 
