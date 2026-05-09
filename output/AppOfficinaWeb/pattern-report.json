@@ -55,12 +55,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld21j",
-      "valueAttribute" : "AppOfficinaDataService$att74a",
+      "fieldId" : "sfld12j",
+      "valueAttribute" : "AppOfficinaDataService$att76a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld19j",
-      "valueAttribute" : "AppOfficinaDataService$att72a",
+      "fieldId" : "fld15j",
+      "valueAttribute" : "AppOfficinaDataService$att69a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17j",
+      "valueAttribute" : "AppOfficinaDataService$att71a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18j",
+      "valueAttribute" : "AppOfficinaDataService$att67a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld14j",
@@ -71,28 +79,20 @@
       "valueAttribute" : "AppOfficinaDataService$att75a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld12j",
-      "valueAttribute" : "AppOfficinaDataService$att76a",
+      "fieldId" : "fld16j",
+      "valueAttribute" : "AppOfficinaDataService$att70a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld18j",
-      "valueAttribute" : "AppOfficinaDataService$att67a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15j",
-      "valueAttribute" : "AppOfficinaDataService$att69a",
+      "fieldId" : "fld19j",
+      "valueAttribute" : "AppOfficinaDataService$att72a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld20j",
       "valueAttribute" : "AppOfficinaDataService$att73a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld16j",
-      "valueAttribute" : "AppOfficinaDataService$att70a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld17j",
-      "valueAttribute" : "AppOfficinaDataService$att71a",
+      "fieldId" : "fld21j",
+      "valueAttribute" : "AppOfficinaDataService$att74a",
       "valueAssociationRole" : null
     } ],
     "component" : {

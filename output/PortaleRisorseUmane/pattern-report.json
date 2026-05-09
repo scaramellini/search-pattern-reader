@@ -294,48 +294,6 @@
       "dataBinding" : "PortaleRisorseUmaneDS$cls12d"
     }
   }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst22c",
-        "type" : "LIST",
-        "pageId" : "page1x.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls42a"
-      },
-      "to" : {
-        "id" : "lst23c",
-        "type" : "LIST",
-        "pageId" : "page1x.wr",
-        "dataBinding" : "PortaleRisorseUmaneDS$cls3k"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_role195a$_be_att32u",
-        "target" : "acond19c"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_role197a$_be_att28u",
-        "target" : "prd2x"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_role195a$_be_att32u",
-        "target" : "prd1x"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "page",
-        "target" : "prd3x"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att676a",
-        "target" : "rcond27c._be_att28u"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att641a",
-        "target" : "prd31c"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {

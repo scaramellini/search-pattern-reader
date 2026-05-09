@@ -1,27 +1,5 @@
 {
   "patterns" : [ {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu3g",
-        "type" : "LIST",
-        "pageId" : "page2g.wr",
-        "dataBinding" : "sportelloServices$ent1g"
-      },
-      "to" : {
-        "id" : "pwu4g",
-        "type" : "LIST",
-        "pageId" : "page2g.wr",
-        "dataBinding" : "sportelloServices$ent6g"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att4g",
-        "target" : "rcond1g._be_att4g"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
@@ -137,28 +115,6 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
-  }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu27t",
-        "type" : "LIST",
-        "pageId" : "page27t.wr",
-        "dataBinding" : "sportelloServices$ent14t"
-      },
-      "to" : {
-        "id" : "pwu28t",
-        "type" : "LIST",
-        "pageId" : "page27t.wr",
-        "dataBinding" : "sportelloServices$ent30t"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att54t",
-        "target" : "rcond16t._be_att54t"
-      } ]
-    } ],
-    "fields" : null
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
@@ -542,28 +498,6 @@
         "automaticCoupling" : false,
         "source" : "data._be_att214am",
         "target" : "kcond59am._be_att214am"
-      } ]
-    } ],
-    "fields" : null
-  }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu1aw",
-        "type" : "LIST",
-        "pageId" : "page1aw.wr",
-        "dataBinding" : "sportelloServices$ent1aw"
-      },
-      "to" : {
-        "id" : "pwu2aw",
-        "type" : "LIST",
-        "pageId" : "page1aw.wr",
-        "dataBinding" : "sportelloServices$ent2aw"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att1aw",
-        "target" : "rcond1aw._be_att1aw"
       } ]
     } ],
     "fields" : null

@@ -37,11 +37,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld16",
+      "fieldId" : "sfld20",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld11",
+      "fieldId" : "fld16",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -49,11 +49,11 @@
       "valueAttribute" : "WebEDIServices$att57",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld163",
+      "fieldId" : "sfld11",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld20",
+      "fieldId" : "fld163",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -61,20 +61,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld157",
-      "valueAttribute" : "WebEDIServices$att8",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld158",
-      "valueAttribute" : "WebEDIServices$att9",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld159",
       "valueAttribute" : "WebEDIServices$att10",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld1",
       "valueAttribute" : "WebEDIServices$att7",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld158",
+      "valueAttribute" : "WebEDIServices$att9",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld157",
+      "valueAttribute" : "WebEDIServices$att8",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -87,12 +87,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld218",
-      "valueAttribute" : "WebEDIServices$att78",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld219",
       "valueAttribute" : "WebEDIServices$att79",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld218",
+      "valueAttribute" : "WebEDIServices$att78",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -105,20 +105,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld134",
-      "valueAttribute" : "WebEDIServices$att1",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld18",
       "valueAttribute" : "WebEDIServices$att67",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld135",
-      "valueAttribute" : "WebEDIServices$att2",
+      "fieldId" : "fld134",
+      "valueAttribute" : "WebEDIServices$att1",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld131",
       "valueAttribute" : "WebEDIServices$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld135",
+      "valueAttribute" : "WebEDIServices$att2",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -131,20 +131,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld17",
-      "valueAttribute" : "WebEDIServices$att67",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld122",
       "valueAttribute" : "WebEDIServices$att1",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld129",
-      "valueAttribute" : "WebEDIServices$att2",
+      "fieldId" : "sfld17",
+      "valueAttribute" : "WebEDIServices$att67",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld121",
       "valueAttribute" : "WebEDIServices$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld129",
+      "valueAttribute" : "WebEDIServices$att2",
       "valueAssociationRole" : null
     } ],
     "component" : {

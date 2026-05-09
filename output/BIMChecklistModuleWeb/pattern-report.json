@@ -756,36 +756,6 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1p",
-        "type" : "LIST",
-        "pageId" : "page1p.wr",
-        "dataBinding" : "BIMChecklistModuleDS$cls5o"
-      },
-      "to" : {
-        "id" : "lst16p",
-        "type" : "LIST",
-        "pageId" : "page1p.wr",
-        "dataBinding" : "BIMChecklistModuleDS$cls40j"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att37o",
-        "target" : "rcond11p._be_att37o"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "true",
-        "target" : "prd13p"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att37o",
-        "target" : "prd20p"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {

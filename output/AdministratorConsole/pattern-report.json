@@ -200,32 +200,6 @@
       "dataBinding" : "AdministratorConsoleDS$cls1ay"
     }
   }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst16v",
-        "type" : "LIST",
-        "pageId" : "page22v.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "dtl23v",
-        "type" : "DETAILS",
-        "pageId" : "page22v.wr",
-        "dataBinding" : "AdministratorConsoleDS$cls2"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp298x",
-        "target" : "rcond36v._be_att1"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp591e",
-        "target" : "acond24v"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
@@ -392,54 +366,6 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1o",
-        "type" : "LIST",
-        "pageId" : "page2o.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "dtl16v",
-        "type" : "DETAILS",
-        "pageId" : "page2o.wr",
-        "dataBinding" : "AdministratorConsoleDS$cls2"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp22x",
-        "target" : "rcond13v._be_att1"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp50ak",
-        "target" : "acond12v"
-      } ]
-    } ],
-    "fields" : null
-  }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1o",
-        "type" : "LIST",
-        "pageId" : "page2o.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "lst35i",
-        "type" : "LIST",
-        "pageId" : "page2o.wr",
-        "dataBinding" : "AdministratorConsoleDS$cls24l"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp22x",
-        "target" : "rcond32i._be_att1"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Master Detail Pattern",
     "flows" : [ {
       "from" : {
@@ -582,32 +508,6 @@
       "dataBinding" : "AdministratorConsoleDS$cls4ai"
     }
   }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst58p",
-        "type" : "LIST",
-        "pageId" : "page12p.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "dtl255p",
-        "type" : "DETAILS",
-        "pageId" : "page12p.wr",
-        "dataBinding" : "AdministratorConsoleDS$cls2"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp298x",
-        "target" : "rcond87p._be_att1"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp591e",
-        "target" : "acond104p"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Master Detail Pattern",
     "flows" : [ {
       "from" : {
@@ -745,32 +645,6 @@
       "valueAttribute" : "AdministratorConsoleDS$att299a",
       "valueAssociationRole" : null
     } ]
-  }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst100s",
-        "type" : "LIST",
-        "pageId" : "page14s.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "dtl96s",
-        "type" : "DETAILS",
-        "pageId" : "page14s.wr",
-        "dataBinding" : "AdministratorConsoleDS$cls2"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp549t",
-        "target" : "rcond95s._be_att1"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp608t",
-        "target" : "acond50s"
-      } ]
-    } ],
-    "fields" : null
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],

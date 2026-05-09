@@ -25,16 +25,16 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld22t",
-      "valueAttribute" : "WFDEL96Services$att244t",
+      "fieldId" : "fld25d",
+      "valueAttribute" : "WFDEL96Services$email",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld22v",
       "valueAttribute" : "WFDEL96Services$att243v",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld25d",
-      "valueAttribute" : "WFDEL96Services$email",
+      "fieldId" : "fld22t",
+      "valueAttribute" : "WFDEL96Services$att244t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld19v",
@@ -95,15 +95,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld56t",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld58t",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld57t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld56t",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -167,7 +167,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld18v",
+      "fieldId" : "sfld31v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -175,7 +175,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld31v",
+      "fieldId" : "fld18v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

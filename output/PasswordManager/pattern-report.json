@@ -1,31 +1,5 @@
 {
   "patterns" : [ {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst3j",
-        "type" : "LIST",
-        "pageId" : "page3j.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "lst6j",
-        "type" : "LIST",
-        "pageId" : "page3j.wr",
-        "dataBinding" : "PasswordManagerServices$cls2l"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp110l",
-        "target" : "rcond3j._be_att1l"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp110l",
-        "target" : "prd5j"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Preassigned SelectionFields Pattern",
     "flows" : [ {
       "from" : {

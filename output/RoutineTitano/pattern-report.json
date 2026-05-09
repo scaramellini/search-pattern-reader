@@ -34,28 +34,6 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multilevel Master Detail Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "inu3e",
-        "type" : "LIST",
-        "pageId" : "page2e.wr",
-        "dataBinding" : "RoutineTitanoServices$ent9e"
-      },
-      "to" : {
-        "id" : "inu4e",
-        "type" : "LIST",
-        "pageId" : "page2e.wr",
-        "dataBinding" : "RoutineTitanoServices$ent19e"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att33e",
-        "target" : "rcond5e._be_att33e"
-      } ]
-    } ],
-    "fields" : null
-  }, {
     "patternType" : "Basic Search Pattern",
     "flows" : [ {
       "from" : {

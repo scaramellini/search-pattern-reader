@@ -17,22 +17,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld31n",
-      "valueAttribute" : "UserManagementServices$att30n",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld5n",
-      "valueAttribute" : "UserManagementServices$att102",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld9n",
-      "valueAttribute" : "UserManagementServices$att106",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld6n",
-      "valueAttribute" : "UserManagementServices$att103",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld8n",
       "valueAttribute" : "UserManagementServices$att105",
       "valueAssociationRole" : null
@@ -45,8 +29,24 @@
       "valueAttribute" : "UserManagementServices$att101",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld6n",
+      "valueAttribute" : "UserManagementServices$att103",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld44n",
       "valueAttribute" : "UserManagementServices$att31n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5n",
+      "valueAttribute" : "UserManagementServices$att102",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9n",
+      "valueAttribute" : "UserManagementServices$att106",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31n",
+      "valueAttribute" : "UserManagementServices$att30n",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -73,24 +73,24 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld17n",
-      "valueAttribute" : "UserManagementServices$att308",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18n",
-      "valueAttribute" : "UserManagementServices$att309",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld4j",
       "valueAttribute" : "UserManagementServices$att4j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19n",
+      "valueAttribute" : "UserManagementServices$att314",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld16n",
       "valueAttribute" : "UserManagementServices$att307",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld19n",
-      "valueAttribute" : "UserManagementServices$att314",
+      "fieldId" : "fld18n",
+      "valueAttribute" : "UserManagementServices$att309",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17n",
+      "valueAttribute" : "UserManagementServices$att308",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -129,10 +129,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld5n",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "UserManagementServices$role3"
-    }, {
       "fieldId" : "msfld6n",
       "valueAttribute" : null,
       "valueAssociationRole" : "UserManagementServices$role5"
@@ -144,6 +140,10 @@
       "fieldId" : "msfld7n",
       "valueAttribute" : null,
       "valueAssociationRole" : "UserManagementServices$role1"
+    }, {
+      "fieldId" : "sfld5n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "UserManagementServices$role3"
     } ],
     "component" : {
       "id" : "enu16n",
@@ -221,12 +221,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld11n",
-      "valueAttribute" : "UserManagementServices$att2",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld13n",
       "valueAttribute" : "UserManagementServices$att3",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11n",
+      "valueAttribute" : "UserManagementServices$att2",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -265,15 +265,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld6n",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld20n",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld21n",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld6n",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
