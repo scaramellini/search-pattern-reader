@@ -29,7 +29,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         if (startNode.getType() != NodeType.FORM)
             return null;
-        
+
         Set<GraphNode.FieldInfo> fields = new HashSet<>();
 
         if (startNode != null && startNode.getFieldElementIds() != null) {
@@ -46,7 +46,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         for (Edge formToList : graph.getOutgoing(startNode.getId())) {
 
-            if(formToList.getType() != FlowType.NAVIGATION)
+            if (formToList.getType() != FlowType.NAVIGATION)
                 continue;
 
             GraphNode masterList = graph.getNode(formToList.getTargetId());
@@ -62,7 +62,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
             for (Edge incoming : graph.getIncoming(masterList.getId())) {
 
-                if(!incoming.getType().equals(FlowType.NAVIGATION))
+                if (!incoming.getType().equals(FlowType.NAVIGATION))
                     continue;
 
                 GraphNode source = graph.getNode(incoming.getSourceId());
@@ -71,7 +71,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                     continue;
 
                 if ((source.getType() == NodeType.LIST || source.getType() == NodeType.FORM) &&
-                        !source.getId().equals(masterList.getId())) {
+                        !source.getId().equals(startNode.getId())) {
 
                     valorizedMasterListConditions += utilityTools.getConditionCount(incoming, masterList);
                     supportingComponents.add(source);
@@ -82,7 +82,8 @@ public class FacetedSearchPattern extends GenericGraphPattern {
             if (supportingComponents.isEmpty())
                 continue;
 
-            // if the total number of conditions in the master list is greater than the number of valorized conditions, then the pattern is not valid
+            // if the total number of conditions in the master list is greater than the
+            // number of valorized conditions, then the pattern is not valid
             if (valorizedMasterListConditions < masterList.getConditionalExpressions().values()
                     .stream()
                     .filter(Objects::nonNull)
@@ -90,7 +91,10 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                     .sum())
                 continue;
 
-            instances.add(new PatternInstance(matched, fields, null));
+            if (matched.size() > 1) {
+                instances.add(new PatternInstance(matched, fields, null));
+            }
+
         }
 
         return instances.isEmpty() ? null : instances;
@@ -116,8 +120,10 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                 GraphNode source = graph.getNode(edge.getSourceId());
                 if (source == null)
                     continue;
-                // if there is at least one supporting form different from the starting form node, then it is a multiform variant
-                if (source.getType() == NodeType.FORM && !source.getId().equals(instance.getEdges().get(0).getSourceId()))
+                // if there is at least one supporting form different from the starting form
+                // node, then it is a multiform variant
+                if (source.getType() == NodeType.FORM
+                        && !source.getId().equals(instance.getEdges().get(0).getSourceId()))
                     hasSupportingForm = true;
                 if (source.getType() == NodeType.LIST)
                     hasSupportingList = true;

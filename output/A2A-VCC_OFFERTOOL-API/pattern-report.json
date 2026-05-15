@@ -1,18 +1,48 @@
 {
   "patterns" : [ {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau1ai",
         "type" : "DETAILS",
         "pageId" : "page2ai.wr",
-        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x"
+        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu1ai",
         "type" : "FORM",
         "pageId" : "page2ai.wr",
-        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x"
+        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x",
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att24x",
+        "target" : "kcond1._be_att24x"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld1ai",
+      "valueAttribute" : "A2AVCCOFFERTOOLAPIServices$att56x",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Form Pattern Class Variant",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau1ai",
+        "type" : "DETAILS",
+        "pageId" : "page2ai.wr",
+        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "enu1ai",
+        "type" : "FORM",
+        "pageId" : "page2ai.wr",
+        "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,7 +67,8 @@
       "id" : "enu1ai",
       "type" : "FORM",
       "pageId" : "page2ai.wr",
-      "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x"
+      "dataBinding" : "A2AVCCOFFERTOOLAPIServices$ent8x",
+      "isInDialogPage" : false
     }
   } ]
 }

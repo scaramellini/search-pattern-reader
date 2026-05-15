@@ -6,13 +6,15 @@
         "id" : "enu6b",
         "type" : "FORM",
         "pageId" : "page6b.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu9b",
         "type" : "LIST",
         "pageId" : "page6b.wr",
-        "dataBinding" : "GestioneMagazziniServices$ent3b"
+        "dataBinding" : "GestioneMagazziniServices$ent3b",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -65,39 +67,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld20d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15x",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld21d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld17d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld4ah",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld6d",
-      "valueAttribute" : null,
+      "valueAttribute" : "GestioneMagazziniServices$att84lv",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld22d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld3ah",
+      "fieldId" : "fld17d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -105,7 +83,31 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld15x",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld2ah",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3ah",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

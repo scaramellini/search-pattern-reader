@@ -6,13 +6,15 @@
         "id" : "enu24",
         "type" : "FORM",
         "pageId" : "page23.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu16",
         "type" : "LIST",
         "pageId" : "page23.wr",
-        "dataBinding" : "ManagementOSDMServices$User"
+        "dataBinding" : "ManagementOSDMServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -33,15 +35,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld86",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld16",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld15",
+      "valueAttribute" : "ManagementOSDMServices$roleName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld86",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -53,6 +55,10 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld80",
+      "valueAttribute" : "ManagementOSDMServices$userName",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld4s",
       "valueAttribute" : "ManagementOSDMServices$att1",
       "valueAssociationRole" : null
@@ -61,39 +67,36 @@
       "valueAttribute" : "ManagementOSDMServices$email",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld84",
-      "valueAttribute" : "ManagementOSDMServices$att14k",
-      "valueAssociationRole" : null
+      "fieldId" : "msfld5s",
+      "valueAttribute" : "ManagementOSDMServices$roleName",
+      "valueAssociationRole" : "ManagementOSDMServices$User2Role"
     }, {
       "fieldId" : "fld82",
       "valueAttribute" : "ManagementOSDMServices$att26a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld14",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "ManagementOSDMServices$User2DefaultRole"
-    }, {
       "fieldId" : "fld85",
       "valueAttribute" : "ManagementOSDMServices$att16k",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "msfld5s",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "ManagementOSDMServices$User2Role"
+      "fieldId" : "sfld14",
+      "valueAttribute" : "ManagementOSDMServices$roleName",
+      "valueAssociationRole" : "ManagementOSDMServices$User2DefaultRole"
     }, {
       "fieldId" : "fld81",
       "valueAttribute" : "ManagementOSDMServices$att25a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld80",
-      "valueAttribute" : "ManagementOSDMServices$userName",
+      "fieldId" : "fld84",
+      "valueAttribute" : "ManagementOSDMServices$att14k",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu23",
       "type" : "FORM",
       "pageId" : "page22.wr",
-      "dataBinding" : "ManagementOSDMServices$User"
+      "dataBinding" : "ManagementOSDMServices$User",
+      "isInDialogPage" : false
     }
   } ]
 }

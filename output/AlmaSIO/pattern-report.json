@@ -15,7 +15,8 @@
       "id" : "enu2",
       "type" : "FORM",
       "pageId" : "page1.wr",
-      "dataBinding" : "AlmaSIOServices$User"
+      "dataBinding" : "AlmaSIOServices$User",
+      "isInDialogPage" : false
     }
   } ]
 }

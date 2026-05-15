@@ -6,13 +6,15 @@
         "id" : "enu33d",
         "type" : "FORM",
         "pageId" : "page40d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu41d",
         "type" : "LIST",
         "pageId" : "page40d.wr",
-        "dataBinding" : "webratiocrmmultifileHEADServices$ent26d"
+        "dataBinding" : "webratiocrmmultifileHEADServices$ent26d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -49,15 +51,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld144d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld130d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "msfld17d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld143d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -69,15 +71,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld19d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld144d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld129d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld19d",
+      "valueAttribute" : "webratiocrmmultifileHEADServices$att245d",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld143d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -88,13 +90,15 @@
         "id" : "enu32p",
         "type" : "FORM",
         "pageId" : "page44p.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu22p",
         "type" : "LIST",
         "pageId" : "page44p.wr",
-        "dataBinding" : "webratiocrmmultifileHEADServices$ent13p"
+        "dataBinding" : "webratiocrmmultifileHEADServices$ent13p",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -123,19 +127,19 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld99p",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld35p",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld93p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "sfld35p",
+      "valueAttribute" : "webratiocrmmultifileHEADServices$att144p",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld100p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld99p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -146,13 +150,15 @@
         "id" : "enu53r",
         "type" : "FORM",
         "pageId" : "page49r.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu21r",
         "type" : "LIST",
         "pageId" : "page49r.wr",
-        "dataBinding" : "webratiocrmmultifileHEADServices$rent12"
+        "dataBinding" : "webratiocrmmultifileHEADServices$rent12",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -181,7 +187,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "msfld20r",
+      "fieldId" : "fld227r",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -189,8 +195,8 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld227r",
-      "valueAttribute" : null,
+      "fieldId" : "msfld20r",
+      "valueAttribute" : "webratiocrmmultifileHEADServices$att158",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld224r",
@@ -201,35 +207,36 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld115p",
-      "valueAttribute" : "webratiocrmmultifileHEADServices$att79d",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld114p",
-      "valueAttribute" : "webratiocrmmultifileHEADServices$att78d",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld112p",
       "valueAttribute" : "webratiocrmmultifileHEADServices$att157d",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld117p",
+      "valueAttribute" : "webratiocrmmultifileHEADServices$att76d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld113p",
       "valueAttribute" : "webratiocrmmultifileHEADServices$att77d",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld114p",
+      "valueAttribute" : "webratiocrmmultifileHEADServices$att78d",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld116p",
       "valueAttribute" : "webratiocrmmultifileHEADServices$att80d",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld117p",
-      "valueAttribute" : "webratiocrmmultifileHEADServices$att76d",
+      "fieldId" : "fld115p",
+      "valueAttribute" : "webratiocrmmultifileHEADServices$att79d",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu34p",
       "type" : "FORM",
       "pageId" : "page47p.wr",
-      "dataBinding" : "webratiocrmmultifileHEADServices$ent12d"
+      "dataBinding" : "webratiocrmmultifileHEADServices$ent12d",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -238,13 +245,15 @@
         "id" : "enu24d",
         "type" : "FORM",
         "pageId" : "page32d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu24d",
         "type" : "LIST",
         "pageId" : "page32d.wr",
-        "dataBinding" : "webratiocrmmultifileHEADServices$ent11d"
+        "dataBinding" : "webratiocrmmultifileHEADServices$ent11d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -273,7 +282,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld81d",
+      "fieldId" : "fld80d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -281,11 +290,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld80d",
+      "fieldId" : "fld82d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld82d",
+      "fieldId" : "fld81d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -296,13 +305,15 @@
         "id" : "enu23p",
         "type" : "FORM",
         "pageId" : "page6p.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu16p",
         "type" : "LIST",
         "pageId" : "page6p.wr",
-        "dataBinding" : "webratiocrmmultifileHEADServices$ent4p"
+        "dataBinding" : "webratiocrmmultifileHEADServices$ent4p",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -331,23 +342,23 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "msfld17p",
+      "fieldId" : "msfld16p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld2at",
-      "valueAttribute" : null,
+      "fieldId" : "msfld14p",
+      "valueAttribute" : "webratiocrmmultifileHEADServices$ent41a$att158",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld24p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "msfld16p",
+      "fieldId" : "msfld17p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "msfld14p",
+      "fieldId" : "sfld2at",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {

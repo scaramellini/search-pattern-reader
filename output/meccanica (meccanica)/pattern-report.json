@@ -6,13 +6,15 @@
         "id" : "enu17i",
         "type" : "FORM",
         "pageId" : "page85i.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu39i",
         "type" : "LIST",
         "pageId" : "page85i.wr",
-        "dataBinding" : "meccanicaServices$ProcessInstance"
+        "dataBinding" : "meccanicaServices$ProcessInstance",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -29,24 +31,32 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld8t",
-      "valueAttribute" : "meccanicaServices$att19t",
+      "fieldId" : "fld58t",
+      "valueAttribute" : "meccanicaServices$att10t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld51t",
-      "valueAttribute" : "meccanicaServices$att3t",
+      "fieldId" : "sfld9t",
+      "valueAttribute" : "meccanicaServices$att17t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld54t",
-      "valueAttribute" : "meccanicaServices$att6t",
+      "fieldId" : "fld62t",
+      "valueAttribute" : "meccanicaServices$att18t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld52t",
       "valueAttribute" : "meccanicaServices$att4t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld62t",
-      "valueAttribute" : "meccanicaServices$att18t",
+      "fieldId" : "fld68t",
+      "valueAttribute" : "meccanicaServices$att24t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld56t",
+      "valueAttribute" : "meccanicaServices$att8t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld51t",
+      "valueAttribute" : "meccanicaServices$att3t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld67t",
@@ -57,108 +67,104 @@
       "valueAttribute" : "meccanicaServices$att9t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld60t",
-      "valueAttribute" : "meccanicaServices$att16t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld68t",
-      "valueAttribute" : "meccanicaServices$att24t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld9t",
-      "valueAttribute" : "meccanicaServices$att17t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld56t",
-      "valueAttribute" : "meccanicaServices$att8t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld50t",
-      "valueAttribute" : "meccanicaServices$att2t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld58t",
-      "valueAttribute" : "meccanicaServices$att10t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld59t",
       "valueAttribute" : "meccanicaServices$att11t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld64t",
-      "valueAttribute" : "meccanicaServices$att20t",
+      "fieldId" : "fld60t",
+      "valueAttribute" : "meccanicaServices$att16t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld66t",
       "valueAttribute" : "meccanicaServices$att22t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld65t",
-      "valueAttribute" : "meccanicaServices$att21t",
+      "fieldId" : "sfld8t",
+      "valueAttribute" : "meccanicaServices$att19t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64t",
+      "valueAttribute" : "meccanicaServices$att20t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50t",
+      "valueAttribute" : "meccanicaServices$att2t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld53t",
       "valueAttribute" : "meccanicaServices$att5t",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld65t",
+      "valueAttribute" : "meccanicaServices$att21t",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld55t",
       "valueAttribute" : "meccanicaServices$att7t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54t",
+      "valueAttribute" : "meccanicaServices$att6t",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu9t",
       "type" : "FORM",
       "pageId" : "page15t.wr",
-      "dataBinding" : "meccanicaServices$ent1t"
+      "dataBinding" : "meccanicaServices$ent1t",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld5s",
-      "valueAttribute" : "meccanicaServices$att158s",
+      "fieldId" : "fld79s",
+      "valueAttribute" : "meccanicaServices$att159s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld76s",
       "valueAttribute" : "meccanicaServices$att149s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld2s",
-      "valueAttribute" : "meccanicaServices$att156s",
+      "fieldId" : "sfld5s",
+      "valueAttribute" : "meccanicaServices$att158s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld81s",
-      "valueAttribute" : "meccanicaServices$att181s",
+      "fieldId" : "sfld2s",
+      "valueAttribute" : "meccanicaServices$att156s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld80s",
       "valueAttribute" : "meccanicaServices$att160s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld79s",
-      "valueAttribute" : "meccanicaServices$att159s",
+      "fieldId" : "fld81s",
+      "valueAttribute" : "meccanicaServices$att181s",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu9s",
       "type" : "FORM",
       "pageId" : "page36s.wr",
-      "dataBinding" : "meccanicaServices$ent16s"
+      "dataBinding" : "meccanicaServices$ent16s",
+      "isInDialogPage" : false
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau19o",
         "type" : "DETAILS",
         "pageId" : "page97o.wr",
-        "dataBinding" : "meccanicaServices$ent8a"
+        "dataBinding" : "meccanicaServices$ent8a",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu42o",
         "type" : "FORM",
         "pageId" : "page97o.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -183,7 +189,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld168o",
+      "fieldId" : "fld166o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -191,65 +197,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld166o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld167o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld169o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dau19o",
-        "type" : "DETAILS",
-        "pageId" : "page97o.wr",
-        "dataBinding" : "meccanicaServices$ent8a"
-      },
-      "to" : {
-        "id" : "enu42o",
-        "type" : "FORM",
-        "pageId" : "page97o.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att90w",
-        "target" : "{fld166o}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att89w",
-        "target" : "{fld165o}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att33a",
-        "target" : "{fld167o}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att11h",
-        "target" : "{fld168o}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att13h",
-        "target" : "{fld169o}value"
-      } ]
-    } ],
-    "fields" : [ {
       "fieldId" : "fld168o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld165o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld166o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -265,31 +213,32 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld37t",
-      "valueAttribute" : "meccanicaServices$att4t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld39t",
-      "valueAttribute" : "meccanicaServices$att6t",
+      "fieldId" : "fld36t",
+      "valueAttribute" : "meccanicaServices$att3t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld38t",
       "valueAttribute" : "meccanicaServices$att5t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld36t",
-      "valueAttribute" : "meccanicaServices$att3t",
+      "fieldId" : "fld37t",
+      "valueAttribute" : "meccanicaServices$att4t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld35t",
       "valueAttribute" : "meccanicaServices$att2t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39t",
+      "valueAttribute" : "meccanicaServices$att6t",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu7t",
       "type" : "FORM",
       "pageId" : "page13t.wr",
-      "dataBinding" : "meccanicaServices$ent1t"
+      "dataBinding" : "meccanicaServices$ent1t",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -298,13 +247,15 @@
         "id" : "enu7t",
         "type" : "FORM",
         "pageId" : "page13t.wr",
-        "dataBinding" : "meccanicaServices$ent1t"
+        "dataBinding" : "meccanicaServices$ent1t",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3t",
         "type" : "LIST",
         "pageId" : "page13t.wr",
-        "dataBinding" : "meccanicaServices$ent1t"
+        "dataBinding" : "meccanicaServices$ent1t",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -329,184 +280,143 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld37t",
-      "valueAttribute" : "meccanicaServices$att4t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld39t",
-      "valueAttribute" : "meccanicaServices$att6t",
+      "fieldId" : "fld36t",
+      "valueAttribute" : "meccanicaServices$att3t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld38t",
       "valueAttribute" : "meccanicaServices$att5t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld36t",
-      "valueAttribute" : "meccanicaServices$att3t",
+      "fieldId" : "fld37t",
+      "valueAttribute" : "meccanicaServices$att4t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld35t",
       "valueAttribute" : "meccanicaServices$att2t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39t",
+      "valueAttribute" : "meccanicaServices$att6t",
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld316s",
-      "valueAttribute" : "meccanicaServices$att174s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld315s",
-      "valueAttribute" : "meccanicaServices$att173s",
+      "fieldId" : "sfld34s",
+      "valueAttribute" : "meccanicaServices$att169s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld126s",
       "valueAttribute" : "meccanicaServices$att168s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld134s",
-      "valueAttribute" : "meccanicaServices$att171s",
+      "fieldId" : "fld138s",
+      "valueAttribute" : "meccanicaServices$att172s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld34s",
-      "valueAttribute" : "meccanicaServices$att169s",
+      "fieldId" : "fld315s",
+      "valueAttribute" : "meccanicaServices$att173s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld316s",
+      "valueAttribute" : "meccanicaServices$att174s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld336s",
       "valueAttribute" : "meccanicaServices$att175s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld138s",
-      "valueAttribute" : "meccanicaServices$att172s",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld337s",
       "valueAttribute" : "meccanicaServices$att170s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld134s",
+      "valueAttribute" : "meccanicaServices$att171s",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu70s",
       "type" : "FORM",
       "pageId" : "page87s.wr",
-      "dataBinding" : "meccanicaServices$ent18s"
+      "dataBinding" : "meccanicaServices$ent18s",
+      "isInDialogPage" : false
     }
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu85s",
-        "type" : "LIST",
-        "pageId" : "page121s.wr",
-        "dataBinding" : "meccanicaServices$ent1k"
-      },
-      "to" : {
-        "id" : "enu95s",
-        "type" : "FORM",
-        "pageId" : "page121s.wr",
-        "dataBinding" : "meccanicaServices$ent1k"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att2k",
-        "target" : "kcond54._be_att2k"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld451s",
-      "valueAttribute" : "meccanicaServices$att6k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld450s",
-      "valueAttribute" : "meccanicaServices$att4k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld454s",
-      "valueAttribute" : "meccanicaServices$att247s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld453s",
-      "valueAttribute" : "meccanicaServices$att9k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld452s",
-      "valueAttribute" : "meccanicaServices$att8k",
-      "valueAssociationRole" : null
-    } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld45t",
-      "valueAttribute" : "meccanicaServices$att7t",
+      "fieldId" : "fld70t",
+      "valueAttribute" : "meccanicaServices$att22t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld73t",
       "valueAttribute" : "meccanicaServices$att24t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld46t",
-      "valueAttribute" : "meccanicaServices$att8t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld49t",
-      "valueAttribute" : "meccanicaServices$att11t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld70t",
-      "valueAttribute" : "meccanicaServices$att22t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld71t",
       "valueAttribute" : "meccanicaServices$att20t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld75t",
-      "valueAttribute" : "meccanicaServices$att21t",
+      "fieldId" : "fld45t",
+      "valueAttribute" : "meccanicaServices$att7t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld12t",
       "valueAttribute" : "meccanicaServices$att19t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld47t",
-      "valueAttribute" : "meccanicaServices$att9t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld72t",
-      "valueAttribute" : "meccanicaServices$att16t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld13t",
-      "valueAttribute" : "meccanicaServices$att17t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld41t",
-      "valueAttribute" : "meccanicaServices$att3t",
+      "fieldId" : "fld40t",
+      "valueAttribute" : "meccanicaServices$att2t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld42t",
       "valueAttribute" : "meccanicaServices$att4t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld44t",
-      "valueAttribute" : "meccanicaServices$att6t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld69t",
-      "valueAttribute" : "meccanicaServices$att18t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld43t",
       "valueAttribute" : "meccanicaServices$att5t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47t",
+      "valueAttribute" : "meccanicaServices$att9t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44t",
+      "valueAttribute" : "meccanicaServices$att6t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld48t",
       "valueAttribute" : "meccanicaServices$att10t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld40t",
-      "valueAttribute" : "meccanicaServices$att2t",
+      "fieldId" : "fld49t",
+      "valueAttribute" : "meccanicaServices$att11t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld75t",
+      "valueAttribute" : "meccanicaServices$att21t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld13t",
+      "valueAttribute" : "meccanicaServices$att17t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld69t",
+      "valueAttribute" : "meccanicaServices$att18t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld41t",
+      "valueAttribute" : "meccanicaServices$att3t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld46t",
+      "valueAttribute" : "meccanicaServices$att8t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld72t",
+      "valueAttribute" : "meccanicaServices$att16t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld74t",
@@ -517,37 +427,39 @@
       "id" : "enu8t",
       "type" : "FORM",
       "pageId" : "page14t.wr",
-      "dataBinding" : "meccanicaServices$ent1t"
+      "dataBinding" : "meccanicaServices$ent1t",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld451s",
-      "valueAttribute" : "meccanicaServices$att6k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld450s",
-      "valueAttribute" : "meccanicaServices$att4k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld454s",
-      "valueAttribute" : "meccanicaServices$att247s",
+      "fieldId" : "fld452s",
+      "valueAttribute" : "meccanicaServices$att8k",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld453s",
       "valueAttribute" : "meccanicaServices$att9k",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld452s",
-      "valueAttribute" : "meccanicaServices$att8k",
+      "fieldId" : "fld451s",
+      "valueAttribute" : "meccanicaServices$att6k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld454s",
+      "valueAttribute" : "meccanicaServices$att247s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld450s",
+      "valueAttribute" : "meccanicaServices$att4k",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu95s",
       "type" : "FORM",
       "pageId" : "page121s.wr",
-      "dataBinding" : "meccanicaServices$ent1k"
+      "dataBinding" : "meccanicaServices$ent1k",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -557,31 +469,32 @@
       "valueAttribute" : "meccanicaServices$att127h",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld140h",
-      "valueAttribute" : "meccanicaServices$att128h",
+      "fieldId" : "fld143h",
+      "valueAttribute" : "meccanicaServices$att131h",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld142h",
+      "valueAttribute" : "meccanicaServices$att130h",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld144h",
       "valueAttribute" : "meccanicaServices$att132h",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld143h",
-      "valueAttribute" : "meccanicaServices$att131h",
+      "fieldId" : "fld140h",
+      "valueAttribute" : "meccanicaServices$att128h",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld141h",
       "valueAttribute" : "meccanicaServices$att129h",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld142h",
-      "valueAttribute" : "meccanicaServices$att130h",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu33h",
       "type" : "FORM",
       "pageId" : "page51h.wr",
-      "dataBinding" : "meccanicaServices$ent9h"
+      "dataBinding" : "meccanicaServices$ent9h",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -599,22 +512,25 @@
       "id" : "enu5t",
       "type" : "FORM",
       "pageId" : "page12t.wr",
-      "dataBinding" : "meccanicaServices$ent1w"
+      "dataBinding" : "meccanicaServices$ent1w",
+      "isInDialogPage" : false
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau30v",
         "type" : "DETAILS",
         "pageId" : "page68v.wr",
-        "dataBinding" : "meccanicaServices$ent35a"
+        "dataBinding" : "meccanicaServices$ent35a",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu41v",
         "type" : "FORM",
         "pageId" : "page68v.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -631,57 +547,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld246v",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld248v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld247v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld246v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dau30v",
-        "type" : "DETAILS",
-        "pageId" : "page68v.wr",
-        "dataBinding" : "meccanicaServices$ent35a"
-      },
-      "to" : {
-        "id" : "enu41v",
-        "type" : "FORM",
-        "pageId" : "page68v.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att20c",
-        "target" : "{fld248v}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att21c",
-        "target" : "{fld246v}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att1c",
-        "target" : "{fld247v}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld248v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld247v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld246v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -693,32 +567,32 @@
       "valueAttribute" : "meccanicaServices$att224s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld122s",
-      "valueAttribute" : "meccanicaServices$att218s",
+      "fieldId" : "fld142s",
+      "valueAttribute" : "meccanicaServices$att222s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld145s",
-      "valueAttribute" : "meccanicaServices$att223s",
+      "fieldId" : "fld122s",
+      "valueAttribute" : "meccanicaServices$att218s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld119s",
       "valueAttribute" : "meccanicaServices$att217s",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld145s",
+      "valueAttribute" : "meccanicaServices$att223s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld117s",
+      "valueAttribute" : "meccanicaServices$att216s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld309s",
+      "valueAttribute" : "meccanicaServices$att227s",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld148s",
       "valueAttribute" : "meccanicaServices$att225s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld349s",
-      "valueAttribute" : "meccanicaServices$att229s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld92s",
-      "valueAttribute" : "meccanicaServices$att215s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld142s",
-      "valueAttribute" : "meccanicaServices$att222s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld330s",
@@ -729,38 +603,41 @@
       "valueAttribute" : "meccanicaServices$att214s",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld92s",
+      "valueAttribute" : "meccanicaServices$att215s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld349s",
+      "valueAttribute" : "meccanicaServices$att229s",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld206s",
       "valueAttribute" : "meccanicaServices$att226s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld309s",
-      "valueAttribute" : "meccanicaServices$att227s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld117s",
-      "valueAttribute" : "meccanicaServices$att216s",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu20s",
       "type" : "FORM",
       "pageId" : "page84s.wr",
-      "dataBinding" : "meccanicaServices$ent22s"
+      "dataBinding" : "meccanicaServices$ent22s",
+      "isInDialogPage" : false
     }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau7w",
         "type" : "DETAILS",
         "pageId" : "page7w.wr",
-        "dataBinding" : "meccanicaServices$ent8a"
+        "dataBinding" : "meccanicaServices$ent8a",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu27w",
         "type" : "FORM",
         "pageId" : "page7w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -785,15 +662,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld9h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld12h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld8h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -801,130 +670,22 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld160w",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dau7w",
-        "type" : "DETAILS",
-        "pageId" : "page7w.wr",
-        "dataBinding" : "meccanicaServices$ent8a"
-      },
-      "to" : {
-        "id" : "enu27w",
-        "type" : "FORM",
-        "pageId" : "page7w.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att90w",
-        "target" : "{fld161w}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att89w",
-        "target" : "{fld160w}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att33a",
-        "target" : "{fld8h}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att11h",
-        "target" : "{fld9h}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att13h",
-        "target" : "{fld12h}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld9h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld12h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld8h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld161w",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld160w",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu29s",
-        "type" : "LIST",
-        "pageId" : "page87s.wr",
-        "dataBinding" : "meccanicaServices$ent18s"
-      },
-      "to" : {
-        "id" : "enu70s",
-        "type" : "FORM",
-        "pageId" : "page87s.wr",
-        "dataBinding" : "meccanicaServices$ent18s"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att167s",
-        "target" : "kcond141._be_att167s"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld316s",
-      "valueAttribute" : "meccanicaServices$att174s",
-      "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld315s",
-      "valueAttribute" : "meccanicaServices$att173s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld126s",
-      "valueAttribute" : "meccanicaServices$att168s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld134s",
-      "valueAttribute" : "meccanicaServices$att171s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld34s",
-      "valueAttribute" : "meccanicaServices$att169s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld336s",
-      "valueAttribute" : "meccanicaServices$att175s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld138s",
-      "valueAttribute" : "meccanicaServices$att172s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld337s",
-      "valueAttribute" : "meccanicaServices$att170s",
+      "fieldId" : "fld9h",
+      "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld147h",
-      "valueAttribute" : "meccanicaServices$att129h",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld145h",
       "valueAttribute" : "meccanicaServices$att127h",
       "valueAssociationRole" : null
@@ -933,12 +694,16 @@
       "valueAttribute" : "meccanicaServices$att130h",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld149h",
-      "valueAttribute" : "meccanicaServices$att131h",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld150h",
       "valueAttribute" : "meccanicaServices$att132h",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld147h",
+      "valueAttribute" : "meccanicaServices$att129h",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld149h",
+      "valueAttribute" : "meccanicaServices$att131h",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld146h",
@@ -949,7 +714,8 @@
       "id" : "enu34h",
       "type" : "FORM",
       "pageId" : "page52h.wr",
-      "dataBinding" : "meccanicaServices$ent9h"
+      "dataBinding" : "meccanicaServices$ent9h",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -963,7 +729,23 @@
       "id" : "enu69t",
       "type" : "FORM",
       "pageId" : "page130t.wr",
-      "dataBinding" : "meccanicaServices$User"
+      "dataBinding" : "meccanicaServices$User",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld36t",
+      "valueAttribute" : "meccanicaServices$att47ay",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu57t",
+      "type" : "FORM",
+      "pageId" : "page111t.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -972,13 +754,15 @@
         "id" : "enu11f",
         "type" : "FORM",
         "pageId" : "page14f.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu4f",
         "type" : "LIST",
         "pageId" : "page14f.wr",
-        "dataBinding" : "meccanicaServices$ent2f"
+        "dataBinding" : "meccanicaServices$ent2f",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -1003,47 +787,63 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld15s",
-      "valueAttribute" : "meccanicaServices$att208s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld19s",
-      "valueAttribute" : "meccanicaServices$att212s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18s",
-      "valueAttribute" : "meccanicaServices$att211s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld20s",
-      "valueAttribute" : "meccanicaServices$att213s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld16s",
-      "valueAttribute" : "meccanicaServices$att209s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld14s",
-      "valueAttribute" : "meccanicaServices$att207s",
+      "fieldId" : "fld13s",
+      "valueAttribute" : "meccanicaServices$att206s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld17s",
       "valueAttribute" : "meccanicaServices$att210s",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld19s",
+      "valueAttribute" : "meccanicaServices$att212s",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld12s",
       "valueAttribute" : "meccanicaServices$att205s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld13s",
-      "valueAttribute" : "meccanicaServices$att206s",
+      "fieldId" : "fld16s",
+      "valueAttribute" : "meccanicaServices$att209s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18s",
+      "valueAttribute" : "meccanicaServices$att211s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15s",
+      "valueAttribute" : "meccanicaServices$att208s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20s",
+      "valueAttribute" : "meccanicaServices$att213s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14s",
+      "valueAttribute" : "meccanicaServices$att207s",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu3s",
       "type" : "FORM",
       "pageId" : "page81s.wr",
-      "dataBinding" : "meccanicaServices$ent21s"
+      "dataBinding" : "meccanicaServices$ent21s",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld18e",
+      "valueAttribute" : "meccanicaServices$att254s",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu4e",
+      "type" : "FORM",
+      "pageId" : "page4e.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -1052,13 +852,15 @@
         "id" : "enu48i",
         "type" : "FORM",
         "pageId" : "page75i.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu25i",
         "type" : "LIST",
         "pageId" : "page75i.wr",
-        "dataBinding" : "meccanicaServices$User"
+        "dataBinding" : "meccanicaServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -1075,7 +877,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld92f",
+      "fieldId" : "fld72h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -1083,10 +885,25 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld72h",
+      "fieldId" : "fld92f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld19e",
+      "valueAttribute" : "meccanicaServices$att254s",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu5e",
+      "type" : "FORM",
+      "pageId" : "page5e.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
   }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
@@ -1094,13 +911,15 @@
         "id" : "enu32h",
         "type" : "FORM",
         "pageId" : "page42h.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu21h",
         "type" : "LIST",
         "pageId" : "page42h.wr",
-        "dataBinding" : "meccanicaServices$ent9h"
+        "dataBinding" : "meccanicaServices$ent9h",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -1125,7 +944,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld83h",
+      "fieldId" : "fld132h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -1133,7 +952,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld106h",
+      "fieldId" : "fld83h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -1141,7 +960,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld132h",
+      "fieldId" : "fld106h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

@@ -1,18 +1,65 @@
 {
   "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld4j",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu21j",
+      "type" : "FORM",
+      "pageId" : "page50j.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld22b0",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu57b0",
+      "type" : "FORM",
+      "pageId" : "page139b0.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld19b0",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu53b0",
+      "type" : "FORM",
+      "pageId" : "page135b0.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
     "patternType" : "Master Detail Pattern",
     "flows" : [ {
       "from" : {
         "id" : "inu5q",
         "type" : "LIST",
         "pageId" : "page1q.wr",
-        "dataBinding" : "OriginalSkillsServices$ent13"
+        "dataBinding" : "OriginalSkillsServices$ent13",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dau3q",
         "type" : "DETAILS",
         "pageId" : "page1q.wr",
-        "dataBinding" : "OriginalSkillsServices$ent13"
+        "dataBinding" : "OriginalSkillsServices$ent13",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -28,13 +75,15 @@
         "id" : "inu5q",
         "type" : "LIST",
         "pageId" : "page1q.wr",
-        "dataBinding" : "OriginalSkillsServices$ent13"
+        "dataBinding" : "OriginalSkillsServices$ent13",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dau3q",
         "type" : "DETAILS",
         "pageId" : "page1q.wr",
-        "dataBinding" : "OriginalSkillsServices$ent13"
+        "dataBinding" : "OriginalSkillsServices$ent13",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -46,13 +95,15 @@
         "id" : "dau3q",
         "type" : "DETAILS",
         "pageId" : "page1q.wr",
-        "dataBinding" : "OriginalSkillsServices$ent13"
+        "dataBinding" : "OriginalSkillsServices$ent13",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "inu6q",
         "type" : "LIST",
         "pageId" : "page1q.wr",
-        "dataBinding" : "OriginalSkillsServices$ent10"
+        "dataBinding" : "OriginalSkillsServices$ent10",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -68,13 +119,15 @@
         "id" : "enu23j",
         "type" : "FORM",
         "pageId" : "page27j.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu7j",
         "type" : "LIST",
         "pageId" : "page27j.wr",
-        "dataBinding" : "OriginalSkillsServices$ent5j"
+        "dataBinding" : "OriginalSkillsServices$ent5j",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -91,6 +144,10 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld11j",
+      "valueAttribute" : "OriginalSkillsServices$att128",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld55j",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -98,71 +155,68 @@
       "fieldId" : "fld56j",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld11j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu1z",
-        "type" : "LIST",
-        "pageId" : "page2z.wr",
-        "dataBinding" : "OriginalSkillsServices$ent4z"
-      },
-      "to" : {
-        "id" : "enu1z",
-        "type" : "FORM",
-        "pageId" : "page2z.wr",
-        "dataBinding" : "OriginalSkillsServices$ent4z"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att20z",
-        "target" : "kcond4._be_att20z"
-      } ]
-    } ],
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld5z",
-      "valueAttribute" : "OriginalSkillsServices$att24z",
+      "fieldId" : "sfld2d",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld3z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "OriginalSkillsServices$role13z"
-    }, {
-      "fieldId" : "sfld4z",
-      "valueAttribute" : "OriginalSkillsServices$att5z",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld4z",
-      "valueAttribute" : "OriginalSkillsServices$att22z",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld6z",
-      "valueAttribute" : "OriginalSkillsServices$att23z",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld3z",
-      "valueAttribute" : "OriginalSkillsServices$att21z",
-      "valueAssociationRole" : null
-    } ]
+    } ],
+    "component" : {
+      "id" : "enu35d",
+      "type" : "FORM",
+      "pageId" : "page53d.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
   }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld21b0",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu56b0",
+      "type" : "FORM",
+      "pageId" : "page140b0.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld2z",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3z",
+      "type" : "FORM",
+      "pageId" : "page1z.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau1l",
         "type" : "DETAILS",
         "pageId" : "page4l.wr",
-        "dataBinding" : "OriginalSkillsServices$ent20"
+        "dataBinding" : "OriginalSkillsServices$ent20",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu1l",
         "type" : "FORM",
         "pageId" : "page4l.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -192,47 +246,35 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dau1l",
-        "type" : "DETAILS",
-        "pageId" : "page4l.wr",
-        "dataBinding" : "OriginalSkillsServices$ent20"
-      },
-      "to" : {
-        "id" : "enu1l",
-        "type" : "FORM",
-        "pageId" : "page4l.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att8l",
-        "target" : "{fld3l}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att1l",
-        "target" : "{fld4l}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att3y",
-        "target" : "{fld4y}value"
-      } ]
-    } ],
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld4l",
-      "valueAttribute" : null,
+      "fieldId" : "sfld3at",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld3l",
-      "valueAttribute" : null,
+    } ],
+    "component" : {
+      "id" : "enu4at",
+      "type" : "FORM",
+      "pageId" : "page4at.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld10j",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld4y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
+    } ],
+    "component" : {
+      "id" : "enu13j",
+      "type" : "FORM",
+      "pageId" : "page17j.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
@@ -245,7 +287,38 @@
       "id" : "enu25af",
       "type" : "FORM",
       "pageId" : "page25af.wr",
-      "dataBinding" : "OriginalSkillsServices$ent20"
+      "dataBinding" : "OriginalSkillsServices$ent20",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld1d",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu25d",
+      "type" : "FORM",
+      "pageId" : "page27d.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld20b0",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu55b0",
+      "type" : "FORM",
+      "pageId" : "page136b0.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -255,57 +328,104 @@
       "valueAttribute" : "OriginalSkillsServices$att24z",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld3z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "OriginalSkillsServices$role13z"
+      "fieldId" : "fld3z",
+      "valueAttribute" : "OriginalSkillsServices$att21z",
+      "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld4z",
       "valueAttribute" : "OriginalSkillsServices$att5z",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld4z",
-      "valueAttribute" : "OriginalSkillsServices$att22z",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld6z",
       "valueAttribute" : "OriginalSkillsServices$att23z",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld3z",
-      "valueAttribute" : "OriginalSkillsServices$att21z",
+      "fieldId" : "sfld3z",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : "OriginalSkillsServices$role13z"
+    }, {
+      "fieldId" : "fld4z",
+      "valueAttribute" : "OriginalSkillsServices$att22z",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu1z",
       "type" : "FORM",
       "pageId" : "page2z.wr",
-      "dataBinding" : "OriginalSkillsServices$ent4z"
+      "dataBinding" : "OriginalSkillsServices$ent4z",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld10z",
-      "valueAttribute" : "OriginalSkillsServices$att16z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld7z",
       "valueAttribute" : "OriginalSkillsServices$att13z",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld1z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "OriginalSkillsServices$role7z"
+      "fieldId" : "fld10z",
+      "valueAttribute" : "OriginalSkillsServices$att16z",
+      "valueAssociationRole" : null
     }, {
       "fieldId" : "fld8z",
       "valueAttribute" : "OriginalSkillsServices$att14z",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1z",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : "OriginalSkillsServices$role7z"
     } ],
     "component" : {
       "id" : "enu2z",
       "type" : "FORM",
       "pageId" : "page3z.wr",
-      "dataBinding" : "OriginalSkillsServices$ent1z"
+      "dataBinding" : "OriginalSkillsServices$ent1z",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld39j",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu67j",
+      "type" : "FORM",
+      "pageId" : "page101j.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld4b0",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu50b0",
+      "type" : "FORM",
+      "pageId" : "page126b0.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld6j",
+      "valueAttribute" : "OriginalSkillsServices$att157b0",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu55j",
+      "type" : "FORM",
+      "pageId" : "page82j.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   } ]
 }

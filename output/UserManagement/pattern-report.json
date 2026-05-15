@@ -11,49 +11,51 @@
       "id" : "enu3m",
       "type" : "FORM",
       "pageId" : "page2m.wr",
-      "dataBinding" : "UserManagementServices$ent1f"
+      "dataBinding" : "UserManagementServices$ent1f",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld8n",
-      "valueAttribute" : "UserManagementServices$att105",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld7n",
-      "valueAttribute" : "UserManagementServices$att104",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld4n",
-      "valueAttribute" : "UserManagementServices$att101",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld6n",
       "valueAttribute" : "UserManagementServices$att103",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31n",
+      "valueAttribute" : "UserManagementServices$att30n",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld44n",
       "valueAttribute" : "UserManagementServices$att31n",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld5n",
-      "valueAttribute" : "UserManagementServices$att102",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld9n",
       "valueAttribute" : "UserManagementServices$att106",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld31n",
-      "valueAttribute" : "UserManagementServices$att30n",
+      "fieldId" : "fld4n",
+      "valueAttribute" : "UserManagementServices$att101",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7n",
+      "valueAttribute" : "UserManagementServices$att104",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8n",
+      "valueAttribute" : "UserManagementServices$att105",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5n",
+      "valueAttribute" : "UserManagementServices$att102",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu5n",
       "type" : "FORM",
       "pageId" : "page4n.wr",
-      "dataBinding" : "UserManagementServices$ent6"
+      "dataBinding" : "UserManagementServices$ent6",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -67,37 +69,39 @@
       "id" : "enu15f",
       "type" : "FORM",
       "pageId" : "page10f.wr",
-      "dataBinding" : "UserManagementServices$ent2f"
+      "dataBinding" : "UserManagementServices$ent2f",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld16n",
+      "valueAttribute" : "UserManagementServices$att307",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld4j",
       "valueAttribute" : "UserManagementServices$att4j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17n",
+      "valueAttribute" : "UserManagementServices$att308",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld19n",
       "valueAttribute" : "UserManagementServices$att314",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld16n",
-      "valueAttribute" : "UserManagementServices$att307",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld18n",
       "valueAttribute" : "UserManagementServices$att309",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld17n",
-      "valueAttribute" : "UserManagementServices$att308",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu20n",
       "type" : "FORM",
       "pageId" : "page23n.wr",
-      "dataBinding" : "UserManagementServices$ent18"
+      "dataBinding" : "UserManagementServices$ent18",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -106,13 +110,15 @@
         "id" : "enu12n",
         "type" : "FORM",
         "pageId" : "page12n.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3n",
         "type" : "LIST",
         "pageId" : "page12n.wr",
-        "dataBinding" : "UserManagementServices$ent1"
+        "dataBinding" : "UserManagementServices$ent1",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -129,27 +135,28 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "msfld6n",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "UserManagementServices$role5"
-    }, {
       "fieldId" : "fld14n",
       "valueAttribute" : "UserManagementServices$att19",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "msfld6n",
+      "valueAttribute" : "UserManagementServices$roleName",
+      "valueAssociationRole" : "UserManagementServices$role5"
+    }, {
       "fieldId" : "msfld7n",
-      "valueAttribute" : null,
+      "valueAttribute" : "UserManagementServices$modelElementName",
       "valueAssociationRole" : "UserManagementServices$role1"
     }, {
       "fieldId" : "sfld5n",
-      "valueAttribute" : null,
+      "valueAttribute" : "UserManagementServices$roleName",
       "valueAssociationRole" : "UserManagementServices$role3"
     } ],
     "component" : {
       "id" : "enu16n",
       "type" : "FORM",
       "pageId" : "page15n.wr",
-      "dataBinding" : "UserManagementServices$ent2"
+      "dataBinding" : "UserManagementServices$ent2",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -158,13 +165,15 @@
         "id" : "enu2m",
         "type" : "FORM",
         "pageId" : "page1m.wr",
-        "dataBinding" : "UserManagementServices$ent1f"
+        "dataBinding" : "UserManagementServices$ent1f",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1m",
         "type" : "LIST",
         "pageId" : "page1m.wr",
-        "dataBinding" : "UserManagementServices$ent1f"
+        "dataBinding" : "UserManagementServices$ent1f",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -189,7 +198,8 @@
       "id" : "enu14f",
       "type" : "FORM",
       "pageId" : "page9f.wr",
-      "dataBinding" : "UserManagementServices$ent2f"
+      "dataBinding" : "UserManagementServices$ent2f",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -198,13 +208,15 @@
         "id" : "enu14f",
         "type" : "FORM",
         "pageId" : "page9f.wr",
-        "dataBinding" : "UserManagementServices$ent2f"
+        "dataBinding" : "UserManagementServices$ent2f",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu5f",
         "type" : "LIST",
         "pageId" : "page9f.wr",
-        "dataBinding" : "UserManagementServices$ent2f"
+        "dataBinding" : "UserManagementServices$ent2f",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -221,19 +233,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld13n",
-      "valueAttribute" : "UserManagementServices$att3",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld11n",
       "valueAttribute" : "UserManagementServices$att2",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13n",
+      "valueAttribute" : "UserManagementServices$att3",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu13n",
       "type" : "FORM",
       "pageId" : "page13n.wr",
-      "dataBinding" : "UserManagementServices$ent1"
+      "dataBinding" : "UserManagementServices$ent1",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -242,13 +255,15 @@
         "id" : "enu21n",
         "type" : "FORM",
         "pageId" : "page21n.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu6n",
         "type" : "LIST",
         "pageId" : "page21n.wr",
-        "dataBinding" : "UserManagementServices$ent18"
+        "dataBinding" : "UserManagementServices$ent18",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -265,11 +280,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld6n",
+      "fieldId" : "fld20n",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld20n",
+      "fieldId" : "sfld6n",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {

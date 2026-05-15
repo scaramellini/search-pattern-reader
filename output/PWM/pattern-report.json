@@ -3,12 +3,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld28",
-      "valueAttribute" : "PWMServices$att22",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld3i",
       "valueAttribute" : "PWMServices$att1i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld28",
+      "valueAttribute" : "PWMServices$att22",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld29",
@@ -19,7 +19,8 @@
       "id" : "enu10",
       "type" : "FORM",
       "pageId" : "page20.wr",
-      "dataBinding" : "PWMServices$ent5"
+      "dataBinding" : "PWMServices$ent5",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -28,13 +29,15 @@
         "id" : "enu14",
         "type" : "FORM",
         "pageId" : "page27.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu13",
         "type" : "LIST",
         "pageId" : "page27.wr",
-        "dataBinding" : "PWMServices$ent1"
+        "dataBinding" : "PWMServices$ent1",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -51,15 +54,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld44",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld45",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld46",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld44",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -70,13 +73,15 @@
         "id" : "enu13",
         "type" : "FORM",
         "pageId" : "page25.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu12",
         "type" : "LIST",
         "pageId" : "page25.wr",
-        "dataBinding" : "PWMServices$ent3"
+        "dataBinding" : "PWMServices$ent3",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -93,6 +98,10 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld42",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld41",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -100,87 +109,90 @@
       "fieldId" : "fld18o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld42",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld20",
-      "valueAttribute" : "PWMServices$att2",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld2i",
-      "valueAttribute" : "PWMServices$att2i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "msfld1",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PWMServices$role12"
-    }, {
       "fieldId" : "fld21",
       "valueAttribute" : "PWMServices$att3",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22",
+      "valueAttribute" : "PWMServices$att4",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld27",
       "valueAttribute" : "PWMServices$att5",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld22",
-      "valueAttribute" : "PWMServices$att4",
+      "fieldId" : "fld2i",
+      "valueAttribute" : "PWMServices$att2i",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20",
+      "valueAttribute" : "PWMServices$att2",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld1",
+      "valueAttribute" : "PWMServices$att8",
+      "valueAssociationRole" : "PWMServices$role12"
     } ],
     "component" : {
       "id" : "enu9",
       "type" : "FORM",
       "pageId" : "page18.wr",
-      "dataBinding" : "PWMServices$ent1"
+      "dataBinding" : "PWMServices$ent1",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld17",
-      "valueAttribute" : "PWMServices$att7",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld18",
       "valueAttribute" : "PWMServices$att8",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17",
+      "valueAttribute" : "PWMServices$att7",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu8",
       "type" : "FORM",
       "pageId" : "page16.wr",
-      "dataBinding" : "PWMServices$ent2"
+      "dataBinding" : "PWMServices$ent2",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld8",
-      "valueAttribute" : "PWMServices$att19",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld16",
       "valueAttribute" : "PWMServices$att20",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8",
+      "valueAttribute" : "PWMServices$att19",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu7",
       "type" : "FORM",
       "pageId" : "page14.wr",
-      "dataBinding" : "PWMServices$ent4"
+      "dataBinding" : "PWMServices$ent4",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld3",
-      "valueAttribute" : "PWMServices$att13",
+      "fieldId" : "fld1",
+      "valueAttribute" : "PWMServices$att11",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5",
+      "valueAttribute" : "PWMServices$att15",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld7",
@@ -188,19 +200,15 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld6o",
-      "valueAttribute" : null,
+      "valueAttribute" : "PWMServices$att8",
       "valueAssociationRole" : "PWMServices$role9"
     }, {
-      "fieldId" : "fld1",
-      "valueAttribute" : "PWMServices$att11",
+      "fieldId" : "fld3",
+      "valueAttribute" : "PWMServices$att13",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld4",
       "valueAttribute" : "PWMServices$att14",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld5",
-      "valueAttribute" : "PWMServices$att15",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld2",
@@ -211,7 +219,8 @@
       "id" : "enu6",
       "type" : "FORM",
       "pageId" : "page1.wr",
-      "dataBinding" : "PWMServices$ent3"
+      "dataBinding" : "PWMServices$ent3",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -220,13 +229,15 @@
         "id" : "enu3",
         "type" : "FORM",
         "pageId" : "page7.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3",
         "type" : "LIST",
         "pageId" : "page7.wr",
-        "dataBinding" : "PWMServices$ent4"
+        "dataBinding" : "PWMServices$ent4",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -239,11 +250,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld13",
+      "fieldId" : "fld14",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld14",
+      "fieldId" : "fld13",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -254,13 +265,15 @@
         "id" : "enu2",
         "type" : "FORM",
         "pageId" : "page5.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2",
         "type" : "LIST",
         "pageId" : "page5.wr",
-        "dataBinding" : "PWMServices$ent5"
+        "dataBinding" : "PWMServices$ent5",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -273,11 +286,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld11",
+      "fieldId" : "fld12",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld12",
+      "fieldId" : "fld11",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -288,13 +301,15 @@
         "id" : "enu1",
         "type" : "FORM",
         "pageId" : "page3.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1",
         "type" : "LIST",
         "pageId" : "page3.wr",
-        "dataBinding" : "PWMServices$ent2"
+        "dataBinding" : "PWMServices$ent2",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

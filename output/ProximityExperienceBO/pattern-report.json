@@ -15,7 +15,8 @@
       "id" : "enu11f",
       "type" : "FORM",
       "pageId" : "page2f.wr",
-      "dataBinding" : "ProximityExperienceBOServices$ent1f"
+      "dataBinding" : "ProximityExperienceBOServices$ent1f",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -24,13 +25,15 @@
         "id" : "enu11f",
         "type" : "FORM",
         "pageId" : "page2f.wr",
-        "dataBinding" : "ProximityExperienceBOServices$ent1f"
+        "dataBinding" : "ProximityExperienceBOServices$ent1f",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu6f",
         "type" : "LIST",
         "pageId" : "page2f.wr",
-        "dataBinding" : "ProximityExperienceBOServices$ent1f"
+        "dataBinding" : "ProximityExperienceBOServices$ent1f",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

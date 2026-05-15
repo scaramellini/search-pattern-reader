@@ -6,13 +6,15 @@
         "id" : "enu9w",
         "type" : "FORM",
         "pageId" : "page3w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2w",
         "type" : "LIST",
         "pageId" : "page3w.wr",
-        "dataBinding" : "OrderManagementServices$ent7w"
+        "dataBinding" : "OrderManagementServices$ent7w",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -25,11 +27,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld32w",
+      "fieldId" : "fld30w",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld30w",
+      "fieldId" : "fld32w",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -40,13 +42,15 @@
         "id" : "enu21a",
         "type" : "FORM",
         "pageId" : "page13a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu17a",
         "type" : "LIST",
         "pageId" : "page13a.wr",
-        "dataBinding" : "OrderManagementServices$ent1a"
+        "dataBinding" : "OrderManagementServices$ent1a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -59,11 +63,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld30a",
+      "fieldId" : "fld31a",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld31a",
+      "fieldId" : "fld30a",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -74,13 +78,15 @@
         "id" : "enu5w",
         "type" : "FORM",
         "pageId" : "page5w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3w",
         "type" : "LIST",
         "pageId" : "page5w.wr",
-        "dataBinding" : "OrderManagementServices$ent3a"
+        "dataBinding" : "OrderManagementServices$ent3a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -100,13 +106,15 @@
         "id" : "enu1w",
         "type" : "FORM",
         "pageId" : "page1w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1w",
         "type" : "LIST",
         "pageId" : "page1w.wr",
-        "dataBinding" : "OrderManagementServices$ent2w"
+        "dataBinding" : "OrderManagementServices$ent2w",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -126,13 +134,15 @@
         "id" : "enu29a",
         "type" : "FORM",
         "pageId" : "page31a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu25a",
         "type" : "LIST",
         "pageId" : "page31a.wr",
-        "dataBinding" : "OrderManagementServices$User"
+        "dataBinding" : "OrderManagementServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -157,16 +167,16 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld78a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld29a",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld28a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld78a",
-      "valueAttribute" : null,
+      "valueAttribute" : "OrderManagementServices$roleName",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld79a",
@@ -189,36 +199,38 @@
       "id" : "enu12w",
       "type" : "FORM",
       "pageId" : "page14w.wr",
-      "dataBinding" : "OrderManagementServices$ent9w"
+      "dataBinding" : "OrderManagementServices$ent9w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld31a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "OrderManagementServices$role31a"
-    }, {
       "fieldId" : "fld99a",
       "valueAttribute" : "OrderManagementServices$att81a",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld31a",
+      "valueAttribute" : "OrderManagementServices$att83a",
+      "valueAssociationRole" : "OrderManagementServices$role31a"
     } ],
     "component" : {
       "id" : "enu34a",
       "type" : "FORM",
       "pageId" : "page36a.wr",
-      "dataBinding" : "OrderManagementServices$ent14a"
+      "dataBinding" : "OrderManagementServices$ent14a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld13w",
-      "valueAttribute" : "OrderManagementServices$att195a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld14w",
       "valueAttribute" : "OrderManagementServices$att196a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13w",
+      "valueAttribute" : "OrderManagementServices$att195a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld89w",
@@ -229,7 +241,8 @@
       "id" : "enu6w",
       "type" : "FORM",
       "pageId" : "page6w.wr",
-      "dataBinding" : "OrderManagementServices$ent3a"
+      "dataBinding" : "OrderManagementServices$ent3a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -238,13 +251,15 @@
         "id" : "enu21w",
         "type" : "FORM",
         "pageId" : "page22w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu14w",
         "type" : "LIST",
         "pageId" : "page22w.wr",
-        "dataBinding" : "OrderManagementServices$ent10w"
+        "dataBinding" : "OrderManagementServices$ent10w",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -261,12 +276,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld92w",
-      "valueAttribute" : "OrderManagementServices$att128w",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld10w",
       "valueAttribute" : "OrderManagementServices$att9w",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld92w",
+      "valueAttribute" : "OrderManagementServices$att128w",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld8w",
@@ -277,7 +292,8 @@
       "id" : "enu2w",
       "type" : "FORM",
       "pageId" : "page2w.wr",
-      "dataBinding" : "OrderManagementServices$ent2w"
+      "dataBinding" : "OrderManagementServices$ent2w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -291,7 +307,8 @@
       "id" : "enu25w",
       "type" : "FORM",
       "pageId" : "page9w.wr",
-      "dataBinding" : "OrderManagementServices$ent16w"
+      "dataBinding" : "OrderManagementServices$ent16w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -313,7 +330,8 @@
       "id" : "enu29w",
       "type" : "FORM",
       "pageId" : "page35w.wr",
-      "dataBinding" : "OrderManagementServices$ent17w"
+      "dataBinding" : "OrderManagementServices$ent17w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -322,13 +340,15 @@
         "id" : "enu31a",
         "type" : "FORM",
         "pageId" : "page33a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu26a",
         "type" : "LIST",
         "pageId" : "page33a.wr",
-        "dataBinding" : "OrderManagementServices$ent15a"
+        "dataBinding" : "OrderManagementServices$ent15a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -348,13 +368,15 @@
         "id" : "enu15a",
         "type" : "FORM",
         "pageId" : "page12a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu14a",
         "type" : "LIST",
         "pageId" : "page12a.wr",
-        "dataBinding" : "OrderManagementServices$ent16a"
+        "dataBinding" : "OrderManagementServices$ent16a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -387,16 +409,13 @@
       "id" : "enu7w",
       "type" : "FORM",
       "pageId" : "page7w.wr",
-      "dataBinding" : "OrderManagementServices$ent4w"
+      "dataBinding" : "OrderManagementServices$ent4w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld33w",
-      "valueAttribute" : "OrderManagementServices$att48w",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld34w",
       "valueAttribute" : "OrderManagementServices$att49w",
       "valueAssociationRole" : null
@@ -404,12 +423,17 @@
       "fieldId" : "fld35w",
       "valueAttribute" : "OrderManagementServices$att50w",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld33w",
+      "valueAttribute" : "OrderManagementServices$att48w",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu10w",
       "type" : "FORM",
       "pageId" : "page11w.wr",
-      "dataBinding" : "OrderManagementServices$ent7w"
+      "dataBinding" : "OrderManagementServices$ent7w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -418,13 +442,15 @@
         "id" : "enu30w",
         "type" : "FORM",
         "pageId" : "page36w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu39w",
         "type" : "LIST",
         "pageId" : "page36w.wr",
-        "dataBinding" : "OrderManagementServices$ent17w"
+        "dataBinding" : "OrderManagementServices$ent17w",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -441,23 +467,24 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld77w",
-      "valueAttribute" : "OrderManagementServices$att68w",
+      "fieldId" : "fld76w",
+      "valueAttribute" : "OrderManagementServices$att67w",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld91w",
       "valueAttribute" : "OrderManagementServices$att131w",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld76w",
-      "valueAttribute" : "OrderManagementServices$att67w",
+      "fieldId" : "fld77w",
+      "valueAttribute" : "OrderManagementServices$att68w",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu22w",
       "type" : "FORM",
       "pageId" : "page23w.wr",
-      "dataBinding" : "OrderManagementServices$ent10w"
+      "dataBinding" : "OrderManagementServices$ent10w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -471,7 +498,8 @@
       "id" : "enu32a",
       "type" : "FORM",
       "pageId" : "page34a.wr",
-      "dataBinding" : "OrderManagementServices$ent15a"
+      "dataBinding" : "OrderManagementServices$ent15a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -480,13 +508,15 @@
         "id" : "enu11w",
         "type" : "FORM",
         "pageId" : "page13w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu10w",
         "type" : "LIST",
         "pageId" : "page13w.wr",
-        "dataBinding" : "OrderManagementServices$ent9w"
+        "dataBinding" : "OrderManagementServices$ent9w",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -514,13 +544,15 @@
         "id" : "enu27w",
         "type" : "FORM",
         "pageId" : "page29w.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu25w",
         "type" : "LIST",
         "pageId" : "page29w.wr",
-        "dataBinding" : "OrderManagementServices$ent16w"
+        "dataBinding" : "OrderManagementServices$ent16w",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

@@ -1,18 +1,440 @@
 {
   "patterns" : [ {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu85b",
+        "type" : "FORM",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu59b",
+        "type" : "LIST",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld221b}value",
+        "target" : "_be_pdp1606"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld75b}value._be_att26",
+        "target" : "_be_pdp1607"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu98b",
+        "type" : "FORM",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu59b",
+        "type" : "LIST",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld236b}value",
+        "target" : "_be_pdp1606"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld53b}value._be_att26",
+        "target" : "_be_pdp1607"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld221b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld75b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu61b",
+        "type" : "FORM",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu47b",
+        "type" : "LIST",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld184b}value",
+        "target" : "_be_pdp1682"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld42b}value._be_att26",
+        "target" : "_be_pdp1683"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu73b",
+        "type" : "FORM",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu47b",
+        "type" : "LIST",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld203b}value",
+        "target" : "_be_pdp1682"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld59b}value._be_att26",
+        "target" : "_be_pdp1683"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld42b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld184b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu73b",
+        "type" : "FORM",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu47b",
+        "type" : "LIST",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld203b}value",
+        "target" : "_be_pdp1682"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld59b}value._be_att26",
+        "target" : "_be_pdp1683"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu61b",
+        "type" : "FORM",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu47b",
+        "type" : "LIST",
+        "pageId" : "page104b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld184b}value",
+        "target" : "_be_pdp1682"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld42b}value._be_att26",
+        "target" : "_be_pdp1683"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld203b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld59b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu121b",
+        "type" : "FORM",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu80b",
+        "type" : "LIST",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld281b}value",
+        "target" : "_be_pdp2168"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld103b}value._be_att26",
+        "target" : "_be_pdp2169"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu123b",
+        "type" : "FORM",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu80b",
+        "type" : "LIST",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld283b}value",
+        "target" : "_be_pdp2168"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld105b}value._be_att26",
+        "target" : "_be_pdp2169"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld103b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld281b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu146b",
+        "type" : "FORM",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu112b",
+        "type" : "LIST",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld336b}value",
+        "target" : "_be_pdp1579"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld126b}value._be_att26",
+        "target" : "_be_pdp1580"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu148b",
+        "type" : "FORM",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu112b",
+        "type" : "LIST",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld338b}value",
+        "target" : "_be_pdp1579"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld128b}value._be_att26",
+        "target" : "_be_pdp1580"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld336b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld126b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu98b",
+        "type" : "FORM",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu59b",
+        "type" : "LIST",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld236b}value",
+        "target" : "_be_pdp1606"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld53b}value._be_att26",
+        "target" : "_be_pdp1607"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu85b",
+        "type" : "FORM",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu59b",
+        "type" : "LIST",
+        "pageId" : "page105b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld221b}value",
+        "target" : "_be_pdp1606"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld75b}value._be_att26",
+        "target" : "_be_pdp1607"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld53b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld236b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu75b",
+        "type" : "FORM",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu51b",
+        "type" : "LIST",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld104b}value",
+        "target" : "_be_pdp1777"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld61b}value._be_att26",
+        "target" : "_be_pdp1778"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu66b",
+        "type" : "FORM",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu51b",
+        "type" : "LIST",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld194b}value",
+        "target" : "_be_pdp1777"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld46b}value._be_att26",
+        "target" : "_be_pdp1778"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld61b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld104b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
     "patternType" : "Basic Search Pattern",
     "flows" : [ {
       "from" : {
         "id" : "enu99b",
         "type" : "FORM",
         "pageId" : "page92b.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu42b",
         "type" : "LIST",
         "pageId" : "page92b.wr",
-        "dataBinding" : "databaseRicercaServices$ent4b"
+        "dataBinding" : "databaseRicercaServices$ent4b",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -26,19 +448,381 @@
       "valueAssociationRole" : null
     } ]
   }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu123b",
+        "type" : "FORM",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu80b",
+        "type" : "LIST",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld283b}value",
+        "target" : "_be_pdp2168"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld105b}value._be_att26",
+        "target" : "_be_pdp2169"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu121b",
+        "type" : "FORM",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu80b",
+        "type" : "LIST",
+        "pageId" : "page137b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld281b}value",
+        "target" : "_be_pdp2168"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld103b}value._be_att26",
+        "target" : "_be_pdp2169"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld283b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld105b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu64b",
+        "type" : "FORM",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu65b",
+        "type" : "LIST",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld189b}value",
+        "target" : "_be_pdp2098"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld43b}value._be_att26",
+        "target" : "_be_pdp2099"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu93b",
+        "type" : "FORM",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu65b",
+        "type" : "LIST",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld229b}value",
+        "target" : "_be_pdp2098"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld81b}value._be_att26",
+        "target" : "_be_pdp2099"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld43b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld189b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu148b",
+        "type" : "FORM",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu112b",
+        "type" : "LIST",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld338b}value",
+        "target" : "_be_pdp1579"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld128b}value._be_att26",
+        "target" : "_be_pdp1580"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu146b",
+        "type" : "FORM",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu112b",
+        "type" : "LIST",
+        "pageId" : "page158b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld336b}value",
+        "target" : "_be_pdp1579"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld126b}value._be_att26",
+        "target" : "_be_pdp1580"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld128b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld338b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu93b",
+        "type" : "FORM",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu65b",
+        "type" : "LIST",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld229b}value",
+        "target" : "_be_pdp2098"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld81b}value._be_att26",
+        "target" : "_be_pdp2099"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu64b",
+        "type" : "FORM",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu65b",
+        "type" : "LIST",
+        "pageId" : "page111b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld189b}value",
+        "target" : "_be_pdp2098"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld43b}value._be_att26",
+        "target" : "_be_pdp2099"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld81b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld229b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu125b",
+        "type" : "FORM",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu97b",
+        "type" : "LIST",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld288b}value",
+        "target" : "_be_pdp2071"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld102b}value._be_att26",
+        "target" : "_be_pdp2072"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu127b",
+        "type" : "FORM",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu97b",
+        "type" : "LIST",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld290b}value",
+        "target" : "_be_pdp2071"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld107b}value._be_att26",
+        "target" : "_be_pdp2072"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld102b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld288b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu137b",
+        "type" : "FORM",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu106b",
+        "type" : "LIST",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld315b}value",
+        "target" : "_be_pdp1552"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld117b}value._be_att26",
+        "target" : "_be_pdp1553"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu139b",
+        "type" : "FORM",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu106b",
+        "type" : "LIST",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld317b}value",
+        "target" : "_be_pdp1552"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld119b}value._be_att26",
+        "target" : "_be_pdp1553"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld117b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld315b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
       "from" : {
         "id" : "enu114b",
         "type" : "FORM",
         "pageId" : "page140b.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu94b",
         "type" : "LIST",
         "pageId" : "page140b.wr",
-        "dataBinding" : "databaseRicercaServices$ent10b"
+        "dataBinding" : "databaseRicercaServices$ent10b",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -75,7 +859,19 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld264b",
+      "fieldId" : "fld262b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld268b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld263b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld267b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -87,23 +883,311 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld263b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld262b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld268b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld267b",
+      "fieldId" : "fld264b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld261b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu139b",
+        "type" : "FORM",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu106b",
+        "type" : "LIST",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld317b}value",
+        "target" : "_be_pdp1552"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld119b}value._be_att26",
+        "target" : "_be_pdp1553"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu137b",
+        "type" : "FORM",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu106b",
+        "type" : "LIST",
+        "pageId" : "page152b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld315b}value",
+        "target" : "_be_pdp1552"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld117b}value._be_att26",
+        "target" : "_be_pdp1553"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld119b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld317b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu127b",
+        "type" : "FORM",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu97b",
+        "type" : "LIST",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld290b}value",
+        "target" : "_be_pdp2071"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld107b}value._be_att26",
+        "target" : "_be_pdp2072"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu125b",
+        "type" : "FORM",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu97b",
+        "type" : "LIST",
+        "pageId" : "page143b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld288b}value",
+        "target" : "_be_pdp2071"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld102b}value._be_att26",
+        "target" : "_be_pdp2072"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld290b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld107b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu115b",
+        "type" : "FORM",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu95b",
+        "type" : "LIST",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld269b}value",
+        "target" : "_be_pdp1841"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld95b}value._be_att26",
+        "target" : "_be_pdp1842"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu117b",
+        "type" : "FORM",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu95b",
+        "type" : "LIST",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld276b}value",
+        "target" : "_be_pdp1841"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld97b}value._be_att26",
+        "target" : "_be_pdp1842"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld269b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld95b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu117b",
+        "type" : "FORM",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu95b",
+        "type" : "LIST",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld276b}value",
+        "target" : "_be_pdp1841"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld97b}value._be_att26",
+        "target" : "_be_pdp1842"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu115b",
+        "type" : "FORM",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu95b",
+        "type" : "LIST",
+        "pageId" : "page141b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld269b}value",
+        "target" : "_be_pdp1841"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld95b}value._be_att26",
+        "target" : "_be_pdp1842"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld276b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld97b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu69b",
+        "type" : "FORM",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu61b",
+        "type" : "LIST",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld235b}value",
+        "target" : "_be_pdp2195"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld50b}value._be_att26",
+        "target" : "_be_pdp2196"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu89b",
+        "type" : "FORM",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu61b",
+        "type" : "LIST",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld225b}value",
+        "target" : "_be_pdp2195"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld77b}value._be_att26",
+        "target" : "_be_pdp2196"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld50b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld235b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -114,13 +1198,15 @@
         "id" : "enu59b",
         "type" : "FORM",
         "pageId" : "page77b.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu41b",
         "type" : "LIST",
         "pageId" : "page77b.wr",
-        "dataBinding" : "databaseRicercaServices$ent6"
+        "dataBinding" : "databaseRicercaServices$ent6",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -153,7 +1239,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld178b",
+      "fieldId" : "fld182b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -161,15 +1247,75 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld164b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld239b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld182b",
+      "fieldId" : "fld178b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld164b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu80b",
+        "type" : "FORM",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu55b",
+        "type" : "LIST",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld206b}value",
+        "target" : "_be_pdp1633"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld68b}value._be_att26",
+        "target" : "_be_pdp1634"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu65b",
+        "type" : "FORM",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu55b",
+        "type" : "LIST",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld193b}value",
+        "target" : "_be_pdp1633"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld44b}value._be_att26",
+        "target" : "_be_pdp1634"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld68b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld206b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -180,13 +1326,15 @@
         "id" : "enu108b",
         "type" : "FORM",
         "pageId" : "page122b.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu72b",
         "type" : "LIST",
         "pageId" : "page122b.wr",
-        "dataBinding" : "databaseRicercaServices$ent9b"
+        "dataBinding" : "databaseRicercaServices$ent9b",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -211,11 +1359,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld399b",
+      "fieldId" : "fld245b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld245b",
+      "fieldId" : "fld399b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -224,19 +1372,36 @@
       "valueAssociationRole" : null
     } ]
   }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld17b",
+      "valueAttribute" : "databaseRicercaServices$att8",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu12b",
+      "type" : "FORM",
+      "pageId" : "page22b.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
       "from" : {
         "id" : "enu53b",
         "type" : "FORM",
         "pageId" : "page73b.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu14b",
         "type" : "LIST",
         "pageId" : "page73b.wr",
-        "dataBinding" : "databaseRicercaServices$ent5"
+        "dataBinding" : "databaseRicercaServices$ent5",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -269,19 +1434,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld175b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld95b",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld165b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld173b",
+      "fieldId" : "fld162b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld175b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -289,12 +1450,196 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld142b",
+      "fieldId" : "fld173b",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld162b",
+      "fieldId" : "fld95b",
       "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld142b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu89b",
+        "type" : "FORM",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu61b",
+        "type" : "LIST",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld225b}value",
+        "target" : "_be_pdp2195"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld77b}value._be_att26",
+        "target" : "_be_pdp2196"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu69b",
+        "type" : "FORM",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu61b",
+        "type" : "LIST",
+        "pageId" : "page109b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld235b}value",
+        "target" : "_be_pdp2195"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld50b}value._be_att26",
+        "target" : "_be_pdp2196"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld225b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld77b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu65b",
+        "type" : "FORM",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu55b",
+        "type" : "LIST",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld193b}value",
+        "target" : "_be_pdp1633"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld44b}value._be_att26",
+        "target" : "_be_pdp1634"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu80b",
+        "type" : "FORM",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu55b",
+        "type" : "LIST",
+        "pageId" : "page98b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld206b}value",
+        "target" : "_be_pdp1633"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld68b}value._be_att26",
+        "target" : "_be_pdp1634"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "sfld44b",
+      "valueAttribute" : "databaseRicercaServices$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld193b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multiform Variant Faceted Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "enu66b",
+        "type" : "FORM",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu51b",
+        "type" : "LIST",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld194b}value",
+        "target" : "_be_pdp1777"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld46b}value._be_att26",
+        "target" : "_be_pdp1778"
+      } ]
+    }, {
+      "from" : {
+        "id" : "enu75b",
+        "type" : "FORM",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "pwu51b",
+        "type" : "LIST",
+        "pageId" : "page76b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{fld104b}value",
+        "target" : "_be_pdp1777"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{sfld61b}value._be_att26",
+        "target" : "_be_pdp1778"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld194b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld46b",
+      "valueAttribute" : "databaseRicercaServices$att24",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -304,13 +1649,15 @@
         "id" : "enu131b",
         "type" : "FORM",
         "pageId" : "page145b.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu86b",
         "type" : "LIST",
         "pageId" : "page145b.wr",
-        "dataBinding" : "databaseRicercaServices$ent14b"
+        "dataBinding" : "databaseRicercaServices$ent14b",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

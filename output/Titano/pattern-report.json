@@ -6,13 +6,15 @@
         "id" : "enu74e",
         "type" : "FORM",
         "pageId" : "page119e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "inu88e",
         "type" : "LIST",
         "pageId" : "page119e.wr",
-        "dataBinding" : "TitanoServices$ent53e"
+        "dataBinding" : "TitanoServices$ent53e",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -29,15 +31,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld124e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld122e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld123e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld124e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -48,13 +50,15 @@
         "id" : "enu75e",
         "type" : "FORM",
         "pageId" : "page114e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "inu89e",
         "type" : "LIST",
         "pageId" : "page114e.wr",
-        "dataBinding" : "TitanoServices$ent58e"
+        "dataBinding" : "TitanoServices$ent58e",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -82,13 +86,15 @@
         "id" : "enu76e",
         "type" : "FORM",
         "pageId" : "page120e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "inu93e",
         "type" : "LIST",
         "pageId" : "page120e.wr",
-        "dataBinding" : "TitanoServices$ent54e"
+        "dataBinding" : "TitanoServices$ent54e",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -109,11 +115,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld127e",
+      "fieldId" : "fld135e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld135e",
+      "fieldId" : "fld127e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -124,13 +130,15 @@
         "id" : "enu70e",
         "type" : "FORM",
         "pageId" : "page103e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "inu73e",
         "type" : "LIST",
         "pageId" : "page103e.wr",
-        "dataBinding" : "TitanoServices$ent48e"
+        "dataBinding" : "TitanoServices$ent48e",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

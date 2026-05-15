@@ -7,10 +7,6 @@
       "valueAttribute" : "WebOrderData$att21",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld1",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "WebOrderData$role25"
-    }, {
       "fieldId" : "fld6",
       "valueAttribute" : "WebOrderData$att16",
       "valueAssociationRole" : null
@@ -18,12 +14,32 @@
       "fieldId" : "fld7",
       "valueAttribute" : "WebOrderData$att15",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1",
+      "valueAttribute" : "WebOrderData$att51",
+      "valueAssociationRole" : "WebOrderData$role25"
     } ],
     "component" : {
       "id" : "frm4",
       "type" : "FORM",
       "pageId" : "page6.wr",
-      "dataBinding" : "WebOrderData$cls3"
+      "dataBinding" : "WebOrderData$cls3",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld2u",
+      "valueAttribute" : "WebOrderData$att67",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm4u",
+      "type" : "FORM",
+      "pageId" : "page6u.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -32,13 +48,15 @@
         "id" : "frm6u",
         "type" : "FORM",
         "pageId" : "page9u.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst1u",
         "type" : "LIST",
         "pageId" : "page9u.wr",
-        "dataBinding" : "WebOrderData$cls8i"
+        "dataBinding" : "WebOrderData$cls8i",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -67,14 +85,6 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld14u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld12u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld11u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -83,11 +93,19 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld13u",
+      "fieldId" : "fld18u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld18u",
+      "fieldId" : "fld12u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -103,7 +121,8 @@
       "id" : "frm2u",
       "type" : "FORM",
       "pageId" : "page1u.wr",
-      "dataBinding" : "WebOrderData$cls4"
+      "dataBinding" : "WebOrderData$cls4",
+      "isInDialogPage" : false
     }
   } ]
 }

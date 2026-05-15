@@ -6,13 +6,15 @@
         "id" : "lst7",
         "type" : "LIST",
         "pageId" : "page16.wr",
-        "dataBinding" : "CustomersData$cls3w"
+        "dataBinding" : "CustomersData$cls3w",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dtl24",
         "type" : "DETAILS",
         "pageId" : "page16.wr",
-        "dataBinding" : "CustomersData$cls3w"
+        "dataBinding" : "CustomersData$cls3w",
+        "isInDialogPage" : false
       },
       "bindings" : [ ]
     } ],
@@ -24,13 +26,15 @@
         "id" : "frm16",
         "type" : "FORM",
         "pageId" : "page22.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst11",
         "type" : "LIST",
         "pageId" : "page22.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -67,7 +71,8 @@
       "id" : "frm17",
       "type" : "FORM",
       "pageId" : "page25.wr",
-      "dataBinding" : "CustomersData$cls3w"
+      "dataBinding" : "CustomersData$cls3w",
+      "isInDialogPage" : false
     }
   } ]
 }

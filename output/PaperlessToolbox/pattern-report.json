@@ -6,13 +6,15 @@
         "id" : "enu4z",
         "type" : "FORM",
         "pageId" : "page4z.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1z",
         "type" : "LIST",
         "pageId" : "page4z.wr",
-        "dataBinding" : "PaperlessToolboxServices$ent4"
+        "dataBinding" : "PaperlessToolboxServices$ent4",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -25,11 +27,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld17z",
+      "fieldId" : "fld16z",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld16z",
+      "fieldId" : "fld17z",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

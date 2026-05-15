@@ -6,13 +6,15 @@
         "id" : "enu120o",
         "type" : "FORM",
         "pageId" : "page116o.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu22o",
         "type" : "LIST",
         "pageId" : "page116o.wr",
-        "dataBinding" : "RecuperoCreditiServices$ent1v"
+        "dataBinding" : "RecuperoCreditiServices$ent1v",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,11 +39,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld437o",
+      "fieldId" : "fld436o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld436o",
+      "fieldId" : "fld437o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -49,11 +51,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld151o",
-      "valueAttribute" : null,
+      "fieldId" : "sfld152o",
+      "valueAttribute" : "RecuperoCreditiServices$att4o",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld152o",
+      "fieldId" : "sfld151o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -61,10 +63,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "msfld5o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RecuperoCreditiServices$role41o"
-    }, {
       "fieldId" : "fld119o",
       "valueAttribute" : "RecuperoCreditiServices$att520o",
       "valueAssociationRole" : null
@@ -72,35 +70,40 @@
       "fieldId" : "fld116o",
       "valueAttribute" : "RecuperoCreditiServices$att517o",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld5o",
+      "valueAttribute" : "RecuperoCreditiServices$ent4v$att26",
+      "valueAssociationRole" : "RecuperoCreditiServices$role41o"
     } ],
     "component" : {
       "id" : "enu44o",
       "type" : "FORM",
       "pageId" : "page51o.wr",
-      "dataBinding" : "RecuperoCreditiServices$ent47o"
+      "dataBinding" : "RecuperoCreditiServices$ent47o",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld1v",
-      "valueAttribute" : "RecuperoCreditiServices$att10",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld7",
-      "valueAttribute" : null,
+      "valueAttribute" : "RecuperoCreditiServices$att7",
       "valueAssociationRole" : "RecuperoCreditiServices$role4"
     }, {
       "fieldId" : "fld14",
       "valueAttribute" : "RecuperoCreditiServices$att9",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld17",
-      "valueAttribute" : "RecuperoCreditiServices$att12",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld16",
       "valueAttribute" : "RecuperoCreditiServices$att11",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld1v",
+      "valueAttribute" : "RecuperoCreditiServices$att10",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17",
+      "valueAttribute" : "RecuperoCreditiServices$att12",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld18",
@@ -111,7 +114,8 @@
       "id" : "enu7",
       "type" : "FORM",
       "pageId" : "page9.wr",
-      "dataBinding" : "RecuperoCreditiServices$ent2"
+      "dataBinding" : "RecuperoCreditiServices$ent2",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -120,13 +124,15 @@
         "id" : "enu6",
         "type" : "FORM",
         "pageId" : "page7.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu4",
         "type" : "LIST",
         "pageId" : "page7.wr",
-        "dataBinding" : "RecuperoCreditiServices$ent2"
+        "dataBinding" : "RecuperoCreditiServices$ent2",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -143,16 +149,16 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld13",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld5",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld6",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld13",
-      "valueAttribute" : null,
+      "valueAttribute" : "RecuperoCreditiServices$att7",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -162,13 +168,15 @@
         "id" : "enu5",
         "type" : "FORM",
         "pageId" : "page6.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3",
         "type" : "LIST",
         "pageId" : "page6.wr",
-        "dataBinding" : "RecuperoCreditiServices$ent3"
+        "dataBinding" : "RecuperoCreditiServices$ent3",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -193,7 +201,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld10",
+      "fieldId" : "fld11",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -201,15 +209,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "sfld4",
+      "valueAttribute" : "RecuperoCreditiServices$att26",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld3",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld4",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld11",
+      "fieldId" : "fld10",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -217,20 +225,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld3",
-      "valueAttribute" : "RecuperoCreditiServices$att1",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RecuperoCreditiServices$User2DefaultRole"
-    }, {
-      "fieldId" : "sfld2",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RecuperoCreditiServices$role1"
-    }, {
       "fieldId" : "fld2",
       "valueAttribute" : "RecuperoCreditiServices$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2",
+      "valueAttribute" : "RecuperoCreditiServices$att7",
+      "valueAssociationRole" : "RecuperoCreditiServices$role1"
+    }, {
+      "fieldId" : "sfld1",
+      "valueAttribute" : "RecuperoCreditiServices$roleName",
+      "valueAssociationRole" : "RecuperoCreditiServices$User2DefaultRole"
+    }, {
+      "fieldId" : "fld3",
+      "valueAttribute" : "RecuperoCreditiServices$att1",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld4",
@@ -241,7 +249,8 @@
       "id" : "enu2",
       "type" : "FORM",
       "pageId" : "page3.wr",
-      "dataBinding" : "RecuperoCreditiServices$User"
+      "dataBinding" : "RecuperoCreditiServices$User",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -255,6 +264,10 @@
       "valueAttribute" : "RecuperoCreditiServices$att14y",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld15y",
+      "valueAttribute" : "RecuperoCreditiServices$att16y",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld14y",
       "valueAttribute" : "RecuperoCreditiServices$att11y",
       "valueAssociationRole" : null
@@ -262,38 +275,36 @@
       "fieldId" : "fld16y",
       "valueAttribute" : "RecuperoCreditiServices$att15y",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15y",
-      "valueAttribute" : "RecuperoCreditiServices$att16y",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu6y",
       "type" : "FORM",
       "pageId" : "page5y.wr",
-      "dataBinding" : "RecuperoCreditiServices$ent2y"
+      "dataBinding" : "RecuperoCreditiServices$ent2y",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld135o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RecuperoCreditiServices$role105o"
+      "fieldId" : "sfld136o",
+      "valueAttribute" : "RecuperoCreditiServices$ent7v$att4o",
+      "valueAssociationRole" : "RecuperoCreditiServices$role110o"
     }, {
       "fieldId" : "fld331o",
       "valueAttribute" : "RecuperoCreditiServices$att794o",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld136o",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RecuperoCreditiServices$role110o"
+      "fieldId" : "sfld135o",
+      "valueAttribute" : "RecuperoCreditiServices$att7",
+      "valueAssociationRole" : "RecuperoCreditiServices$role105o"
     } ],
     "component" : {
       "id" : "enu101o",
       "type" : "FORM",
       "pageId" : "page102o.wr",
-      "dataBinding" : "RecuperoCreditiServices$ent66o"
+      "dataBinding" : "RecuperoCreditiServices$ent66o",
+      "isInDialogPage" : false
     }
   } ]
 }

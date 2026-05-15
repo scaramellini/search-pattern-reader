@@ -3,14 +3,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld99a",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att761a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld83a",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att753a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld69a",
       "valueAttribute" : "ConfigurePriceQuoteServices$att752a",
       "valueAssociationRole" : null
@@ -18,12 +10,21 @@
       "fieldId" : "fld71a",
       "valueAttribute" : "ConfigurePriceQuoteServices$att751a",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att753a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld99a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att761a",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu65a",
       "type" : "FORM",
       "pageId" : "page62a.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent57a"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent57a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -32,13 +33,15 @@
         "id" : "enu65a",
         "type" : "FORM",
         "pageId" : "page62a.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent57a"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent57a",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu34a",
         "type" : "LIST",
         "pageId" : "page62a.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent57a"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent57a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -59,20 +62,20 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld99a",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att761a",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld83a",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att753a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld69a",
       "valueAttribute" : "ConfigurePriceQuoteServices$att752a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld71a",
       "valueAttribute" : "ConfigurePriceQuoteServices$att751a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld83a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att753a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld99a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att761a",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -83,10 +86,6 @@
       "valueAttribute" : "ConfigurePriceQuoteServices$att497w",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld4m",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att496w",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld6ai",
       "valueAttribute" : "ConfigurePriceQuoteServices$att14ai",
       "valueAssociationRole" : null
@@ -94,12 +93,17 @@
       "fieldId" : "fld6m",
       "valueAttribute" : "ConfigurePriceQuoteServices$att498w",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att496w",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu1m",
       "type" : "FORM",
       "pageId" : "page2m.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent7w"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent7w",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -108,13 +112,15 @@
         "id" : "enu1z",
         "type" : "FORM",
         "pageId" : "page1z.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1z",
         "type" : "LIST",
         "pageId" : "page1z.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent4z"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent4z",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -135,6 +141,10 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld20z",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld21z",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -146,10 +156,6 @@
       "fieldId" : "fld22z",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld20z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Basic Search Pattern",
@@ -158,13 +164,15 @@
         "id" : "enu20k",
         "type" : "FORM",
         "pageId" : "page19k.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu11k",
         "type" : "LIST",
         "pageId" : "page19k.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$User"
+        "dataBinding" : "ConfigurePriceQuoteServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -184,13 +192,15 @@
         "id" : "enu32k",
         "type" : "FORM",
         "pageId" : "page32k.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu27k",
         "type" : "LIST",
         "pageId" : "page32k.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent76"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent76",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -231,31 +241,32 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld1av",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att2669",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld2av",
       "valueAttribute" : "ConfigurePriceQuoteServices$att24av",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld1av",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att17av",
+      "fieldId" : "fld4av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att23av",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2669",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld3av",
       "valueAttribute" : "ConfigurePriceQuoteServices$att22av",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld4av",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att23av",
+      "fieldId" : "sfld1av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att17av",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu3av",
       "type" : "FORM",
       "pageId" : "page3av.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent226"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent226",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -264,13 +275,15 @@
         "id" : "enu6k",
         "type" : "FORM",
         "pageId" : "page6k.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu4k",
         "type" : "LIST",
         "pageId" : "page6k.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$User"
+        "dataBinding" : "ConfigurePriceQuoteServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -299,7 +312,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld4k",
+      "fieldId" : "fld21k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -307,15 +320,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld20k",
-      "valueAttribute" : null,
+      "fieldId" : "sfld4k",
+      "valueAttribute" : "ConfigurePriceQuoteServices$roleName",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld22k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld21k",
+      "fieldId" : "fld20k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -330,13 +343,15 @@
         "id" : "enu26k",
         "type" : "FORM",
         "pageId" : "page26k.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu21k",
         "type" : "LIST",
         "pageId" : "page26k.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent219"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent219",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -353,7 +368,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld85k",
+      "fieldId" : "fld87k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -361,7 +376,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld87k",
+      "fieldId" : "fld85k",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -369,6 +384,10 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld10av",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att21av",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld9av",
       "valueAttribute" : "ConfigurePriceQuoteServices$att20av",
       "valueAssociationRole" : null
@@ -380,16 +399,13 @@
       "fieldId" : "fld11av",
       "valueAttribute" : "ConfigurePriceQuoteServices$att25av",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld10av",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att21av",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu1av",
       "type" : "FORM",
       "pageId" : "page1av.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent1av"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent1av",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -403,22 +419,25 @@
       "id" : "enu2r",
       "type" : "FORM",
       "pageId" : "page2r.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent1r"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent1r",
+      "isInDialogPage" : false
     }
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau2r",
         "type" : "DETAILS",
         "pageId" : "page2r.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent1r"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent1r",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu2r",
         "type" : "FORM",
         "pageId" : "page2r.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent1r"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent1r",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -432,19 +451,49 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Preloaded Form Pattern Class Variant",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau2r",
+        "type" : "DETAILS",
+        "pageId" : "page2r.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent1r",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "enu2r",
+        "type" : "FORM",
+        "pageId" : "page2r.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent1r",
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1r",
+        "target" : "kcond61._be_att1r"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld3r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2r",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau2m",
         "type" : "DETAILS",
         "pageId" : "page2m.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent7w"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent7w",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu1m",
         "type" : "FORM",
         "pageId" : "page2m.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent7w"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent7w",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -457,8 +506,44 @@
       "valueAttribute" : "ConfigurePriceQuoteServices$att497w",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld6ai",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att14ai",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att498w",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld4m",
       "valueAttribute" : "ConfigurePriceQuoteServices$att496w",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Form Pattern Class Variant",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau2m",
+        "type" : "DETAILS",
+        "pageId" : "page2m.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent7w",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "enu1m",
+        "type" : "FORM",
+        "pageId" : "page2m.wr",
+        "dataBinding" : "ConfigurePriceQuoteServices$ent7w",
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att495w",
+        "target" : "kcond50._be_att495w"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld5m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att497w",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld6ai",
@@ -468,11 +553,19 @@
       "fieldId" : "fld6m",
       "valueAttribute" : "ConfigurePriceQuoteServices$att498w",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4m",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att496w",
+      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld4r",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att10r",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld5r",
       "valueAttribute" : "ConfigurePriceQuoteServices$att11r",
       "valueAssociationRole" : null
@@ -480,16 +573,13 @@
       "fieldId" : "fld6r",
       "valueAttribute" : "ConfigurePriceQuoteServices$att12r",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld4r",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att10r",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu3r",
       "type" : "FORM",
       "pageId" : "page2r.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent4r"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent4r",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -499,12 +589,12 @@
       "valueAttribute" : "ConfigurePriceQuoteServices$att110s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld66s",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att116s",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld62s",
       "valueAttribute" : "ConfigurePriceQuoteServices$att113s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld66s",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att116s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld63s",
@@ -519,52 +609,19 @@
       "id" : "enu7s",
       "type" : "FORM",
       "pageId" : "page4s.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent21"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent21",
+      "isInDialogPage" : false
     }
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu1r",
-        "type" : "LIST",
-        "pageId" : "page2r.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent4r"
-      },
-      "to" : {
-        "id" : "enu3r",
-        "type" : "FORM",
-        "pageId" : "page2r.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent4r"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att9r",
-        "target" : "kcond62._be_att9r"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld5r",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att11r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld6r",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att12r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld4r",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att10r",
-      "valueAssociationRole" : null
-    } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "sfld9k",
-      "valueAttribute" : null,
+      "valueAttribute" : "ConfigurePriceQuoteServices$modelElementName",
       "valueAssociationRole" : "ConfigurePriceQuoteServices$Role2DefaultModelElement"
     }, {
       "fieldId" : "msfld3k",
-      "valueAttribute" : null,
+      "valueAttribute" : "ConfigurePriceQuoteServices$modelElementName",
       "valueAssociationRole" : "ConfigurePriceQuoteServices$Role2ModelElement"
     }, {
       "fieldId" : "fld24k",
@@ -575,7 +632,8 @@
       "id" : "enu8k",
       "type" : "FORM",
       "pageId" : "page8k.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$Role"
+      "dataBinding" : "ConfigurePriceQuoteServices$Role",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -584,13 +642,15 @@
         "id" : "enu60a",
         "type" : "FORM",
         "pageId" : "page81a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu40a",
         "type" : "LIST",
         "pageId" : "page81a.wr",
-        "dataBinding" : "ConfigurePriceQuoteServices$ent117"
+        "dataBinding" : "ConfigurePriceQuoteServices$ent117",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -607,15 +667,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld50a",
+      "fieldId" : "fld349a",
       "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld50a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att1781",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld350a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld349a",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -627,45 +687,47 @@
       "valueAttribute" : "ConfigurePriceQuoteServices$att2643",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld7a",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att2644",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld5a",
       "valueAttribute" : "ConfigurePriceQuoteServices$att2642",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att2644",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu12a",
       "type" : "FORM",
       "pageId" : "page10a.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent219"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent219",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld414a",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att109k",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld411a",
-      "valueAttribute" : "ConfigurePriceQuoteServices$att105k",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld415a",
       "valueAttribute" : "ConfigurePriceQuoteServices$att45h",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld414a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att109k",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld413a",
       "valueAttribute" : "ConfigurePriceQuoteServices$att108k",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld411a",
+      "valueAttribute" : "ConfigurePriceQuoteServices$att105k",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu68a",
       "type" : "FORM",
       "pageId" : "page66a.wr",
-      "dataBinding" : "ConfigurePriceQuoteServices$ent4k"
+      "dataBinding" : "ConfigurePriceQuoteServices$ent4k",
+      "isInDialogPage" : false
     }
   } ]
 }

@@ -3,27 +3,28 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "msfld1f",
+      "valueAttribute" : "GestioneRicorsiServices$att266i",
+      "valueAssociationRole" : "GestioneRicorsiServices$role99i"
+    }, {
+      "fieldId" : "fld185f",
+      "valueAttribute" : "GestioneRicorsiServices$att193i",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld187f",
       "valueAttribute" : "GestioneRicorsiServices$att204i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "msfld1f",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "GestioneRicorsiServices$role99i"
-    }, {
       "fieldId" : "fld186f",
       "valueAttribute" : "GestioneRicorsiServices$att203i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld185f",
-      "valueAttribute" : "GestioneRicorsiServices$att193i",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu65f",
       "type" : "FORM",
       "pageId" : "page77f.wr",
-      "dataBinding" : "GestioneRicorsiServices$ent27i"
+      "dataBinding" : "GestioneRicorsiServices$ent27i",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -33,16 +34,12 @@
       "valueAttribute" : "GestioneRicorsiServices$att267i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld206f",
-      "valueAttribute" : "GestioneRicorsiServices$att256i",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld203f",
       "valueAttribute" : "GestioneRicorsiServices$att240i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld202f",
-      "valueAttribute" : "GestioneRicorsiServices$att239i",
+      "fieldId" : "fld206f",
+      "valueAttribute" : "GestioneRicorsiServices$att256i",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld205f",
@@ -52,12 +49,17 @@
       "fieldId" : "fld204f",
       "valueAttribute" : "GestioneRicorsiServices$att241i",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld202f",
+      "valueAttribute" : "GestioneRicorsiServices$att239i",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu80f",
       "type" : "FORM",
       "pageId" : "page80f.wr",
-      "dataBinding" : "GestioneRicorsiServices$ent32i"
+      "dataBinding" : "GestioneRicorsiServices$ent32i",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -87,22 +89,42 @@
       "id" : "enu78f",
       "type" : "FORM",
       "pageId" : "page78f.wr",
-      "dataBinding" : "GestioneRicorsiServices$ent28i"
+      "dataBinding" : "GestioneRicorsiServices$ent28i",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld281f",
+      "valueAttribute" : "GestioneRicorsiServices$att49",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld3f",
+      "valueAttribute" : "GestioneRicorsiServices$att7",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu121f",
+      "type" : "FORM",
+      "pageId" : "page128f.wr",
+      "dataBinding" : "GestioneRicorsiServices$ent8",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "msfld2f",
-      "valueAttribute" : null,
+      "valueAttribute" : "GestioneRicorsiServices$att267i",
       "valueAssociationRole" : "GestioneRicorsiServices$role97i"
-    }, {
-      "fieldId" : "fld195f",
-      "valueAttribute" : "GestioneRicorsiServices$att230i",
-      "valueAssociationRole" : null
     }, {
       "fieldId" : "fld197f",
       "valueAttribute" : "GestioneRicorsiServices$att232i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld195f",
+      "valueAttribute" : "GestioneRicorsiServices$att230i",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld196f",
@@ -113,7 +135,8 @@
       "id" : "enu79f",
       "type" : "FORM",
       "pageId" : "page79f.wr",
-      "dataBinding" : "GestioneRicorsiServices$ent31i"
+      "dataBinding" : "GestioneRicorsiServices$ent31i",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -127,7 +150,8 @@
       "id" : "enu5f",
       "type" : "FORM",
       "pageId" : "page5f.wr",
-      "dataBinding" : "GestioneRicorsiServices$ent8"
+      "dataBinding" : "GestioneRicorsiServices$ent8",
+      "isInDialogPage" : false
     }
   } ]
 }

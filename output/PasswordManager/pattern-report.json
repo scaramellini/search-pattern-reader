@@ -1,32 +1,6 @@
 {
   "patterns" : [ {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst11j",
-        "type" : "LIST",
-        "pageId" : "page6j.wr",
-        "dataBinding" : "PasswordManagerServices$cls2"
-      },
-      "to" : {
-        "id" : "frm7j",
-        "type" : "FORM",
-        "pageId" : "page6j.wr",
-        "dataBinding" : "PasswordManagerServices$cls2"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld18j",
-      "valueAttribute" : "PasswordManagerServices$att13l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld14j",
-      "valueAttribute" : "PasswordManagerServices$att16",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld18j",
@@ -41,52 +15,25 @@
       "id" : "frm7j",
       "type" : "FORM",
       "pageId" : "page6j.wr",
-      "dataBinding" : "PasswordManagerServices$cls2"
+      "dataBinding" : "PasswordManagerServices$cls2",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst12j",
-        "type" : "LIST",
-        "pageId" : "page7j.wr",
-        "dataBinding" : "PasswordManagerServices$cls3"
-      },
-      "to" : {
-        "id" : "frm10j",
-        "type" : "FORM",
-        "pageId" : "page7j.wr",
-        "dataBinding" : "PasswordManagerServices$cls3"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld24j",
-      "valueAttribute" : "PasswordManagerServices$att18",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld23j",
-      "valueAttribute" : "PasswordManagerServices$att15l",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld4j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "PasswordManagerServices$role12l"
-    } ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dtl2j",
         "type" : "DETAILS",
         "pageId" : "page1j.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : true
       },
       "to" : {
         "id" : "frm5j",
         "type" : "FORM",
         "pageId" : "page1j.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : true
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -100,33 +47,7 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dtl2j",
-        "type" : "DETAILS",
-        "pageId" : "page1j.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm5j",
-        "type" : "FORM",
-        "pageId" : "page1j.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp8l",
-        "target" : "{fld13j}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld13j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld24j",
@@ -138,14 +59,15 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld4j",
-      "valueAttribute" : null,
+      "valueAttribute" : "PasswordManagerServices$att16",
       "valueAssociationRole" : "PasswordManagerServices$role12l"
     } ],
     "component" : {
       "id" : "frm10j",
       "type" : "FORM",
       "pageId" : "page7j.wr",
-      "dataBinding" : "PasswordManagerServices$cls3"
+      "dataBinding" : "PasswordManagerServices$cls3",
+      "isInDialogPage" : true
     }
   } ]
 }

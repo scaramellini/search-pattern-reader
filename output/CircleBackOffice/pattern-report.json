@@ -1,15 +1,15 @@
 {
   "patterns" : [ {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld7u",
+      "valueAttribute" : "CircleDS$att90j",
+      "valueAssociationRole" : "CircleDS$role21j"
+    }, {
       "fieldId" : "fld5u",
       "valueAttribute" : "CircleDS$att85j",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld7u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role21j"
     }, {
       "fieldId" : "sfld8u",
       "valueAttribute" : null,
@@ -19,80 +19,72 @@
       "id" : "frm5u",
       "type" : "FORM",
       "pageId" : "page2u.wr",
-      "dataBinding" : "CircleDS$cls12j"
+      "dataBinding" : "CircleDS$cls12j",
+      "isInDialogPage" : true
     }
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dtl5e",
-        "type" : "DETAILS",
-        "pageId" : "page6e.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm9f",
-        "type" : "FORM",
-        "pageId" : "page6e.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp23j",
-        "target" : "{fld42f}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld42f",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld14a",
-      "valueAttribute" : "CircleDS$att62",
+      "fieldId" : "sfld3d",
+      "valueAttribute" : "CircleDS$att58",
       "valueAssociationRole" : null
-    }, {
+    } ],
+    "component" : {
+      "id" : "frm6d",
+      "type" : "FORM",
+      "pageId" : "page5d.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
       "fieldId" : "sfld17a",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att60",
       "valueAssociationRole" : "CircleDS$role15"
     }, {
       "fieldId" : "fld12a",
       "valueAttribute" : "CircleDS$att63",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14a",
+      "valueAttribute" : "CircleDS$att62",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm6a",
       "type" : "FORM",
       "pageId" : "page3a.wr",
-      "dataBinding" : "CircleDS$cls10"
+      "dataBinding" : "CircleDS$cls10",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld9u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role25j"
-    }, {
-      "fieldId" : "sfld10u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role23j"
-    }, {
       "fieldId" : "fld7u",
       "valueAttribute" : "CircleDS$att97j",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10u",
+      "valueAttribute" : "CircleDS$att68j",
+      "valueAssociationRole" : "CircleDS$role23j"
+    }, {
+      "fieldId" : "sfld9u",
+      "valueAttribute" : "CircleDS$att94j",
+      "valueAssociationRole" : "CircleDS$role25j"
     } ],
     "component" : {
       "id" : "frm7u",
       "type" : "FORM",
       "pageId" : "page3u.wr",
-      "dataBinding" : "CircleDS$cls15j"
+      "dataBinding" : "CircleDS$cls15j",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld6u",
@@ -103,7 +95,8 @@
       "id" : "frm6u",
       "type" : "FORM",
       "pageId" : "page2u.wr",
-      "dataBinding" : "CircleDS$cls13j"
+      "dataBinding" : "CircleDS$cls13j",
+      "isInDialogPage" : true
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -112,13 +105,15 @@
         "id" : "frm6y",
         "type" : "FORM",
         "pageId" : "page4y.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst3y",
         "type" : "LIST",
         "pageId" : "page4y.wr",
-        "dataBinding" : "CircleDS$cls7l"
+        "dataBinding" : "CircleDS$cls7l",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -132,19 +127,177 @@
       "valueAssociationRole" : null
     } ]
   }, {
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl4f",
+        "type" : "DETAILS",
+        "pageId" : "page1f.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : true
+      },
+      "to" : {
+        "id" : "frm6f",
+        "type" : "FORM",
+        "pageId" : "page1f.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : true
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp301j",
+        "target" : "{fld16f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp307j",
+        "target" : "{fld24f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp272j",
+        "target" : "{fld18f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp306j",
+        "target" : "{fld19f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp305j",
+        "target" : "{fld21f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp304j",
+        "target" : "{fld22f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp302j",
+        "target" : "{fld23f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp300j",
+        "target" : "{fld20f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp22f",
+        "target" : "{fld31f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp15f",
+        "target" : "{fld35f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp17f",
+        "target" : "{sfld12f}presel._be_att73"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp11f",
+        "target" : "{fld34f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp19f",
+        "target" : "{fld36f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp16f",
+        "target" : "{fld32f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp13f",
+        "target" : "{fld33f}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld33f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld35f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld34f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld24f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld22f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld9f",
+      "valueAttribute" : "CircleDS$att95j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10f",
+      "valueAttribute" : "CircleDS$att83j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12f",
+      "valueAttribute" : "CircleDS$att74",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8f",
+      "valueAttribute" : "CircleDS$att72j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld23f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
       "from" : {
         "id" : "frm7a",
         "type" : "FORM",
         "pageId" : "page2a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst10a",
         "type" : "LIST",
         "pageId" : "page2a.wr",
-        "dataBinding" : "CircleDS$cls12"
+        "dataBinding" : "CircleDS$cls12",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -169,7 +322,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld6d",
+      "fieldId" : "fld5d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -177,7 +330,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld5d",
+      "fieldId" : "fld7d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -185,21 +338,21 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld7d",
+      "fieldId" : "fld6d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld4d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role15r"
-    }, {
       "fieldId" : "sfld2d",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att84",
       "valueAssociationRole" : "CircleDS$role13r"
+    }, {
+      "fieldId" : "sfld4d",
+      "valueAttribute" : "CircleDS$att60",
+      "valueAssociationRole" : "CircleDS$role15r"
     }, {
       "fieldId" : "fld21d",
       "valueAttribute" : "CircleDS$att41r",
@@ -209,10 +362,11 @@
       "id" : "frm7d",
       "type" : "FORM",
       "pageId" : "page6d.wr",
-      "dataBinding" : "CircleDS$cls3r"
+      "dataBinding" : "CircleDS$cls3r",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld3u",
@@ -223,10 +377,11 @@
       "id" : "frm3u",
       "type" : "FORM",
       "pageId" : "page1u.wr",
-      "dataBinding" : "CircleDS$cls6j"
+      "dataBinding" : "CircleDS$cls6j",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld20d",
@@ -237,32 +392,142 @@
       "id" : "frm5d",
       "type" : "FORM",
       "pageId" : "page5d.wr",
-      "dataBinding" : "CircleDS$cls2r"
+      "dataBinding" : "CircleDS$cls2r",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld6u",
+      "valueAttribute" : "CircleDS$att68j",
+      "valueAssociationRole" : "CircleDS$role17j"
+    }, {
       "fieldId" : "fld4u",
       "valueAttribute" : "CircleDS$att85j",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld5u",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att90j",
       "valueAssociationRole" : "CircleDS$role21j"
-    }, {
-      "fieldId" : "sfld6u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role17j"
     } ],
     "component" : {
       "id" : "frm4u",
       "type" : "FORM",
       "pageId" : "page2u.wr",
-      "dataBinding" : "CircleDS$cls12j"
+      "dataBinding" : "CircleDS$cls12j",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "dtl6f",
+        "type" : "DETAILS",
+        "pageId" : "page8a.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "frm2a",
+        "type" : "FORM",
+        "pageId" : "page8a.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp24q",
+        "target" : "{fld21a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp17q",
+        "target" : "{sfld4a}presel._be_att73"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp110r",
+        "target" : "{fld4d}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp22q",
+        "target" : "{fld18a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp7q",
+        "target" : "{fld6a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp21q",
+        "target" : "{fld20a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp20q",
+        "target" : "{fld5a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp10q",
+        "target" : "{fld1d}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp9q",
+        "target" : "{fld13a}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp353j",
+        "target" : "{sfld16e}presel._be_att7l"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld21a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4a",
+      "valueAttribute" : "CircleDS$att73",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld1d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld16e",
+      "valueAttribute" : "CircleDS$att7l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld15e",
+      "valueAttribute" : "CircleDS$att7l",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6a",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld9a",
@@ -277,7 +542,8 @@
       "id" : "frm5a",
       "type" : "FORM",
       "pageId" : "page7a.wr",
-      "dataBinding" : "CircleDS$cls8"
+      "dataBinding" : "CircleDS$cls8",
+      "isInDialogPage" : true
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -286,13 +552,15 @@
         "id" : "frm2c",
         "type" : "FORM",
         "pageId" : "page2c.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst1c",
         "type" : "LIST",
         "pageId" : "page2c.wr",
-        "dataBinding" : "CircleDS$cls7"
+        "dataBinding" : "CircleDS$cls7",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -313,14 +581,6 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld12c",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld9c",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld11c",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -328,61 +588,40 @@
       "fieldId" : "fld10c",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dtl1e",
-        "type" : "DETAILS",
-        "pageId" : "page2e.wr",
-        "dataBinding" : "CircleDS$cls21j"
-      },
-      "to" : {
-        "id" : "frm11u",
-        "type" : "FORM",
-        "pageId" : "page2e.wr",
-        "dataBinding" : "CircleDS$cls21j"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld13u",
-      "valueAttribute" : "CircleDS$att171j",
+    }, {
+      "fieldId" : "fld9c",
+      "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld15u",
-      "valueAttribute" : "CircleDS$att168j",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld14u",
-      "valueAttribute" : "CircleDS$att169j",
+      "fieldId" : "fld12c",
+      "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld1u",
+      "valueAttribute" : "CircleDS$att49j",
+      "valueAssociationRole" : "CircleDS$role3j"
+    }, {
       "fieldId" : "sfld2u",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att68j",
       "valueAssociationRole" : "CircleDS$role3j"
     }, {
       "fieldId" : "fld1u",
       "valueAttribute" : "CircleDS$att72j",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role3j"
     } ],
     "component" : {
       "id" : "frm1u",
       "type" : "FORM",
       "pageId" : "page1u.wr",
-      "dataBinding" : "CircleDS$cls9j"
+      "dataBinding" : "CircleDS$cls9j",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld35d",
@@ -393,7 +632,8 @@
       "id" : "frm16d",
       "type" : "FORM",
       "pageId" : "page9d.wr",
-      "dataBinding" : "CircleDS$cls17"
+      "dataBinding" : "CircleDS$cls17",
+      "isInDialogPage" : true
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -402,13 +642,15 @@
         "id" : "frm1y",
         "type" : "FORM",
         "pageId" : "page2y.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst1y",
         "type" : "LIST",
         "pageId" : "page2y.wr",
-        "dataBinding" : "CircleDS$cls1q"
+        "dataBinding" : "CircleDS$cls1q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -429,35 +671,51 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld3c",
+      "fieldId" : "fld3y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld3y",
+      "fieldId" : "fld3c",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld2u",
+      "valueAttribute" : "CircleDS$att72j",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld3u",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att49j",
       "valueAssociationRole" : "CircleDS$role3j"
     }, {
       "fieldId" : "sfld4u",
       "valueAttribute" : null,
       "valueAssociationRole" : "CircleDS$role3j"
-    }, {
-      "fieldId" : "fld2u",
-      "valueAttribute" : "CircleDS$att72j",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm2u",
       "type" : "FORM",
       "pageId" : "page1u.wr",
-      "dataBinding" : "CircleDS$cls9j"
+      "dataBinding" : "CircleDS$cls9j",
+      "isInDialogPage" : true
+    }
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld12d",
+      "valueAttribute" : "CircleDS$att60r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm17d",
+      "type" : "FORM",
+      "pageId" : "page2d.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : true
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -466,13 +724,15 @@
         "id" : "frm17a",
         "type" : "FORM",
         "pageId" : "page14a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst16a",
         "type" : "LIST",
         "pageId" : "page14a.wr",
-        "dataBinding" : "CircleDS$cls2q"
+        "dataBinding" : "CircleDS$cls2q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -490,14 +750,14 @@
     } ],
     "fields" : [ {
       "fieldId" : "sfld9a",
+      "valueAttribute" : "CircleDS$att60",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld47a",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld48a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld47a",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -508,13 +768,15 @@
         "id" : "frm3a",
         "type" : "FORM",
         "pageId" : "page3a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst6a",
         "type" : "LIST",
         "pageId" : "page3a.wr",
-        "dataBinding" : "CircleDS$cls10"
+        "dataBinding" : "CircleDS$cls10",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -528,7 +790,7 @@
     } ],
     "fields" : [ {
       "fieldId" : "sfld2a",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att60",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld8a",
@@ -536,192 +798,191 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
-        "id" : "lst17d",
-        "type" : "LIST",
-        "pageId" : "page14d.wr",
-        "dataBinding" : "CircleDS$cls7r"
+        "id" : "dtl3f",
+        "type" : "DETAILS",
+        "pageId" : "page8a.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : true
       },
       "to" : {
-        "id" : "frm22d",
+        "id" : "frm3f",
         "type" : "FORM",
-        "pageId" : "page14d.wr",
-        "dataBinding" : "CircleDS$cls7r"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld52d",
-      "valueAttribute" : "CircleDS$att65r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld51d",
-      "valueAttribute" : "CircleDS$att64r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld11d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role27r"
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1u",
-        "type" : "LIST",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CircleDS$cls6j"
-      },
-      "to" : {
-        "id" : "frm2u",
-        "type" : "FORM",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CircleDS$cls9j"
+        "pageId" : "page8a.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : true
       },
       "bindings" : [ {
         "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{fld2u}value"
+        "source" : "data._be_pdp301j",
+        "target" : "{fld2f}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld4u}_be_pdp83r"
+        "source" : "data._be_pdp307j",
+        "target" : "{fld10f}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "kcond2u._be_att70j"
+        "source" : "data._be_pdp272j",
+        "target" : "{fld4f}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "data._be_att47j",
-        "target" : "{sfld3u}presel._be_att47j"
+        "source" : "data._be_pdp306j",
+        "target" : "{fld5f}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld4u}_be_pdp184e"
+        "source" : "data._be_pdp305j",
+        "target" : "{fld7f}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld4u}_be_pdp69r"
+        "source" : "data._be_pdp304j",
+        "target" : "{fld8f}value"
       }, {
         "automaticCoupling" : false,
-        "source" : "data._be_att47j",
-        "target" : "{sfld4u}_be_pdp31z"
+        "source" : "data._be_pdp302j",
+        "target" : "{fld9f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp300j",
+        "target" : "{fld6f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp303j",
+        "target" : "prd5d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp22f",
+        "target" : "{fld29f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp15f",
+        "target" : "{fld25f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp17f",
+        "target" : "{sfld11f}presel._be_att73"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp11f",
+        "target" : "{fld26f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp19f",
+        "target" : "{fld27f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp16f",
+        "target" : "{fld28f}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp13f",
+        "target" : "{fld30f}value"
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld3u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role3j"
-    }, {
-      "fieldId" : "sfld4u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role3j"
-    }, {
-      "fieldId" : "fld2u",
+      "fieldId" : "sfld5f",
       "valueAttribute" : "CircleDS$att72j",
       "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst1u",
-        "type" : "LIST",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CircleDS$cls6j"
-      },
-      "to" : {
-        "id" : "frm3u",
-        "type" : "FORM",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CircleDS$cls6j"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld3u",
-      "valueAttribute" : "CircleDS$att49j",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst2a",
-        "type" : "LIST",
-        "pageId" : "page7a.wr",
-        "dataBinding" : "CircleDS$cls8"
-      },
-      "to" : {
-        "id" : "frm5a",
-        "type" : "FORM",
-        "pageId" : "page7a.wr",
-        "dataBinding" : "CircleDS$cls8"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld9a",
-      "valueAttribute" : "CircleDS$att56",
+    }, {
+      "fieldId" : "fld28f",
+      "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld10a",
-      "valueAttribute" : "CircleDS$att57",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst17a",
-        "type" : "LIST",
-        "pageId" : "page13a.wr",
-        "dataBinding" : "CircleDS$cls2s"
-      },
-      "to" : {
-        "id" : "frm20a",
-        "type" : "FORM",
-        "pageId" : "page13a.wr",
-        "dataBinding" : "CircleDS$cls2s"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld54a",
-      "valueAttribute" : "CircleDS$att38s",
+      "fieldId" : "fld27f",
+      "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld55a",
-      "valueAttribute" : "CircleDS$att50s",
+      "fieldId" : "fld4f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld8f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6f",
+      "valueAttribute" : "CircleDS$att95j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld25f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld30f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7f",
+      "valueAttribute" : "CircleDS$att83j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld5f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld11f",
+      "valueAttribute" : "CircleDS$att74",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3f",
+      "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld49a",
-      "valueAttribute" : "CircleDS$att9q",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld50a",
       "valueAttribute" : "CircleDS$att11q",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld12a",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att60",
       "valueAssociationRole" : "CircleDS$role1q"
     }, {
       "fieldId" : "fld51a",
       "valueAttribute" : "CircleDS$att10q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld49a",
+      "valueAttribute" : "CircleDS$att9q",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm18a",
       "type" : "FORM",
       "pageId" : "page14a.wr",
-      "dataBinding" : "CircleDS$cls2q"
+      "dataBinding" : "CircleDS$cls2q",
+      "isInDialogPage" : true
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -730,13 +991,15 @@
         "id" : "frm1e",
         "type" : "FORM",
         "pageId" : "page1e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst1e",
         "type" : "LIST",
         "pageId" : "page1e.wr",
-        "dataBinding" : "CircleDS$cls21j"
+        "dataBinding" : "CircleDS$cls21j",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -750,37 +1013,39 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
-        "id" : "lst18a",
-        "type" : "LIST",
-        "pageId" : "page15a.wr",
-        "dataBinding" : "CircleDS$cls3s"
+        "id" : "dtl2f",
+        "type" : "DETAILS",
+        "pageId" : "page8a.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
-        "id" : "frm22a",
+        "id" : "frm2f",
         "type" : "FORM",
-        "pageId" : "page15a.wr",
-        "dataBinding" : "CircleDS$cls3s"
+        "pageId" : "page8a.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
-      "bindings" : [ ]
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp76f",
+        "target" : "{fld1f}value"
+      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld15a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role11s"
-    }, {
-      "fieldId" : "fld59a",
-      "valueAttribute" : "CircleDS$att45s",
+      "fieldId" : "sfld4f",
+      "valueAttribute" : "CircleDS$att95j",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld16a",
+      "fieldId" : "fld1f",
       "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role10s"
+      "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld58a",
-      "valueAttribute" : "CircleDS$att51s",
+      "fieldId" : "sfld3f",
+      "valueAttribute" : "CircleDS$att83j",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -790,13 +1055,15 @@
         "id" : "frm19a",
         "type" : "FORM",
         "pageId" : "page13a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst17a",
         "type" : "LIST",
         "pageId" : "page13a.wr",
-        "dataBinding" : "CircleDS$cls2s"
+        "dataBinding" : "CircleDS$cls2s",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -818,144 +1085,27 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst15e",
-        "type" : "LIST",
-        "pageId" : "page6e.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm10e",
-        "type" : "FORM",
-        "pageId" : "page6e.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp42j",
-        "target" : "{fld44e}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp43j",
-        "target" : "{fld45e}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld45e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld44e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst3u",
-        "type" : "LIST",
-        "pageId" : "page2u.wr",
-        "dataBinding" : "CircleDS$cls13j"
-      },
-      "to" : {
-        "id" : "frm5u",
-        "type" : "FORM",
-        "pageId" : "page2u.wr",
-        "dataBinding" : "CircleDS$cls12j"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{fld5u}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "kcond5u._be_att83j"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld8u}_be_pdp184e"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld8u}_be_pdp69r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld8u}_be_pdp83r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld8u}_be_pdp31z"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att88j",
-        "target" : "{sfld8u}_be_pdp32z"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att88j",
-        "target" : "{sfld7u}presel._be_att88j"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld5u",
-      "valueAttribute" : "CircleDS$att85j",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld7u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role21j"
-    }, {
-      "fieldId" : "sfld8u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role17j"
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst3u",
-        "type" : "LIST",
-        "pageId" : "page2u.wr",
-        "dataBinding" : "CircleDS$cls13j"
-      },
-      "to" : {
-        "id" : "frm6u",
-        "type" : "FORM",
-        "pageId" : "page2u.wr",
-        "dataBinding" : "CircleDS$cls13j"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld6u",
-      "valueAttribute" : "CircleDS$att90j",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld13u",
       "valueAttribute" : "CircleDS$att171j",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld15u",
-      "valueAttribute" : "CircleDS$att168j",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld14u",
       "valueAttribute" : "CircleDS$att169j",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15u",
+      "valueAttribute" : "CircleDS$att168j",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm11u",
       "type" : "FORM",
       "pageId" : "page2e.wr",
-      "dataBinding" : "CircleDS$cls21j"
+      "dataBinding" : "CircleDS$cls21j",
+      "isInDialogPage" : true
     }
   }, {
     "patternType" : "Master Detail Pattern",
@@ -964,13 +1114,15 @@
         "id" : "lst2g",
         "type" : "LIST",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls1l"
+        "dataBinding" : "CircleDS$cls1l",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dtl1g",
         "type" : "DETAILS",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls1l"
+        "dataBinding" : "CircleDS$cls1l",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -986,13 +1138,15 @@
         "id" : "lst2g",
         "type" : "LIST",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls1l"
+        "dataBinding" : "CircleDS$cls1l",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dtl1g",
         "type" : "DETAILS",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls1l"
+        "dataBinding" : "CircleDS$cls1l",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -1004,13 +1158,15 @@
         "id" : "dtl1g",
         "type" : "DETAILS",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls1l"
+        "dataBinding" : "CircleDS$cls1l",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst2g",
         "type" : "LIST",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls1l"
+        "dataBinding" : "CircleDS$cls1l",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -1022,13 +1178,15 @@
         "id" : "dtl1g",
         "type" : "DETAILS",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls1l"
+        "dataBinding" : "CircleDS$cls1l",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst2y",
         "type" : "LIST",
         "pageId" : "page2g.wr",
-        "dataBinding" : "CircleDS$cls2l"
+        "dataBinding" : "CircleDS$cls2l",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -1038,103 +1196,17 @@
     } ],
     "fields" : null
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst16d",
-        "type" : "LIST",
-        "pageId" : "page14d.wr",
-        "dataBinding" : "CircleDS$cls6r"
-      },
-      "to" : {
-        "id" : "frm21d",
-        "type" : "FORM",
-        "pageId" : "page14d.wr",
-        "dataBinding" : "CircleDS$cls6r"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld48d",
-      "valueAttribute" : "CircleDS$att60r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld50d",
-      "valueAttribute" : "CircleDS$att61r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld36d",
-      "valueAttribute" : "CircleDS$att79r",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst2u",
-        "type" : "LIST",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CircleDS$cls9j"
-      },
-      "to" : {
-        "id" : "frm1u",
-        "type" : "FORM",
-        "pageId" : "page1u.wr",
-        "dataBinding" : "CircleDS$cls9j"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "sfld2u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role3j"
-    }, {
-      "fieldId" : "fld1u",
-      "valueAttribute" : "CircleDS$att72j",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role3j"
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst16a",
-        "type" : "LIST",
-        "pageId" : "page14a.wr",
-        "dataBinding" : "CircleDS$cls2q"
-      },
-      "to" : {
-        "id" : "frm18a",
-        "type" : "FORM",
-        "pageId" : "page14a.wr",
-        "dataBinding" : "CircleDS$cls2q"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld49a",
-      "valueAttribute" : "CircleDS$att9q",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld50a",
-      "valueAttribute" : "CircleDS$att11q",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld12a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role1q"
-    }, {
-      "fieldId" : "fld51a",
-      "valueAttribute" : "CircleDS$att10q",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld11h",
+      "valueAttribute" : "CircleDS$att94e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29g",
+      "valueAttribute" : "CircleDS$att99e",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld23h",
       "valueAttribute" : "CircleDS$att98e",
       "valueAssociationRole" : null
@@ -1142,27 +1214,20 @@
       "fieldId" : "fld22h",
       "valueAttribute" : "CircleDS$att97e",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld29g",
-      "valueAttribute" : "CircleDS$att99e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld11h",
-      "valueAttribute" : "CircleDS$att94e",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm13h",
       "type" : "FORM",
       "pageId" : "page10h.wr",
-      "dataBinding" : "CircleDS$cls11e"
+      "dataBinding" : "CircleDS$cls11e",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "sfld8d",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att84",
       "valueAssociationRole" : "CircleDS$role13r"
     }, {
       "fieldId" : "sfld9d",
@@ -1177,166 +1242,11 @@
       "id" : "frm13d",
       "type" : "FORM",
       "pageId" : "page6d.wr",
-      "dataBinding" : "CircleDS$cls3r"
+      "dataBinding" : "CircleDS$cls3r",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst5u",
-        "type" : "LIST",
-        "pageId" : "page3u.wr",
-        "dataBinding" : "CircleDS$cls14j"
-      },
-      "to" : {
-        "id" : "frm8u",
-        "type" : "FORM",
-        "pageId" : "page3u.wr",
-        "dataBinding" : "CircleDS$cls15j"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{fld8u}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "kcond8u._be_att95j"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld12u}_be_pdp184e"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld12u}_be_pdp69r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att93j",
-        "target" : "{sfld12u}_be_pdp33z"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld12u}_be_pdp83r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld12u}_be_pdp31z"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld12u}_be_pdp32z"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att93j",
-        "target" : "{sfld11u}presel._be_att93j"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld8u",
-      "valueAttribute" : "CircleDS$att97j",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld11u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role25j"
-    }, {
-      "fieldId" : "sfld12u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role23j"
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst5u",
-        "type" : "LIST",
-        "pageId" : "page3u.wr",
-        "dataBinding" : "CircleDS$cls14j"
-      },
-      "to" : {
-        "id" : "frm9u",
-        "type" : "FORM",
-        "pageId" : "page3u.wr",
-        "dataBinding" : "CircleDS$cls14j"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld9u",
-      "valueAttribute" : "CircleDS$att94j",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst6h",
-        "type" : "LIST",
-        "pageId" : "page10h.wr",
-        "dataBinding" : "CircleDS$cls11e"
-      },
-      "to" : {
-        "id" : "frm13h",
-        "type" : "FORM",
-        "pageId" : "page10h.wr",
-        "dataBinding" : "CircleDS$cls11e"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att93e",
-        "target" : "kcond9h._be_att93e"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld23h",
-      "valueAttribute" : "CircleDS$att98e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld22h",
-      "valueAttribute" : "CircleDS$att97e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld29g",
-      "valueAttribute" : "CircleDS$att99e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld11h",
-      "valueAttribute" : "CircleDS$att94e",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst6a",
-        "type" : "LIST",
-        "pageId" : "page3a.wr",
-        "dataBinding" : "CircleDS$cls10"
-      },
-      "to" : {
-        "id" : "frm6a",
-        "type" : "FORM",
-        "pageId" : "page3a.wr",
-        "dataBinding" : "CircleDS$cls10"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld14a",
-      "valueAttribute" : "CircleDS$att62",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld17a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role15"
-    }, {
-      "fieldId" : "fld12a",
-      "valueAttribute" : "CircleDS$att63",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld33d",
@@ -1347,244 +1257,34 @@
       "id" : "frm14d",
       "type" : "FORM",
       "pageId" : "page6d.wr",
-      "dataBinding" : "CircleDS$cls18"
+      "dataBinding" : "CircleDS$cls18",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst4u",
-        "type" : "LIST",
-        "pageId" : "page2u.wr",
-        "dataBinding" : "CircleDS$cls12j"
-      },
-      "to" : {
-        "id" : "frm4u",
-        "type" : "FORM",
-        "pageId" : "page2u.wr",
-        "dataBinding" : "CircleDS$cls12j"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld4u",
-      "valueAttribute" : "CircleDS$att85j",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld5u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role21j"
-    }, {
-      "fieldId" : "sfld6u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role17j"
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld7d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role19r"
-    }, {
       "fieldId" : "fld34d",
       "valueAttribute" : "CircleDS$att44r",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld10d",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att82",
       "valueAssociationRole" : "CircleDS$role17r"
+    }, {
+      "fieldId" : "sfld7d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : "CircleDS$role19r"
     } ],
     "component" : {
       "id" : "frm15d",
       "type" : "FORM",
       "pageId" : "page9d.wr",
-      "dataBinding" : "CircleDS$cls4r"
+      "dataBinding" : "CircleDS$cls4r",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst11d",
-        "type" : "LIST",
-        "pageId" : "page9d.wr",
-        "dataBinding" : "CircleDS$cls17"
-      },
-      "to" : {
-        "id" : "frm15d",
-        "type" : "FORM",
-        "pageId" : "page9d.wr",
-        "dataBinding" : "CircleDS$cls4r"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "kcond7d._be_att42r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{fld34d}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att81",
-        "target" : "{sfld10d}presel._be_att81"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld7d}_be_pdp69r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att81",
-        "target" : "{sfld7d}_be_pdp83r"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "sfld7d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role19r"
-    }, {
-      "fieldId" : "fld34d",
-      "valueAttribute" : "CircleDS$att44r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld10d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role17r"
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst11d",
-        "type" : "LIST",
-        "pageId" : "page9d.wr",
-        "dataBinding" : "CircleDS$cls17"
-      },
-      "to" : {
-        "id" : "frm16d",
-        "type" : "FORM",
-        "pageId" : "page9d.wr",
-        "dataBinding" : "CircleDS$cls17"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld35d",
-      "valueAttribute" : "CircleDS$att82",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst8a",
-        "type" : "LIST",
-        "pageId" : "page8a.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm9a",
-        "type" : "FORM",
-        "pageId" : "page8a.wr",
-        "dataBinding" : "CircleDS$cls5"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp26r",
-        "target" : "kcond6a._be_att37"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp30r",
-        "target" : "{sfld1d}presel.0"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld30a",
-      "valueAttribute" : "CircleDS$att41",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1d",
-      "valueAttribute" : "CircleDS$att42",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld27a",
-      "valueAttribute" : "CircleDS$att38",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld37d",
-      "valueAttribute" : "CircleDS$att80r",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld29a",
-      "valueAttribute" : "CircleDS$att40",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld26a",
-      "valueAttribute" : "CircleDS$att39",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst8d",
-        "type" : "LIST",
-        "pageId" : "page6d.wr",
-        "dataBinding" : "CircleDS$cls3r"
-      },
-      "to" : {
-        "id" : "frm7d",
-        "type" : "FORM",
-        "pageId" : "page6d.wr",
-        "dataBinding" : "CircleDS$cls3r"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "sfld4d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role15r"
-    }, {
-      "fieldId" : "sfld2d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role13r"
-    }, {
-      "fieldId" : "fld21d",
-      "valueAttribute" : "CircleDS$att41r",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst12d",
-        "type" : "LIST",
-        "pageId" : "page9d.wr",
-        "dataBinding" : "CircleDS$cls4r"
-      },
-      "to" : {
-        "id" : "frm10d",
-        "type" : "FORM",
-        "pageId" : "page9d.wr",
-        "dataBinding" : "CircleDS$cls4r"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "sfld6d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role17r"
-    }, {
-      "fieldId" : "sfld5d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role19r"
-    }, {
-      "fieldId" : "fld32d",
-      "valueAttribute" : "CircleDS$att44r",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld54a",
@@ -1599,172 +1299,13 @@
       "id" : "frm20a",
       "type" : "FORM",
       "pageId" : "page13a.wr",
-      "dataBinding" : "CircleDS$cls2s"
+      "dataBinding" : "CircleDS$cls2s",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst6u",
-        "type" : "LIST",
-        "pageId" : "page3u.wr",
-        "dataBinding" : "CircleDS$cls15j"
-      },
-      "to" : {
-        "id" : "frm7u",
-        "type" : "FORM",
-        "pageId" : "page3u.wr",
-        "dataBinding" : "CircleDS$cls15j"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "sfld9u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role25j"
-    }, {
-      "fieldId" : "sfld10u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role23j"
-    }, {
-      "fieldId" : "fld7u",
-      "valueAttribute" : "CircleDS$att97j",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst7a",
-        "type" : "LIST",
-        "pageId" : "page8a.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm8a",
-        "type" : "FORM",
-        "pageId" : "page8a.wr",
-        "dataBinding" : "CircleDS$cls2"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp11r",
-        "target" : "kcond5a._be_att9"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp89r",
-        "target" : "{sfld6a}presel._be_att73"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld11d",
-      "valueAttribute" : "CircleDS$att11",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld23a",
-      "valueAttribute" : "CircleDS$att15",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15a",
-      "valueAttribute" : "CircleDS$att13",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld24a",
-      "valueAttribute" : "CircleDS$att14",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld56a",
-      "valueAttribute" : "CircleDS$att58s",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld8d",
-      "valueAttribute" : "CircleDS$att12",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld6a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role46"
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst7d",
-        "type" : "LIST",
-        "pageId" : "page6d.wr",
-        "dataBinding" : "CircleDS$cls18"
-      },
-      "to" : {
-        "id" : "frm13d",
-        "type" : "FORM",
-        "pageId" : "page6d.wr",
-        "dataBinding" : "CircleDS$cls3r"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att83",
-        "target" : "{sfld8d}presel._be_att83"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "kcond5d._be_att39r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att83",
-        "target" : "{sfld9d}_be_pdp69r"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{fld25d}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "$$NULL$$",
-        "target" : "{sfld9d}_be_pdp83r"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "sfld8d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role13r"
-    }, {
-      "fieldId" : "sfld9d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role15r"
-    }, {
-      "fieldId" : "fld25d",
-      "valueAttribute" : "CircleDS$att41r",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst7d",
-        "type" : "LIST",
-        "pageId" : "page6d.wr",
-        "dataBinding" : "CircleDS$cls18"
-      },
-      "to" : {
-        "id" : "frm14d",
-        "type" : "FORM",
-        "pageId" : "page6d.wr",
-        "dataBinding" : "CircleDS$cls18"
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld33d",
-      "valueAttribute" : "CircleDS$att84",
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld48d",
-      "valueAttribute" : "CircleDS$att60r",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld50d",
       "valueAttribute" : "CircleDS$att61r",
       "valueAssociationRole" : null
@@ -1772,12 +1313,17 @@
       "fieldId" : "fld36d",
       "valueAttribute" : "CircleDS$att79r",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48d",
+      "valueAttribute" : "CircleDS$att60r",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm21d",
       "type" : "FORM",
       "pageId" : "page14d.wr",
-      "dataBinding" : "CircleDS$cls6r"
+      "dataBinding" : "CircleDS$cls6r",
+      "isInDialogPage" : true
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -1786,13 +1332,15 @@
         "id" : "frm21a",
         "type" : "FORM",
         "pageId" : "page15a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst18a",
         "type" : "LIST",
         "pageId" : "page15a.wr",
-        "dataBinding" : "CircleDS$cls3s"
+        "dataBinding" : "CircleDS$cls3s",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -1810,7 +1358,7 @@
     } ],
     "fields" : [ {
       "fieldId" : "sfld14a",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att38s",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld57a",
@@ -1818,38 +1366,39 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld13a",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att60",
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld8u",
-      "valueAttribute" : "CircleDS$att97j",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld11u",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role25j"
-    }, {
       "fieldId" : "sfld12u",
       "valueAttribute" : null,
       "valueAssociationRole" : "CircleDS$role23j"
+    }, {
+      "fieldId" : "sfld11u",
+      "valueAttribute" : "CircleDS$att94j",
+      "valueAssociationRole" : "CircleDS$role25j"
+    }, {
+      "fieldId" : "fld8u",
+      "valueAttribute" : "CircleDS$att97j",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm8u",
       "type" : "FORM",
       "pageId" : "page3u.wr",
-      "dataBinding" : "CircleDS$cls15j"
+      "dataBinding" : "CircleDS$cls15j",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld11d",
-      "valueAttribute" : "CircleDS$att11",
-      "valueAssociationRole" : null
+      "fieldId" : "sfld6a",
+      "valueAttribute" : "CircleDS$att74",
+      "valueAssociationRole" : "CircleDS$role46"
     }, {
       "fieldId" : "fld23a",
       "valueAttribute" : "CircleDS$att15",
@@ -1859,8 +1408,8 @@
       "valueAttribute" : "CircleDS$att13",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld24a",
-      "valueAttribute" : "CircleDS$att14",
+      "fieldId" : "fld11d",
+      "valueAttribute" : "CircleDS$att11",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld56a",
@@ -1871,27 +1420,28 @@
       "valueAttribute" : "CircleDS$att12",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld6a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role46"
+      "fieldId" : "fld24a",
+      "valueAttribute" : "CircleDS$att14",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm8a",
       "type" : "FORM",
       "pageId" : "page8a.wr",
-      "dataBinding" : "CircleDS$cls2"
+      "dataBinding" : "CircleDS$cls2",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld6d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role17r"
-    }, {
       "fieldId" : "sfld5d",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att60",
       "valueAssociationRole" : "CircleDS$role19r"
+    }, {
+      "fieldId" : "sfld6d",
+      "valueAttribute" : "CircleDS$att82",
+      "valueAssociationRole" : "CircleDS$role17r"
     }, {
       "fieldId" : "fld32d",
       "valueAttribute" : "CircleDS$att44r",
@@ -1901,10 +1451,11 @@
       "id" : "frm10d",
       "type" : "FORM",
       "pageId" : "page9d.wr",
-      "dataBinding" : "CircleDS$cls4r"
+      "dataBinding" : "CircleDS$cls4r",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld52d",
@@ -1916,43 +1467,45 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld11d",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att59",
       "valueAssociationRole" : "CircleDS$role27r"
     } ],
     "component" : {
       "id" : "frm22d",
       "type" : "FORM",
       "pageId" : "page14d.wr",
-      "dataBinding" : "CircleDS$cls7r"
+      "dataBinding" : "CircleDS$cls7r",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld15a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "CircleDS$role11s"
-    }, {
-      "fieldId" : "fld59a",
-      "valueAttribute" : "CircleDS$att45s",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld16a",
-      "valueAttribute" : null,
+      "valueAttribute" : "CircleDS$att38s",
       "valueAssociationRole" : "CircleDS$role10s"
     }, {
       "fieldId" : "fld58a",
       "valueAttribute" : "CircleDS$att51s",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld59a",
+      "valueAttribute" : "CircleDS$att45s",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld15a",
+      "valueAttribute" : "CircleDS$att60",
+      "valueAssociationRole" : "CircleDS$role11s"
     } ],
     "component" : {
       "id" : "frm22a",
       "type" : "FORM",
       "pageId" : "page15a.wr",
-      "dataBinding" : "CircleDS$cls3s"
+      "dataBinding" : "CircleDS$cls3s",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld9u",
@@ -1963,10 +1516,11 @@
       "id" : "frm9u",
       "type" : "FORM",
       "pageId" : "page3u.wr",
-      "dataBinding" : "CircleDS$cls14j"
+      "dataBinding" : "CircleDS$cls14j",
+      "isInDialogPage" : true
     }
   }, {
-    "patternType" : "Multi-Field Form Pattern",
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld30a",
@@ -1975,6 +1529,10 @@
     }, {
       "fieldId" : "sfld1d",
       "valueAttribute" : "CircleDS$att42",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26a",
+      "valueAttribute" : "CircleDS$att39",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld27a",
@@ -1988,16 +1546,13 @@
       "fieldId" : "fld29a",
       "valueAttribute" : "CircleDS$att40",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld26a",
-      "valueAttribute" : "CircleDS$att39",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm9a",
       "type" : "FORM",
       "pageId" : "page8a.wr",
-      "dataBinding" : "CircleDS$cls5"
+      "dataBinding" : "CircleDS$cls5",
+      "isInDialogPage" : true
     }
   } ]
 }

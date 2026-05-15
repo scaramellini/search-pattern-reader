@@ -7,110 +7,114 @@
       "valueAttribute" : "WebRatioKnowledgeBaseServices$att7t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld10t",
-      "valueAttribute" : "WebRatioKnowledgeBaseServices$att3t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld9t",
       "valueAttribute" : "WebRatioKnowledgeBaseServices$att2t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10t",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att3t",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu1t",
       "type" : "FORM",
       "pageId" : "page3t.wr",
-      "dataBinding" : "WebRatioKnowledgeBaseServices$ent1t"
+      "dataBinding" : "WebRatioKnowledgeBaseServices$ent1t",
+      "isInDialogPage" : false
     }
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu20x",
-        "type" : "LIST",
-        "pageId" : "page24x.wr",
-        "dataBinding" : "WebRatioKnowledgeBaseServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu1x",
-        "type" : "FORM",
-        "pageId" : "page24x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu20x",
-        "type" : "LIST",
-        "pageId" : "page24x.wr",
-        "dataBinding" : "WebRatioKnowledgeBaseServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu1x",
-        "type" : "FORM",
-        "pageId" : "page24x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu27x",
-        "type" : "LIST",
-        "pageId" : "page37x.wr",
-        "dataBinding" : "WebRatioKnowledgeBaseServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu27x",
-        "type" : "FORM",
-        "pageId" : "page37x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu27x",
-        "type" : "LIST",
-        "pageId" : "page37x.wr",
-        "dataBinding" : "WebRatioKnowledgeBaseServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu27x",
-        "type" : "FORM",
-        "pageId" : "page37x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld9x",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att14",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu20x",
+      "type" : "FORM",
+      "pageId" : "page27x.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld11x",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att13t",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu24x",
+      "type" : "FORM",
+      "pageId" : "page32x.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld12x",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att12t",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu28x",
+      "type" : "FORM",
+      "pageId" : "page39x.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld1k",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att5k",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu2k",
+      "type" : "FORM",
+      "pageId" : "page2k.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld1ae",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att5k",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu1ae",
+      "type" : "FORM",
+      "pageId" : "page6ae.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld58x",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att39ae",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5ae",
+      "valueAttribute" : "WebRatioKnowledgeBaseServices$att62ae",
+      "valueAssociationRole" : "WebRatioKnowledgeBaseServices$role14ae"
+    }, {
       "fieldId" : "fld57x",
       "valueAttribute" : "WebRatioKnowledgeBaseServices$att37ae",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld5ae",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "WebRatioKnowledgeBaseServices$role14ae"
-    }, {
       "fieldId" : "fld56x",
       "valueAttribute" : "WebRatioKnowledgeBaseServices$att38ae",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld58x",
-      "valueAttribute" : "WebRatioKnowledgeBaseServices$att39ae",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld55x",
@@ -121,44 +125,9 @@
       "id" : "enu37x",
       "type" : "FORM",
       "pageId" : "page46x.wr",
-      "dataBinding" : "WebRatioKnowledgeBaseServices$ent7ae"
+      "dataBinding" : "WebRatioKnowledgeBaseServices$ent7ae",
+      "isInDialogPage" : false
     }
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu25x",
-        "type" : "LIST",
-        "pageId" : "page36x.wr",
-        "dataBinding" : "WebRatioKnowledgeBaseServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu26x",
-        "type" : "FORM",
-        "pageId" : "page36x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu25x",
-        "type" : "LIST",
-        "pageId" : "page36x.wr",
-        "dataBinding" : "WebRatioKnowledgeBaseServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu26x",
-        "type" : "FORM",
-        "pageId" : "page36x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
@@ -175,7 +144,8 @@
       "id" : "enu23x",
       "type" : "FORM",
       "pageId" : "page31x.wr",
-      "dataBinding" : "WebRatioKnowledgeBaseServices$ent3t"
+      "dataBinding" : "WebRatioKnowledgeBaseServices$ent3t",
+      "isInDialogPage" : false
     }
   } ]
 }

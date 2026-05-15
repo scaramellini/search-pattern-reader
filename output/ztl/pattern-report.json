@@ -1,3 +1,39 @@
 {
-  "patterns" : [ ]
+  "patterns" : [ {
+    "patternType" : "Preloaded Form Pattern Class Variant",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau10q",
+        "type" : "DETAILS",
+        "pageId" : "page10j.wr",
+        "dataBinding" : "ztlServices$ent3",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "enu6j",
+        "type" : "FORM",
+        "pageId" : "page10j.wr",
+        "dataBinding" : "ztlServices$ent3",
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_ent3$userOID",
+        "target" : "kcond26._be_ent3$userOID"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld1w",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld72q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld38j",
+      "valueAttribute" : "ztlServices$ent3$email",
+      "valueAssociationRole" : null
+    } ]
+  } ]
 }

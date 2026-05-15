@@ -1,75 +1,26 @@
 {
   "patterns" : [ {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst4x",
-        "type" : "LIST",
-        "pageId" : "page2x.wr",
-        "dataBinding" : null
-      },
-      "to" : {
-        "id" : "frm6x",
-        "type" : "FORM",
-        "pageId" : "page2x.wr",
-        "dataBinding" : "BioscalinDataService$User"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp100s",
-        "target" : "{fld23x}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp101s",
-        "target" : "{fld24x}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp99s",
-        "target" : "{fld25x}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_pdp100s",
-        "target" : "acond1d"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld26x",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld25x",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld23x",
-      "valueAttribute" : "BioscalinDataService$userName",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld24x",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld3x",
-      "valueAttribute" : "BioscalinDataService$att3",
+      "fieldId" : "fld5x",
+      "valueAttribute" : "BioscalinDataService$att2",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld13x",
       "valueAttribute" : "BioscalinDataService$att19s",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld5x",
-      "valueAttribute" : "BioscalinDataService$att2",
+      "fieldId" : "fld3x",
+      "valueAttribute" : "BioscalinDataService$att3",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "frm1x",
       "type" : "FORM",
       "pageId" : "page1x.wr",
-      "dataBinding" : "BioscalinDataService$cls1"
+      "dataBinding" : "BioscalinDataService$cls1",
+      "isInDialogPage" : false
     }
   } ]
 }

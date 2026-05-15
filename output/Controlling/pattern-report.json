@@ -3,51 +3,52 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld2m",
-      "valueAttribute" : "ControllingServices$att119m",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld3m",
-      "valueAttribute" : "ControllingServices$att111m",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld5m",
-      "valueAttribute" : "ControllingServices$att113m",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld14m",
-      "valueAttribute" : "ControllingServices$att120m",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld7m",
-      "valueAttribute" : "ControllingServices$att7m",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld2m",
-      "valueAttribute" : "ControllingServices$att110m",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld4m",
-      "valueAttribute" : "ControllingServices$att112m",
+      "fieldId" : "fld1d",
+      "valueAttribute" : "ControllingServices$att1d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld6m",
       "valueAttribute" : "ControllingServices$att118m",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld2m",
+      "valueAttribute" : "ControllingServices$att110m",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3m",
+      "valueAttribute" : "ControllingServices$att111m",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld14m",
+      "valueAttribute" : "ControllingServices$att120m",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld58m",
-      "valueAttribute" : null,
+      "valueAttribute" : "ControllingServices$att43m",
       "valueAssociationRole" : "ControllingServices$role16m"
     }, {
-      "fieldId" : "fld1d",
-      "valueAttribute" : "ControllingServices$att1d",
+      "fieldId" : "fld5m",
+      "valueAttribute" : "ControllingServices$att113m",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4m",
+      "valueAttribute" : "ControllingServices$att112m",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7m",
+      "valueAttribute" : "ControllingServices$att7m",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2m",
+      "valueAttribute" : "ControllingServices$att119m",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu2m",
       "type" : "FORM",
       "pageId" : "page2m.wr",
-      "dataBinding" : "ControllingServices$ent7m"
+      "dataBinding" : "ControllingServices$ent7m",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -56,13 +57,15 @@
         "id" : "enu8z",
         "type" : "FORM",
         "pageId" : "page14z.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu6z",
         "type" : "LIST",
         "pageId" : "page14z.wr",
-        "dataBinding" : "ControllingServices$ent51z"
+        "dataBinding" : "ControllingServices$ent51z",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -80,15 +83,15 @@
     } ],
     "fields" : [ {
       "fieldId" : "sfld17z",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld16z",
-      "valueAttribute" : null,
+      "valueAttribute" : "ControllingServices$att1361z",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld22z",
       "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld16z",
+      "valueAttribute" : "ControllingServices$att457z",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -111,7 +114,8 @@
       "id" : "enu10m",
       "type" : "FORM",
       "pageId" : "page21m.wr",
-      "dataBinding" : "ControllingServices$ent3m"
+      "dataBinding" : "ControllingServices$ent3m",
+      "isInDialogPage" : false
     }
   } ]
 }

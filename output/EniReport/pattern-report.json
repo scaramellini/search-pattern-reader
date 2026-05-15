@@ -6,13 +6,15 @@
         "id" : "enu7u",
         "type" : "FORM",
         "pageId" : "page15u.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu5u",
         "type" : "LIST",
         "pageId" : "page15u.wr",
-        "dataBinding" : "EniReportServices$User"
+        "dataBinding" : "EniReportServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -29,15 +31,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld19u",
+      "fieldId" : "fld18u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "msfld6u",
-      "valueAttribute" : null,
+      "valueAttribute" : "EniReportServices$roleName",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld18u",
+      "fieldId" : "fld19u",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -45,19 +47,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld23u",
-      "valueAttribute" : "EniReportServices$att35",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld24u",
       "valueAttribute" : "EniReportServices$att36",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld23u",
+      "valueAttribute" : "EniReportServices$att35",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu12u",
       "type" : "FORM",
       "pageId" : "page18u.wr",
-      "dataBinding" : "EniReportServices$ent7"
+      "dataBinding" : "EniReportServices$ent7",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -66,13 +69,15 @@
         "id" : "enu16u",
         "type" : "FORM",
         "pageId" : "page19u.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu8u",
         "type" : "LIST",
         "pageId" : "page19u.wr",
-        "dataBinding" : "EniReportServices$ent10"
+        "dataBinding" : "EniReportServices$ent10",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -92,13 +97,15 @@
         "id" : "enu8u",
         "type" : "FORM",
         "pageId" : "page17u.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu7u",
         "type" : "LIST",
         "pageId" : "page17u.wr",
-        "dataBinding" : "EniReportServices$ent7"
+        "dataBinding" : "EniReportServices$ent7",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -112,49 +119,58 @@
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "inu1",
-        "type" : "LIST",
-        "pageId" : "page1.wr",
-        "dataBinding" : "EniReportServices$User"
-      },
-      "to" : {
-        "id" : "enu1",
-        "type" : "FORM",
-        "pageId" : "page1.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_userName",
-        "target" : "{fld1}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_password",
-        "target" : "{fld2}value"
-      } ]
-    } ],
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld2",
-      "valueAttribute" : null,
+      "fieldId" : "fld17u",
+      "valueAttribute" : "EniReportServices$att25",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld1",
+      "fieldId" : "sfld8u",
       "valueAttribute" : null,
+      "valueAssociationRole" : "EniReportServices$role35"
+    }, {
+      "fieldId" : "sfld13u",
+      "valueAttribute" : "EniReportServices$att53",
       "valueAssociationRole" : null
-    } ]
+    }, {
+      "fieldId" : "fld8u",
+      "valueAttribute" : "EniReportServices$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld11u",
+      "valueAttribute" : "EniReportServices$att4",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7u",
+      "valueAttribute" : "EniReportServices$roleName",
+      "valueAssociationRole" : "EniReportServices$User2DefaultRole"
+    }, {
+      "fieldId" : "fld9u",
+      "valueAttribute" : "EniReportServices$password",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld10u",
+      "valueAttribute" : "EniReportServices$email",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu4u",
+      "type" : "FORM",
+      "pageId" : "page9u.wr",
+      "dataBinding" : "EniReportServices$User",
+      "isInDialogPage" : false
+    }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld27u",
-      "valueAttribute" : "EniReportServices$att39",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld28u",
       "valueAttribute" : "EniReportServices$att40",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld27u",
+      "valueAttribute" : "EniReportServices$att39",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld29u",
@@ -169,7 +185,8 @@
       "id" : "enu15u",
       "type" : "FORM",
       "pageId" : "page21u.wr",
-      "dataBinding" : "EniReportServices$ent10"
+      "dataBinding" : "EniReportServices$ent10",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -183,7 +200,8 @@
       "id" : "enu29u",
       "type" : "FORM",
       "pageId" : "page28u.wr",
-      "dataBinding" : "EniReportServices$ent11"
+      "dataBinding" : "EniReportServices$ent11",
+      "isInDialogPage" : false
     }
   } ]
 }

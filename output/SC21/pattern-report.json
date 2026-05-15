@@ -6,13 +6,15 @@
         "id" : "enu73d",
         "type" : "FORM",
         "pageId" : "page121d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu79d",
         "type" : "LIST",
         "pageId" : "page121d.wr",
-        "dataBinding" : "SC21Services$ent113d"
+        "dataBinding" : "SC21Services$ent113d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -41,15 +43,19 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld148d",
+      "valueAttribute" : "SC21Services$att1898i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld94d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld340d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld342d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld148d",
+      "fieldId" : "sfld96d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -57,62 +63,26 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld94d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld96d",
+      "fieldId" : "fld342d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau71d",
         "type" : "DETAILS",
         "pageId" : "page35d.wr",
-        "dataBinding" : "SC21Services$ent121d"
+        "dataBinding" : "SC21Services$ent121d",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu27d",
         "type" : "FORM",
         "pageId" : "page35d.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att1925d",
-        "target" : "{fld141d}value"
-      }, {
-        "automaticCoupling" : false,
-        "source" : "data._be_att1926d",
-        "target" : "{fld140d}value"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld140d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld141d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dau71d",
-        "type" : "DETAILS",
-        "pageId" : "page35d.wr",
-        "dataBinding" : "SC21Services$ent121d"
-      },
-      "to" : {
-        "id" : "enu27d",
-        "type" : "FORM",
-        "pageId" : "page35d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -137,6 +107,36 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld4ak",
+      "valueAttribute" : "SC21Services$att20ak",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu11ak",
+      "type" : "FORM",
+      "pageId" : "page14ak.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld62d",
+      "valueAttribute" : "SC21Services$att474d",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu10d",
+      "type" : "FORM",
+      "pageId" : "page19d.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
       "fieldId" : "fld183u",
       "valueAttribute" : "SC21Services$att10as",
       "valueAssociationRole" : null
@@ -145,7 +145,8 @@
       "id" : "enu17u",
       "type" : "FORM",
       "pageId" : "page28u.wr",
-      "dataBinding" : "SC21Services$ent1r"
+      "dataBinding" : "SC21Services$ent1r",
+      "isInDialogPage" : false
     }
   } ]
 }

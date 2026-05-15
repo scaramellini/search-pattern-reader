@@ -6,13 +6,15 @@
         "id" : "enu6g",
         "type" : "FORM",
         "pageId" : "page13g.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu4g",
         "type" : "LIST",
         "pageId" : "page13g.wr",
-        "dataBinding" : "RiotWebServices$ent27o"
+        "dataBinding" : "RiotWebServices$ent27o",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -25,46 +27,30 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld10g",
-      "valueAttribute" : null,
+      "fieldId" : "sfld3g",
+      "valueAttribute" : "RiotWebServices$att179",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld3g",
+      "fieldId" : "fld10g",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau30f",
         "type" : "DETAILS",
         "pageId" : "page95f.wr",
-        "dataBinding" : "RiotWebServices$ent8d"
+        "dataBinding" : "RiotWebServices$ent8d",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu79f",
         "type" : "FORM",
         "pageId" : "page95f.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dau30f",
-        "type" : "DETAILS",
-        "pageId" : "page95f.wr",
-        "dataBinding" : "RiotWebServices$ent8d"
-      },
-      "to" : {
-        "id" : "enu79f",
-        "type" : "FORM",
-        "pageId" : "page95f.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ ]
     } ],
@@ -76,13 +62,15 @@
         "id" : "enu86f",
         "type" : "FORM",
         "pageId" : "page105f.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu49f",
         "type" : "LIST",
         "pageId" : "page105f.wr",
-        "dataBinding" : "RiotWebServices$ent8d"
+        "dataBinding" : "RiotWebServices$ent8d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -95,46 +83,30 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld201f",
+      "fieldId" : "fld202f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld202f",
+      "fieldId" : "fld201f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau14f",
         "type" : "DETAILS",
         "pageId" : "page86f.wr",
-        "dataBinding" : "RiotWebServices$ent16d"
+        "dataBinding" : "RiotWebServices$ent16d",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu74f",
         "type" : "FORM",
         "pageId" : "page86f.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "dau14f",
-        "type" : "DETAILS",
-        "pageId" : "page86f.wr",
-        "dataBinding" : "RiotWebServices$ent16d"
-      },
-      "to" : {
-        "id" : "enu74f",
-        "type" : "FORM",
-        "pageId" : "page86f.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ ]
     } ],
@@ -143,44 +115,40 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld40z",
-      "valueAttribute" : "RiotWebServices$att324z",
+      "fieldId" : "sfld2o",
+      "valueAttribute" : "RiotWebServices$att71s",
       "valueAssociationRole" : null
-    }, {
+    } ],
+    "component" : {
+      "id" : "enu3o",
+      "type" : "FORM",
+      "pageId" : "page3o.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
       "fieldId" : "fld93z",
       "valueAttribute" : "RiotWebServices$att115z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld40z",
+      "valueAttribute" : "RiotWebServices$att324z",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu10z",
       "type" : "FORM",
       "pageId" : "page26z.wr",
-      "dataBinding" : "RiotWebServices$ent5z"
+      "dataBinding" : "RiotWebServices$ent5z",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld82i",
-      "valueAttribute" : "RiotWebServices$att48i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld79i",
-      "valueAttribute" : "RiotWebServices$att15i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld83i",
-      "valueAttribute" : "RiotWebServices$att49i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld81i",
-      "valueAttribute" : "RiotWebServices$att47i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld10i",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RiotWebServices$role21i"
-    }, {
       "fieldId" : "fld73i",
       "valueAttribute" : "RiotWebServices$att14i",
       "valueAssociationRole" : null
@@ -189,26 +157,62 @@
       "valueAttribute" : "RiotWebServices$att13i",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld84i",
+      "valueAttribute" : "RiotWebServices$att85i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10i",
+      "valueAttribute" : "RiotWebServices$att179",
+      "valueAssociationRole" : "RiotWebServices$role21i"
+    }, {
+      "fieldId" : "fld79i",
+      "valueAttribute" : "RiotWebServices$att15i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld82i",
+      "valueAttribute" : "RiotWebServices$att48i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld81i",
+      "valueAttribute" : "RiotWebServices$att47i",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld80i",
       "valueAttribute" : "RiotWebServices$att46i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld84i",
-      "valueAttribute" : "RiotWebServices$att85i",
+      "fieldId" : "fld83i",
+      "valueAttribute" : "RiotWebServices$att49i",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu12i",
       "type" : "FORM",
       "pageId" : "page2i.wr",
-      "dataBinding" : "RiotWebServices$ent2i"
+      "dataBinding" : "RiotWebServices$ent2i",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld17i",
-      "valueAttribute" : "RiotWebServices$att12i",
+      "fieldId" : "sfld77f",
+      "valueAttribute" : "RiotWebServices$att177",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu76f",
+      "type" : "FORM",
+      "pageId" : "page89f.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld32i",
+      "valueAttribute" : "RiotWebServices$att44i",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld15i",
@@ -223,27 +227,28 @@
       "valueAttribute" : "RiotWebServices$att16i",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "sfld7i",
+      "valueAttribute" : "RiotWebServices$att56i",
+      "valueAssociationRole" : "RiotWebServices$role15i"
+    }, {
       "fieldId" : "fld14i",
       "valueAttribute" : "RiotWebServices$att6i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld34i",
-      "valueAttribute" : "RiotWebServices$att84i",
+      "fieldId" : "fld17i",
+      "valueAttribute" : "RiotWebServices$att12i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld7i",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RiotWebServices$role15i"
-    }, {
-      "fieldId" : "fld32i",
-      "valueAttribute" : "RiotWebServices$att44i",
+      "fieldId" : "fld34i",
+      "valueAttribute" : "RiotWebServices$att84i",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu9i",
       "type" : "FORM",
       "pageId" : "page16i.wr",
-      "dataBinding" : "RiotWebServices$ent1i"
+      "dataBinding" : "RiotWebServices$ent1i",
+      "isInDialogPage" : false
     }
   } ]
 }

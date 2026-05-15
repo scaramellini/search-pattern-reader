@@ -1,35 +1,5 @@
 {
   "patterns" : [ {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu3h",
-        "type" : "LIST",
-        "pageId" : "page13h.wr",
-        "dataBinding" : "WebRatioDeskServices$ent2y"
-      },
-      "to" : {
-        "id" : "enu11h",
-        "type" : "FORM",
-        "pageId" : "page13h.wr",
-        "dataBinding" : "WebRatioDeskServices$ent2y"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att4y",
-        "target" : "kcond8._be_att4y"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld21h",
-      "valueAttribute" : "WebRatioDeskServices$att10y",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld20h",
-      "valueAttribute" : "WebRatioDeskServices$att9y",
-      "valueAssociationRole" : null
-    } ]
-  }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
@@ -45,7 +15,23 @@
       "id" : "enu11h",
       "type" : "FORM",
       "pageId" : "page13h.wr",
-      "dataBinding" : "WebRatioDeskServices$ent2y"
+      "dataBinding" : "WebRatioDeskServices$ent2y",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld15h",
+      "valueAttribute" : "WebRatioDeskServices$att115h",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu8h",
+      "type" : "FORM",
+      "pageId" : "page17h.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -63,7 +49,8 @@
       "id" : "enu8y",
       "type" : "FORM",
       "pageId" : "page9y.wr",
-      "dataBinding" : "WebRatioDeskServices$ent2y"
+      "dataBinding" : "WebRatioDeskServices$ent2y",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -81,7 +68,8 @@
       "id" : "enu9g",
       "type" : "FORM",
       "pageId" : "page8g.wr",
-      "dataBinding" : "WebRatioDeskServices$ent6g"
+      "dataBinding" : "WebRatioDeskServices$ent6g",
+      "isInDialogPage" : false
     }
   } ]
 }

@@ -3,37 +3,39 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld48z",
-      "valueAttribute" : "JoinOnWebServices$att33z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld61z",
       "valueAttribute" : "JoinOnWebServices$att37z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48z",
+      "valueAttribute" : "JoinOnWebServices$att33z",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu22z",
       "type" : "FORM",
       "pageId" : "page29z.wr",
-      "dataBinding" : "JoinOnWebServices$ent4z"
+      "dataBinding" : "JoinOnWebServices$ent4z",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld78z",
-      "valueAttribute" : "JoinOnWebServices$att10z",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld80z",
       "valueAttribute" : "JoinOnWebServices$att8z",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld78z",
+      "valueAttribute" : "JoinOnWebServices$att10z",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu28z",
       "type" : "FORM",
       "pageId" : "page48z.wr",
-      "dataBinding" : "JoinOnWebServices$ent3z"
+      "dataBinding" : "JoinOnWebServices$ent3z",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -43,27 +45,28 @@
       "valueAttribute" : "JoinOnWebServices$att9g",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld73z",
-      "valueAttribute" : "JoinOnWebServices$att7g",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld74z",
       "valueAttribute" : "JoinOnWebServices$att8g",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld71z",
-      "valueAttribute" : "JoinOnWebServices$att3g",
+      "fieldId" : "fld73z",
+      "valueAttribute" : "JoinOnWebServices$att7g",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld70z",
       "valueAttribute" : "JoinOnWebServices$att4g",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld71z",
+      "valueAttribute" : "JoinOnWebServices$att3g",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu26z",
       "type" : "FORM",
       "pageId" : "page34z.wr",
-      "dataBinding" : "JoinOnWebServices$ent1g"
+      "dataBinding" : "JoinOnWebServices$ent1g",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -77,7 +80,8 @@
       "id" : "enu2g",
       "type" : "FORM",
       "pageId" : "page5g.wr",
-      "dataBinding" : "JoinOnWebServices$ent5z"
+      "dataBinding" : "JoinOnWebServices$ent5z",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -95,7 +99,8 @@
       "id" : "enu43z",
       "type" : "FORM",
       "pageId" : "page72z.wr",
-      "dataBinding" : "JoinOnWebServices$ent27z"
+      "dataBinding" : "JoinOnWebServices$ent27z",
+      "isInDialogPage" : false
     }
   } ]
 }

@@ -3,31 +3,32 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld6p",
-      "valueAttribute" : "TicaServices$att36i",
+      "fieldId" : "fld3p",
+      "valueAttribute" : "TicaServices$att33i",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld4p",
       "valueAttribute" : "TicaServices$att34i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld7p",
-      "valueAttribute" : "TicaServices$att37i",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld5p",
       "valueAttribute" : "TicaServices$att35i",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld3p",
-      "valueAttribute" : "TicaServices$att33i",
+      "fieldId" : "fld6p",
+      "valueAttribute" : "TicaServices$att36i",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7p",
+      "valueAttribute" : "TicaServices$att37i",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu5p",
       "type" : "FORM",
       "pageId" : "page3p.wr",
-      "dataBinding" : "TicaServices$ent2i"
+      "dataBinding" : "TicaServices$ent2i",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -37,19 +38,20 @@
       "valueAttribute" : "TicaServices$att29r",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld32r",
-      "valueAttribute" : "TicaServices$att4r",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld36r",
       "valueAttribute" : "TicaServices$att14r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32r",
+      "valueAttribute" : "TicaServices$att4r",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu20r",
       "type" : "FORM",
       "pageId" : "page16r.wr",
-      "dataBinding" : "TicaServices$ent2r"
+      "dataBinding" : "TicaServices$ent2r",
+      "isInDialogPage" : false
     }
   } ]
 }

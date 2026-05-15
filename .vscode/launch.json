@@ -15,15 +15,15 @@
                 "C:/Users/scd2/GIT/politecnico-9",
                 "C:/WebRatio/WebRatio Enterprise Platform 9.3.0/Workspaces/Workspace ALGO/Custom project"
             ] */
-            "args": [
+            /* "args": [
                 "C:/WebRatio/WebRatio Enterprise Platform 9.3.0/Workspaces/Workspace ALGO/Custom project/Model",
-            ]
+            ] */
             /* "args": [
                 "C:/WebRatio/WebRatio Enterprise Platform 9.3.0/Workspaces/Workspace ALGO/Custom project/Model/WebModel/wv2/area3/page19.wr",
             ] */
-            /* "args": [
+            "args": [
                 "C:/Users/scd2/GIT/data-set/data-set",
-            ] */
+            ]
         },
     ]
 }

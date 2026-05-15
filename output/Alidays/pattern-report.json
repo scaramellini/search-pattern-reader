@@ -11,25 +11,61 @@
       "id" : "enu29a",
       "type" : "FORM",
       "pageId" : "page21a.wr",
-      "dataBinding" : "AlidaysServices$ent32a"
+      "dataBinding" : "AlidaysServices$ent32a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "sfld55r",
+      "valueAttribute" : "AlidaysServices$att143r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu84r",
+      "type" : "FORM",
+      "pageId" : "page91r.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld146a",
+      "valueAttribute" : "AlidaysServices$att117a",
+      "valueAssociationRole" : "AlidaysServices$role434a"
+    }, {
       "fieldId" : "fld84a",
       "valueAttribute" : "AlidaysServices$att100a",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld146a",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "AlidaysServices$role434a"
     } ],
     "component" : {
       "id" : "enu270a",
       "type" : "FORM",
       "pageId" : "page188a.wr",
-      "dataBinding" : "AlidaysServices$ent27a"
+      "dataBinding" : "AlidaysServices$ent27a",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld24a",
+      "valueAttribute" : "AlidaysServices$att77a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld25a",
+      "valueAttribute" : "AlidaysServices$att32a",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu99a",
+      "type" : "FORM",
+      "pageId" : "page84a.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -43,7 +79,8 @@
       "id" : "enu271a",
       "type" : "FORM",
       "pageId" : "page188a.wr",
-      "dataBinding" : "AlidaysServices$ent29a"
+      "dataBinding" : "AlidaysServices$ent29a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -53,12 +90,12 @@
       "valueAttribute" : "AlidaysServices$att195a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld222b",
-      "valueAttribute" : "AlidaysServices$att194a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld224b",
       "valueAttribute" : "AlidaysServices$att196a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld226b",
+      "valueAttribute" : "AlidaysServices$att2a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld227b",
@@ -69,15 +106,16 @@
       "valueAttribute" : "AlidaysServices$att197a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld226b",
-      "valueAttribute" : "AlidaysServices$att2a",
+      "fieldId" : "fld222b",
+      "valueAttribute" : "AlidaysServices$att194a",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu40b",
       "type" : "FORM",
       "pageId" : "page28b.wr",
-      "dataBinding" : "AlidaysServices$ent46a"
+      "dataBinding" : "AlidaysServices$ent46a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -86,13 +124,15 @@
         "id" : "enu269a",
         "type" : "FORM",
         "pageId" : "page187a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu39a",
         "type" : "LIST",
         "pageId" : "page187a.wr",
-        "dataBinding" : "AlidaysServices$ent27a"
+        "dataBinding" : "AlidaysServices$ent27a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -106,7 +146,7 @@
     } ],
     "fields" : [ {
       "fieldId" : "sfld145a",
-      "valueAttribute" : null,
+      "valueAttribute" : "AlidaysServices$att117a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld83a",
@@ -117,12 +157,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld214a",
-      "valueAttribute" : "AlidaysServices$ent382a$att1490a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld155a",
       "valueAttribute" : "AlidaysServices$ent382a$att1048a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld214a",
+      "valueAttribute" : "AlidaysServices$ent382a$att1490a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld379a",
@@ -133,22 +173,40 @@
       "id" : "enu48a",
       "type" : "FORM",
       "pageId" : "page94a.wr",
-      "dataBinding" : "AlidaysServices$ent382a"
+      "dataBinding" : "AlidaysServices$ent382a",
+      "isInDialogPage" : false
     }
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld57r",
+      "valueAttribute" : "AlidaysServices$att143r",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu11r",
+      "type" : "FORM",
+      "pageId" : "page6r.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau23b",
         "type" : "DETAILS",
         "pageId" : "page28b.wr",
-        "dataBinding" : "AlidaysServices$ent190a"
+        "dataBinding" : "AlidaysServices$ent190a",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu39b",
         "type" : "FORM",
         "pageId" : "page28b.wr",
-        "dataBinding" : "AlidaysServices$ent190a"
+        "dataBinding" : "AlidaysServices$ent190a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -157,40 +215,42 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld217b",
-      "valueAttribute" : "AlidaysServices$ent190a$att508a",
+      "fieldId" : "fld220b",
+      "valueAttribute" : "AlidaysServices$ent190a$att25a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld218b",
-      "valueAttribute" : "AlidaysServices$ent190a$att224a",
+      "fieldId" : "fld217b",
+      "valueAttribute" : "AlidaysServices$ent190a$att508a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld221b",
       "valueAttribute" : "AlidaysServices$ent190a$att26a",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld218b",
+      "valueAttribute" : "AlidaysServices$ent190a$att224a",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld219b",
       "valueAttribute" : "AlidaysServices$ent190a$att225a",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld220b",
-      "valueAttribute" : "AlidaysServices$ent190a$att25a",
-      "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau23b",
         "type" : "DETAILS",
         "pageId" : "page28b.wr",
-        "dataBinding" : "AlidaysServices$ent190a"
+        "dataBinding" : "AlidaysServices$ent190a",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu40b",
         "type" : "FORM",
         "pageId" : "page28b.wr",
-        "dataBinding" : "AlidaysServices$ent46a"
+        "dataBinding" : "AlidaysServices$ent46a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -203,12 +263,12 @@
       "valueAttribute" : "AlidaysServices$att195a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld222b",
-      "valueAttribute" : "AlidaysServices$att194a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld224b",
       "valueAttribute" : "AlidaysServices$att196a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld226b",
+      "valueAttribute" : "AlidaysServices$att2a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld227b",
@@ -219,8 +279,52 @@
       "valueAttribute" : "AlidaysServices$att197a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld226b",
-      "valueAttribute" : "AlidaysServices$att2a",
+      "fieldId" : "fld222b",
+      "valueAttribute" : "AlidaysServices$att194a",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Form Pattern Class Variant",
+    "flows" : [ {
+      "from" : {
+        "id" : "dau23b",
+        "type" : "DETAILS",
+        "pageId" : "page28b.wr",
+        "dataBinding" : "AlidaysServices$ent190a",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "enu39b",
+        "type" : "FORM",
+        "pageId" : "page28b.wr",
+        "dataBinding" : "AlidaysServices$ent190a",
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_ent190a$att506a",
+        "target" : "kcond161._be_ent190a$att506a"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "fld220b",
+      "valueAttribute" : "AlidaysServices$ent190a$att25a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld217b",
+      "valueAttribute" : "AlidaysServices$ent190a$att508a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld221b",
+      "valueAttribute" : "AlidaysServices$ent190a$att26a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld218b",
+      "valueAttribute" : "AlidaysServices$ent190a$att224a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld219b",
+      "valueAttribute" : "AlidaysServices$ent190a$att225a",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -231,49 +335,51 @@
       "valueAttribute" : "AlidaysServices$att149r",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld93r",
-      "valueAttribute" : "AlidaysServices$att151r",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld88r",
       "valueAttribute" : "AlidaysServices$att150r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld93r",
+      "valueAttribute" : "AlidaysServices$att151r",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu100r",
       "type" : "FORM",
       "pageId" : "page110r.wr",
-      "dataBinding" : "AlidaysServices$ent21r"
+      "dataBinding" : "AlidaysServices$ent21r",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld217b",
-      "valueAttribute" : "AlidaysServices$ent190a$att508a",
+      "fieldId" : "fld220b",
+      "valueAttribute" : "AlidaysServices$ent190a$att25a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld218b",
-      "valueAttribute" : "AlidaysServices$ent190a$att224a",
+      "fieldId" : "fld217b",
+      "valueAttribute" : "AlidaysServices$ent190a$att508a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld221b",
       "valueAttribute" : "AlidaysServices$ent190a$att26a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld219b",
-      "valueAttribute" : "AlidaysServices$ent190a$att225a",
+      "fieldId" : "fld218b",
+      "valueAttribute" : "AlidaysServices$ent190a$att224a",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld220b",
-      "valueAttribute" : "AlidaysServices$ent190a$att25a",
+      "fieldId" : "fld219b",
+      "valueAttribute" : "AlidaysServices$ent190a$att225a",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu39b",
       "type" : "FORM",
       "pageId" : "page28b.wr",
-      "dataBinding" : "AlidaysServices$ent190a"
+      "dataBinding" : "AlidaysServices$ent190a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -287,12 +393,17 @@
       "id" : "enu264a",
       "type" : "FORM",
       "pageId" : "page183a.wr",
-      "dataBinding" : "AlidaysServices$ent4"
+      "dataBinding" : "AlidaysServices$ent4",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld94r",
+      "valueAttribute" : "AlidaysServices$att149r",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld105r",
       "valueAttribute" : "AlidaysServices$att150r",
       "valueAssociationRole" : null
@@ -300,16 +411,13 @@
       "fieldId" : "fld115r",
       "valueAttribute" : "AlidaysServices$att151r",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld94r",
-      "valueAttribute" : "AlidaysServices$att149r",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu102r",
       "type" : "FORM",
       "pageId" : "page111r.wr",
-      "dataBinding" : "AlidaysServices$ent21r"
+      "dataBinding" : "AlidaysServices$ent21r",
+      "isInDialogPage" : false
     }
   } ]
 }

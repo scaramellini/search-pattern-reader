@@ -6,13 +6,15 @@
         "id" : "enu3v",
         "type" : "FORM",
         "pageId" : "page15v.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu8v",
         "type" : "LIST",
         "pageId" : "page15v.wr",
-        "dataBinding" : "SmartWineTastingWebServices$ent4v"
+        "dataBinding" : "SmartWineTastingWebServices$ent4v",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,7 +39,8 @@
       "id" : "enu62v",
       "type" : "FORM",
       "pageId" : "page68v.wr",
-      "dataBinding" : "SmartWineTastingWebServices$ent23v"
+      "dataBinding" : "SmartWineTastingWebServices$ent23v",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -46,13 +49,15 @@
         "id" : "enu12v",
         "type" : "FORM",
         "pageId" : "page13v.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu14v",
         "type" : "LIST",
         "pageId" : "page13v.wr",
-        "dataBinding" : "SmartWineTastingWebServices$ent3v"
+        "dataBinding" : "SmartWineTastingWebServices$ent3v",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -77,7 +82,8 @@
       "id" : "enu46v",
       "type" : "FORM",
       "pageId" : "page42v.wr",
-      "dataBinding" : "SmartWineTastingWebServices$ent7v"
+      "dataBinding" : "SmartWineTastingWebServices$ent7v",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -86,13 +92,15 @@
         "id" : "enu32v",
         "type" : "FORM",
         "pageId" : "page37v.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu26v",
         "type" : "LIST",
         "pageId" : "page37v.wr",
-        "dataBinding" : "SmartWineTastingWebServices$ent3v"
+        "dataBinding" : "SmartWineTastingWebServices$ent3v",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -117,7 +125,8 @@
       "id" : "enu51v",
       "type" : "FORM",
       "pageId" : "page49v.wr",
-      "dataBinding" : "SmartWineTastingWebServices$ent21v"
+      "dataBinding" : "SmartWineTastingWebServices$ent21v",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -131,7 +140,8 @@
       "id" : "enu49v",
       "type" : "FORM",
       "pageId" : "page43v.wr",
-      "dataBinding" : "SmartWineTastingWebServices$ent10v"
+      "dataBinding" : "SmartWineTastingWebServices$ent10v",
+      "isInDialogPage" : false
     }
   } ]
 }

@@ -23,7 +23,8 @@
       "id" : "enu8d",
       "type" : "FORM",
       "pageId" : "page6d.wr",
-      "dataBinding" : "GSEServices$User"
+      "dataBinding" : "GSEServices$User",
+      "isInDialogPage" : false
     }
   } ]
 }

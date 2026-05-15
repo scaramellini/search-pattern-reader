@@ -6,13 +6,15 @@
         "id" : "enu26r",
         "type" : "FORM",
         "pageId" : "page48r.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu20r",
         "type" : "LIST",
         "pageId" : "page48r.wr",
-        "dataBinding" : "IntranetGVPMServices$ent10r"
+        "dataBinding" : "IntranetGVPMServices$ent10r",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -29,15 +31,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld87r",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld88r",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld8r",
+      "valueAttribute" : "IntranetGVPMServices$att111r",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld87r",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

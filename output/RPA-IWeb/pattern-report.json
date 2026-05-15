@@ -6,13 +6,15 @@
         "id" : "enu33d",
         "type" : "FORM",
         "pageId" : "page38d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu16d",
         "type" : "LIST",
         "pageId" : "page38d.wr",
-        "dataBinding" : "RPAIWebServices$ent2d"
+        "dataBinding" : "RPAIWebServices$ent2d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -33,11 +35,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld9v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld15d",
+      "fieldId" : "fld47d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -45,7 +43,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld47d",
+      "fieldId" : "sfld15d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld9v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -56,13 +58,15 @@
         "id" : "enu5s",
         "type" : "FORM",
         "pageId" : "page3s.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2s",
         "type" : "LIST",
         "pageId" : "page3s.wr",
-        "dataBinding" : "RPAIWebServices$ent4s"
+        "dataBinding" : "RPAIWebServices$ent4s",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -87,7 +91,8 @@
       "id" : "enu29d",
       "type" : "FORM",
       "pageId" : "page33d.wr",
-      "dataBinding" : "RPAIWebServices$ent5"
+      "dataBinding" : "RPAIWebServices$ent5",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -96,13 +101,15 @@
         "id" : "enu6d",
         "type" : "FORM",
         "pageId" : "page10d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu6d",
         "type" : "LIST",
         "pageId" : "page10d.wr",
-        "dataBinding" : "RPAIWebServices$ent11d"
+        "dataBinding" : "RPAIWebServices$ent11d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -119,15 +126,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld12d",
+      "fieldId" : "fld10d",
       "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12d",
+      "valueAttribute" : "RPAIWebServices$att17d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld9d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld10d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -143,7 +150,8 @@
       "id" : "enu34d",
       "type" : "FORM",
       "pageId" : "page39d.wr",
-      "dataBinding" : "RPAIWebServices$ent4d"
+      "dataBinding" : "RPAIWebServices$ent4d",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -157,7 +165,8 @@
       "id" : "enu6s",
       "type" : "FORM",
       "pageId" : "page4s.wr",
-      "dataBinding" : "RPAIWebServices$ent4s"
+      "dataBinding" : "RPAIWebServices$ent4s",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -171,7 +180,8 @@
       "id" : "enu23d",
       "type" : "FORM",
       "pageId" : "page27d.wr",
-      "dataBinding" : "RPAIWebServices$ent1d"
+      "dataBinding" : "RPAIWebServices$ent1d",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -180,13 +190,15 @@
         "id" : "enu3s",
         "type" : "FORM",
         "pageId" : "page1s.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1s",
         "type" : "LIST",
         "pageId" : "page1s.wr",
-        "dataBinding" : "RPAIWebServices$ent3s"
+        "dataBinding" : "RPAIWebServices$ent3s",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -215,7 +227,8 @@
       "id" : "enu4j",
       "type" : "FORM",
       "pageId" : "page7j.wr",
-      "dataBinding" : "RPAIWebServices$ent1j"
+      "dataBinding" : "RPAIWebServices$ent1j",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -229,7 +242,8 @@
       "id" : "enu36d",
       "type" : "FORM",
       "pageId" : "page41d.wr",
-      "dataBinding" : "RPAIWebServices$ent3d"
+      "dataBinding" : "RPAIWebServices$ent3d",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -243,36 +257,38 @@
       "id" : "enu4s",
       "type" : "FORM",
       "pageId" : "page2s.wr",
-      "dataBinding" : "RPAIWebServices$ent3s"
+      "dataBinding" : "RPAIWebServices$ent3s",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld33d",
-      "valueAttribute" : "RPAIWebServices$att28",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld32d",
       "valueAttribute" : "RPAIWebServices$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld33d",
+      "valueAttribute" : "RPAIWebServices$att28",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu24d",
       "type" : "FORM",
       "pageId" : "page28d.wr",
-      "dataBinding" : "RPAIWebServices$ent2"
+      "dataBinding" : "RPAIWebServices$ent2",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld3a",
-      "valueAttribute" : "RPAIWebServices$att4a",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld2a",
       "valueAttribute" : "RPAIWebServices$att6a",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld3a",
+      "valueAttribute" : "RPAIWebServices$att4a",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld4a",
@@ -283,33 +299,35 @@
       "id" : "enu2a",
       "type" : "FORM",
       "pageId" : "page2a.wr",
-      "dataBinding" : "RPAIWebServices$ent1a"
+      "dataBinding" : "RPAIWebServices$ent1a",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld54d",
-      "valueAttribute" : "RPAIWebServices$att92d",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld10v",
-      "valueAttribute" : "RPAIWebServices$att10o",
+      "fieldId" : "fld43d",
+      "valueAttribute" : "RPAIWebServices$att4d",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld42d",
       "valueAttribute" : "RPAIWebServices$att5d",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld43d",
-      "valueAttribute" : "RPAIWebServices$att4d",
+      "fieldId" : "fld10v",
+      "valueAttribute" : "RPAIWebServices$att10o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54d",
+      "valueAttribute" : "RPAIWebServices$att92d",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu30d",
       "type" : "FORM",
       "pageId" : "page34d.wr",
-      "dataBinding" : "RPAIWebServices$ent2d"
+      "dataBinding" : "RPAIWebServices$ent2d",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -318,13 +336,15 @@
         "id" : "enu2j",
         "type" : "FORM",
         "pageId" : "page6j.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2j",
         "type" : "LIST",
         "pageId" : "page6j.wr",
-        "dataBinding" : "RPAIWebServices$ent1j"
+        "dataBinding" : "RPAIWebServices$ent1j",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -341,17 +361,17 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld4o",
-      "valueAttribute" : "RPAIWebServices$att7o",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld2o",
       "valueAttribute" : "RPAIWebServices$att2o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld2o",
-      "valueAttribute" : null,
+      "valueAttribute" : "RPAIWebServices$att5o",
       "valueAssociationRole" : "RPAIWebServices$role1o"
+    }, {
+      "fieldId" : "fld4o",
+      "valueAttribute" : "RPAIWebServices$att7o",
+      "valueAssociationRole" : null
     }, {
       "fieldId" : "fld3o",
       "valueAttribute" : "RPAIWebServices$att3o",
@@ -361,29 +381,46 @@
       "id" : "enu2o",
       "type" : "FORM",
       "pageId" : "page2o.wr",
-      "dataBinding" : "RPAIWebServices$ent1o"
+      "dataBinding" : "RPAIWebServices$ent1o",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld7d",
-      "valueAttribute" : "RPAIWebServices$att31d",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld6d",
       "valueAttribute" : "RPAIWebServices$att21d",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld7d",
+      "valueAttribute" : "RPAIWebServices$att31d",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld11d",
-      "valueAttribute" : null,
+      "valueAttribute" : "RPAIWebServices$att17d",
       "valueAssociationRole" : "RPAIWebServices$role21d"
     } ],
     "component" : {
       "id" : "enu3d",
       "type" : "FORM",
       "pageId" : "page5d.wr",
-      "dataBinding" : "RPAIWebServices$ent10d"
+      "dataBinding" : "RPAIWebServices$ent10d",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld1c",
+      "valueAttribute" : "RPAIWebServices$processName",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu3c",
+      "type" : "FORM",
+      "pageId" : "page3c.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -392,13 +429,15 @@
         "id" : "enu31d",
         "type" : "FORM",
         "pageId" : "page36d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu15d",
         "type" : "LIST",
         "pageId" : "page36d.wr",
-        "dataBinding" : "RPAIWebServices$ent6d"
+        "dataBinding" : "RPAIWebServices$ent6d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -415,7 +454,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld45d",
+      "fieldId" : "fld44d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -423,7 +462,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld44d",
+      "fieldId" : "fld45d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -431,10 +470,6 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "msfld2v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "RPAIWebServices$role8v"
-    }, {
       "fieldId" : "fld38d",
       "valueAttribute" : "RPAIWebServices$att30",
       "valueAssociationRole" : null
@@ -442,12 +477,17 @@
       "fieldId" : "fld39d",
       "valueAttribute" : "RPAIWebServices$att31",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld2v",
+      "valueAttribute" : "RPAIWebServices$att44",
+      "valueAssociationRole" : "RPAIWebServices$role8v"
     } ],
     "component" : {
       "id" : "enu27d",
       "type" : "FORM",
       "pageId" : "page31d.wr",
-      "dataBinding" : "RPAIWebServices$ent3"
+      "dataBinding" : "RPAIWebServices$ent3",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -465,7 +505,8 @@
       "id" : "enu14s",
       "type" : "FORM",
       "pageId" : "page13s.wr",
-      "dataBinding" : "RPAIWebServices$ent1z"
+      "dataBinding" : "RPAIWebServices$ent1z",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -474,13 +515,15 @@
         "id" : "enu44d",
         "type" : "FORM",
         "pageId" : "page52d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu27d",
         "type" : "LIST",
         "pageId" : "page52d.wr",
-        "dataBinding" : "RPAIWebServices$ent14d"
+        "dataBinding" : "RPAIWebServices$ent14d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -509,7 +552,8 @@
       "id" : "enu20d",
       "type" : "FORM",
       "pageId" : "page24d.wr",
-      "dataBinding" : "RPAIWebServices$ent4"
+      "dataBinding" : "RPAIWebServices$ent4",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -523,7 +567,8 @@
       "id" : "enu1d",
       "type" : "FORM",
       "pageId" : "page3d.wr",
-      "dataBinding" : "RPAIWebServices$ent7d"
+      "dataBinding" : "RPAIWebServices$ent7d",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Basic Search Pattern",
@@ -532,13 +577,15 @@
         "id" : "enu1a",
         "type" : "FORM",
         "pageId" : "page1a.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1a",
         "type" : "LIST",
         "pageId" : "page1a.wr",
-        "dataBinding" : "RPAIWebServices$ent1a"
+        "dataBinding" : "RPAIWebServices$ent1a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

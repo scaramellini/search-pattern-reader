@@ -1,18 +1,54 @@
 {
   "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld47m",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att27",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu7m",
+      "type" : "FORM",
+      "pageId" : "page8m.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld2q",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld7q",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att41",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu7q",
+      "type" : "FORM",
+      "pageId" : "page12q.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
       "from" : {
         "id" : "enu7q",
         "type" : "FORM",
         "pageId" : "page12q.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu7q",
         "type" : "LIST",
         "pageId" : "page12q.wr",
-        "dataBinding" : "ManutenzioneParcheggiServices$ent2q"
+        "dataBinding" : "ManutenzioneParcheggiServices$ent2q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -26,11 +62,11 @@
     } ],
     "fields" : [ {
       "fieldId" : "sfld2q",
-      "valueAttribute" : null,
+      "valueAttribute" : "ManutenzioneParcheggiServices$att27",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld7q",
-      "valueAttribute" : null,
+      "valueAttribute" : "ManutenzioneParcheggiServices$att41",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -40,13 +76,15 @@
         "id" : "enu5q",
         "type" : "FORM",
         "pageId" : "page8q.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu5q",
         "type" : "LIST",
         "pageId" : "page8q.wr",
-        "dataBinding" : "ManutenzioneParcheggiServices$ent10"
+        "dataBinding" : "ManutenzioneParcheggiServices$ent10",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -59,11 +97,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld38q",
+      "fieldId" : "fld37q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld37q",
+      "fieldId" : "fld38q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -71,12 +109,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld54m",
-      "valueAttribute" : "ManutenzioneParcheggiServices$att44m",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld6",
       "valueAttribute" : "ManutenzioneParcheggiServices$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld54m",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att44m",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld9",
@@ -87,7 +125,8 @@
       "id" : "enu12",
       "type" : "FORM",
       "pageId" : "page15.wr",
-      "dataBinding" : "ManutenzioneParcheggiServices$ent13"
+      "dataBinding" : "ManutenzioneParcheggiServices$ent13",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -96,13 +135,15 @@
         "id" : "enu1q",
         "type" : "FORM",
         "pageId" : "page4q.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2q",
         "type" : "LIST",
         "pageId" : "page4q.wr",
-        "dataBinding" : "ManutenzioneParcheggiServices$ent10"
+        "dataBinding" : "ManutenzioneParcheggiServices$ent10",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -119,11 +160,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld17q",
+      "fieldId" : "fld16q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld16q",
+      "fieldId" : "fld17q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -135,19 +176,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld50q",
-      "valueAttribute" : "ManutenzioneParcheggiServices$att29q",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld51q",
       "valueAttribute" : "ManutenzioneParcheggiServices$att30q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld50q",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att29q",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu10q",
       "type" : "FORM",
       "pageId" : "page14q.wr",
-      "dataBinding" : "ManutenzioneParcheggiServices$ent4q"
+      "dataBinding" : "ManutenzioneParcheggiServices$ent4q",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -161,7 +203,8 @@
       "id" : "enu6m",
       "type" : "FORM",
       "pageId" : "page7m.wr",
-      "dataBinding" : "ManutenzioneParcheggiServices$ent6"
+      "dataBinding" : "ManutenzioneParcheggiServices$ent6",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -170,13 +213,15 @@
         "id" : "enu45",
         "type" : "FORM",
         "pageId" : "page43.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu20",
         "type" : "LIST",
         "pageId" : "page43.wr",
-        "dataBinding" : "ManutenzioneParcheggiServices$ent2"
+        "dataBinding" : "ManutenzioneParcheggiServices$ent2",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -205,18 +250,6 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld109",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld111",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld108",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld110",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -228,24 +261,37 @@
       "fieldId" : "sfld53m",
       "valueAttribute" : null,
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld108",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld109",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld111",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld81",
-      "valueAttribute" : "ManutenzioneParcheggiServices$att6",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld82",
       "valueAttribute" : "ManutenzioneParcheggiServices$att1",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld81",
+      "valueAttribute" : "ManutenzioneParcheggiServices$att6",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu22",
       "type" : "FORM",
       "pageId" : "page24.wr",
-      "dataBinding" : "ManutenzioneParcheggiServices$ent1"
+      "dataBinding" : "ManutenzioneParcheggiServices$ent1",
+      "isInDialogPage" : false
     }
   } ]
 }

@@ -6,13 +6,15 @@
         "id" : "pwu4i",
         "type" : "LIST",
         "pageId" : "page89.wr",
-        "dataBinding" : "contabilitaServices$ent47"
+        "dataBinding" : "contabilitaServices$ent47",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dau47",
         "type" : "DETAILS",
         "pageId" : "page89.wr",
-        "dataBinding" : "contabilitaServices$ent47"
+        "dataBinding" : "contabilitaServices$ent47",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -28,13 +30,15 @@
         "id" : "pwu7i",
         "type" : "LIST",
         "pageId" : "page11.wr",
-        "dataBinding" : "contabilitaServices$ent46a"
+        "dataBinding" : "contabilitaServices$ent46a",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dau6",
         "type" : "DETAILS",
         "pageId" : "page11.wr",
-        "dataBinding" : "contabilitaServices$ent46a"
+        "dataBinding" : "contabilitaServices$ent46a",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -50,13 +54,15 @@
         "id" : "enu7",
         "type" : "FORM",
         "pageId" : "page8.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2",
         "type" : "LIST",
         "pageId" : "page8.wr",
-        "dataBinding" : "contabilitaServices$ent3"
+        "dataBinding" : "contabilitaServices$ent3",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -86,14 +92,10 @@
     } ],
     "fields" : [ {
       "fieldId" : "msfld5i",
-      "valueAttribute" : null,
+      "valueAttribute" : "contabilitaServices$att135",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld23c",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld33s",
+      "fieldId" : "fld24c",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -101,11 +103,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld24c",
+      "fieldId" : "fld23c",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld1c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld33s",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -116,13 +122,15 @@
         "id" : "pwu3i",
         "type" : "LIST",
         "pageId" : "page64a.wr",
-        "dataBinding" : "contabilitaServices$ent45"
+        "dataBinding" : "contabilitaServices$ent45",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dau33",
         "type" : "DETAILS",
         "pageId" : "page64a.wr",
-        "dataBinding" : "contabilitaServices$ent45"
+        "dataBinding" : "contabilitaServices$ent45",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

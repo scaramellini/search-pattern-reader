@@ -15,7 +15,23 @@
       "id" : "enu17v",
       "type" : "FORM",
       "pageId" : "page5v.wr",
-      "dataBinding" : "wrnewsletterServices$ent11v"
+      "dataBinding" : "wrnewsletterServices$ent11v",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld18v",
+      "valueAttribute" : "wrnewsletterServices$att49v",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu14v",
+      "type" : "FORM",
+      "pageId" : "page7v.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
     }
   } ]
 }

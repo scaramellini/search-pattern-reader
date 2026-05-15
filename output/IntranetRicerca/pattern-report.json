@@ -6,13 +6,15 @@
         "id" : "enu23aa",
         "type" : "FORM",
         "pageId" : "page25aa.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu32aa",
         "type" : "LIST",
         "pageId" : "page25aa.wr",
-        "dataBinding" : "IntranetRicercaServices$ent17as"
+        "dataBinding" : "IntranetRicercaServices$ent17as",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -41,11 +43,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld62aa",
+      "fieldId" : "fld183as",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld86aa",
+      "fieldId" : "sfld62aa",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -53,15 +55,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld181as",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld183as",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld59aa",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld86aa",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld181as",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -72,13 +74,15 @@
         "id" : "enu48i",
         "type" : "FORM",
         "pageId" : "page75i.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu25i",
         "type" : "LIST",
         "pageId" : "page75i.wr",
-        "dataBinding" : "IntranetRicercaServices$User"
+        "dataBinding" : "IntranetRicercaServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -99,15 +103,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld72h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld139i",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld92f",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld72h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -122,13 +126,15 @@
         "id" : "enu31aa",
         "type" : "FORM",
         "pageId" : "page29aa.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu35aa",
         "type" : "LIST",
         "pageId" : "page29aa.wr",
-        "dataBinding" : "IntranetRicercaServices$ent56aa"
+        "dataBinding" : "IntranetRicercaServices$ent56aa",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -149,7 +155,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld87aa",
+      "fieldId" : "fld89aa",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -161,7 +167,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld89aa",
+      "fieldId" : "fld87aa",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

@@ -6,13 +6,15 @@
         "id" : "frm3",
         "type" : "FORM",
         "pageId" : "page7.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst8",
         "type" : "LIST",
         "pageId" : "page7.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -33,11 +35,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld2",
+      "fieldId" : "fld7",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld7",
+      "fieldId" : "sfld2",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -56,13 +58,15 @@
         "id" : "frmw4h",
         "type" : "FORM",
         "pageId" : "pagew7h.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lstw6h",
         "type" : "LIST",
         "pageId" : "pagew7h.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -87,15 +91,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fldw9h",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfldw2h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fldw8h",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fldw9h",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

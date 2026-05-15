@@ -3,6 +3,18 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld11o",
+      "valueAttribute" : "ControlloSosteServices$att16o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld40f",
+      "valueAttribute" : "ControlloSosteServices$att4n",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48f",
+      "valueAttribute" : "ControlloSosteServices$att148f",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld47f",
       "valueAttribute" : "ControlloSosteServices$att147f",
       "valueAssociationRole" : null
@@ -11,35 +23,24 @@
       "valueAttribute" : "ControlloSosteServices$att17o",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld53f",
-      "valueAttribute" : "ControlloSosteServices$att171f",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld46f",
       "valueAttribute" : "ControlloSosteServices$att146f",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld53f",
+      "valueAttribute" : "ControlloSosteServices$att171f",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld5i",
       "valueAttribute" : "ControlloSosteServices$att2i",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld40f",
-      "valueAttribute" : "ControlloSosteServices$att4n",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld11o",
-      "valueAttribute" : "ControlloSosteServices$att16o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld48f",
-      "valueAttribute" : "ControlloSosteServices$att148f",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu21f",
       "type" : "FORM",
       "pageId" : "page31f.wr",
-      "dataBinding" : "ControlloSosteServices$ent1n"
+      "dataBinding" : "ControlloSosteServices$ent1n",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -61,42 +62,48 @@
       "id" : "enu2i",
       "type" : "FORM",
       "pageId" : "page2i.wr",
-      "dataBinding" : "ControlloSosteServices$ent4i"
+      "dataBinding" : "ControlloSosteServices$ent4i",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld9f",
-      "valueAttribute" : "ControlloSosteServices$att26f",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld7f",
-      "valueAttribute" : "ControlloSosteServices$att24f",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld8f",
-      "valueAttribute" : "ControlloSosteServices$att25f",
+      "fieldId" : "fld6f",
+      "valueAttribute" : "ControlloSosteServices$att23f",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld1c",
       "valueAttribute" : "ControlloSosteServices$att2r",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld6f",
-      "valueAttribute" : "ControlloSosteServices$att23f",
+      "fieldId" : "fld8f",
+      "valueAttribute" : "ControlloSosteServices$att25f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld7f",
+      "valueAttribute" : "ControlloSosteServices$att24f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld9f",
+      "valueAttribute" : "ControlloSosteServices$att26f",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu4f",
       "type" : "FORM",
       "pageId" : "page4f.wr",
-      "dataBinding" : "ControlloSosteServices$ent4f"
+      "dataBinding" : "ControlloSosteServices$ent4f",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld23f",
+      "valueAttribute" : "ControlloSosteServices$att42f",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld24f",
       "valueAttribute" : "ControlloSosteServices$att48f",
       "valueAssociationRole" : null
@@ -104,16 +111,13 @@
       "fieldId" : "fld22f",
       "valueAttribute" : "ControlloSosteServices$att10f",
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld23f",
-      "valueAttribute" : "ControlloSosteServices$att42f",
-      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu5f",
       "type" : "FORM",
       "pageId" : "page5f.wr",
-      "dataBinding" : "ControlloSosteServices$ent2f"
+      "dataBinding" : "ControlloSosteServices$ent2f",
+      "isInDialogPage" : false
     }
   } ]
 }

@@ -6,13 +6,15 @@
         "id" : "enu1v",
         "type" : "FORM",
         "pageId" : "page7v.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3v",
         "type" : "LIST",
         "pageId" : "page7v.wr",
-        "dataBinding" : "PayCityServices$ent1v"
+        "dataBinding" : "PayCityServices$ent1v",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -33,12 +35,8 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld21v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld7v",
-      "valueAttribute" : null,
+      "valueAttribute" : "PayCityServices$att5v",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld22v",
@@ -46,8 +44,27 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld5v",
+      "valueAttribute" : "PayCityServices$att21v",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld32j",
+      "valueAttribute" : "PayCityServices$roleName",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu53j",
+      "type" : "FORM",
+      "pageId" : "page81j.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
   } ]
 }

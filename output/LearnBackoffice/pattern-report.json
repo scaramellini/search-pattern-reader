@@ -6,13 +6,15 @@
         "id" : "frm17y",
         "type" : "FORM",
         "pageId" : "page26y.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst2y",
         "type" : "LIST",
         "pageId" : "page26y.wr",
-        "dataBinding" : "LearnServices$cls5q"
+        "dataBinding" : "LearnServices$cls5q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,12 +39,16 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld18y",
+      "fieldId" : "sfld16y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "sfld18y",
+      "valueAttribute" : "LearnServices$att8q",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld7y",
-      "valueAttribute" : null,
+      "valueAttribute" : "LearnServices$att15q",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld172y",
@@ -52,33 +58,30 @@
       "fieldId" : "fld181y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld16y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "lst24y",
-        "type" : "LIST",
-        "pageId" : "page57y.wr",
-        "dataBinding" : "LearnServices$cls39q"
-      },
-      "to" : {
-        "id" : "frm44y",
-        "type" : "FORM",
-        "pageId" : "page57y.wr",
-        "dataBinding" : "LearnServices$cls39q"
-      },
-      "bindings" : [ ]
-    } ],
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld208y",
-      "valueAttribute" : "LearnServices$att187q",
+      "fieldId" : "sfld24y",
+      "valueAttribute" : "LearnServices$att113q",
       "valueAssociationRole" : null
-    } ]
+    }, {
+      "fieldId" : "fld205y",
+      "valueAttribute" : "LearnServices$att100q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld204y",
+      "valueAttribute" : "LearnServices$att116q",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm43y",
+      "type" : "FORM",
+      "pageId" : "page32y.wr",
+      "dataBinding" : "LearnServices$cls23q",
+      "isInDialogPage" : false
+    }
   }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
@@ -86,13 +89,15 @@
         "id" : "frm46y",
         "type" : "FORM",
         "pageId" : "page57y.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst24y",
         "type" : "LIST",
         "pageId" : "page57y.wr",
-        "dataBinding" : "LearnServices$cls39q"
+        "dataBinding" : "LearnServices$cls39q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -105,12 +110,12 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld25y",
+      "fieldId" : "fld212y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld212y",
-      "valueAttribute" : null,
+      "fieldId" : "sfld25y",
+      "valueAttribute" : "LearnServices$att187q",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -120,13 +125,15 @@
         "id" : "frm16y",
         "type" : "FORM",
         "pageId" : "page24y.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst11y",
         "type" : "LIST",
         "pageId" : "page24y.wr",
-        "dataBinding" : "LearnServices$cls4q"
+        "dataBinding" : "LearnServices$cls4q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -151,7 +158,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "sfld19y",
+      "valueAttribute" : "LearnServices$att8q",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld5y",
+      "valueAttribute" : "LearnServices$att85q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld156y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -162,14 +177,6 @@
       "fieldId" : "sfld15y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld156y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld19y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -178,13 +185,15 @@
         "id" : "frm18y",
         "type" : "FORM",
         "pageId" : "page27y.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "lst14y",
         "type" : "LIST",
         "pageId" : "page27y.wr",
-        "dataBinding" : "LearnServices$cls3q"
+        "dataBinding" : "LearnServices$cls3q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -213,24 +222,71 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld14y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld4y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld12y",
-      "valueAttribute" : null,
+      "valueAttribute" : "LearnServices$att108q",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld182y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld4y",
+      "valueAttribute" : "LearnServices$att8q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld14y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld104y",
+      "valueAttribute" : "LearnServices$att121q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld98y",
+      "valueAttribute" : "LearnServices$att9q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld102y",
+      "valueAttribute" : "LearnServices$att13q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld100y",
+      "valueAttribute" : "LearnServices$att11q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld3y",
+      "valueAttribute" : "LearnServices$att187q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld97y",
+      "valueAttribute" : "LearnServices$att8q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld6y",
+      "valueAttribute" : "LearnServices$att108q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld101y",
+      "valueAttribute" : "LearnServices$att12q",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld210y",
+      "valueAttribute" : "LearnServices$att188q",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "frm20y",
+      "type" : "FORM",
+      "pageId" : "page30y.wr",
+      "dataBinding" : "LearnServices$cls3q",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
     "flows" : [ ],
     "fields" : [ {
       "fieldId" : "fld208y",
@@ -241,7 +297,8 @@
       "id" : "frm44y",
       "type" : "FORM",
       "pageId" : "page57y.wr",
-      "dataBinding" : "LearnServices$cls39q"
+      "dataBinding" : "LearnServices$cls39q",
+      "isInDialogPage" : true
     }
   } ]
 }

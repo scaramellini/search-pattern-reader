@@ -6,13 +6,15 @@
         "id" : "enu32p",
         "type" : "FORM",
         "pageId" : "page38p.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu13p",
         "type" : "LIST",
         "pageId" : "page38p.wr",
-        "dataBinding" : "WebAIATServices$ent3p"
+        "dataBinding" : "WebAIATServices$ent3p",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,6 +39,10 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld123p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld122p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -46,10 +52,6 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld23p",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld123p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -64,13 +66,15 @@
         "id" : "enu26e",
         "type" : "FORM",
         "pageId" : "page28e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu8e",
         "type" : "LIST",
         "pageId" : "page28e.wr",
-        "dataBinding" : "WebAIATServices$ent14"
+        "dataBinding" : "WebAIATServices$ent14",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -83,11 +87,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld70e",
+      "fieldId" : "fld71e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld71e",
+      "fieldId" : "fld70e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -98,13 +102,15 @@
         "id" : "enu27p",
         "type" : "FORM",
         "pageId" : "page30p.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu15p",
         "type" : "LIST",
         "pageId" : "page30p.wr",
-        "dataBinding" : "WebAIATServices$User"
+        "dataBinding" : "WebAIATServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -121,15 +127,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld100p",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld101p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld99p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld100p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -140,13 +146,15 @@
         "id" : "enu9e",
         "type" : "FORM",
         "pageId" : "page9e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu5e",
         "type" : "LIST",
         "pageId" : "page9e.wr",
-        "dataBinding" : "WebAIATServices$ent14"
+        "dataBinding" : "WebAIATServices$ent14",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,

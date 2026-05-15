@@ -6,13 +6,15 @@
         "id" : "enu4j",
         "type" : "FORM",
         "pageId" : "page4j.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2j",
         "type" : "LIST",
         "pageId" : "page4j.wr",
-        "dataBinding" : "ProfilerServices$ent4j"
+        "dataBinding" : "ProfilerServices$ent4j",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -30,17 +32,13 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld1j",
-      "valueAttribute" : null,
+      "valueAttribute" : "ProfilerServices$att37j",
       "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld5j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "ProfilerServices$role2k"
-    }, {
       "fieldId" : "fld11j",
       "valueAttribute" : "ProfilerServices$att28k",
       "valueAssociationRole" : null
@@ -48,42 +46,48 @@
       "fieldId" : "fld12j",
       "valueAttribute" : "ProfilerServices$att35k",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5j",
+      "valueAttribute" : "ProfilerServices$att10",
+      "valueAssociationRole" : "ProfilerServices$role2k"
     } ],
     "component" : {
       "id" : "enu5j",
       "type" : "FORM",
       "pageId" : "page7j.wr",
-      "dataBinding" : "ProfilerServices$ent6k"
+      "dataBinding" : "ProfilerServices$ent6k",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld20j",
-      "valueAttribute" : "ProfilerServices$att63j",
+      "fieldId" : "fld1j",
+      "valueAttribute" : "ProfilerServices$att2j",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld2j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "ProfilerServices$role10j"
-    }, {
       "fieldId" : "msfld1j",
-      "valueAttribute" : null,
+      "valueAttribute" : "ProfilerServices$att22q",
       "valueAssociationRole" : "ProfilerServices$role3j"
     }, {
       "fieldId" : "fld9j",
       "valueAttribute" : "ProfilerServices$att62j",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld1j",
-      "valueAttribute" : "ProfilerServices$att2j",
+      "fieldId" : "sfld2j",
+      "valueAttribute" : "ProfilerServices$att61j",
+      "valueAssociationRole" : "ProfilerServices$role10j"
+    }, {
+      "fieldId" : "fld20j",
+      "valueAttribute" : "ProfilerServices$att63j",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu2j",
       "type" : "FORM",
       "pageId" : "page3j.wr",
-      "dataBinding" : "ProfilerServices$ent1j"
+      "dataBinding" : "ProfilerServices$ent1j",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -92,13 +96,15 @@
         "id" : "enu7j",
         "type" : "FORM",
         "pageId" : "page11j.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu7j",
         "type" : "LIST",
         "pageId" : "page11j.wr",
-        "dataBinding" : "ProfilerServices$ent2j"
+        "dataBinding" : "ProfilerServices$ent2j",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -127,19 +133,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld14j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld9j",
-      "valueAttribute" : null,
+      "valueAttribute" : "ProfilerServices$att28k",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld18j",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15j",
+      "fieldId" : "fld14j",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -147,7 +145,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld15j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld16j",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18j",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

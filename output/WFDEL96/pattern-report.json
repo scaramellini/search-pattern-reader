@@ -19,33 +19,35 @@
       "id" : "enu9t",
       "type" : "FORM",
       "pageId" : "page7t.wr",
-      "dataBinding" : "WFDEL96Services$ent3t"
+      "dataBinding" : "WFDEL96Services$ent3t",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld25d",
-      "valueAttribute" : "WFDEL96Services$email",
+      "fieldId" : "fld19v",
+      "valueAttribute" : "WFDEL96Services$userName",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld22v",
       "valueAttribute" : "WFDEL96Services$att243v",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld22t",
-      "valueAttribute" : "WFDEL96Services$att244t",
+      "fieldId" : "fld25d",
+      "valueAttribute" : "WFDEL96Services$email",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld19v",
-      "valueAttribute" : "WFDEL96Services$userName",
+      "fieldId" : "fld22t",
+      "valueAttribute" : "WFDEL96Services$att244t",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu30v",
       "type" : "FORM",
       "pageId" : "page27v.wr",
-      "dataBinding" : "WFDEL96Services$User"
+      "dataBinding" : "WFDEL96Services$User",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -63,7 +65,8 @@
       "id" : "enu8i",
       "type" : "FORM",
       "pageId" : "page9v.wr",
-      "dataBinding" : "WFDEL96Services$ent2v"
+      "dataBinding" : "WFDEL96Services$ent2v",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -72,13 +75,15 @@
         "id" : "enu8t",
         "type" : "FORM",
         "pageId" : "page4t.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu9t",
         "type" : "LIST",
         "pageId" : "page4t.wr",
-        "dataBinding" : "WFDEL96Services$ent3t"
+        "dataBinding" : "WFDEL96Services$ent3t",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -95,46 +100,16 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld56t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld58t",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld57t",
       "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld56t",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    } ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu2v",
-        "type" : "LIST",
-        "pageId" : "page9v.wr",
-        "dataBinding" : "WFDEL96Services$ent2v"
-      },
-      "to" : {
-        "id" : "enu8i",
-        "type" : "FORM",
-        "pageId" : "page9v.wr",
-        "dataBinding" : "WFDEL96Services$ent2v"
-      },
-      "bindings" : [ {
-        "automaticCoupling" : false,
-        "source" : "data._be_att18v",
-        "target" : "kcond20._be_att18v"
-      } ]
-    } ],
-    "fields" : [ {
-      "fieldId" : "fld25i",
-      "valueAttribute" : "WFDEL96Services$att250t",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld33i",
-      "valueAttribute" : "WFDEL96Services$att249t",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -144,13 +119,15 @@
         "id" : "enu29v",
         "type" : "FORM",
         "pageId" : "page11v.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu17v",
         "type" : "LIST",
         "pageId" : "page11v.wr",
-        "dataBinding" : "WFDEL96Services$User"
+        "dataBinding" : "WFDEL96Services$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -168,14 +145,14 @@
     } ],
     "fields" : [ {
       "fieldId" : "sfld31v",
+      "valueAttribute" : "WFDEL96Services$roleName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld18v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld17v",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld18v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

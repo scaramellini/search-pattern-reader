@@ -6,13 +6,15 @@
         "id" : "enu21d",
         "type" : "FORM",
         "pageId" : "page32d.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3d",
         "type" : "LIST",
         "pageId" : "page32d.wr",
-        "dataBinding" : "CashFlowServices$ent7d"
+        "dataBinding" : "CashFlowServices$ent7d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,7 +39,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld31d",
+      "fieldId" : "fld37d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld38d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -49,11 +55,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld38d",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld37d",
+      "fieldId" : "sfld31d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -64,13 +66,15 @@
         "id" : "enu8d",
         "type" : "FORM",
         "pageId" : "page4.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu4",
         "type" : "LIST",
         "pageId" : "page4.wr",
-        "dataBinding" : "CashFlowServices$ent12d"
+        "dataBinding" : "CashFlowServices$ent12d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -98,13 +102,15 @@
         "id" : "enu10d",
         "type" : "FORM",
         "pageId" : "page6.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu5",
         "type" : "LIST",
         "pageId" : "page6.wr",
-        "dataBinding" : "CashFlowServices$ent10d"
+        "dataBinding" : "CashFlowServices$ent10d",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -125,11 +131,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld32d",
+      "fieldId" : "fld30d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld30d",
+      "fieldId" : "fld32d",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

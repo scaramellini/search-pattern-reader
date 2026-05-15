@@ -6,13 +6,15 @@
         "id" : "enu1j",
         "type" : "FORM",
         "pageId" : "page1j.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1j",
         "type" : "LIST",
         "pageId" : "page1j.wr",
-        "dataBinding" : "CommercialiServices$ent1j"
+        "dataBinding" : "CommercialiServices$ent1j",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -32,13 +34,15 @@
         "id" : "pwu1u",
         "type" : "LIST",
         "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1u"
+        "dataBinding" : "CommercialiServices$ent1u",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dau1u",
         "type" : "DETAILS",
         "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1u"
+        "dataBinding" : "CommercialiServices$ent1u",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -54,13 +58,15 @@
         "id" : "pwu1u",
         "type" : "LIST",
         "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1u"
+        "dataBinding" : "CommercialiServices$ent1u",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "dau1u",
         "type" : "DETAILS",
         "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1u"
+        "dataBinding" : "CommercialiServices$ent1u",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -72,13 +78,15 @@
         "id" : "dau1u",
         "type" : "DETAILS",
         "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1u"
+        "dataBinding" : "CommercialiServices$ent1u",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1m",
         "type" : "LIST",
         "pageId" : "page1u.wr",
-        "dataBinding" : "CommercialiServices$ent1"
+        "dataBinding" : "CommercialiServices$ent1",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -94,13 +102,15 @@
         "id" : "enu7f",
         "type" : "FORM",
         "pageId" : "page4f.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu5f",
         "type" : "LIST",
         "pageId" : "page4f.wr",
-        "dataBinding" : "CommercialiServices$ent9q"
+        "dataBinding" : "CommercialiServices$ent9q",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -129,14 +139,6 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld9f",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld10f",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld71o",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -145,11 +147,19 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld17f",
-      "valueAttribute" : null,
+      "fieldId" : "sfld9f",
+      "valueAttribute" : "CommercialiServices$att84q",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld70o",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld10f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld17f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

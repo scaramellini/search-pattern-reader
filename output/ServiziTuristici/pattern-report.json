@@ -1,44 +1,128 @@
 {
   "patterns" : [ {
-    "patternType" : "Preloaded Fields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
-        "id" : "dau5e",
+        "id" : "dau3t",
         "type" : "DETAILS",
-        "pageId" : "page3e.wr",
-        "dataBinding" : "ServiziTuristiciServices$ent7"
+        "pageId" : "page5t.wr",
+        "dataBinding" : "ServiziTuristiciServices$ent3",
+        "isInDialogPage" : false
       },
       "to" : {
-        "id" : "enu6e",
+        "id" : "enu5t",
         "type" : "FORM",
-        "pageId" : "page3e.wr",
-        "dataBinding" : null
+        "pageId" : "page5t.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
-        "source" : "data._be_att33t",
-        "target" : "{fld21e}value"
+        "source" : "data._be_att72",
+        "target" : "{fld34t}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att14",
+        "target" : "{fld32t}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att11",
+        "target" : "{fld29t}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att23",
+        "target" : "{fld31t}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att45",
+        "target" : "{fld30t}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att10",
+        "target" : "{fld28t}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4j",
+        "target" : "{sfld2t}presel.0"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att16",
+        "target" : "{fld33t}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att9r",
+        "target" : "{fld38p}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8r",
+        "target" : "{fld39p}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1u",
+        "target" : "{fld6u}value"
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld21e",
+      "fieldId" : "fld34t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld6u",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld31t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld30t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld33t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld28t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld32t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld38p",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld39p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
+    "patternType" : "Preloaded Form Pattern",
     "flows" : [ {
       "from" : {
         "id" : "dau5e",
         "type" : "DETAILS",
         "pageId" : "page3e.wr",
-        "dataBinding" : "ServiziTuristiciServices$ent7"
+        "dataBinding" : "ServiziTuristiciServices$ent7",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "enu6e",
         "type" : "FORM",
         "pageId" : "page3e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -58,13 +142,15 @@
         "id" : "enu4t",
         "type" : "FORM",
         "pageId" : "page18r.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu2t",
         "type" : "LIST",
         "pageId" : "page18r.wr",
-        "dataBinding" : "ServiziTuristiciServices$ent3"
+        "dataBinding" : "ServiziTuristiciServices$ent3",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -105,7 +191,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld25t",
+      "fieldId" : "fld26t",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -113,19 +199,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld11p",
+      "fieldId" : "fld14t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld25t",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld13t",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld1t",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld26t",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -137,7 +219,11 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld14t",
+      "fieldId" : "fld1t",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld11p",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

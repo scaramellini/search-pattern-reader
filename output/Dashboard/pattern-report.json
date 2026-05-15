@@ -6,13 +6,15 @@
         "id" : "enu11e",
         "type" : "FORM",
         "pageId" : "page29e.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu16e",
         "type" : "LIST",
         "pageId" : "page29e.wr",
-        "dataBinding" : "DashboardServices$ent41e"
+        "dataBinding" : "DashboardServices$ent41e",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -41,20 +43,8 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld16e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld15e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld18e",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "sfld17e",
-      "valueAttribute" : null,
+      "valueAttribute" : "DashboardServices$att30o",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld6e",
@@ -64,21 +54,33 @@
       "fieldId" : "fld18e",
       "valueAttribute" : null,
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld18e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld16e",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld23e",
+      "valueAttribute" : "DashboardServices$att48e",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld28e",
       "valueAttribute" : "DashboardServices$att115e",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld29e",
       "valueAttribute" : "DashboardServices$att116e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld23e",
-      "valueAttribute" : "DashboardServices$att48e",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld1c",
@@ -93,61 +95,63 @@
       "id" : "enu15e",
       "type" : "FORM",
       "pageId" : "page18e.wr",
-      "dataBinding" : "DashboardServices$ent6e"
+      "dataBinding" : "DashboardServices$ent6e",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld20e",
-      "valueAttribute" : "DashboardServices$att30o",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld41e",
-      "valueAttribute" : "DashboardServices$att50e",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld39e",
       "valueAttribute" : "DashboardServices$att7e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld44e",
-      "valueAttribute" : "DashboardServices$att323e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld67e",
-      "valueAttribute" : "DashboardServices$att360e",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld85e",
-      "valueAttribute" : "DashboardServices$att351e",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld91e",
       "valueAttribute" : "DashboardServices$att410e",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld20e",
+      "valueAttribute" : "DashboardServices$att30o",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld21e",
       "valueAttribute" : "DashboardServices$att31o",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8e",
+      "valueAttribute" : "DashboardServices$att127e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld67e",
+      "valueAttribute" : "DashboardServices$att360e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld44e",
+      "valueAttribute" : "DashboardServices$att323e",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld40e",
       "valueAttribute" : "DashboardServices$att8e",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld41e",
+      "valueAttribute" : "DashboardServices$att50e",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld88e",
       "valueAttribute" : "DashboardServices$att355e",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld8e",
-      "valueAttribute" : "DashboardServices$att127e",
+      "fieldId" : "fld85e",
+      "valueAttribute" : "DashboardServices$att351e",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu16e",
       "type" : "FORM",
       "pageId" : "page19e.wr",
-      "dataBinding" : "DashboardServices$ent5o"
+      "dataBinding" : "DashboardServices$ent5o",
+      "isInDialogPage" : false
     }
   } ]
 }

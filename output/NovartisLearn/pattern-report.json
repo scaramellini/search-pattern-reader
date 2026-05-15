@@ -3,108 +3,44 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld9t",
-      "valueAttribute" : "NovartisLearnServices$att2t",
+      "fieldId" : "fld10t",
+      "valueAttribute" : "NovartisLearnServices$att3t",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld1t",
       "valueAttribute" : "NovartisLearnServices$att7t",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld10t",
-      "valueAttribute" : "NovartisLearnServices$att3t",
+      "fieldId" : "fld9t",
+      "valueAttribute" : "NovartisLearnServices$att2t",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu1t",
       "type" : "FORM",
       "pageId" : "page3t.wr",
-      "dataBinding" : "NovartisLearnServices$ent1t"
+      "dataBinding" : "NovartisLearnServices$ent1t",
+      "isInDialogPage" : false
     }
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu20x",
-        "type" : "LIST",
-        "pageId" : "page24x.wr",
-        "dataBinding" : "NovartisLearnServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu1x",
-        "type" : "FORM",
-        "pageId" : "page24x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu20x",
-        "type" : "LIST",
-        "pageId" : "page24x.wr",
-        "dataBinding" : "NovartisLearnServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu1x",
-        "type" : "FORM",
-        "pageId" : "page24x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu27x",
-        "type" : "LIST",
-        "pageId" : "page37x.wr",
-        "dataBinding" : "NovartisLearnServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu27x",
-        "type" : "FORM",
-        "pageId" : "page37x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu27x",
-        "type" : "LIST",
-        "pageId" : "page37x.wr",
-        "dataBinding" : "NovartisLearnServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu27x",
-        "type" : "FORM",
-        "pageId" : "page37x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld5ae",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "NovartisLearnServices$role14ae"
-    }, {
-      "fieldId" : "fld56x",
-      "valueAttribute" : "NovartisLearnServices$att38ae",
+      "fieldId" : "sfld1ae",
+      "valueAttribute" : "NovartisLearnServices$att5k",
       "valueAssociationRole" : null
-    }, {
+    } ],
+    "component" : {
+      "id" : "enu1ae",
+      "type" : "FORM",
+      "pageId" : "page6ae.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
       "fieldId" : "fld57x",
       "valueAttribute" : "NovartisLearnServices$att37ae",
       "valueAssociationRole" : null
@@ -116,12 +52,21 @@
       "fieldId" : "fld55x",
       "valueAttribute" : "NovartisLearnServices$att36ae",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld56x",
+      "valueAttribute" : "NovartisLearnServices$att38ae",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5ae",
+      "valueAttribute" : "NovartisLearnServices$att62ae",
+      "valueAssociationRole" : "NovartisLearnServices$role14ae"
     } ],
     "component" : {
       "id" : "enu37x",
       "type" : "FORM",
       "pageId" : "page46x.wr",
-      "dataBinding" : "NovartisLearnServices$ent7ae"
+      "dataBinding" : "NovartisLearnServices$ent7ae",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -130,13 +75,15 @@
         "id" : "enu12ae",
         "type" : "FORM",
         "pageId" : "page30ae.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu1ae",
         "type" : "LIST",
         "pageId" : "page30ae.wr",
-        "dataBinding" : "NovartisLearnServices$User"
+        "dataBinding" : "NovartisLearnServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -165,67 +112,32 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld38ae",
+      "fieldId" : "fld31ae",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld31ae",
+      "fieldId" : "fld38ae",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
   }, {
-    "patternType" : "Preloaded Fields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu25x",
-        "type" : "LIST",
-        "pageId" : "page36x.wr",
-        "dataBinding" : "NovartisLearnServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu26x",
-        "type" : "FORM",
-        "pageId" : "page36x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
-    "patternType" : "Preassigned SelectionFields Pattern",
-    "flows" : [ {
-      "from" : {
-        "id" : "pwu25x",
-        "type" : "LIST",
-        "pageId" : "page36x.wr",
-        "dataBinding" : "NovartisLearnServices$ent1u"
-      },
-      "to" : {
-        "id" : "enu26x",
-        "type" : "FORM",
-        "pageId" : "page36x.wr",
-        "dataBinding" : null
-      },
-      "bindings" : [ ]
-    } ],
-    "fields" : [ ]
-  }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld13x",
-      "valueAttribute" : "NovartisLearnServices$att27t",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld9x",
       "valueAttribute" : "NovartisLearnServices$att13t",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13x",
+      "valueAttribute" : "NovartisLearnServices$att27t",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu23x",
       "type" : "FORM",
       "pageId" : "page31x.wr",
-      "dataBinding" : "NovartisLearnServices$ent3t"
+      "dataBinding" : "NovartisLearnServices$ent3t",
+      "isInDialogPage" : false
     }
   } ]
 }

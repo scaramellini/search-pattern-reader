@@ -6,13 +6,15 @@
         "id" : "enu7y",
         "type" : "FORM",
         "pageId" : "page14y.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3y",
         "type" : "LIST",
         "pageId" : "page14y.wr",
-        "dataBinding" : "SAREPServices$ent15p"
+        "dataBinding" : "SAREPServices$ent15p",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,6 +39,14 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld30y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld28y",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld26y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -45,15 +55,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld28y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld29y",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld30y",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

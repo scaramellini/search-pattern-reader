@@ -3,39 +3,63 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld31f",
-      "valueAttribute" : "ecommerceServices$att266",
+      "fieldId" : "fld27f",
+      "valueAttribute" : "ecommerceServices$att111p",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld33f",
       "valueAttribute" : "ecommerceServices$att268",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld29f",
-      "valueAttribute" : "ecommerceServices$att113p",
+      "fieldId" : "fld31f",
+      "valueAttribute" : "ecommerceServices$att266",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld28f",
-      "valueAttribute" : "ecommerceServices$att112p",
+      "fieldId" : "fld32f",
+      "valueAttribute" : "ecommerceServices$att267",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld29f",
+      "valueAttribute" : "ecommerceServices$att113p",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld30f",
       "valueAttribute" : "ecommerceServices$att123p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld27f",
-      "valueAttribute" : "ecommerceServices$att111p",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld32f",
-      "valueAttribute" : "ecommerceServices$att267",
+      "fieldId" : "fld28f",
+      "valueAttribute" : "ecommerceServices$att112p",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu13f",
       "type" : "FORM",
       "pageId" : "page13f.wr",
-      "dataBinding" : "ecommerceServices$ent11p"
+      "dataBinding" : "ecommerceServices$ent11p",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld13f",
+      "valueAttribute" : "ecommerceServices$att9p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld19f",
+      "valueAttribute" : "ecommerceServices$ent9$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld2f",
+      "valueAttribute" : "ecommerceServices$att154c",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu11f",
+      "type" : "FORM",
+      "pageId" : "page8f.wr",
+      "dataBinding" : "ecommerceServices$ent9",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -49,33 +73,35 @@
       "id" : "enu1i",
       "type" : "FORM",
       "pageId" : "page1i.wr",
-      "dataBinding" : "ecommerceServices$ent9"
+      "dataBinding" : "ecommerceServices$ent9",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld184",
-      "valueAttribute" : "ecommerceServices$att10",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld180",
       "valueAttribute" : "ecommerceServices$att257",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld182",
-      "valueAttribute" : "ecommerceServices$att8",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld183",
       "valueAttribute" : "ecommerceServices$att9",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld184",
+      "valueAttribute" : "ecommerceServices$att10",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld182",
+      "valueAttribute" : "ecommerceServices$att8",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu54",
       "type" : "FORM",
       "pageId" : "page51.wr",
-      "dataBinding" : "ecommerceServices$ent7"
+      "dataBinding" : "ecommerceServices$ent7",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -84,13 +110,15 @@
         "id" : "enu54",
         "type" : "FORM",
         "pageId" : "page51.wr",
-        "dataBinding" : "ecommerceServices$ent7"
+        "dataBinding" : "ecommerceServices$ent7",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu27",
         "type" : "LIST",
         "pageId" : "page51.wr",
-        "dataBinding" : "ecommerceServices$ent7"
+        "dataBinding" : "ecommerceServices$ent7",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -111,22 +139,53 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld184",
-      "valueAttribute" : "ecommerceServices$att10",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld180",
       "valueAttribute" : "ecommerceServices$att257",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld182",
-      "valueAttribute" : "ecommerceServices$att8",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld183",
       "valueAttribute" : "ecommerceServices$att9",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld184",
+      "valueAttribute" : "ecommerceServices$att10",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld182",
+      "valueAttribute" : "ecommerceServices$att8",
+      "valueAssociationRole" : null
     } ]
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "fld1i",
+      "valueAttribute" : "ecommerceServices$att9p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld179",
+      "valueAttribute" : "ecommerceServices$ent9$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8",
+      "valueAttribute" : "ecommerceServices$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5i",
+      "valueAttribute" : "ecommerceServices$att37",
+      "valueAssociationRole" : "ecommerceServices$role63"
+    }, {
+      "fieldId" : "sfld32c",
+      "valueAttribute" : "ecommerceServices$att154c",
+      "valueAssociationRole" : "ecommerceServices$role48c"
+    } ],
+    "component" : {
+      "id" : "enu53",
+      "type" : "FORM",
+      "pageId" : "page64.wr",
+      "dataBinding" : "ecommerceServices$ent9",
+      "isInDialogPage" : false
+    }
   }, {
     "patternType" : "Multicriteria Search Pattern",
     "flows" : [ {
@@ -134,13 +193,15 @@
         "id" : "enu53",
         "type" : "FORM",
         "pageId" : "page64.wr",
-        "dataBinding" : "ecommerceServices$ent9"
+        "dataBinding" : "ecommerceServices$ent9",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu16",
         "type" : "LIST",
         "pageId" : "page64.wr",
-        "dataBinding" : "ecommerceServices$ent9"
+        "dataBinding" : "ecommerceServices$ent9",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -169,32 +230,36 @@
       "valueAttribute" : "ecommerceServices$att9p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld5i",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "ecommerceServices$role63"
-    }, {
-      "fieldId" : "sfld32c",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "ecommerceServices$role48c"
-    }, {
-      "fieldId" : "sfld8",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld179",
       "valueAttribute" : "ecommerceServices$ent9$email",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld8",
+      "valueAttribute" : "ecommerceServices$att41",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld5i",
+      "valueAttribute" : "ecommerceServices$att37",
+      "valueAssociationRole" : "ecommerceServices$role63"
+    }, {
+      "fieldId" : "sfld32c",
+      "valueAttribute" : "ecommerceServices$att154c",
+      "valueAssociationRole" : "ecommerceServices$role48c"
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld13c",
-      "valueAttribute" : "ecommerceServices$att266",
+      "fieldId" : "fld14c",
+      "valueAttribute" : "ecommerceServices$att267",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld10c",
       "valueAttribute" : "ecommerceServices$att112p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld13c",
+      "valueAttribute" : "ecommerceServices$att266",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld12c",
@@ -205,23 +270,20 @@
       "valueAttribute" : "ecommerceServices$att111p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld15c",
-      "valueAttribute" : "ecommerceServices$att268",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld11c",
       "valueAttribute" : "ecommerceServices$att113p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld14c",
-      "valueAttribute" : "ecommerceServices$att267",
+      "fieldId" : "fld15c",
+      "valueAttribute" : "ecommerceServices$att268",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu8c",
       "type" : "FORM",
       "pageId" : "page4c.wr",
-      "dataBinding" : "ecommerceServices$ent11p"
+      "dataBinding" : "ecommerceServices$ent11p",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -231,19 +293,20 @@
       "valueAttribute" : "ecommerceServices$att3f",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld15f",
-      "valueAttribute" : "ecommerceServices$att4f",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld17f",
       "valueAttribute" : "ecommerceServices$att2f",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld15f",
+      "valueAttribute" : "ecommerceServices$att4f",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu8f",
       "type" : "FORM",
       "pageId" : "page10f.wr",
-      "dataBinding" : "ecommerceServices$ent1f"
+      "dataBinding" : "ecommerceServices$ent1f",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -252,13 +315,15 @@
         "id" : "enu2f",
         "type" : "FORM",
         "pageId" : "page2f.wr",
-        "dataBinding" : "ecommerceServices$ent1f"
+        "dataBinding" : "ecommerceServices$ent1f",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu3f",
         "type" : "LIST",
         "pageId" : "page2f.wr",
-        "dataBinding" : "ecommerceServices$ent1f"
+        "dataBinding" : "ecommerceServices$ent1f",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -287,36 +352,48 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld3f",
-      "valueAttribute" : "ecommerceServices$att2f",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld16f",
-      "valueAttribute" : null,
+      "fieldId" : "sfld1f",
+      "valueAttribute" : "ecommerceServices$att6f",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld11f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "sfld3f",
+      "valueAttribute" : "ecommerceServices$att2f",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld12f",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld16f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld8f",
       "valueAttribute" : null,
       "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1f",
-      "valueAttribute" : "ecommerceServices$att6f",
-      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld25f",
-      "valueAttribute" : "ecommerceServices$att267",
+      "fieldId" : "fld21f",
+      "valueAttribute" : "ecommerceServices$att112p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld24f",
+      "valueAttribute" : "ecommerceServices$att266",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld20f",
+      "valueAttribute" : "ecommerceServices$att111p",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld26f",
+      "valueAttribute" : "ecommerceServices$att268",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld22f",
@@ -327,27 +404,16 @@
       "valueAttribute" : "ecommerceServices$att123p",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld26f",
-      "valueAttribute" : "ecommerceServices$att268",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld20f",
-      "valueAttribute" : "ecommerceServices$att111p",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld24f",
-      "valueAttribute" : "ecommerceServices$att266",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld21f",
-      "valueAttribute" : "ecommerceServices$att112p",
+      "fieldId" : "fld25f",
+      "valueAttribute" : "ecommerceServices$att267",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu12f",
       "type" : "FORM",
       "pageId" : "page12f.wr",
-      "dataBinding" : "ecommerceServices$ent11p"
+      "dataBinding" : "ecommerceServices$ent11p",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -356,13 +422,15 @@
         "id" : "enu32c",
         "type" : "FORM",
         "pageId" : "page34c.wr",
-        "dataBinding" : "ecommerceServices$ent9c"
+        "dataBinding" : "ecommerceServices$ent9c",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu22c",
         "type" : "LIST",
         "pageId" : "page34c.wr",
-        "dataBinding" : "ecommerceServices$ent9c"
+        "dataBinding" : "ecommerceServices$ent9c",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -383,15 +451,15 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld58c",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld57c",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld56c",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld58c",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {

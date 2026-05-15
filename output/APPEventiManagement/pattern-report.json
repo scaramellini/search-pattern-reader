@@ -3,46 +3,59 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld55y",
-      "valueAttribute" : "APPEventiManagementServices$att7y",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld50y",
       "valueAttribute" : "APPEventiManagementServices$att2y",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld56y",
-      "valueAttribute" : "APPEventiManagementServices$att8y",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld53y",
       "valueAttribute" : "APPEventiManagementServices$att5y",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld56y",
+      "valueAttribute" : "APPEventiManagementServices$att8y",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld52y",
       "valueAttribute" : "APPEventiManagementServices$att4y",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld51y",
-      "valueAttribute" : "APPEventiManagementServices$att3y",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld54y",
       "valueAttribute" : "APPEventiManagementServices$att6y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld55y",
+      "valueAttribute" : "APPEventiManagementServices$att7y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld51y",
+      "valueAttribute" : "APPEventiManagementServices$att3y",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu10y",
       "type" : "FORM",
       "pageId" : "page10y.wr",
-      "dataBinding" : "APPEventiManagementServices$ent1y"
+      "dataBinding" : "APPEventiManagementServices$ent1y",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld78y",
+      "valueAttribute" : "APPEventiManagementServices$att6y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld75y",
+      "valueAttribute" : "APPEventiManagementServices$att3y",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld80y",
       "valueAttribute" : "APPEventiManagementServices$att8y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld74y",
+      "valueAttribute" : "APPEventiManagementServices$att2y",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld76y",
@@ -53,27 +66,16 @@
       "valueAttribute" : "APPEventiManagementServices$att7y",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld75y",
-      "valueAttribute" : "APPEventiManagementServices$att3y",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld77y",
       "valueAttribute" : "APPEventiManagementServices$att5y",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld78y",
-      "valueAttribute" : "APPEventiManagementServices$att6y",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld74y",
-      "valueAttribute" : "APPEventiManagementServices$att2y",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu14y",
       "type" : "FORM",
       "pageId" : "page14y.wr",
-      "dataBinding" : "APPEventiManagementServices$ent1y"
+      "dataBinding" : "APPEventiManagementServices$ent1y",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -82,13 +84,15 @@
         "id" : "enu6q",
         "type" : "FORM",
         "pageId" : "page9q.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu11q",
         "type" : "LIST",
         "pageId" : "page9q.wr",
-        "dataBinding" : "APPEventiManagementServices$User"
+        "dataBinding" : "APPEventiManagementServices$User",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -105,15 +109,15 @@
       } ]
     } ],
     "fields" : [ {
+      "fieldId" : "fld21q",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld20q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld19q",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld21q",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -124,13 +128,15 @@
         "id" : "enu17ai",
         "type" : "FORM",
         "pageId" : "page17ai.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu16ai",
         "type" : "LIST",
         "pageId" : "page17ai.wr",
-        "dataBinding" : "APPEventiManagementServices$ent15ai"
+        "dataBinding" : "APPEventiManagementServices$ent15ai",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -168,11 +174,11 @@
       "valueAssociationRole" : null
     }, {
       "fieldId" : "msfld2ai",
-      "valueAttribute" : null,
+      "valueAttribute" : "APPEventiManagementServices$att142ai",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld12ai",
-      "valueAttribute" : null,
+      "valueAttribute" : "APPEventiManagementServices$att8",
       "valueAssociationRole" : null
     } ]
   }, {
@@ -182,13 +188,15 @@
         "id" : "enu16ai",
         "type" : "FORM",
         "pageId" : "page16ai.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu14ai",
         "type" : "LIST",
         "pageId" : "page16ai.wr",
-        "dataBinding" : "APPEventiManagementServices$ent20ai"
+        "dataBinding" : "APPEventiManagementServices$ent20ai",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -205,12 +213,12 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld11ai",
+      "fieldId" : "sfld14ai",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld14ai",
-      "valueAttribute" : null,
+      "fieldId" : "sfld11ai",
+      "valueAttribute" : "APPEventiManagementServices$att8",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld15ai",
@@ -221,39 +229,40 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld72y",
-      "valueAttribute" : "APPEventiManagementServices$att11y",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld67y",
       "valueAttribute" : "APPEventiManagementServices$att16y",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld71y",
-      "valueAttribute" : "APPEventiManagementServices$att12y",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld73y",
       "valueAttribute" : "APPEventiManagementServices$att10y",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld70y",
-      "valueAttribute" : "APPEventiManagementServices$att13y",
+      "fieldId" : "fld72y",
+      "valueAttribute" : "APPEventiManagementServices$att11y",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld69y",
       "valueAttribute" : "APPEventiManagementServices$att14y",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld71y",
+      "valueAttribute" : "APPEventiManagementServices$att12y",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld68y",
       "valueAttribute" : "APPEventiManagementServices$att15y",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld70y",
+      "valueAttribute" : "APPEventiManagementServices$att13y",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu13y",
       "type" : "FORM",
       "pageId" : "page13y.wr",
-      "dataBinding" : "APPEventiManagementServices$ent2y"
+      "dataBinding" : "APPEventiManagementServices$ent2y",
+      "isInDialogPage" : false
     }
   } ]
 }

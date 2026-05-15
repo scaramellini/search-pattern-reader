@@ -3,47 +3,48 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld11q",
-      "valueAttribute" : "BonificiServices$att16",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld1q",
-      "valueAttribute" : "BonificiServices$att32",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld12q",
-      "valueAttribute" : "BonificiServices$att36",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld3m",
-      "valueAttribute" : "BonificiServices$att19",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld42m",
       "valueAttribute" : "BonificiServices$att2",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld2m",
-      "valueAttribute" : "BonificiServices$att6",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld26m",
       "valueAttribute" : "BonificiServices$att33",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "sfld1q",
+      "valueAttribute" : "BonificiServices$att32",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld2m",
+      "valueAttribute" : "BonificiServices$att6",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld13q",
       "valueAttribute" : "BonificiServices$att29",
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld3m",
+      "valueAttribute" : "BonificiServices$att19",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld2q",
-      "valueAttribute" : null,
+      "valueAttribute" : "BonificiServices$att158",
       "valueAssociationRole" : "BonificiServices$role1q"
+    }, {
+      "fieldId" : "fld11q",
+      "valueAttribute" : "BonificiServices$att16",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12q",
+      "valueAttribute" : "BonificiServices$att36",
+      "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu7m",
       "type" : "FORM",
       "pageId" : "page15m.wr",
-      "dataBinding" : "BonificiServices$ent1"
+      "dataBinding" : "BonificiServices$ent1",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multicriteria Search Pattern",
@@ -52,13 +53,15 @@
         "id" : "enu8m",
         "type" : "FORM",
         "pageId" : "page7m.wr",
-        "dataBinding" : null
+        "dataBinding" : null,
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu6m",
         "type" : "LIST",
         "pageId" : "page7m.wr",
-        "dataBinding" : "BonificiServices$ent2m"
+        "dataBinding" : "BonificiServices$ent2m",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -83,14 +86,6 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "fld21m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld20m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld19m",
       "valueAttribute" : null,
       "valueAssociationRole" : null
@@ -99,7 +94,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "fld20m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "fld31m",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld21m",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -119,7 +122,39 @@
       "id" : "enu3m",
       "type" : "FORM",
       "pageId" : "page4m.wr",
-      "dataBinding" : "BonificiServices$User"
+      "dataBinding" : "BonificiServices$User",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld2m",
+      "valueAttribute" : "BonificiServices$roleName",
+      "valueAssociationRole" : "BonificiServices$User2Role"
+    }, {
+      "fieldId" : "fld37m",
+      "valueAttribute" : "BonificiServices$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld35m",
+      "valueAttribute" : "BonificiServices$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld2m",
+      "valueAttribute" : "BonificiServices$roleName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld36m",
+      "valueAttribute" : "BonificiServices$password",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu4m",
+      "type" : "FORM",
+      "pageId" : "page5m.wr",
+      "dataBinding" : "BonificiServices$User",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -133,33 +168,35 @@
       "id" : "enu5m",
       "type" : "FORM",
       "pageId" : "page1m.wr",
-      "dataBinding" : "BonificiServices$ent1m"
+      "dataBinding" : "BonificiServices$ent1m",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "msfld3m",
-      "valueAttribute" : null,
-      "valueAssociationRole" : "BonificiServices$User2Role"
-    }, {
       "fieldId" : "fld27m",
       "valueAttribute" : "BonificiServices$userName",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld6m",
-      "valueAttribute" : null,
+      "valueAttribute" : "BonificiServices$roleName",
       "valueAssociationRole" : "BonificiServices$User2DefaultRole"
     }, {
       "fieldId" : "fld28m",
       "valueAttribute" : "BonificiServices$email",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "msfld3m",
+      "valueAttribute" : "BonificiServices$roleName",
+      "valueAssociationRole" : "BonificiServices$User2Role"
     } ],
     "component" : {
       "id" : "enu10m",
       "type" : "FORM",
       "pageId" : "page13m.wr",
-      "dataBinding" : "BonificiServices$User"
+      "dataBinding" : "BonificiServices$User",
+      "isInDialogPage" : false
     }
   } ]
 }

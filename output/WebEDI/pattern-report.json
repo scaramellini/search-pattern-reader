@@ -6,13 +6,15 @@
         "id" : "enu5",
         "type" : "FORM",
         "pageId" : "page6.wr",
-        "dataBinding" : "WebEDIServices$ent6"
+        "dataBinding" : "WebEDIServices$ent6",
+        "isInDialogPage" : false
       },
       "to" : {
         "id" : "pwu4",
         "type" : "LIST",
         "pageId" : "page6.wr",
-        "dataBinding" : "WebEDIServices$ent6"
+        "dataBinding" : "WebEDIServices$ent6",
+        "isInDialogPage" : false
       },
       "bindings" : [ {
         "automaticCoupling" : false,
@@ -37,51 +39,52 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "sfld20",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld16",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld12",
-      "valueAttribute" : "WebEDIServices$att57",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "sfld11",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld163",
       "valueAttribute" : null,
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld20",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld11",
+      "valueAttribute" : "WebEDIServices$att64",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld12",
+      "valueAttribute" : "WebEDIServices$att57",
+      "valueAssociationRole" : null
     } ]
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld159",
-      "valueAttribute" : "WebEDIServices$att10",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld1",
       "valueAttribute" : "WebEDIServices$att7",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld157",
+      "valueAttribute" : "WebEDIServices$att8",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld158",
       "valueAttribute" : "WebEDIServices$att9",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld157",
-      "valueAttribute" : "WebEDIServices$att8",
+      "fieldId" : "fld159",
+      "valueAttribute" : "WebEDIServices$att10",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu1",
       "type" : "FORM",
       "pageId" : "page1.wr",
-      "dataBinding" : "WebEDIServices$ent1"
+      "dataBinding" : "WebEDIServices$ent1",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
@@ -99,18 +102,19 @@
       "id" : "enu34",
       "type" : "FORM",
       "pageId" : "page45.wr",
-      "dataBinding" : "WebEDIServices$ent8"
+      "dataBinding" : "WebEDIServices$ent8",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld18",
-      "valueAttribute" : "WebEDIServices$att67",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld134",
       "valueAttribute" : "WebEDIServices$att1",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld18",
+      "valueAttribute" : "WebEDIServices$att67",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld131",
@@ -125,33 +129,35 @@
       "id" : "enu29",
       "type" : "FORM",
       "pageId" : "page38.wr",
-      "dataBinding" : "WebEDIServices$User"
+      "dataBinding" : "WebEDIServices$User",
+      "isInDialogPage" : false
     }
   }, {
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld122",
-      "valueAttribute" : "WebEDIServices$att1",
+      "fieldId" : "fld121",
+      "valueAttribute" : "WebEDIServices$email",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "sfld17",
       "valueAttribute" : "WebEDIServices$att67",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld121",
-      "valueAttribute" : "WebEDIServices$email",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld129",
       "valueAttribute" : "WebEDIServices$att2",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld122",
+      "valueAttribute" : "WebEDIServices$att1",
       "valueAssociationRole" : null
     } ],
     "component" : {
       "id" : "enu28",
       "type" : "FORM",
       "pageId" : "page37.wr",
-      "dataBinding" : "WebEDIServices$User"
+      "dataBinding" : "WebEDIServices$User",
+      "isInDialogPage" : false
     }
   } ]
 }

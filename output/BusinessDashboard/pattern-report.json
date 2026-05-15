@@ -1,3 +1,34 @@
 {
-  "patterns" : [ ]
+  "patterns" : [ {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "sfld36b",
+      "valueAttribute" : "BusinessDashboardServices$att4e",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld63b",
+      "valueAttribute" : "BusinessDashboardServices$att12g",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld66b",
+      "valueAttribute" : "BusinessDashboardServices$att47g",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld64b",
+      "valueAttribute" : "BusinessDashboardServices$att13g",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld65b",
+      "valueAttribute" : "BusinessDashboardServices$att603b",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "enu44b",
+      "type" : "FORM",
+      "pageId" : "page48b.wr",
+      "dataBinding" : "BusinessDashboardServices$ent3g",
+      "isInDialogPage" : false
+    }
+  } ]
 }
