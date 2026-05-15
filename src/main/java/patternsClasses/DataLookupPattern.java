@@ -186,6 +186,7 @@ public class DataLookupPattern extends GenericGraphPattern {
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
         ep.dataBinding = node.getObjectId();
+        ep.isInDialogPage = node.isInDialogPage();
 
         return ep;
     }

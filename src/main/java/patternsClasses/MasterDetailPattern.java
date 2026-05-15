@@ -65,7 +65,8 @@ public class MasterDetailPattern extends GenericGraphPattern {
 
         ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
-        entry.patternType = name;
+        entry.patternType = getPatternTypeWithVariant(name, graph, instance,
+                "Master Detail Hierachy Variant Pattern", "Master Detail Dialog Variant Pattern");
 
         for (Edge edge : instance.getEdges()) {
 
@@ -108,6 +109,7 @@ public class MasterDetailPattern extends GenericGraphPattern {
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
         ep.dataBinding = node.getObjectId();
+        ep.isInDialogPage = node.isInDialogPage();
 
         return ep;
     }

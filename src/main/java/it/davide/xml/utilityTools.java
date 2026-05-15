@@ -47,6 +47,7 @@ public class utilityTools {
             if (bindingConditionId == null)
                 continue;
 
+            // on econdition is enough, but we check all the conditions of the target node to be sure
             for (String condId : targetConditions) {
 
                 if (condId.contains("#") &&

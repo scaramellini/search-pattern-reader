@@ -11,6 +11,7 @@ public class GraphNode {
     private final NodeType type;
     private final String pageId;
     private final String objectId;
+    private final Boolean inDialogPage;
 
     private Map<FieldElementCategory, Set<FieldInfo>> fieldElementIds = new HashMap<>();
     private Map<ConditionalExpressionCategory, Set<String>> conditionalExpressions = new HashMap<>();
@@ -19,11 +20,14 @@ public class GraphNode {
         private String id;
         private String valueAttribute;
         private String valueAssociationAttribute;
+        private String fieldDataBinding;
+        
 
-        public FieldInfo(String id, String valueAttribute, String valueAssociationAttribute) {
+        public FieldInfo(String id, String valueAttribute, String valueAssociationAttribute, String fieldDataBinding) {
             this.id = id;
             this.valueAttribute = valueAttribute;
             this.valueAssociationAttribute = valueAssociationAttribute;
+            this.fieldDataBinding = fieldDataBinding;
         }
 
         public String getId() {
@@ -36,6 +40,10 @@ public class GraphNode {
 
         public String getValueAssociationAttribute() {
             return valueAssociationAttribute;
+        }
+
+        public String getFieldDataBinding() {
+            return fieldDataBinding;
         }
     }
 
@@ -50,13 +58,14 @@ public class GraphNode {
         keyCondition
     }
 
-    public GraphNode(String id, NodeType type, String pageId, String objectId,
+    public GraphNode(String id, NodeType type, String pageId, String objectId, Boolean inDialogPage,
             Map<FieldElementCategory, Set<FieldInfo>> fieldElementIds,
             Map<ConditionalExpressionCategory, Set<String>> conditionalExpressions) {
         this.id = id;
         this.type = type;
         this.pageId = pageId;
         this.objectId = objectId;
+        this.inDialogPage = inDialogPage;
         this.fieldElementIds = fieldElementIds;
         this.conditionalExpressions = conditionalExpressions;   
     }
@@ -87,6 +96,10 @@ public class GraphNode {
      */
     public String getObjectId() {
         return objectId;
+    }
+
+    public Boolean isInDialogPage() {
+        return inDialogPage;
     }
 
     public Map<FieldElementCategory, Set<FieldInfo>> getFieldElementIds() {

@@ -11,10 +11,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class PreloadedFieldsPattern extends GenericGraphPattern {
+public class PreloadedFormPattern extends GenericGraphPattern {
 
-    public PreloadedFieldsPattern() {
-        this.name = "Preloaded Fields Pattern";
+    public PreloadedFormPattern() {
+        this.name = "Preloaded Form Pattern";
     }
 
     /**
@@ -26,7 +26,7 @@ public class PreloadedFieldsPattern extends GenericGraphPattern {
     public List<PatternInstance> matches(IFMLGraph graph,
             GraphNode startNode) {
 
-        if (startNode.getType() != NodeType.LIST && startNode.getType() != NodeType.DETAILS)
+        if (startNode.getType() != NodeType.DETAILS)
             return null;
 
         List<PatternInstance> instances = new ArrayList<>();
@@ -64,7 +64,7 @@ public class PreloadedFieldsPattern extends GenericGraphPattern {
 
             boolean valid = true;
 
-            Set<String> fieldIds = utilityTools.extractSimpleFields(target);
+            Set<String> fieldIds = utilityTools.extractAllFields(target);
 
             for (EdgeBinding binding : edge.getBindings()) {
 
@@ -72,16 +72,6 @@ public class PreloadedFieldsPattern extends GenericGraphPattern {
 
                 if (targetAttr == null)
                     continue;
-
-                if (targetAttr.contains("presel.")) {
-                    valid = false;
-                    break;
-                }
-
-                if (!targetAttr.endsWith("value")) {
-                    valid = false;
-                    break;
-                }
 
                 if (fieldIds.contains(utilityTools.extractFieldId(targetAttr))) {
                     preloadedFieldsCount++;
@@ -157,6 +147,7 @@ public class PreloadedFieldsPattern extends GenericGraphPattern {
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
         ep.dataBinding = node.getObjectId();
+        ep.isInDialogPage = node.isInDialogPage();
 
         return ep;
     }

@@ -28,16 +28,17 @@ public class NewIFMLPatternExtractor {
         private String id;
         private String type;
         private String objectId;
+        private Boolean inDialogPage;
         private Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> fieldElementIds = new HashMap<>();
         private Map<GraphNode.ConditionalExpressionCategory, Set<String>> conditionalExpressions = new HashMap<>();
 
-
-        public ComponentInfo(String id, String type, String objectId,
+        public ComponentInfo(String id, String type, String objectId, Boolean inDialogPage,
                 Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> fieldElementIds,
                 Map<GraphNode.ConditionalExpressionCategory, Set<String>> conditionalExpressions) {
             this.id = id;
             this.type = type;
             this.objectId = objectId;
+            this.inDialogPage = inDialogPage;
             this.fieldElementIds = fieldElementIds;
             this.conditionalExpressions = conditionalExpressions;
         }
@@ -52,6 +53,10 @@ public class NewIFMLPatternExtractor {
 
         public String getObjectId() {
             return objectId;
+        }
+
+        public Boolean isInDialogPage() {
+            return inDialogPage;
         }
 
         public Map<GraphNode.FieldElementCategory, Set<GraphNode.FieldInfo>> getFieldElementIds() {
@@ -93,7 +98,7 @@ public class NewIFMLPatternExtractor {
      * @param viewComponents
      * @param components
      */
-    private void collectDirectComponents(Element viewComponents, List<ComponentInfo> components) {
+    private void collectDirectComponents(Element viewComponents, List<ComponentInfo> components, Boolean inDialog) {
 
         NodeList children = viewComponents.getChildNodes();
 
@@ -116,14 +121,18 @@ public class NewIFMLPatternExtractor {
                 Map<GraphNode.ConditionalExpressionCategory, Set<String>> conditionalExpressions = new HashMap<>();
 
                 fieldElementIds.put(GraphNode.FieldElementCategory.Field, extractFieldIds(element, "Field"));
-                fieldElementIds.put(GraphNode.FieldElementCategory.SelectionField, extractFieldIds(element, "SelectionField"));
+                fieldElementIds.put(GraphNode.FieldElementCategory.SelectionField,
+                        extractFieldIds(element, "SelectionField"));
 
-                conditionalExpressions.put(GraphNode.ConditionalExpressionCategory.associationCondition, extractComponentConditions(element, "AssociationRoleCondition"));
-                conditionalExpressions.put(GraphNode.ConditionalExpressionCategory.attributeConditions, extractComponentConditions(element, "AttributesCondition"));
-                conditionalExpressions.put(GraphNode.ConditionalExpressionCategory.keyCondition, extractComponentConditions(element, "KeyCondition"));
+                conditionalExpressions.put(GraphNode.ConditionalExpressionCategory.associationCondition,
+                        extractComponentConditions(element, "AssociationRoleCondition"));
+                conditionalExpressions.put(GraphNode.ConditionalExpressionCategory.attributeConditions,
+                        extractComponentConditions(element, "AttributesCondition"));
+                conditionalExpressions.put(GraphNode.ConditionalExpressionCategory.keyCondition,
+                        extractComponentConditions(element, "KeyCondition"));
 
                 if (id != null && !id.isEmpty()) {
-                    components.add(new ComponentInfo(id, element.getNodeName(), objectId,
+                    components.add(new ComponentInfo(id, element.getNodeName(), objectId, inDialog,
                             fieldElementIds, conditionalExpressions));
                 }
             }
@@ -153,7 +162,7 @@ public class NewIFMLPatternExtractor {
             if (node.getNodeType() == Node.ELEMENT_NODE &&
                     node.getNodeName().equals("ViewComponents")) {
 
-                collectDirectComponents((Element) node, components);
+                collectDirectComponents((Element) node, components, false);
             }
         }
 
@@ -172,7 +181,7 @@ public class NewIFMLPatternExtractor {
                 if (node.getNodeType() == Node.ELEMENT_NODE &&
                         node.getNodeName().equals("ViewComponents")) {
 
-                    collectDirectComponents((Element) node, components);
+                    collectDirectComponents((Element) node, components, true);
                 }
             }
         }
@@ -203,6 +212,7 @@ public class NewIFMLPatternExtractor {
             getViewComponents(doc).forEach(component -> {
                 GraphNode node = new GraphNode(component.getId(), resolveNodeType(component.getType()), pageId,
                         component.getObjectId(),
+                        component.isInDialogPage(),
                         component.getFieldElementIds(),
                         component.getConditionalExpressions());
 
@@ -258,7 +268,23 @@ public class NewIFMLPatternExtractor {
 
         return null;
     }
+    private boolean isFieldTriggeredFlow(Element flow) {
+        Node current = flow.getParentNode();
+        boolean fieldAncestor = false;
 
+        while (current != null && current.getNodeType() == Node.ELEMENT_NODE) {
+            Element el = (Element) current;
+            if ("Field".equals(el.getLocalName()) || "SelectionField".equals(el.getLocalName())) {
+                fieldAncestor = true;
+            }
+            if (navFlowParentElements.contains(el.getLocalName())) {
+                return fieldAncestor;
+            }
+            current = current.getParentNode();
+        }
+
+        return false;
+    }
     /**
      * check if the parameter binding is a passing binding
      * 
@@ -323,21 +349,41 @@ public class NewIFMLPatternExtractor {
             Element fieldEl = (Element) fieldNodes.item(i);
             String fieldId = fieldEl.getAttribute("id");
             if (fieldId != null && !fieldId.isEmpty()) {
-                // Check for ValueAttribute
-                NodeList valueAttrNodes = fieldEl.getElementsByTagNameNS("*", "ValueAttribute");
+
                 String valueAttr = null;
                 String valueAssocAttr = null;
+
+                // Check for data binding
+                NodeList dataBindingNodes = fieldEl.getElementsByTagNameNS("*", "OptionsDataBinding");
+                String fieldDataBinding = null;
+                if (dataBindingNodes.getLength() > 0) {
+                    Element dataBindingEl = (Element) dataBindingNodes.item(0);
+                    fieldDataBinding = resolveAttribute(dataBindingEl, Arrays.asList("classServiceRes"));
+
+                    NodeList valueOptNodes = fieldEl.getElementsByTagNameNS("*", "OptionsAttributes");
+                    if (valueOptNodes.getLength() > 0) {
+                        Element valueAttrEl = (Element) valueOptNodes.item(0);
+                        valueAttr = resolveAttribute(valueAttrEl,
+                                Arrays.asList("classServiceAttribute", "classServiceRole"));
+                    }
+                }
+
+                // Check for ValueAttribute
+                NodeList valueAttrNodes = fieldEl.getElementsByTagNameNS("*", "ValueAttribute");
+
                 if (valueAttrNodes.getLength() > 0) {
                     Element valueAttrEl = (Element) valueAttrNodes.item(0);
-                    valueAttr = resolveAttribute(valueAttrEl, Arrays.asList("classServiceAttribute", "classServiceRole"));
+                    valueAttr = resolveAttribute(valueAttrEl,
+                            Arrays.asList("classServiceAttribute", "classServiceRole"));
                 } else {
                     NodeList valueAssocAttrNodes = fieldEl.getElementsByTagNameNS("*", "ValueAssociationRole");
                     if (valueAssocAttrNodes.getLength() > 0) {
                         Element valueAttrEl = (Element) valueAssocAttrNodes.item(0);
-                        valueAssocAttr = resolveAttribute(valueAttrEl, Arrays.asList("classServiceAttribute", "classServiceRole"));
+                        valueAssocAttr = resolveAttribute(valueAttrEl,
+                                Arrays.asList("classServiceAttribute", "classServiceRole"));
                     }
                 }
-                fieldInfos.add(new GraphNode.FieldInfo(fieldId, valueAttr, valueAssocAttr));
+                fieldInfos.add(new GraphNode.FieldInfo(fieldId, valueAttr, valueAssocAttr, fieldDataBinding));
             }
         }
 
@@ -386,10 +432,13 @@ public class NewIFMLPatternExtractor {
                             ? FlowType.DATA_FLOW
                             : FlowType.NAVIGATION;
 
+                    boolean fieldTriggered = isFieldTriggeredFlow(flowElement);
+
                     Edge edge = new Edge(
                             sourceId,
                             targetId,
-                            type);
+                            type,
+                            fieldTriggered);
 
                     NodeList bindingNodes = flowElement.getElementsByTagNameNS("*", "ParameterBinding");
 

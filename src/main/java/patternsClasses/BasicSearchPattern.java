@@ -88,7 +88,8 @@ public class BasicSearchPattern extends GenericGraphPattern {
 
         ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
-        entry.patternType = name;
+        boolean hasFieldTriggeredEdge = instance.getEdges().stream().anyMatch(Edge::isFieldTriggered);
+        entry.patternType = hasFieldTriggeredEdge ? "Single Field Variant Basic Search Pattern" : name;
 
         entry.fields = buildFieldsEndpoint(instance.getFields());
 
@@ -134,6 +135,7 @@ public class BasicSearchPattern extends GenericGraphPattern {
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
         ep.dataBinding = node.getObjectId();
+        ep.isInDialogPage = node.isInDialogPage();
 
         return ep;
     }

@@ -52,7 +52,8 @@ public class MultiFieldFormPattern extends GenericGraphPattern {
     public void createJsonPattern(ProjectPatternsJson projectJson, PatternInstance instance, IFMLGraph graph) {
         ProjectPatternsJson.SingleComponentPatternEntry entry = new ProjectPatternsJson.SingleComponentPatternEntry();
 
-        entry.patternType = name;
+        entry.patternType = getPatternTypeWithVariant(name, graph, instance,
+                null, "Multifield Form Dialog Variant Pattern");
         entry.component = buildSingleEndpoint(instance.getSingleNode());
 
         entry.fields = buildFieldsEndpoint(instance.getFields());
@@ -73,6 +74,7 @@ public class MultiFieldFormPattern extends GenericGraphPattern {
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
         ep.dataBinding = node.getObjectId();
+        ep.isInDialogPage = node.isInDialogPage();
 
         return ep;
     }

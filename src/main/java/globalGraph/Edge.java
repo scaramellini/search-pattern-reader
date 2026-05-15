@@ -9,13 +9,15 @@ public class Edge {
     private final String sourceId;
     private final String targetId;
     private final FlowType type;
+    private final boolean fieldTriggered;
 
     private final List<EdgeBinding> bindings = new ArrayList<>();
 
-    public Edge(String sourceId, String targetId, FlowType type) {
+    public Edge(String sourceId, String targetId, FlowType type, boolean fieldTriggered) {
         this.sourceId = sourceId;
         this.targetId = targetId;
         this.type = type;
+        this.fieldTriggered = fieldTriggered;
     }
 
     /**
@@ -44,6 +46,10 @@ public class Edge {
      */
     public List<EdgeBinding> getBindings() {
         return bindings;
+    }
+
+    public boolean isFieldTriggered() {
+        return fieldTriggered;
     }
 
     /**

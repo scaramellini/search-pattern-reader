@@ -92,8 +92,8 @@ public class Main {
                                 new MasterDetailPattern(),
                                 new MasterMultiDetailsPattern(),
                                 new MultiLevelMasterDetailPattern(),
-                                new PreloadedFieldsPattern(),
-                                new PreassignedSelectionFieldsPattern(),
+                                new PreloadedFormPattern(),
+                                new PreloadedFormPatternClassVariant(),
                                 new WizardPattern(),
                                 new DataLookupPattern()));
 

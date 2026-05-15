@@ -56,7 +56,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
             valorizedMasterListConditions += utilityTools.getConditionCount(formToList, masterList);
 
-            List<GraphNode> supportingLists = new ArrayList<>();
+            List<GraphNode> supportingComponents = new ArrayList<>();
             List<Edge> matched = new ArrayList<>();
             matched.add(formToList);
 
@@ -70,16 +70,16 @@ public class FacetedSearchPattern extends GenericGraphPattern {
                 if (source == null)
                     continue;
 
-                if (source.getType() == NodeType.LIST &&
+                if ((source.getType() == NodeType.LIST || source.getType() == NodeType.FORM) &&
                         !source.getId().equals(masterList.getId())) {
 
                     valorizedMasterListConditions += utilityTools.getConditionCount(incoming, masterList);
-                    supportingLists.add(source);
+                    supportingComponents.add(source);
                     matched.add(incoming);
                 }
             }
 
-            if (supportingLists.isEmpty())
+            if (supportingComponents.isEmpty())
                 continue;
 
             // if the total number of conditions in the master list is greater than the number of valorized conditions, then the pattern is not valid
@@ -108,7 +108,25 @@ public class FacetedSearchPattern extends GenericGraphPattern {
 
         ProjectPatternsJson.PatternEntry entry = new ProjectPatternsJson.PatternEntry();
 
-        entry.patternType = name;
+        boolean hasSupportingForm = false;
+        boolean hasSupportingList = false;
+
+        if (instance.getEdges() != null && !instance.getEdges().isEmpty()) {
+            for (Edge edge : instance.getEdges()) {
+                GraphNode source = graph.getNode(edge.getSourceId());
+                if (source == null)
+                    continue;
+                // if there is at least one supporting form different from the starting form node, then it is a multiform variant
+                if (source.getType() == NodeType.FORM && !source.getId().equals(instance.getEdges().get(0).getSourceId()))
+                    hasSupportingForm = true;
+                if (source.getType() == NodeType.LIST)
+                    hasSupportingList = true;
+            }
+        }
+
+        entry.patternType = (hasSupportingForm && !hasSupportingList)
+                ? "Multiform Variant Faceted Search Pattern"
+                : name;
 
         entry.fields = buildFieldsEndpoint(instance.getFields());
 
@@ -154,6 +172,7 @@ public class FacetedSearchPattern extends GenericGraphPattern {
         ep.type = node.getType().name();
         ep.pageId = node.getPageId();
         ep.dataBinding = node.getObjectId();
+        ep.isInDialogPage = node.isInDialogPage();
 
         return ep;
     }

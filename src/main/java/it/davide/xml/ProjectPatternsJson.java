@@ -39,6 +39,7 @@ public class ProjectPatternsJson {
         public String type;
         public String pageId;
         public String dataBinding;
+        public Boolean isInDialogPage;
     }
 
     public static class FieldEndpoint {
