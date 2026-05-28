@@ -100,8 +100,8 @@ public class utilityTools {
             return false;
 
         // each condition has to be satisfied
-        if (!satisfiedConditions.containsAll(conditions))
-            return false;
+        /* if (!satisfiedConditions.containsAll(conditions))
+            return false; */
 
         return true;
     }

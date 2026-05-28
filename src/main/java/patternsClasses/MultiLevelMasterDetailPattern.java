@@ -70,8 +70,13 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
      */
     private boolean isValidPath(List<GraphNode> path) {
 
-        if (path.get(0).getType() != NodeType.LIST)
+        if (path.get(0).getType() != NodeType.LIST && path.get(0).getType() != NodeType.HIERARCHY)
             return false;
+
+        //check for the first and second component to be on the same data binding
+        if (path.get(0).getObjectId() == null || path.get(1).getObjectId() == null
+                    || !path.get(0).getObjectId().equals(path.get(1).getObjectId()))
+                return false;
 
         for (int i = 0; i < path.size(); i++) {
 

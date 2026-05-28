@@ -3,12 +3,12 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld4",
-      "valueAttribute" : "AlmaSIOServices$userName",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld5",
       "valueAttribute" : "AlmaSIOServices$password",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld4",
+      "valueAttribute" : "AlmaSIOServices$userName",
       "valueAssociationRole" : null
     } ],
     "component" : {

@@ -7,14 +7,6 @@
       "valueAttribute" : "AgendaServices$userName",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "sfld12",
-      "valueAttribute" : "AgendaServices$roleName",
-      "valueAssociationRole" : "AgendaServices$User2DefaultRole"
-    }, {
-      "fieldId" : "fld48",
-      "valueAttribute" : "AgendaServices$email",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld47",
       "valueAttribute" : "AgendaServices$password",
       "valueAssociationRole" : null
@@ -22,6 +14,14 @@
       "fieldId" : "fld49",
       "valueAttribute" : "AgendaServices$att23",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld48",
+      "valueAttribute" : "AgendaServices$email",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld12",
+      "valueAttribute" : "AgendaServices$roleName",
+      "valueAssociationRole" : "AgendaServices$User2DefaultRole"
     } ],
     "component" : {
       "id" : "enu1",
@@ -34,13 +34,13 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "sfld13",
-      "valueAttribute" : "AgendaServices$modelElementName",
-      "valueAssociationRole" : "AgendaServices$Role2DefaultModelElement"
-    }, {
       "fieldId" : "fld50",
       "valueAttribute" : "AgendaServices$roleName",
       "valueAssociationRole" : null
+    }, {
+      "fieldId" : "sfld13",
+      "valueAttribute" : "AgendaServices$modelElementName",
+      "valueAssociationRole" : "AgendaServices$Role2DefaultModelElement"
     } ],
     "component" : {
       "id" : "enu14",

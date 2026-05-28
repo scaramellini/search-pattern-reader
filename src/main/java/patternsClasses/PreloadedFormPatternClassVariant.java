@@ -142,6 +142,7 @@ public class PreloadedFormPatternClassVariant extends GenericGraphPattern {
                         valid = false;
                         break;
                     }
+                    preloadedFieldsCount++;
                 }
             }
 

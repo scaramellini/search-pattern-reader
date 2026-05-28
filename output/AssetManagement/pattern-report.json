@@ -3,20 +3,20 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
-      "fieldId" : "fld120x",
-      "valueAttribute" : "AssetManagementServices$att37",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld117x",
-      "valueAttribute" : "AssetManagementServices$att34",
-      "valueAssociationRole" : null
-    }, {
       "fieldId" : "fld118x",
       "valueAttribute" : "AssetManagementServices$att35",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld119x",
       "valueAttribute" : "AssetManagementServices$att36",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld117x",
+      "valueAttribute" : "AssetManagementServices$att34",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld120x",
+      "valueAttribute" : "AssetManagementServices$att37",
       "valueAssociationRole" : null
     } ],
     "component" : {
@@ -85,24 +85,32 @@
     "patternType" : "Multi-Field Form Pattern",
     "flows" : [ ],
     "fields" : [ {
+      "fieldId" : "fld122x",
+      "valueAttribute" : "AssetManagementServices$att41",
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "sfld18x",
       "valueAttribute" : "AssetManagementServices$att12x",
       "valueAssociationRole" : "AssetManagementServices$role1x"
     }, {
-      "fieldId" : "fld124x",
-      "valueAttribute" : "AssetManagementServices$att43",
+      "fieldId" : "fld125x",
+      "valueAttribute" : "AssetManagementServices$att44",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "fld129x",
+      "valueAttribute" : "AssetManagementServices$att48",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld62x",
       "valueAttribute" : "AssetManagementServices$att29x",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld128x",
-      "valueAttribute" : "AssetManagementServices$att47",
+      "fieldId" : "fld127x",
+      "valueAttribute" : "AssetManagementServices$att46",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld129x",
-      "valueAttribute" : "AssetManagementServices$att48",
+      "fieldId" : "fld124x",
+      "valueAttribute" : "AssetManagementServices$att43",
       "valueAssociationRole" : null
     }, {
       "fieldId" : "fld126x",
@@ -113,16 +121,8 @@
       "valueAttribute" : "AssetManagementServices$att42",
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "fld125x",
-      "valueAttribute" : "AssetManagementServices$att44",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld122x",
-      "valueAttribute" : "AssetManagementServices$att41",
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "fld127x",
-      "valueAttribute" : "AssetManagementServices$att46",
+      "fieldId" : "fld128x",
+      "valueAttribute" : "AssetManagementServices$att47",
       "valueAssociationRole" : null
     } ],
     "component" : {
