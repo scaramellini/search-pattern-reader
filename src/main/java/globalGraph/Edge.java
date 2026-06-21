@@ -10,6 +10,9 @@ public class Edge {
     private final String targetId;
     private final FlowType type;
     private final boolean fieldTriggered;
+    
+    private final String actionId;  // if target is an external Action
+    private final String targetActionInputPort;  // which InputPort of the Action receives data
 
     private final List<EdgeBinding> bindings = new ArrayList<>();
 
@@ -18,6 +21,20 @@ public class Edge {
         this.targetId = targetId;
         this.type = type;
         this.fieldTriggered = fieldTriggered;
+        this.actionId = null;
+        this.targetActionInputPort = null;
+    }
+    
+    /**
+     * Constructor for edges that point to an external Action
+     */
+    public Edge(String sourceId, String actionId, String targetActionInputPort, FlowType type) {
+        this.sourceId = sourceId;
+        this.targetId = actionId;  // target is the action node id
+        this.actionId = actionId;
+        this.targetActionInputPort = targetActionInputPort;
+        this.type = type;
+        this.fieldTriggered = false;
     }
 
     /**
@@ -57,6 +74,27 @@ public class Edge {
      */
     public void addBinding(EdgeBinding binding) {
         bindings.add(binding);
+    }
+
+    /**
+     * @return String - action ID if this edge points to an external Action, null otherwise
+     */
+    public String getActionId() {
+        return actionId;
+    }
+
+    /**
+     * @return String - target input port of the Action, null if not applicable
+     */
+    public String getTargetActionInputPort() {
+        return targetActionInputPort;
+    }
+
+    /**
+     * @return boolean - true if this edge points to an external Action
+     */
+    public boolean pointsToAction() {
+        return actionId != null;
     }
 
     

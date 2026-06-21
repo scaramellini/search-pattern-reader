@@ -12,6 +12,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import patternsClasses.*;
+import java.util.regex.Pattern;
+
+import globalGraph.IFMLGraph;
 
 //main class of the application, responsible for entire process of pattern detection
 public class Main {
@@ -78,11 +81,17 @@ public class Main {
     public static void main(String[] args) throws Exception {
         NewIFMLPatternExtractor extractor = new NewIFMLPatternExtractor();
 
+        if (args.length == 0) {
+            System.err.println("Please provide at least one path to scan (root project folder).");
+            return;
+        }
+
         for (String path : args) {
             for (String projectDir : getProjectDirectories(path)) {
+                // Build the page-level graph and detect existing UI patterns (unchanged
+                // behavior)
                 ProjectPatternsJson report = new ProjectPatternsJson();
 
-                // initialize the pattern engine with the rules of the patterns to be detected
                 GlobalPatternEngine patternEngine = new GlobalPatternEngine(
                         List.of(
                                 new MultiFieldFormPattern(),
@@ -97,9 +106,8 @@ public class Main {
                                 new WizardPattern(),
                                 new DataLookupPattern()));
 
-                // build the global graph from the pages files and apply the patterns rules on
-                // it
-                patternEngine.detect(extractor.buildGraph(getPagesPaths(projectDir)), report);
+                IFMLGraph pageGraph = extractor.buildGraph(getPagesPaths(projectDir));
+                patternEngine.detect(pageGraph, report);
 
                 ObjectMapper mapper = new ObjectMapper();
                 mapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -108,13 +116,67 @@ public class Main {
                 String projectName = Paths.get(projectDir).getFileName().toString();
                 File outputDir = new File("output" + File.separator + projectName);
                 if (!outputDir.exists()) {
-                    outputDir.mkdirs(); // create directory folder if not exists
+                    outputDir.mkdirs();
                 }
 
                 File outputFile = new File(outputDir, "pattern-report.json");
-
                 mapper.writeValue(outputFile, report);
             }
+
+            for (String projectDir : getProjectDirectories(path)) {
+                // Load Actions for this project
+                ActionRegistry actionRegistry = new ActionRegistry();
+                actionRegistry.loadActionsFromWorkspace(projectDir);
+            
+
+                // Now process each WebView within the project and run functional patterns
+                List<String> webviewIds = getWebviewIds(projectDir);
+                ProjectPatternsJson allFunctionalReports = new ProjectPatternsJson();
+                List<FunctionalPatternInterface> functionalPatterns = List.of(new LoginFunctionalPattern());
+
+                for (String wv : webviewIds) {
+                    WebViewPatternProcessor processor = new WebViewPatternProcessor(wv, projectDir, actionRegistry);
+                    IFMLGraph unified = processor.processWebView();
+
+                    for (FunctionalPatternInterface pattern : functionalPatterns) {
+                        pattern.detect(unified, actionRegistry);
+                        pattern.createJsonPattern(allFunctionalReports, unified);
+                    }
+                }
+
+                ObjectMapper mapper = new ObjectMapper();
+                mapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+                // destination path for the json report
+                String projectName = Paths.get(projectDir).getFileName().toString();
+                File outputDir = new File("output" + File.separator + projectName);
+                if (!outputDir.exists()) {
+                    outputDir.mkdirs();
+                }
+
+                // Write functional patterns report
+                File funcReportFile = new File(outputDir, "functional-pattern-report.json");
+                mapper.writeValue(funcReportFile, allFunctionalReports);
+            }
+        }
+    }
+
+    private static List<String> getWebviewIds(String projectDir) throws Exception {
+        Path root = Paths.get(projectDir);
+        try (Stream<Path> paths = Files.walk(root)) {
+            return paths
+                    .filter(Files::isDirectory)
+                    .map(Path::toString)
+                    .filter(p -> p.contains(File.separator + "Model" + File.separator + "WebModel"))
+                    .map(p -> {
+                        int idx = p.indexOf(File.separator + "WebModel" + File.separator);
+                        return idx >= 0 ? p.substring(idx + (File.separator + "WebModel" + File.separator).length())
+                                : "";
+                    })
+                    .map(s -> s.split(Pattern.quote(File.separator))[0])
+                    .filter(s -> s.startsWith("wv"))
+                    .distinct()
+                    .collect(Collectors.toList());
         }
     }
 }

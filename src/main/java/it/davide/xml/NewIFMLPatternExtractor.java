@@ -1,19 +1,25 @@
 package it.davide.xml;
 
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.*;
 
+import globalGraph.ActionDefinition;
 import globalGraph.Edge;
 import globalGraph.EdgeBinding;
 import globalGraph.FlowType;
@@ -268,6 +274,7 @@ public class NewIFMLPatternExtractor {
 
         return null;
     }
+
     private boolean isFieldTriggeredFlow(Element flow) {
         Node current = flow.getParentNode();
         boolean fieldAncestor = false;
@@ -285,6 +292,7 @@ public class NewIFMLPatternExtractor {
 
         return false;
     }
+
     /**
      * check if the parameter binding is a passing binding
      * 
@@ -398,12 +406,16 @@ public class NewIFMLPatternExtractor {
      * @param graph
      * @throws Exception
      */
-    private void extractEdges(List<String> pagePaths, IFMLGraph graph) throws Exception {
+    private void extractEdges(List<String> pagePaths, IFMLGraph graph, ActionRegistry actionRegistry, Set<String> actionIds) throws Exception {
 
         for (String pagePath : pagePaths) {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
+
+            if (pagePath.contains("page13w.wr")) {
+                System.out.println("Debug: Processing page13w.wr");
+            }
 
             try {
                 Document doc = builder.parse(new File(pagePath));
@@ -428,17 +440,33 @@ public class NewIFMLPatternExtractor {
                     String sourceId = findSource(flowElement);
                     String targetId = flowElement.getAttribute("to");
 
+                    if (sourceId == "frm12w") {
+                        System.out.println("Debug: Found sourceId frm12w in page " + pagePath);
+                    }
+
                     FlowType type = flowElement.getLocalName().equals("DataFlow")
                             ? FlowType.DATA_FLOW
                             : FlowType.NAVIGATION;
 
                     boolean fieldTriggered = isFieldTriggeredFlow(flowElement);
 
-                    Edge edge = new Edge(
-                            sourceId,
-                            targetId,
-                            type,
-                            fieldTriggered);
+                    Edge edge;
+                    if (targetId != null) {
+                        String targetInputPort = null;
+                        if (actionRegistry != null) {
+                            ActionDefinition action = actionRegistry.getAction(targetId);
+                            if (action != null && !action.getInputParameters().isEmpty()) {
+                                targetInputPort = action.getInputParameters().get(0).getId();
+                            }
+                        }
+                        edge = new Edge(sourceId, targetId, targetInputPort, type);
+                    } else {
+                        edge = new Edge(
+                                sourceId,
+                                targetId,
+                                type,
+                                fieldTriggered);
+                    }
 
                     NodeList bindingNodes = flowElement.getElementsByTagNameNS("*", "ParameterBinding");
 
@@ -491,10 +519,18 @@ public class NewIFMLPatternExtractor {
      * @throws Exception
      */
     public IFMLGraph buildGraph(List<String> pagePaths) throws Exception {
+        return buildGraph(pagePaths, null, Collections.emptySet());
+    }
+
+    public IFMLGraph buildGraph(List<String> pagePaths, Set<String> actionIds) throws Exception {
+        return buildGraph(pagePaths, null, actionIds);
+    }
+
+    public IFMLGraph buildGraph(List<String> pagePaths, ActionRegistry actionRegistry, Set<String> actionIds) throws Exception {
         IFMLGraph graph = new IFMLGraph();
 
         extractNodes(pagePaths, graph);
-        extractEdges(pagePaths, graph);
+        extractEdges(pagePaths, graph, actionRegistry, actionIds);
         validateGraph(graph);
         return graph;
     }
@@ -507,11 +543,37 @@ public class NewIFMLPatternExtractor {
     private void validateGraph(IFMLGraph graph) {
 
         for (Edge edge : graph.getAllEdges()) {
-            if (graph.getNode(edge.getSourceId()) == null ||
-                    graph.getNode(edge.getTargetId()) == null) {
-                throw new IllegalStateException("Edge references missing node");
+            if (graph.getNode(edge.getSourceId()) == null) {
+                throw new IllegalStateException("Edge references missing source node");
+            }
+            if (!edge.pointsToAction() && graph.getNode(edge.getTargetId()) == null) {
+                throw new IllegalStateException("Edge references missing target node");
             }
         }
     }
 
+    /**
+     * Get all page files for a specific webview
+     * Pages are stored in paths like: Model/WebModel/wv1/page13w.wr
+     * 
+     * @param folderPath The project folder path
+     * @param webviewId  The webview ID (e.g., "wv1")
+     * @return List of absolute file paths to page files for the specified webview
+     * @throws Exception If directory traversal fails
+     */
+    public List<String> getPageFilesForWebview(String folderPath, String webviewId) throws Exception {
+        List<String> filesInFolder = Files.walk(Paths.get(folderPath))
+                .filter(Files::isRegularFile)
+                .filter(file -> file.getFileName().toString().startsWith("page"))
+                .filter(file -> file.getFileName().toString().endsWith(".wr"))
+                .filter(file -> {
+                    // Check if the file is in a path containing the webview ID
+                    String path = file.toString();
+                    return path.contains(File.separator + webviewId + File.separator);
+                })
+                .map(Path::toString)
+                .collect(Collectors.toList());
+
+        return filesInFolder;
+    }
 }

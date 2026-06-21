@@ -33,6 +33,10 @@ public class utilityTools {
 
     public static boolean hasMatchingCondition(Edge edge, GraphNode targetNode) {
 
+        if(edge == null || targetNode == null || targetNode.getConditionalExpressions() == null) {
+            return false;
+        }
+
         Set<String> targetConditions = targetNode.getConditionalExpressions()
                 .get(GraphNode.ConditionalExpressionCategory.associationCondition);
 

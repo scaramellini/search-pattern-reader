@@ -12,6 +12,9 @@ public class GraphNode {
     private final String pageId;
     private final String objectId;
     private final Boolean inDialogPage;
+    
+    private final boolean isAction;
+    private final ActionDefinition actionDefinition;
 
     private Map<FieldElementCategory, Set<FieldInfo>> fieldElementIds = new HashMap<>();
     private Map<ConditionalExpressionCategory, Set<String>> conditionalExpressions = new HashMap<>();
@@ -67,7 +70,24 @@ public class GraphNode {
         this.objectId = objectId;
         this.inDialogPage = inDialogPage;
         this.fieldElementIds = fieldElementIds;
-        this.conditionalExpressions = conditionalExpressions;   
+        this.conditionalExpressions = conditionalExpressions;
+        this.isAction = false;
+        this.actionDefinition = null;
+    }
+
+    /**
+     * Constructor for nodes representing external Actions
+     */
+    public GraphNode(String id, ActionDefinition actionDefinition) {
+        this.id = id;
+        this.actionDefinition = actionDefinition;
+        this.isAction = true;
+        this.type = NodeType.ACTION;
+        this.pageId = actionDefinition.getWebviewId();
+        this.objectId = null;
+        this.inDialogPage = false;
+        this.fieldElementIds = new HashMap<>();
+        this.conditionalExpressions = new HashMap<>();
     }
 
     /**
@@ -108,5 +128,19 @@ public class GraphNode {
 
     public Map<ConditionalExpressionCategory, Set<String>> getConditionalExpressions() {
         return conditionalExpressions;
+    }
+
+    /**
+     * @return boolean - true if this node represents an external Action
+     */
+    public boolean isAction() {
+        return isAction;
+    }
+
+    /**
+     * @return ActionDefinition - the action definition if isAction is true, null otherwise
+     */
+    public ActionDefinition getActionDefinition() {
+        return actionDefinition;
     }
 }

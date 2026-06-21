@@ -6,5 +6,6 @@ public enum NodeType {
     LIST,
     HIERARCHY,
     VIEW_CONTAINER,
+    ACTION,
     UNKNOWN
 }

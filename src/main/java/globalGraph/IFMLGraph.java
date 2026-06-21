@@ -29,14 +29,42 @@ public class IFMLGraph {
      * @param edge
      */
     public void addEdge(Edge edge) {
-        if (!nodes.containsKey(edge.getSourceId()) ||
-            !nodes.containsKey(edge.getTargetId())) {
-            return; // Ignore edges with missing nodes
+        if (edge.getSourceId() == null || !nodes.containsKey(edge.getSourceId())) {
+            return; // Ignore edges with missing source node
+        }
+
+        if (edge.getTargetId() == null) {
+            return; // Ignore edges with missing target ID
+        }
+
+        if (!nodes.containsKey(edge.getTargetId()) && !edge.pointsToAction()) {
+            return; // Ignore edges with missing non-action target node
         }
 
         edges.add(edge);
         outgoing.get(edge.getSourceId()).add(edge);
+        incoming.putIfAbsent(edge.getTargetId(), new ArrayList<>());
         incoming.get(edge.getTargetId()).add(edge);
+    }
+
+    public void replaceEdge(Edge oldEdge, Edge newEdge) {
+        if (!edges.remove(oldEdge)) {
+            return;
+        }
+
+        List<Edge> oldOutgoing = outgoing.get(oldEdge.getSourceId());
+        if (oldOutgoing != null) {
+            oldOutgoing.remove(oldEdge);
+        }
+
+        if (oldEdge.getTargetId() != null) {
+            List<Edge> oldIncoming = incoming.get(oldEdge.getTargetId());
+            if (oldIncoming != null) {
+                oldIncoming.remove(oldEdge);
+            }
+        }
+
+        addEdge(newEdge);
     }
 
     /** 
