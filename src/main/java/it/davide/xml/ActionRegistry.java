@@ -22,7 +22,8 @@ import java.util.stream.Stream;
  * projects.
  */
 public class ActionRegistry {
-    private final Map<String, ActionDefinition> actions = new HashMap<>();
+
+    private final List<ActionDefinition> actions = new ArrayList<>();
 
     /**
      * Load all actions from the workspace
@@ -35,15 +36,20 @@ public class ActionRegistry {
     public void loadActionsFromWorkspace(String rootPath) throws Exception {
         // Find all Properties.wr files in /Model directories
         List<String> propertiesFilePaths = findPropertiesFiles(rootPath);
-        List<String> wvPropertiesFilePaths = findWVPropertiesFiles(rootPath);
+        List<String> allPropertiesFilePaths = new ArrayList<>();
+        allPropertiesFilePaths.addAll(findWVPropertiesFiles(rootPath));
+        allPropertiesFilePaths.addAll(findHMDPropertiesFiles(rootPath));
         System.out.println("Found " + propertiesFilePaths.size() + " Properties.wr files");
 
         for (String filePath : propertiesFilePaths) {
             try {
                 ActionDefinition actionDef = parseActionDefinition(filePath);
+                if (actionDef.getDefinition().contains("ad2a")) {
+                    System.out.println("Debug: Found action definition ad2a in file " + filePath);
+                }
                 if (actionDef != null) {
-                    mapActionDefintionToId(actionDef, wvPropertiesFilePaths);
-                    actions.put(actionDef.getId(), actionDef);
+                    mapActionDefintionToId(actionDef, allPropertiesFilePaths);
+                    actions.add(actionDef);
                     System.out.println("Loaded action: " + actionDef.getId());
                 }
             } catch (Exception e) {
@@ -91,6 +97,24 @@ public class ActionRegistry {
     }
 
     /**
+     * Find all Properties.wr files in /hmd directories
+     * 
+     * @param rootPath The root path to search
+     * @return List of absolute paths to Properties.wr files
+     * @throws Exception If directory traversal fails
+     */
+    private List<String> findHMDPropertiesFiles(String rootPath) throws Exception {
+        try (Stream<Path> paths = Files.walk(Paths.get(rootPath))) {
+            return paths
+                    .filter(Files::isRegularFile)
+                    .filter(file -> file.getFileName().toString().equals("Properties.wr"))
+                    .filter(file -> file.getParent().toString().contains(File.separator + "hmd"))
+                    .map(Path::toString)
+                    .collect(Collectors.toList());
+        }
+    }
+
+    /**
      * Parse a single ActionDefinition from a Properties.wr file
      * 
      * @param filePath Path to the Properties.wr file
@@ -127,7 +151,7 @@ public class ActionRegistry {
         Map<String, ActionEvent> events = parseEvents(root);
 
         return new ActionDefinition(
-                null, // ID will be set later based on webview context
+                new ArrayList<>(), // IDs will be set later based on webview context
                 actionDefinition,
                 webviewId,
                 filePath,
@@ -152,22 +176,25 @@ public class ActionRegistry {
             NodeList pageChildren = root.getChildNodes();
 
             for (int i = 0; i < pageChildren.getLength(); i++) {
-            Node node = pageChildren.item(i);
+                Node node = pageChildren.item(i);
 
-            if (node.getNodeType() == Node.ELEMENT_NODE &&
-                    node.getNodeName().equals("Action")) {
+                if (node.getNodeType() == Node.ELEMENT_NODE &&
+                        node.getNodeName().equals("Action")) {
 
-                Element actionNode = (Element) node;
+                    Element actionNode = (Element) node;
 
-                String actionId = actionNode.getAttribute("id");
-                String actionDefinition = actionNode.getAttribute("definition");
+                    String actionId = actionNode.getAttribute("id");
+                    String actionDefinition = actionNode.getAttribute("definition");
 
-                if (actionDefinition.equals(actionDef.getDefinition())) {
-                    actionDef.setId(actionId);
-                    return; // Found the matching action, no need to continue
+                    if (actionDefinition.contains("ad2a")) {
+                        System.out.println("Debug: Found action definition ad2a in file " + wvFilePath);
+                    }
+
+                    if (actionDefinition.equals(actionDef.getDefinition())) {
+                        actionDef.addId(actionId);
+                    }
                 }
             }
-        }
         }
 
     }
@@ -398,13 +425,22 @@ public class ActionRegistry {
     }
 
     /**
-     * Get an action by its ID
+     * Get an action by its defintion
      * 
-     * @param actionId The action ID (e.g., "tlads0#ad2w")
+     * @param actionId The action defintion (e.g., "tlads0#ad2w")
      * @return The ActionDefinition, or null if not found
      */
+    public List<ActionDefinition> getActions(String actionId) {
+        return actions;
+    }
+
     public ActionDefinition getAction(String actionId) {
-        return actions.get(actionId);
+        for (ActionDefinition action : actions) {
+            if (action.getIds().contains(actionId)) {
+                return action;
+            }
+        }
+        return null;
     }
 
     /**
@@ -413,7 +449,7 @@ public class ActionRegistry {
      * @return List of all ActionDefinitions
      */
     public List<ActionDefinition> getAllActions() {
-        return new ArrayList<>(actions.values());
+        return actions;
     }
 
     /**
@@ -423,7 +459,7 @@ public class ActionRegistry {
      * @return true if action exists, false otherwise
      */
     public boolean hasAction(String actionId) {
-        return actions.containsKey(actionId);
+        return actions.stream().anyMatch(action -> action.getIds().contains(actionId));
     }
 
     /**
@@ -432,7 +468,11 @@ public class ActionRegistry {
      * @return Set of action IDs
      */
     public Set<String> getActionIds() {
-        return Collections.unmodifiableSet(actions.keySet());
+        Set<String> actionIds = new HashSet<>();
+        for (ActionDefinition action : actions) {
+            actionIds.addAll(action.getIds());
+        }
+        return Collections.unmodifiableSet(actionIds);
     }
 
     /**

@@ -1,32 +1,26 @@
-package patternsClasses;
+package functionalPatternClasses;
 
-import globalGraph.*;
-import it.davide.xml.ActionRegistry;
-import it.davide.xml.ActionDefinitionParser;
-import java.util.List;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+
+import globalGraph.ActionDefinition;
+import globalGraph.ActionEvent;
+import globalGraph.Edge;
+import globalGraph.EdgeBinding;
+import globalGraph.GraphNode;
+import globalGraph.IFMLGraph;
+import globalGraph.NodeType;
+import globalGraph.OperationComponent;
+import it.davide.xml.ActionRegistry;
+import it.davide.xml.FunctionalPatternInterface;
+import it.davide.xml.FunctionalPatternMatch;
 import it.davide.xml.ProjectPatternsJson;
 
-/**
- * LoginFunctionalPattern detects the functional login pattern.
- * 
- * This pattern occurs when:
- * 1. A Form in a page has a NavigationFlow pointing to an Action
- * 2. The Action contains a Login operation
- * 3. The Login operation has success and error flows
- * 4. The Action's output ports are connected to navigation flows leading to other pages
- * 
- * The pattern structure is:
- * Form (page) -> NavigationFlow -> Action SignIn -> InputPort
- *                                                   -> Login Operation
- *                                                   -> SuccessPort -> NavigationFlow -> Success Page
- *                                                   -> ErrorPort -> NavigationFlow -> Error Page
- */
-public class LoginFunctionalPattern implements FunctionalPatternInterface {
-    private String name = "Login Functional Pattern";
-    
+public class LogoutFunctionalPattern implements FunctionalPatternInterface {
+    private String name = "Logout Functional Pattern";
+
     private List<FunctionalPatternMatch> matches = new ArrayList<>();
 
     @Override
@@ -49,126 +43,55 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
                 continue; // Skip edges that don't point to actions
             }
 
-            String actionId = edge.getActionId();
+            String actionId = edge.getTargetId();
+
+            if(actionId.contains("act59b")) {
+                System.out.println("Debug: Found actionId containing 'act59b' in detect");
+            }
+
             ActionDefinition action = actionRegistry.getAction(actionId);
 
             if (action == null) {
                 continue;
             }
 
-            // Check if this action is a login action
-            if (!isLoginAction(action)) {
+            // Check if this action is a logout action
+            if (!isLogoutAction(action)) {
                 continue;
             }
 
-            // Try to construct the full login pattern
+            // Try to construct the full logout pattern
             GraphNode sourceNode = pageGraph.getNode(edge.getSourceId());
-            if (sourceNode == null || !sourceNode.getType().equals(NodeType.FORM)) {
-                continue; // Login pattern should be triggered from a Form
+
+            if (sourceNode == null || (!sourceNode.getType().equals(NodeType.FORM)
+                    && !sourceNode.getType().equals(NodeType.MYPROFILE) && !sourceNode.getType().equals(NodeType.VIEW_COMPONENT))) {
+                continue; // logout pattern should be triggered from a Form or MyProfile component
             }
 
-            // Build the functional graph for this action
-            ActionDefinitionParser parser = new ActionDefinitionParser();
-            FunctionalGraph functionalGraph = parser.buildFunctionalGraph(action);
+            FunctionalPatternMatch match = new FunctionalPatternMatch(
+                    getName(),
+                    sourceNode.getId(),
+                    actionId,
+                    action.getWebviewId());
+            matches.add(match);
 
-            // Check if pattern matches
-            if (validateLoginPattern(pageGraph, action, functionalGraph, sourceNode, edge)) {
-                FunctionalPatternMatch match = new FunctionalPatternMatch(
-                        getName(),
-                        sourceNode.getId(),
-                        action.getId(),
-                        action.getWebviewId()
-                );
-                matches.add(match);
-            }
         }
     }
 
     /**
-     * Check if an action is a login action
-     * An action is considered a login action if it contains a Login operation
+     * Check if an action is a logout action
+     * An action is considered a logout action if it contains a Logout operation
      * 
      * @param action The ActionDefinition to check
-     * @return true if the action contains a Login operation
+     * @return true if the action contains a Logout operation
      */
-    private boolean isLoginAction(ActionDefinition action) {
+    private boolean isLogoutAction(ActionDefinition action) {
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("Login".equals(op.getType())) {
+            if ("Logout".equals(op.getType())) {
                 return true;
             }
         }
         return false;
-    }
-
-    /**
-     * Validate that the login pattern is complete
-     * - The action has input parameters for username/password
-     * - The action has a Login operation
-     * - The Login operation has success and error flows
-     * - Both flows lead to output ports
-     * 
-     * @param pageGraph The page graph
-     * @param action The action definition
-     * @param functionalGraph The action's functional graph
-     * @param formNode The form node that triggers login
-     * @param formToActionEdge The edge from form to action
-     * @return true if the pattern is valid
-     */
-    private boolean validateLoginPattern(IFMLGraph pageGraph, ActionDefinition action,
-                                        FunctionalGraph functionalGraph,
-                                        GraphNode formNode, Edge formToActionEdge) {
-        
-        // Check: Action has input parameters (typically username, password)
-        if (action.getInputParameters().isEmpty()) {
-            return false;
-        }
-
-        // Check: Action has at least 2 input parameters (username, password)
-        if (action.getInputParameters().size() < 2) {
-            return false;
-        }
-
-        // Check: Action has success and error output ports
-        if (action.getSuccessOutputPorts().isEmpty() || action.getErrorOutputPorts().isEmpty()) {
-            return false;
-        }
-
-        // Check: Action contains Login operation
-        OperationComponent loginOp = null;
-        for (OperationComponent op : action.getOperationComponents()) {
-            if ("Login".equals(op.getType())) {
-                loginOp = op;
-                break;
-            }
-        }
-
-        if (loginOp == null) {
-            return false;
-        }
-
-        // Check: Login operation has both success and error flows
-        boolean hasSuccessFlow = false;
-        boolean hasErrorFlow = false;
-
-        for (ComponentFlow flow : loginOp.getFlows()) {
-            if ("SuccessFlow".equals(flow.getType())) {
-                hasSuccessFlow = true;
-            } else if ("ErrorFlow".equals(flow.getType())) {
-                hasErrorFlow = true;
-            }
-        }
-
-        if (!hasSuccessFlow || !hasErrorFlow) {
-            return false;
-        }
-
-        // Check: Form has parameter bindings that map to action input parameters
-        if (formToActionEdge.getBindings().isEmpty()) {
-            return false;
-        }
-
-        // All validation passed
-        return true;
     }
 
     @Override
@@ -176,6 +99,10 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
         for (FunctionalPatternMatch match : matches) {
             GraphNode sourceNode = graph.getNode(match.getSourceComponentId());
             GraphNode actionNode = graph.getNode(match.getActionId());
+
+            if (match.getActionId().contains("act36d")) {
+                System.out.println("Debug: Found actionId containing 'act36d' in createJsonPattern");
+            }
 
             if (sourceNode == null || actionNode == null) {
                 continue;
@@ -188,7 +115,8 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
             ProjectPatternsJson.FlowEntry flowToAction = new ProjectPatternsJson.FlowEntry();
             flowToAction.from = buildEndpoint(sourceNode);
             flowToAction.to = buildEndpoint(actionNode);
-            flowToAction.bindings = buildBindingEntries(findEdgeBindings(graph, sourceNode.getId(), actionNode.getId()));
+            flowToAction.bindings = buildBindingEntries(
+                    findEdgeBindings(graph, sourceNode.getId(), actionNode.getId()));
             entry.flows.add(flowToAction);
 
             ActionDefinition action = actionNode.getActionDefinition();
@@ -198,7 +126,8 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
                         GraphNode targetNode = graph.getNode(eventFlow.getTargetId());
                         ProjectPatternsJson.FlowEntry resultFlow = new ProjectPatternsJson.FlowEntry();
                         resultFlow.from = buildActionEventEndpoint(actionNode, event);
-                        resultFlow.to = targetNode != null ? buildEndpoint(targetNode) : buildUnknownEndpoint(eventFlow.getTargetId(), actionNode.getPageId());
+                        resultFlow.to = targetNode != null ? buildEndpoint(targetNode)
+                                : buildUnknownEndpoint(eventFlow.getTargetId(), actionNode.getPageId());
                         resultFlow.bindings = buildBindingEntries(eventFlow.getBindings());
                         entry.flows.add(resultFlow);
                     }

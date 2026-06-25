@@ -35,5 +35,113 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
+  }, {
+    "patternType" : "Logout Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1w#apg1j#frm1w",
+        "type" : "FORM",
+        "pageId" : "apg1j.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1w#act4w",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv1w#apg1j#frm1w#sfld6w",
+      "valueAttribute" : "AdministratorConsoleDS$att56x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv1w#apg1j#frm1w#sfld2d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Logout Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1w#apg1j#frm1w",
+        "type" : "FORM",
+        "pageId" : "apg1j.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1w#act36d",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv1w#apg1j#frm1w#sfld6w}value._be_att55x",
+        "target" : "wv1w#prd1v"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv1w#apg1j#frm1w#sfld6w}value._be_att56x",
+        "target" : "wv1w#prd3w"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv1w#apg1j#frm1w#sfld6w}value._be_att262t",
+        "target" : "wv1w#prd3y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv1w#apg1j#frm1w#sfld6w}value._be_att272t",
+        "target" : "wv1w#prd11y"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv1w#apg1j#frm1w#sfld2d}value.0",
+        "target" : "wv1w#prd1d"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv1w#apg1j#frm1w#sfld2d}value.0",
+        "target" : "wv1w#act36d.tlads0#ad5d#ipd6d#pdp20d"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv1w#apg1j#frm1w#sfld6w",
+      "valueAttribute" : "AdministratorConsoleDS$att56x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv1w#apg1j#frm1w#sfld2d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Logout Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1w#page3d#frm2d",
+        "type" : "FORM",
+        "pageId" : "page3d.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1w#act30d",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv1w#page3d#frm2d#sfld1d}value.0",
+        "target" : "wv1w#act30d.tlads0#ad3d#ipd4d#pdp9d"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv1w#page3d#frm2d#sfld1d",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
   } ]
 }

@@ -1,0 +1,135 @@
+{
+  "patterns" : [ {
+    "patternType" : "Login Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1#page2#frm1",
+        "type" : "FORM",
+        "pageId" : "page2.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#act2",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv1#page2#frm1#fld2}value",
+        "target" : "wv1#act2.mpkg1#ad1#ipd1#pdp1"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv1#page2#frm1#fld1}value",
+        "target" : "wv1#act2.mpkg1#ad1#ipd1#pdp2"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv1#page2#frm1#fld1",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv1#page2#frm1#fld2",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Login Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1#page2#frm1",
+        "type" : "FORM",
+        "pageId" : "page2.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#act2",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv1#page2#frm1#fld2}value",
+        "target" : "wv1#act2.mpkg1#ad1#ipd1#pdp1"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv1#page2#frm1#fld1}value",
+        "target" : "wv1#act2.mpkg1#ad1#ipd1#pdp2"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv1#page2#frm1#fld1",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv1#page2#frm1#fld2",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Logout Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1#apg1w#dtl7w",
+        "type" : "MYPROFILE",
+        "pageId" : "apg1w.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#act4w",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Logout Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1#page7#dtl9",
+        "type" : "MYPROFILE",
+        "pageId" : "page7.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#act2a",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Logout Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1w#apg2w#dtl4w",
+        "type" : "MYPROFILE",
+        "pageId" : "apg2w.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1w#act7w",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ ]
+    } ],
+    "fields" : [ ]
+  } ]
+}

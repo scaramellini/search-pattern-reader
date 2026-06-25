@@ -37,10 +37,6 @@ public class IFMLGraph {
             return; // Ignore edges with missing target ID
         }
 
-        if (!nodes.containsKey(edge.getTargetId()) && !edge.pointsToAction()) {
-            return; // Ignore edges with missing non-action target node
-        }
-
         edges.add(edge);
         outgoing.get(edge.getSourceId()).add(edge);
         incoming.putIfAbsent(edge.getTargetId(), new ArrayList<>());

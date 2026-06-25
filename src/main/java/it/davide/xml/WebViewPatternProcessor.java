@@ -2,8 +2,13 @@ package it.davide.xml;
 
 import globalGraph.*;
 
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * WebViewPatternProcessor processes a single WebView at a time.
@@ -16,18 +21,15 @@ import java.util.List;
  * Since each WebView is isolated, no links can exist between different WebViews.
  */
 public class WebViewPatternProcessor {
-    private final String webviewId;
     private final String projectPath;
     private final ActionRegistry actionRegistry;
-    private final NewIFMLPatternExtractor extractor;
     
     private IFMLGraph unifiedGraph;
 
-    public WebViewPatternProcessor(String webviewId, String projectPath, ActionRegistry actionRegistry) {
-        this.webviewId = webviewId;
+    public WebViewPatternProcessor(String projectPath, ActionRegistry actionRegistry, IFMLGraph unifiedGraph) {
         this.projectPath = projectPath;
         this.actionRegistry = actionRegistry;
-        this.extractor = new NewIFMLPatternExtractor();
+        this.unifiedGraph = unifiedGraph;
     }
 
     /**
@@ -37,25 +39,13 @@ public class WebViewPatternProcessor {
      * @throws Exception If XML parsing or file operations fail
      */
     public IFMLGraph processWebView() throws Exception {
-        // Get all page files for this webview
-        List<String> pageFilePaths = getPageFilesForWebview();
-        
-        if (pageFilePaths.isEmpty()) {
-            System.out.println("No page files found for webview: " + webviewId);
-            unifiedGraph = new IFMLGraph();
-            return unifiedGraph;
-        }
-
-        // Build the initial graph from pages, preserving any flows targeting actions
-        unifiedGraph = extractor.buildGraph(pageFilePaths, actionRegistry, actionRegistry.getActionIds());
-
         // Add action nodes to the graph
         addActionNodesToGraph();
 
         // Connect page components to actions via edges
         connectPagesToActions();
 
-        System.out.println("WebView " + webviewId + " processed: " + 
+        System.out.println("Unified graph for " + projectPath + " has " +
                 unifiedGraph.getAllNodes().size() + " nodes, " + 
                 unifiedGraph.getAllEdges().size() + " edges");
 
@@ -63,13 +53,30 @@ public class WebViewPatternProcessor {
     }
 
     /**
-     * Get all page files (.wr files starting with "page") for this webview
+     * Get all page files for a specific webview
+     * Pages are stored in paths like: Model/WebModel/wv1/page13w.wr
      * 
-     * @return List of absolute file paths
-     * @throws Exception 
+     * @param folderPath The project folder path
+     * @param webviewId  The webview ID (e.g., "wv1")
+     * @return List of absolute file paths to page files for the specified webview
+     * @throws Exception If directory traversal fails
      */
-    private List<String> getPageFilesForWebview() throws Exception {
-        return extractor.getPageFilesForWebview(projectPath, webviewId);
+    public List<String> getPageFilesForWebview(String folderPath, String webviewId) throws Exception {
+        List<String> filesInFolder = Files.walk(Paths.get(folderPath))
+                .filter(Files::isRegularFile)
+                .filter(file -> {
+                    String fileName = file.getFileName().toString();
+                    return (fileName.startsWith("page") || fileName.startsWith("apg")) && fileName.endsWith(".wr");
+                })
+                .filter(file -> {
+                    // Check if the file is in a path containing the webview ID
+                    String path = file.toString();
+                    return path.contains(File.separator + webviewId + File.separator);
+                })
+                .map(Path::toString)
+                .collect(Collectors.toList());
+
+        return filesInFolder;
     }
 
     /**
@@ -79,11 +86,13 @@ public class WebViewPatternProcessor {
         List<ActionDefinition> actions = actionRegistry.getAllActions();
         
         for (ActionDefinition action : actions) {
-            GraphNode actionNode = new GraphNode(action.getId(), action);
-            unifiedGraph.addNode(actionNode);
+            for(String actionId : action.getIds()) {
+                GraphNode actionNode = new GraphNode(actionId, action);
+                unifiedGraph.addNode(actionNode);
+            }
         }
         
-        System.out.println("Added " + actions.size() + " action nodes for webview: " + webviewId + ", project: " + projectPath);
+        System.out.println("Added " + actions.size() + " action nodes for project: " + projectPath);
     }
 
     /**
@@ -97,20 +106,15 @@ public class WebViewPatternProcessor {
             String targetId = edge.getTargetId();
 
             if (targetId != null && actionRegistry.hasAction(targetId)) {
-                ActionDefinition action = actionRegistry.getAction(targetId);
-                if (action == null) {
-                    continue;
-                }
 
-                String targetInputPort = action.getInputParameters().isEmpty() ? null : action.getInputParameters().get(0).getId();
-                Edge actionEdge = new Edge(edge.getSourceId(), action.getId(), targetInputPort, edge.getType());
+                Edge actionEdge = new Edge(edge.getSourceId(), targetId, edge.getType(), false);
 
                 for (EdgeBinding binding : edge.getBindings()) {
                     actionEdge.addBinding(binding);
                 }
 
                 unifiedGraph.replaceEdge(edge, actionEdge);
-                System.out.println("Converted edge to action call: " + edge.getSourceId() + " -> " + action.getId());
+                System.out.println("Converted edge to action call: " + edge.getSourceId() + " -> " + targetId);
             }
         }
     }
@@ -125,23 +129,11 @@ public class WebViewPatternProcessor {
     }
 
     /**
-     * Get the webview ID this processor is handling
-     * 
-     * @return String - webview ID
-     */
-    public String getWebviewId() {
-        return webviewId;
-    }
-
-    /**
      * Get statistics about the processed webview
      * 
      * @return String - statistics summary
      */
     public String getStatistics() {
-        if (unifiedGraph == null) {
-            return "WebView " + webviewId + " not processed yet";
-        }
         
         int nodeCount = (int) unifiedGraph.getAllNodes().size();
         int edgeCount = unifiedGraph.getAllEdges().size();
@@ -155,8 +147,8 @@ public class WebViewPatternProcessor {
                 .count();
         
         return String.format(
-                "WebView %s - Nodes: %d (Components: %d, Actions: %d), Edges: %d",
-                webviewId, nodeCount, pageComponentCount, actionNodeCount, edgeCount
+                "Nodes: %d (Components: %d, Actions: %d), Edges: %d",
+                nodeCount, pageComponentCount, actionNodeCount, edgeCount
         );
     }
 }

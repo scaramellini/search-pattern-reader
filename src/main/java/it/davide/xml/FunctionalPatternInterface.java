@@ -1,8 +1,7 @@
-package patternsClasses;
+package it.davide.xml;
 
 import globalGraph.IFMLGraph;
-import it.davide.xml.ActionRegistry;
-import it.davide.xml.ProjectPatternsJson;
+
 import java.util.List;
 
 /**

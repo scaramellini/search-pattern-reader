@@ -1,0 +1,892 @@
+{
+  "patterns" : [ {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page25b#dpg8b#frm30b#fld85b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#dpg8b#frm30b#fld83b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#dpg8b#frm30b#fld84b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "wv2#area2#page25b#dpg8b#frm30b",
+      "type" : "FORM",
+      "pageId" : "page25b.wr",
+      "dataBinding" : "DashboardSocialMediaDS$User",
+      "isInDialogPage" : true
+    }
+  }, {
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area5#page18b#dtl1s",
+        "type" : "DETAILS",
+        "pageId" : "page18b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1o",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area5#page18b#frm15b",
+        "type" : "FORM",
+        "pageId" : "page18b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att2o",
+        "target" : "{wv2#area5#page18b#frm15b#sfld67b}presel._be_att33x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4o",
+        "target" : "{wv2#area5#page18b#frm15b#fld66b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6o",
+        "target" : "{wv2#area5#page18b#frm15b#fld62b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att13o",
+        "target" : "{wv2#area5#page18b#frm15b#sfld68b}presel.0"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att7o",
+        "target" : "{wv2#area5#page18b#frm15b#fld65b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8o",
+        "target" : "{wv2#area5#page18b#frm15b#sfld63b}presel._be_att17"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att10o",
+        "target" : "{wv2#area5#page18b#frm15b#sfld65b}presel._be_att31x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att11o",
+        "target" : "{wv2#area5#page18b#frm15b#sfld95b}presel._be_att37x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att12o",
+        "target" : "{wv2#area5#page18b#frm15b#fld92b}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv2#area5#page18b#frm15b#sfld68b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#sfld95b",
+      "valueAttribute" : "DashboardSocialMediaDS$att37x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#fld62b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#fld66b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#sfld63b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#fld65b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#sfld65b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#sfld66b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#fld92b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page18b#frm15b#sfld67b",
+      "valueAttribute" : "DashboardSocialMediaDS$att34x",
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page10#dpg4b#frm7b#fld18b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page10#dpg4b#frm7b#fld17b",
+      "valueAttribute" : "DashboardSocialMediaDS$att17",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "wv2#area2#page10#dpg4b#frm7b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls4",
+      "isInDialogPage" : true
+    }
+  }, {
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "tlmds0#hmd3b#page13b#dtl4b",
+        "type" : "DETAILS",
+        "pageId" : "page13b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "tlmds0#hmd3b#page13b#frm12b",
+        "type" : "FORM",
+        "pageId" : "page13b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att14",
+        "target" : "{tlmds0#hmd3b#page13b#frm12b#fld47b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att2x",
+        "target" : "{tlmds0#hmd3b#page13b#frm12b#fld2b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role37x$_be_att18",
+        "target" : "{tlmds0#hmd3b#page13b#frm12b#sfld49b}presel._be_att18"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att26x",
+        "target" : "{tlmds0#hmd3b#page13b#frm12b#sfld48b}presel._be_pdp110x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_role20x$_be_att16",
+        "target" : "{tlmds0#hmd3b#page13b#frm12b#sfld48b}presel._be_pdp108x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1",
+        "target" : "{tlmds0#hmd3b#page13b#frm12b#sfld48b}_be_pdp107x"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "tlmds0#hmd3b#page13b#frm12b#sfld48b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "tlmds0#hmd3b#page13b#frm12b#fld48b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "tlmds0#hmd3b#page13b#frm12b#fld47b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "tlmds0#hmd3b#page13b#frm12b#sfld49b",
+      "valueAttribute" : "DashboardSocialMediaDS$att22",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "tlmds0#hmd3b#page13b#frm12b#fld2b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area5#page20b#dtl10s",
+        "type" : "DETAILS",
+        "pageId" : "page20b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1o",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area5#page20b#frm17b",
+        "type" : "FORM",
+        "pageId" : "page20b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att2o",
+        "target" : "{wv2#area5#page20b#frm17b#sfld78b}presel._be_att33x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4o",
+        "target" : "{wv2#area5#page20b#frm17b#fld75b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att5o",
+        "target" : "{wv2#area5#page20b#frm17b#sfld77b}presel._be_att31"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6o",
+        "target" : "{wv2#area5#page20b#frm17b#fld71b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att13o",
+        "target" : "{wv2#area5#page20b#frm17b#sfld79b}presel.0"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att7o",
+        "target" : "{wv2#area5#page20b#frm17b#fld74b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8o",
+        "target" : "{wv2#area5#page20b#frm17b#sfld74b}presel._be_att17"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att9o",
+        "target" : "{wv2#area5#page20b#frm17b#sfld75b}presel._be_att16"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att10o",
+        "target" : "{wv2#area5#page20b#frm17b#sfld76b}presel._be_att31x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att11o",
+        "target" : "{wv2#area5#page20b#frm17b#sfld15b}presel._be_att37x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att12o",
+        "target" : "{wv2#area5#page20b#frm17b#fld35b}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv2#area5#page20b#frm17b#sfld74b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#sfld77b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#fld74b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#sfld76b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#sfld78b",
+      "valueAttribute" : "DashboardSocialMediaDS$att34x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#fld75b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#sfld75b",
+      "valueAttribute" : "DashboardSocialMediaDS$att20",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#sfld79b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#sfld15b",
+      "valueAttribute" : "DashboardSocialMediaDS$att37x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#fld71b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page20b#frm17b#fld35b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area5#page11#dtl7s",
+        "type" : "DETAILS",
+        "pageId" : "page11.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1o",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area5#page11#frm13b",
+        "type" : "FORM",
+        "pageId" : "page11.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att2o",
+        "target" : "{wv2#area5#page11#frm13b#sfld55b}presel._be_att33x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4o",
+        "target" : "{wv2#area5#page11#frm13b#fld55b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6o",
+        "target" : "{wv2#area5#page11#frm13b#fld49b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att7o",
+        "target" : "{wv2#area5#page11#frm13b#fld54b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8o",
+        "target" : "{wv2#area5#page11#frm13b#sfld50b}presel._be_att17"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att9o",
+        "target" : "{wv2#area5#page11#frm13b#sfld51b}presel._be_att16"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att10o",
+        "target" : "{wv2#area5#page11#frm13b#sfld52b}presel._be_att31x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att11o",
+        "target" : "{wv2#area5#page11#frm13b#sfld94b}presel._be_att37x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att12o",
+        "target" : "{wv2#area5#page11#frm13b#fld91b}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv2#area5#page11#frm13b#fld91b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#sfld50b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#sfld52b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#fld54b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#fld49b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#sfld55b",
+      "valueAttribute" : "DashboardSocialMediaDS$att34x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#sfld51b",
+      "valueAttribute" : "DashboardSocialMediaDS$att20",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#sfld94b",
+      "valueAttribute" : "DashboardSocialMediaDS$att37x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page11#frm13b#fld55b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page10#dpg5b#frm8b#fld27b",
+      "valueAttribute" : "DashboardSocialMediaDS$att38x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page10#dpg5b#frm8b#fld20b",
+      "valueAttribute" : "DashboardSocialMediaDS$att6x",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "wv2#area2#page10#dpg5b#frm8b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls12x",
+      "isInDialogPage" : true
+    }
+  }, {
+    "patternType" : "Master Detail Dialog Variant Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area5#page21b#lst13b",
+        "type" : "LIST",
+        "pageId" : "page21b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area5#page21b#dpg3b#dtl9b",
+        "type" : "DETAILS",
+        "pageId" : "page21b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1",
+        "isInDialogPage" : true
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1",
+        "target" : "wv2#area5#page21b#dpg3b#dtl9b#sc32b#kcond26b._be_att1"
+      } ]
+    } ],
+    "fields" : null
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area5#page7b#frm26b",
+        "type" : "FORM",
+        "pageId" : "page7b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area5#page7b#lst6b",
+        "type" : "LIST",
+        "pageId" : "page7b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1",
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#sfld12b}value._be_att33x",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#rcond6b._be_att33x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#fld64b}value",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#acond25b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#fld59b}value",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#kcond12b._be_att1"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#fld63b}value",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#acond26b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#sfld9b}value._be_att17",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#rcond3b._be_att17"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#sfld10b}value._be_att16",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#rcond4b._be_att16"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#sfld11b}value._be_att31x",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#rcond5b._be_att31x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#sfld14b}value._be_att37x",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#rcond7b._be_att37x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area5#page7b#frm26b#fld72b}value",
+        "target" : "wv2#area5#page7b#lst6b#sc11b#acond27b"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv2#area5#page7b#frm26b#sfld10b",
+      "valueAttribute" : "DashboardSocialMediaDS$att20",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#fld59b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#sfld9b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#sfld11b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#fld72b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#fld64b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#sfld14b",
+      "valueAttribute" : "DashboardSocialMediaDS$att37x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#sfld12b",
+      "valueAttribute" : "DashboardSocialMediaDS$att34x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page7b#frm26b#fld63b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page10#dpg6b#frm9b#fld29b",
+      "valueAttribute" : "DashboardSocialMediaDS$att23",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page10#dpg6b#frm9b#fld30b",
+      "valueAttribute" : "DashboardSocialMediaDS$att24",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page10#dpg6b#frm9b#fld31b",
+      "valueAttribute" : "DashboardSocialMediaDS$att22",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "wv2#area2#page10#dpg6b#frm9b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls5",
+      "isInDialogPage" : true
+    }
+  }, {
+    "patternType" : "Multi-Field Form Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld43b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld46b",
+      "valueAttribute" : "DashboardSocialMediaDS$att28",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld50b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld45b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld41b",
+      "valueAttribute" : "DashboardSocialMediaDS$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#sfld8b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32",
+      "valueAssociationRole" : "DashboardSocialMediaDS$role16"
+    } ],
+    "component" : {
+      "id" : "wv2#area2#page25b#frm18b",
+      "type" : "FORM",
+      "pageId" : "page25b.wr",
+      "dataBinding" : "DashboardSocialMediaDS$User",
+      "isInDialogPage" : false
+    }
+  }, {
+    "patternType" : "Multicriteria Search Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area2#page25b#frm18b",
+        "type" : "FORM",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area2#page25b#lst1b",
+        "type" : "LIST",
+        "pageId" : "page25b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$User",
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area2#page25b#frm18b#fld50b}value",
+        "target" : "wv2#area2#page25b#lst1b#sc10b#acond19b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area2#page25b#frm18b#fld45b}value",
+        "target" : "wv2#area2#page25b#lst1b#sc10b#acond16b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area2#page25b#frm18b#sfld8b}value._be_att31",
+        "target" : "wv2#area2#page25b#lst1b#sc10b#rcond1b._be_att31"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area2#page25b#frm18b#fld43b}value",
+        "target" : "wv2#area2#page25b#lst1b#sc10b#acond15b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area2#page25b#frm18b#fld41b}value",
+        "target" : "wv2#area2#page25b#lst1b#sc10b#acond20b"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "{wv2#area2#page25b#frm18b#fld46b}value",
+        "target" : "wv2#area2#page25b#lst1b#sc10b#acond38b"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld43b",
+      "valueAttribute" : "DashboardSocialMediaDS$att30",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld46b",
+      "valueAttribute" : "DashboardSocialMediaDS$att28",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld50b",
+      "valueAttribute" : "DashboardSocialMediaDS$att29",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld45b",
+      "valueAttribute" : "DashboardSocialMediaDS$att27",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#fld41b",
+      "valueAttribute" : "DashboardSocialMediaDS$userName",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page25b#frm18b#sfld8b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32",
+      "valueAssociationRole" : "DashboardSocialMediaDS$role16"
+    } ]
+  }, {
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area5#page16b#dtl6s",
+        "type" : "DETAILS",
+        "pageId" : "page16b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1o",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area5#page16b#frm14b",
+        "type" : "FORM",
+        "pageId" : "page16b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att2o",
+        "target" : "{wv2#area5#page16b#frm14b#sfld61b}presel._be_att33x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4o",
+        "target" : "{wv2#area5#page16b#frm14b#fld61b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6o",
+        "target" : "{wv2#area5#page16b#frm14b#fld57b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att7o",
+        "target" : "{wv2#area5#page16b#frm14b#fld60b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8o",
+        "target" : "{wv2#area5#page16b#frm14b#sfld57b}presel._be_att17"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att9o",
+        "target" : "{wv2#area5#page16b#frm14b#sfld58b}presel._be_att16"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att10o",
+        "target" : "{wv2#area5#page16b#frm14b#sfld59b}presel._be_att31x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att11o",
+        "target" : "{wv2#area5#page16b#frm14b#sfld93b}presel._be_att37x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att12o",
+        "target" : "{wv2#area5#page16b#frm14b#fld90b}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv2#area5#page16b#frm14b#sfld57b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#fld57b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#sfld58b",
+      "valueAttribute" : "DashboardSocialMediaDS$att20",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#sfld61b",
+      "valueAttribute" : "DashboardSocialMediaDS$att34x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#sfld93b",
+      "valueAttribute" : "DashboardSocialMediaDS$att37x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#sfld59b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#fld90b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#fld61b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#sfld60b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page16b#frm14b#fld60b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    } ]
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page10#dpg1b#frm6b#fld14b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page10#dpg1b#frm6b#fld15b",
+      "valueAttribute" : "DashboardSocialMediaDS$att31x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area2#page10#dpg1b#frm6b#fld16b",
+      "valueAttribute" : "DashboardSocialMediaDS$att3x",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "wv2#area2#page10#dpg1b#frm6b",
+      "type" : "FORM",
+      "pageId" : "page10.wr",
+      "dataBinding" : "DashboardSocialMediaDS$cls9x",
+      "isInDialogPage" : true
+    }
+  }, {
+    "patternType" : "Multifield Form Dialog Variant Pattern",
+    "flows" : [ ],
+    "fields" : [ {
+      "fieldId" : "wv2#area2#page25b#dpg7b#frm11b#sfld5b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32",
+      "valueAssociationRole" : null
+    } ],
+    "component" : {
+      "id" : "wv2#area2#page25b#dpg7b#frm11b",
+      "type" : "FORM",
+      "pageId" : "page25b.wr",
+      "dataBinding" : null,
+      "isInDialogPage" : true
+    }
+  }, {
+    "patternType" : "Preloaded Form Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv2#area5#page21b#dtl12s",
+        "type" : "DETAILS",
+        "pageId" : "page21b.wr",
+        "dataBinding" : "DashboardSocialMediaDS$cls1o",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv2#area5#page21b#frm20b",
+        "type" : "FORM",
+        "pageId" : "page21b.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att2o",
+        "target" : "{wv2#area5#page21b#frm20b#sfld84b}presel._be_att33x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4o",
+        "target" : "{wv2#area5#page21b#frm20b#fld81b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att6o",
+        "target" : "{wv2#area5#page21b#frm20b#fld77b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att7o",
+        "target" : "{wv2#area5#page21b#frm20b#fld80b}value"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att8o",
+        "target" : "{wv2#area5#page21b#frm20b#sfld80b}presel._be_att17"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att9o",
+        "target" : "{wv2#area5#page21b#frm20b#sfld81b}presel._be_att16"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att10o",
+        "target" : "{wv2#area5#page21b#frm20b#sfld82b}presel._be_att31x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att11o",
+        "target" : "{wv2#area5#page21b#frm20b#sfld16b}presel._be_att37x"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "data._be_att12o",
+        "target" : "{wv2#area5#page21b#frm20b#fld34b}value"
+      } ]
+    } ],
+    "fields" : [ {
+      "fieldId" : "wv2#area5#page21b#frm20b#sfld16b",
+      "valueAttribute" : "DashboardSocialMediaDS$att37x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#sfld84b",
+      "valueAttribute" : "DashboardSocialMediaDS$att34x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#sfld80b",
+      "valueAttribute" : "DashboardSocialMediaDS$att21",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#fld81b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#fld77b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#fld34b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#sfld82b",
+      "valueAttribute" : "DashboardSocialMediaDS$att32x",
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#fld80b",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
+      "fieldId" : "wv2#area5#page21b#frm20b#sfld81b",
+      "valueAttribute" : "DashboardSocialMediaDS$att20",
+      "valueAssociationRole" : null
+    } ]
+  } ]
+}

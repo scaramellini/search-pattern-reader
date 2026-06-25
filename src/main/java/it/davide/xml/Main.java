@@ -11,8 +11,8 @@ import java.util.stream.Stream;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
+import functionalPatternClasses.*;
 import patternsClasses.*;
-import java.util.regex.Pattern;
 
 import globalGraph.IFMLGraph;
 
@@ -21,19 +21,22 @@ public class Main {
 
     /**
      * function that returns the paths of all the files in the directory that start
-     * with "page" and end with ".wr", which are the files that represent the pages
-     * of the IFML model
+     * with "page" or "apg" (abstract pages) and end with ".wr", which are the files
+     * that represent the pages of the IFML model
      * 
      * @param folderPath
      * @return List<String>
      * @throws Exception
      */
     private static List<String> getPagesPaths(String folderPath) throws Exception {
-        // return all files .wr in the directory starting with "page"
+        // return all files .wr in the directory starting with "page" or "apg" (abstract
+        // pages)
         List<String> filesInFolder = Files.walk(Paths.get(folderPath))
                 .filter(Files::isRegularFile)
-                .filter(file -> file.getFileName().toString().startsWith("page"))
-                .filter(file -> file.getFileName().toString().endsWith(".wr"))
+                .filter(file -> {
+                    String fileName = file.getFileName().toString();
+                    return (fileName.startsWith("page") || fileName.startsWith("apg")) && fileName.endsWith(".wr");
+                })
                 .map(Path::toString)
                 .collect(Collectors.toList());
 
@@ -51,8 +54,11 @@ public class Main {
             boolean containsPages;
             try (Stream<Path> pageFiles = Files.walk(root, 1)) {
                 containsPages = pageFiles.filter(Files::isRegularFile)
-                        .anyMatch(file -> file.getFileName().toString().startsWith("page")
-                                && file.getFileName().toString().endsWith(".wr"));
+                        .anyMatch(file -> {
+                            String fileName = file.getFileName().toString();
+                            return (fileName.startsWith("page") || fileName.startsWith("apg"))
+                                    && fileName.endsWith(".wr");
+                        });
             }
 
             if (containsPages) {
@@ -121,62 +127,30 @@ public class Main {
 
                 File outputFile = new File(outputDir, "pattern-report.json");
                 mapper.writeValue(outputFile, report);
-            }
 
-            for (String projectDir : getProjectDirectories(path)) {
                 // Load Actions for this project
                 ActionRegistry actionRegistry = new ActionRegistry();
                 actionRegistry.loadActionsFromWorkspace(projectDir);
-            
 
                 // Now process each WebView within the project and run functional patterns
-                List<String> webviewIds = getWebviewIds(projectDir);
                 ProjectPatternsJson allFunctionalReports = new ProjectPatternsJson();
-                List<FunctionalPatternInterface> functionalPatterns = List.of(new LoginFunctionalPattern());
+                List<FunctionalPatternInterface> functionalPatterns = List.of(new LoginFunctionalPattern(),
+                        new LogoutFunctionalPattern());
 
-                for (String wv : webviewIds) {
-                    WebViewPatternProcessor processor = new WebViewPatternProcessor(wv, projectDir, actionRegistry);
-                    IFMLGraph unified = processor.processWebView();
+                WebViewPatternProcessor processor = new WebViewPatternProcessor(projectDir, actionRegistry,
+                        pageGraph);
+                IFMLGraph unified = processor.processWebView();
 
-                    for (FunctionalPatternInterface pattern : functionalPatterns) {
-                        pattern.detect(unified, actionRegistry);
-                        pattern.createJsonPattern(allFunctionalReports, unified);
-                    }
-                }
-
-                ObjectMapper mapper = new ObjectMapper();
-                mapper.enable(SerializationFeature.INDENT_OUTPUT);
-
-                // destination path for the json report
-                String projectName = Paths.get(projectDir).getFileName().toString();
-                File outputDir = new File("output" + File.separator + projectName);
-                if (!outputDir.exists()) {
-                    outputDir.mkdirs();
+                for (FunctionalPatternInterface pattern : functionalPatterns) {
+                    pattern.detect(unified, actionRegistry);
+                    pattern.createJsonPattern(allFunctionalReports, unified);
                 }
 
                 // Write functional patterns report
                 File funcReportFile = new File(outputDir, "functional-pattern-report.json");
                 mapper.writeValue(funcReportFile, allFunctionalReports);
             }
-        }
-    }
 
-    private static List<String> getWebviewIds(String projectDir) throws Exception {
-        Path root = Paths.get(projectDir);
-        try (Stream<Path> paths = Files.walk(root)) {
-            return paths
-                    .filter(Files::isDirectory)
-                    .map(Path::toString)
-                    .filter(p -> p.contains(File.separator + "Model" + File.separator + "WebModel"))
-                    .map(p -> {
-                        int idx = p.indexOf(File.separator + "WebModel" + File.separator);
-                        return idx >= 0 ? p.substring(idx + (File.separator + "WebModel" + File.separator).length())
-                                : "";
-                    })
-                    .map(s -> s.split(Pattern.quote(File.separator))[0])
-                    .filter(s -> s.startsWith("wv"))
-                    .distinct()
-                    .collect(Collectors.toList());
         }
     }
 }

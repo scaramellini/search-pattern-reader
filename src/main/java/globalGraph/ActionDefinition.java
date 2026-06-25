@@ -8,9 +8,12 @@ import java.util.Map;
  * Represents a complete Action definition extracted from a Properties.wr file.
  * An Action is a reusable module that can be called from pages or other actions.
  * It contains input parameters, output ports (success/error), internal operations, and events.
+ * 
+ * Note: An ActionDefinition can have multiple implementation IDs for the same definition.
+ * For example, "LoginAction" might have implementations "LoginAction_v1", "LoginAction_v2", etc.
  */
 public class ActionDefinition {
-    private String id;
+    private final List<String> ids;
     private final String definition;
     private final String webviewId;
     private final String filePath;
@@ -21,7 +24,7 @@ public class ActionDefinition {
     private final Map<String, ActionEvent> events;
 
     public ActionDefinition(
-            String id,
+            List<String> ids,
             String definition,
             String webviewId,
             String filePath,
@@ -30,7 +33,7 @@ public class ActionDefinition {
             Map<String, List<PortParameter>> errorOutputPorts,
             List<OperationComponent> operationComponents,
             Map<String, ActionEvent> events) {
-        this.id = id;
+        this.ids = ids != null ? new ArrayList<>(ids) : new ArrayList<>();
         this.definition = definition;
         this.webviewId = webviewId;
         this.filePath = filePath;
@@ -42,11 +45,25 @@ public class ActionDefinition {
     }
 
     public String getId() {
-        return id;
+        // Return primary ID (first one)
+        return ids.isEmpty() ? null : ids.get(0);
+    }
+
+    public List<String> getIds() {
+        return new ArrayList<>(ids);
     }
 
     public void setId(String actionId) {
-        this.id = actionId;
+        this.ids.clear();
+        if (actionId != null) {
+            this.ids.add(actionId);
+        }
+    }
+
+    public void addId(String actionId) {
+        if (actionId != null && !ids.contains(actionId)) {
+            ids.add(actionId);
+        }
     }
 
     public String getDefinition() {
@@ -115,7 +132,8 @@ public class ActionDefinition {
     @Override
     public String toString() {
         return "ActionDefinition{" +
-                "id='" + id + '\'' +
+                "ids=" + ids +
+                ", definition='" + definition + '\'' +
                 ", webviewId='" + webviewId + '\'' +
                 ", filePath='" + filePath + '\'' +
                 ", inputParametersCount=" + inputParameters.size() +

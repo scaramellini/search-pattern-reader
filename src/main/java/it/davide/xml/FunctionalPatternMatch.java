@@ -1,4 +1,4 @@
-package patternsClasses;
+package it.davide.xml;
 
 /**
  * Represents a detected functional pattern match

@@ -1,9 +1,6 @@
 package it.davide.xml;
 
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,14 +9,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.*;
 
-import globalGraph.ActionDefinition;
 import globalGraph.Edge;
 import globalGraph.EdgeBinding;
 import globalGraph.FlowType;
@@ -96,7 +91,8 @@ public class NewIFMLPatternExtractor {
             "classServiceRes");
 
     private static List<String> navFlowParentElements = Arrays.asList("Form", "List", "Details", "Hierarchy",
-            "ViewComponent");
+            "ViewComponent", "Action", "Save", "Delete", "Switch", "Loop", "Selector", "Script", "Query", "Time",
+            "Mail", "Login", "Logout", "Register", "UpdateProfile", "ChangePassword", "MyProfile");
 
     /**
      * collect the direct components under a view component
@@ -235,19 +231,53 @@ public class NewIFMLPatternExtractor {
      * @return NodeType
      */
     private NodeType resolveNodeType(String component) {
+        switch (component) {
+            case "Form":
+                return NodeType.FORM;
+            case "Details":
+                return NodeType.DETAILS;
+            case "List":
+                return NodeType.LIST;
+            case "ViewComponent":
+                return NodeType.VIEW_COMPONENT;
+            case "Hierarchy":
+                return NodeType.HIERARCHY;
+            case "Action":
+                return NodeType.ACTION;
+            case "Save":
+                return NodeType.SAVE;
+            case "Delete":
+                return NodeType.DELETE;
+            case "Switch":
+                return NodeType.SWITCH;
+            case "Loop":
+                return NodeType.LOOP;
+            case "Selector":
+                return NodeType.SELECTOR;
+            case "Script":
+                return NodeType.SCRIPT;
+            case "Query":
+                return NodeType.QUERY;
+            case "Time":
+                return NodeType.TIME;
+            case "Mail":
+                return NodeType.MAIL;
+            case "Login":
+                return NodeType.LOGIN;
+            case "Logout":
+                return NodeType.LOGOUT;
+            case "Register":
+                return NodeType.REGISTER;
+            case "UpdateProfile":
+                return NodeType.UPDATEPROFILE;
+            case "ChangePassword":
+                return NodeType.CHANGEPASSWORD;
+            case "MyProfile":
+                return NodeType.MYPROFILE;
+            default:
+                return NodeType.UNKNOWN;
+        }
 
-        if (component.equals("Form"))
-            return NodeType.FORM;
-        if (component.equals("Details"))
-            return NodeType.DETAILS;
-        if (component.equals("List"))
-            return NodeType.LIST;
-        if (component.equals("ViewContainer"))
-            return NodeType.VIEW_CONTAINER;
-        if (component.equals("Hierarchy"))
-            return NodeType.HIERARCHY;
-
-        return NodeType.UNKNOWN;
     }
 
     /**
@@ -406,16 +436,12 @@ public class NewIFMLPatternExtractor {
      * @param graph
      * @throws Exception
      */
-    private void extractEdges(List<String> pagePaths, IFMLGraph graph, ActionRegistry actionRegistry, Set<String> actionIds) throws Exception {
+    private void extractEdges(List<String> pagePaths, IFMLGraph graph) throws Exception {
 
         for (String pagePath : pagePaths) {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
-
-            if (pagePath.contains("page13w.wr")) {
-                System.out.println("Debug: Processing page13w.wr");
-            }
 
             try {
                 Document doc = builder.parse(new File(pagePath));
@@ -440,33 +466,13 @@ public class NewIFMLPatternExtractor {
                     String sourceId = findSource(flowElement);
                     String targetId = flowElement.getAttribute("to");
 
-                    if (sourceId == "frm12w") {
-                        System.out.println("Debug: Found sourceId frm12w in page " + pagePath);
-                    }
-
                     FlowType type = flowElement.getLocalName().equals("DataFlow")
                             ? FlowType.DATA_FLOW
                             : FlowType.NAVIGATION;
 
                     boolean fieldTriggered = isFieldTriggeredFlow(flowElement);
 
-                    Edge edge;
-                    if (targetId != null) {
-                        String targetInputPort = null;
-                        if (actionRegistry != null) {
-                            ActionDefinition action = actionRegistry.getAction(targetId);
-                            if (action != null && !action.getInputParameters().isEmpty()) {
-                                targetInputPort = action.getInputParameters().get(0).getId();
-                            }
-                        }
-                        edge = new Edge(sourceId, targetId, targetInputPort, type);
-                    } else {
-                        edge = new Edge(
-                                sourceId,
-                                targetId,
-                                type,
-                                fieldTriggered);
-                    }
+                    Edge edge = new Edge(sourceId, targetId, type, fieldTriggered);
 
                     NodeList bindingNodes = flowElement.getElementsByTagNameNS("*", "ParameterBinding");
 
@@ -526,54 +532,12 @@ public class NewIFMLPatternExtractor {
         return buildGraph(pagePaths, null, actionIds);
     }
 
-    public IFMLGraph buildGraph(List<String> pagePaths, ActionRegistry actionRegistry, Set<String> actionIds) throws Exception {
+    public IFMLGraph buildGraph(List<String> pagePaths, ActionRegistry actionRegistry, Set<String> actionIds)
+            throws Exception {
         IFMLGraph graph = new IFMLGraph();
 
         extractNodes(pagePaths, graph);
-        extractEdges(pagePaths, graph, actionRegistry, actionIds);
-        validateGraph(graph);
+        extractEdges(pagePaths, graph);
         return graph;
-    }
-
-    /**
-     * validate the graph by checking that all the edges reference existing nodes
-     * 
-     * @param graph
-     */
-    private void validateGraph(IFMLGraph graph) {
-
-        for (Edge edge : graph.getAllEdges()) {
-            if (graph.getNode(edge.getSourceId()) == null) {
-                throw new IllegalStateException("Edge references missing source node");
-            }
-            if (!edge.pointsToAction() && graph.getNode(edge.getTargetId()) == null) {
-                throw new IllegalStateException("Edge references missing target node");
-            }
-        }
-    }
-
-    /**
-     * Get all page files for a specific webview
-     * Pages are stored in paths like: Model/WebModel/wv1/page13w.wr
-     * 
-     * @param folderPath The project folder path
-     * @param webviewId  The webview ID (e.g., "wv1")
-     * @return List of absolute file paths to page files for the specified webview
-     * @throws Exception If directory traversal fails
-     */
-    public List<String> getPageFilesForWebview(String folderPath, String webviewId) throws Exception {
-        List<String> filesInFolder = Files.walk(Paths.get(folderPath))
-                .filter(Files::isRegularFile)
-                .filter(file -> file.getFileName().toString().startsWith("page"))
-                .filter(file -> file.getFileName().toString().endsWith(".wr"))
-                .filter(file -> {
-                    // Check if the file is in a path containing the webview ID
-                    String path = file.toString();
-                    return path.contains(File.separator + webviewId + File.separator);
-                })
-                .map(Path::toString)
-                .collect(Collectors.toList());
-
-        return filesInFolder;
     }
 }
