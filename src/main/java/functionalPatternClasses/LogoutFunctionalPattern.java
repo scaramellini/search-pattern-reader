@@ -45,10 +45,6 @@ public class LogoutFunctionalPattern implements FunctionalPatternInterface {
 
             String actionId = edge.getTargetId();
 
-            if(actionId.contains("act59b")) {
-                System.out.println("Debug: Found actionId containing 'act59b' in detect");
-            }
-
             ActionDefinition action = actionRegistry.getAction(actionId);
 
             if (action == null) {
@@ -100,10 +96,6 @@ public class LogoutFunctionalPattern implements FunctionalPatternInterface {
             GraphNode sourceNode = graph.getNode(match.getSourceComponentId());
             GraphNode actionNode = graph.getNode(match.getActionId());
 
-            if (match.getActionId().contains("act36d")) {
-                System.out.println("Debug: Found actionId containing 'act36d' in createJsonPattern");
-            }
-
             if (sourceNode == null || actionNode == null) {
                 continue;
             }
@@ -121,7 +113,7 @@ public class LogoutFunctionalPattern implements FunctionalPatternInterface {
 
             ActionDefinition action = actionNode.getActionDefinition();
             if (action != null) {
-                for (ActionEvent event : action.getEvents().values()) {
+                for (ActionEvent event : action.getAllEvents()) {
                     for (Edge eventFlow : event.getNavigationFlows()) {
                         GraphNode targetNode = graph.getNode(eventFlow.getTargetId());
                         ProjectPatternsJson.FlowEntry resultFlow = new ProjectPatternsJson.FlowEntry();

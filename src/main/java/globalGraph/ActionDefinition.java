@@ -21,7 +21,8 @@ public class ActionDefinition {
     private final Map<String, List<PortParameter>> successOutputPorts;
     private final Map<String, List<PortParameter>> errorOutputPorts;
     private final List<OperationComponent> operationComponents;
-    private final Map<String, ActionEvent> events;
+    private final Map<String, ActionEvent> successEvents;
+    private final Map<String, ActionEvent> errorEvents;
 
     public ActionDefinition(
             List<String> ids,
@@ -32,7 +33,8 @@ public class ActionDefinition {
             Map<String, List<PortParameter>> successOutputPorts,
             Map<String, List<PortParameter>> errorOutputPorts,
             List<OperationComponent> operationComponents,
-            Map<String, ActionEvent> events) {
+            Map<String, ActionEvent> successEvents,
+            Map<String, ActionEvent> errorEvents) {
         this.ids = ids != null ? new ArrayList<>(ids) : new ArrayList<>();
         this.definition = definition;
         this.webviewId = webviewId;
@@ -41,7 +43,8 @@ public class ActionDefinition {
         this.successOutputPorts = successOutputPorts;
         this.errorOutputPorts = errorOutputPorts;
         this.operationComponents = operationComponents;
-        this.events = events;
+        this.successEvents = successEvents;
+        this.errorEvents = errorEvents;
     }
 
     public String getId() {
@@ -94,8 +97,23 @@ public class ActionDefinition {
         return operationComponents;
     }
 
-    public Map<String, ActionEvent> getEvents() {
-        return events;
+    public Map<String, ActionEvent> getSuccessEvents() {
+        return successEvents;
+    }
+
+    public Map<String, ActionEvent> getErrorEvents() {
+        return errorEvents  ;
+    }
+
+    public List<ActionEvent> getAllEvents() {
+        List<ActionEvent> allEvents = new ArrayList<>();
+        if(successEvents != null) {
+            allEvents.addAll(successEvents.values());
+        }
+        if(errorEvents != null) {
+            allEvents.addAll(errorEvents.values());
+        }
+        return allEvents;
     }
 
     /**
@@ -110,13 +128,6 @@ public class ActionDefinition {
      */
     public List<PortParameter> getErrorPort(String portId) {
         return errorOutputPorts.getOrDefault(portId, new ArrayList<>());
-    }
-
-    /**
-     * Get an event by its id
-     */
-    public ActionEvent getEvent(String eventId) {
-        return events.get(eventId);
     }
 
     /**
@@ -140,7 +151,8 @@ public class ActionDefinition {
                 ", successPortsCount=" + successOutputPorts.size() +
                 ", errorPortsCount=" + errorOutputPorts.size() +
                 ", operationsCount=" + operationComponents.size() +
-                ", eventsCount=" + events.size() +
+                ", successEventsCount=" + successEvents.size() +
+                ", errorEventsCount=" + errorEvents.size() +
                 '}';
     }
 }

@@ -16,6 +16,7 @@ public enum NodeType {
     QUERY,
     TIME,
     MAIL,
+    MESSAGE,
     LOGIN,
     LOGOUT,
     REGISTER,

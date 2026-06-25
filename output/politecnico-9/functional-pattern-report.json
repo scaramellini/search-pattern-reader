@@ -29,9 +29,49 @@
         "source" : "{wv1#page73v#frm48v#fld68v}value",
         "target" : "wv1#act82v.tlads0#ad4v#ipd11v#pdp39v"
       } ]
+    }, {
+      "from" : {
+        "id" : "wv1#act82v#erre131v",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1#act82v",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#page73v#msg34v",
+        "type" : "MESSAGE",
+        "pageId" : "page73v.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "tlads0#ad4v#epd6v#pdp42v",
+        "target" : "messages"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1#act82v#erre132v",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1#act82v",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#page73v#msg34v",
+        "type" : "MESSAGE",
+        "pageId" : "page73v.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "tlads0#ad4v#epd5v#pdp41v",
+        "target" : "messages"
+      } ]
     } ],
     "fields" : [ {
-      "fieldId" : "wv1#page73v#frm48v#fld66v",
+      "fieldId" : "wv1#page73v#frm48v#fld68v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -39,7 +79,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "wv1#page73v#frm48v#fld68v",
+      "fieldId" : "wv1#page73v#frm48v#fld66v",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]

@@ -92,7 +92,7 @@ public class NewIFMLPatternExtractor {
 
     private static List<String> navFlowParentElements = Arrays.asList("Form", "List", "Details", "Hierarchy",
             "ViewComponent", "Action", "Save", "Delete", "Switch", "Loop", "Selector", "Script", "Query", "Time",
-            "Mail", "Login", "Logout", "Register", "UpdateProfile", "ChangePassword", "MyProfile");
+            "Mail", "Message", "Login", "Logout", "Register", "UpdateProfile", "ChangePassword", "MyProfile");
 
     /**
      * collect the direct components under a view component
@@ -262,6 +262,8 @@ public class NewIFMLPatternExtractor {
                 return NodeType.TIME;
             case "Mail":
                 return NodeType.MAIL;
+            case "Message":
+                return NodeType.MESSAGE;
             case "Login":
                 return NodeType.LOGIN;
             case "Logout":

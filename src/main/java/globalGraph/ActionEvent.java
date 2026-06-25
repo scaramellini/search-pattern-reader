@@ -10,13 +10,19 @@ import java.util.List;
  */
 public class ActionEvent {
     private final String id;
+    private final String definition;
     private final String type;  // "SuccessEvent" or "ErrorEvent"
     private final List<Edge> navigationFlows;
 
-    public ActionEvent(String id, String type) {
+    public ActionEvent(String id, String definition, String type) {
         this.id = id;
+        this.definition = definition;
         this.type = type;
         this.navigationFlows = new ArrayList<>();
+    }
+
+    public String getDefinition() {
+        return definition;
     }
 
     public String getId() {

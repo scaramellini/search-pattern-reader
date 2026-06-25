@@ -44,9 +44,6 @@ public class ActionRegistry {
         for (String filePath : propertiesFilePaths) {
             try {
                 ActionDefinition actionDef = parseActionDefinition(filePath);
-                if (actionDef.getDefinition().contains("ad2a")) {
-                    System.out.println("Debug: Found action definition ad2a in file " + filePath);
-                }
                 if (actionDef != null) {
                     mapActionDefintionToId(actionDef, allPropertiesFilePaths);
                     actions.add(actionDef);
@@ -147,9 +144,6 @@ public class ActionRegistry {
         // Parse operation components
         List<OperationComponent> operationComponents = parseOperationComponents(root);
 
-        // Parse events
-        Map<String, ActionEvent> events = parseEvents(root);
-
         return new ActionDefinition(
                 new ArrayList<>(), // IDs will be set later based on webview context
                 actionDefinition,
@@ -159,20 +153,21 @@ public class ActionRegistry {
                 successPorts,
                 errorPorts,
                 operationComponents,
-                events);
+                new HashMap<>(), // Success events will be set later
+                new HashMap<>() // Error events will be set later
+        );
     }
 
-    private void mapActionDefintionToId(ActionDefinition actionDef, List<String> wvPropertiesFilePaths)
+    private void mapActionDefintionToId(ActionDefinition actionDef, List<String> allPropertiesFilePaths)
             throws Exception {
-        for (String wvFilePath : wvPropertiesFilePaths) {
+        for (String propertiesFilePath : allPropertiesFilePaths) {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             factory.setNamespaceAware(true);
             DocumentBuilder builder = factory.newDocumentBuilder();
-            Document actionDoc = builder.parse(new File(wvFilePath));
+            Document actionDoc = builder.parse(new File(propertiesFilePath));
 
-            Element root = actionDoc.getDocumentElement(); // <Page>
+            Element root = actionDoc.getDocumentElement();
 
-            // get view components directly under the page tag
             NodeList pageChildren = root.getChildNodes();
 
             for (int i = 0; i < pageChildren.getLength(); i++) {
@@ -186,11 +181,63 @@ public class ActionRegistry {
                     String actionId = actionNode.getAttribute("id");
                     String actionDefinition = actionNode.getAttribute("definition");
 
-                    if (actionDefinition.contains("ad2a")) {
-                        System.out.println("Debug: Found action definition ad2a in file " + wvFilePath);
-                    }
-
                     if (actionDefinition.equals(actionDef.getDefinition())) {
+
+                        if (actionId.contains("act2w")) {
+                            System.out.println("Debug: Found actionId containing 'act2w' in mapActionDefintionToId");
+                        }
+
+                        NodeList eventsList = actionNode.getElementsByTagNameNS("*", "Events");
+
+                        // there is only one Events tag per Action
+                        Element events = eventsList.getLength() > 0 ? (Element) eventsList.item(0) : null;
+
+                        for (int j = 0; j < events.getChildNodes().getLength(); j++) {
+                            Node eventNode = events.getChildNodes().item(j);
+                            if (eventNode.getNodeType() == Node.ELEMENT_NODE) {
+                                Element eventElement = (Element) eventNode;
+                                String eventId = eventElement.getAttribute("id");
+                                String eventDefinition = eventElement.getAttribute("definition");
+
+                                ActionEvent actionEvent = new ActionEvent(eventId, eventDefinition,
+                                        eventElement.getNodeName());
+
+                                if (eventElement.getNodeName().equals("SuccessEvent")) {
+                                    actionDef.getSuccessEvents().put(eventId, actionEvent);
+                                } else if (eventElement.getNodeName().equals("ErrorEvent")) {
+                                    actionDef.getErrorEvents().put(eventId, actionEvent);
+                                }
+
+                                // Parse navigation flows from events
+                                NodeList navFlows = eventElement.getElementsByTagNameNS("*", "NavigationFlow");
+                                for (int k = 0; k < navFlows.getLength(); k++) {
+                                    Element navFlow = (Element) navFlows.item(k);
+                                    String targetId = navFlow.getAttribute("to");
+
+                                    if (targetId != null && !targetId.isEmpty()) {
+                                        Edge edge = new Edge(eventId, targetId, FlowType.NAVIGATION, false);
+
+                                        // Parse parameter bindings
+                                        NodeList bindings = navFlow.getElementsByTagNameNS("*", "ParameterBinding");
+                                        for (int x = 0; x < bindings.getLength(); x++) {
+                                            Element binding = (Element) bindings.item(x);
+
+                                            boolean automatic = Boolean
+                                                    .parseBoolean(binding.getAttribute("automaticCoupling"));
+                                            String sourceAttr = resolveAttribute(binding,
+                                                    Arrays.asList("source", "sourceValue"));
+                                            String targetAttr = resolveAttribute(binding,
+                                                    Arrays.asList("target", "targetValue"));
+
+                                            edge.addBinding(new EdgeBinding(automatic, sourceAttr, targetAttr));
+                                        }
+
+                                        actionEvent.addNavigationFlow(edge);
+                                    }
+                                }
+                            }
+                        }
+
                         actionDef.addId(actionId);
                     }
                 }
@@ -342,67 +389,6 @@ public class ActionRegistry {
                 }
             }
         }
-    }
-
-    /**
-     * Parse the Events tag to extract action events
-     * 
-     * @param rootElement The root ActionDefinition element
-     * @return Map of event ID to ActionEvent
-     */
-    private Map<String, ActionEvent> parseEvents(Element rootElement) {
-        Map<String, ActionEvent> eventMap = new HashMap<>();
-        NodeList eventsList = rootElement.getElementsByTagNameNS("*", "Events");
-
-        if (eventsList.getLength() == 0) {
-            return eventMap;
-        }
-
-        Element events = (Element) eventsList.item(0);
-        NodeList children = events.getChildNodes();
-
-        for (int i = 0; i < children.getLength(); i++) {
-            Node child = children.item(i);
-
-            if (child.getNodeType() == Node.ELEMENT_NODE) {
-                Element element = (Element) child;
-                String eventType = element.getNodeName(); // SuccessEvent or ErrorEvent
-
-                if ("SuccessEvent".equals(eventType) || "ErrorEvent".equals(eventType)) {
-                    String eventId = element.getAttribute("id");
-                    ActionEvent actionEvent = new ActionEvent(eventId, eventType);
-
-                    // Parse navigation flows from events
-                    NodeList navFlows = element.getElementsByTagNameNS("*", "NavigationFlow");
-                    for (int j = 0; j < navFlows.getLength(); j++) {
-                        Element navFlow = (Element) navFlows.item(j);
-                        String targetId = navFlow.getAttribute("to");
-
-                        if (targetId != null && !targetId.isEmpty()) {
-                            Edge edge = new Edge(eventId, targetId, FlowType.NAVIGATION, false);
-
-                            // Parse parameter bindings
-                            NodeList bindings = navFlow.getElementsByTagNameNS("*", "ParameterBinding");
-                            for (int k = 0; k < bindings.getLength(); k++) {
-                                Element binding = (Element) bindings.item(k);
-
-                                boolean automatic = Boolean.parseBoolean(binding.getAttribute("automaticCoupling"));
-                                String sourceAttr = resolveAttribute(binding, Arrays.asList("source", "sourceValue"));
-                                String targetAttr = resolveAttribute(binding, Arrays.asList("target", "targetValue"));
-
-                                edge.addBinding(new EdgeBinding(automatic, sourceAttr, targetAttr));
-                            }
-
-                            actionEvent.addNavigationFlow(edge);
-                        }
-                    }
-
-                    eventMap.put(eventId, actionEvent);
-                }
-            }
-        }
-
-        return eventMap;
     }
 
     /**

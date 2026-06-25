@@ -18,17 +18,18 @@ import it.davide.xml.ProjectPatternsJson;
  * 1. A Form in a page has a NavigationFlow pointing to an Action
  * 2. The Action contains a Login operation
  * 3. The Login operation has success and error flows
- * 4. The Action's output ports are connected to navigation flows leading to other pages
+ * 4. The Action's output ports are connected to navigation flows leading to
+ * other pages
  * 
  * The pattern structure is:
  * Form (page) -> NavigationFlow -> Action SignIn -> InputPort
- *                                                   -> Login Operation
- *                                                   -> SuccessPort -> NavigationFlow -> Success Page
- *                                                   -> ErrorPort -> NavigationFlow -> Error Page
+ * -> Login Operation
+ * -> SuccessPort -> NavigationFlow -> Success Page
+ * -> ErrorPort -> NavigationFlow -> Error Page
  */
 public class LoginFunctionalPattern implements FunctionalPatternInterface {
     private String name = "Login Functional Pattern";
-    
+
     private List<FunctionalPatternMatch> matches = new ArrayList<>();
 
     @Override
@@ -79,8 +80,7 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
                         getName(),
                         sourceNode.getId(),
                         actionId,
-                        action.getWebviewId()
-                );
+                        action.getWebviewId());
                 matches.add(match);
             }
         }
@@ -109,16 +109,16 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
      * - The Login operation has success and error flows
      * - Both flows lead to output ports
      * 
-     * @param pageGraph The page graph
-     * @param action The action definition
-     * @param functionalGraph The action's functional graph
-     * @param formNode The form node that triggers login
+     * @param pageGraph        The page graph
+     * @param action           The action definition
+     * @param functionalGraph  The action's functional graph
+     * @param formNode         The form node that triggers login
      * @param formToActionEdge The edge from form to action
      * @return true if the pattern is valid
      */
     private boolean validateLoginPattern(IFMLGraph pageGraph, ActionDefinition action,
-                                        FunctionalGraph functionalGraph,
-                                        GraphNode formNode, Edge formToActionEdge) {
+            FunctionalGraph functionalGraph,
+            GraphNode formNode, Edge formToActionEdge) {
 
         // Check: Action has at least 2 input parameters (username, password)
         if (action.getInputParameters().size() < 2) {
@@ -126,7 +126,7 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
         }
 
         // Check: Action has success and error output ports
-        /*if (action.getSuccessOutputPorts().isEmpty() || action.getErrorOutputPorts().isEmpty()) {
+        if (action.getSuccessOutputPorts().isEmpty() || action.getErrorOutputPorts().isEmpty()) {
             return false;
         }
 
@@ -145,23 +145,39 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
 
         // Check: Login operation has both success and error flows
         boolean hasSuccessFlow = false;
-        boolean hasErrorFlow = false;
+        int errorFlowCounter = 0;
 
         for (ComponentFlow flow : loginOp.getFlows()) {
             if ("SuccessFlow".equals(flow.getType())) {
                 hasSuccessFlow = true;
             } else if ("ErrorFlow".equals(flow.getType())) {
-                hasErrorFlow = true;
+                errorFlowCounter++;
             }
         }
 
-        if (!hasSuccessFlow || !hasErrorFlow) {
+        if (!hasSuccessFlow || errorFlowCounter < 3) {
             return false;
-        }*/
+        }
 
         // Check: Form has parameter bindings that map to action input parameters
         if (formToActionEdge.getBindings().isEmpty()) {
             return false;
+        }
+
+        // Check that the Error flows of the action leads to a message component or an
+        List<Edge> errorEventFlows = action.getErrorEvents() != null ? action.getErrorEvents().values().stream()
+                .flatMap(event -> event.getNavigationFlows().stream())
+                .toList() : List.of();
+
+        if(errorEventFlows.size() < 1) {
+            return false;
+        }
+
+        for(Edge errorFlow : errorEventFlows) {
+            GraphNode targetNode = pageGraph.getNode(errorFlow.getTargetId());
+            if (targetNode != null && !targetNode.getType().equals(NodeType.MESSAGE)) {
+                return false;
+            }
         }
 
         // All validation passed
@@ -185,17 +201,20 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
             ProjectPatternsJson.FlowEntry flowToAction = new ProjectPatternsJson.FlowEntry();
             flowToAction.from = buildEndpoint(sourceNode);
             flowToAction.to = buildEndpoint(actionNode);
-            flowToAction.bindings = buildBindingEntries(findEdgeBindings(graph, sourceNode.getId(), actionNode.getId()));
+            flowToAction.bindings = buildBindingEntries(
+                    findEdgeBindings(graph, sourceNode.getId(), actionNode.getId()));
             entry.flows.add(flowToAction);
 
             ActionDefinition action = actionNode.getActionDefinition();
             if (action != null) {
-                for (ActionEvent event : action.getEvents().values()) {
+                for (ActionEvent event : action.getAllEvents()) {
                     for (Edge eventFlow : event.getNavigationFlows()) {
                         GraphNode targetNode = graph.getNode(eventFlow.getTargetId());
+                        boolean isPage = eventFlow.getTargetId().contains("page");
                         ProjectPatternsJson.FlowEntry resultFlow = new ProjectPatternsJson.FlowEntry();
                         resultFlow.from = buildActionEventEndpoint(actionNode, event);
-                        resultFlow.to = targetNode != null ? buildEndpoint(targetNode) : buildUnknownEndpoint(eventFlow.getTargetId(), actionNode.getPageId());
+                        resultFlow.to = targetNode != null ? buildEndpoint(targetNode)
+                                : buildUnknownEndpoint(eventFlow.getTargetId(), actionNode.getPageId(), isPage);
                         resultFlow.bindings = buildBindingEntries(eventFlow.getBindings());
                         entry.flows.add(resultFlow);
                     }
@@ -216,10 +235,10 @@ public class LoginFunctionalPattern implements FunctionalPatternInterface {
         return ep;
     }
 
-    private ProjectPatternsJson.Endpoint buildUnknownEndpoint(String id, String pageId) {
+    private ProjectPatternsJson.Endpoint buildUnknownEndpoint(String id, String pageId, boolean isPage) {
         ProjectPatternsJson.Endpoint ep = new ProjectPatternsJson.Endpoint();
         ep.id = id;
-        ep.type = "UNKNOWN";
+        ep.type = isPage ? "PAGE" : "UNKNOWN";
         ep.pageId = pageId;
         ep.dataBinding = null;
         ep.isInDialogPage = false;
