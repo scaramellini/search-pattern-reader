@@ -135,7 +135,11 @@ public class Main {
                 // Now process each WebView within the project and run functional patterns
                 ProjectPatternsJson allFunctionalReports = new ProjectPatternsJson();
                 List<FunctionalPatternInterface> functionalPatterns = List.of(new LoginFunctionalPattern(),
-                        new LogoutFunctionalPattern());
+                        new LogoutFunctionalPattern(),
+                        new ChangePasswordFunctionalPattern()
+                        /* new ForgotPasswordFunctionalPattern(),
+                        new RegistrationFunctionalPattern(),
+                        new UpdateProfileFunctionalPattern() */);
 
                 WebViewPatternProcessor processor = new WebViewPatternProcessor(projectDir, actionRegistry,
                         pageGraph);
