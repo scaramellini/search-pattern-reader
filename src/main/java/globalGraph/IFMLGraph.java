@@ -71,6 +71,16 @@ public class IFMLGraph {
         return nodes.get(id);
     }
 
+    public List<GraphNode> getNodesByType(NodeType type) {
+        List<GraphNode> result = new ArrayList<>();
+        for (GraphNode node : nodes.values()) {
+            if (node.getType() == type) {
+                result.add(node);
+            }
+        }
+        return result;
+    }
+
     /** 
      * @param nodeId
      * @return List<Edge>

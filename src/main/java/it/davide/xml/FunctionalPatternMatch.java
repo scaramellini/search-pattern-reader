@@ -1,44 +1,26 @@
 package it.davide.xml;
 
+import java.util.List;
+
+import globalGraph.Edge;
+
 /**
  * Represents a detected functional pattern match
  */
 public class FunctionalPatternMatch {
     private final String patternName;
-    private final String sourceComponentId;
-    private final String actionId;
-    private final String webviewId;
+    private final List<Edge> edges;
 
-    public FunctionalPatternMatch(String patternName, String sourceComponentId, String actionId, String webviewId) {
+    public FunctionalPatternMatch(String patternName, List<Edge> edges) {
         this.patternName = patternName;
-        this.sourceComponentId = sourceComponentId;
-        this.actionId = actionId;
-        this.webviewId = webviewId;
+        this.edges = edges;
     }
 
     public String getPatternName() {
         return patternName;
     }
 
-    public String getSourceComponentId() {
-        return sourceComponentId;
-    }
-
-    public String getActionId() {
-        return actionId;
-    }
-
-    public String getWebviewId() {
-        return webviewId;
-    }
-
-    @Override
-    public String toString() {
-        return "FunctionalPatternMatch{" +
-                "patternName='" + patternName + '\'' +
-                ", sourceComponentId='" + sourceComponentId + '\'' +
-                ", actionId='" + actionId + '\'' +
-                ", webviewId='" + webviewId + '\'' +
-                '}';
+    public List<Edge> getEdges() {
+        return edges;
     }
 }

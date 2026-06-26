@@ -155,7 +155,7 @@
       },
       "to" : {
         "id" : "wv1w#page1w",
-        "type" : "UNKNOWN",
+        "type" : "PAGE",
         "pageId" : "",
         "dataBinding" : null,
         "isInDialogPage" : false
@@ -203,7 +203,7 @@
       },
       "to" : {
         "id" : "wv1w#page1w",
-        "type" : "UNKNOWN",
+        "type" : "PAGE",
         "pageId" : "",
         "dataBinding" : null,
         "isInDialogPage" : false

@@ -1,35 +1,25 @@
 package functionalPatternClasses;
 
-import globalGraph.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import globalGraph.ActionDefinition;
+import globalGraph.ComponentFlow;
+import globalGraph.Edge;
+import globalGraph.GraphNode;
+import globalGraph.IFMLGraph;
+import globalGraph.NodeType;
+import globalGraph.OperationComponent;
 import it.davide.xml.ActionRegistry;
 import it.davide.xml.FunctionalPatternInterface;
 import it.davide.xml.FunctionalPatternMatch;
 
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- * LoginFunctionalPattern detects the functional login pattern.
- * 
- * This pattern occurs when:
- * 1. A Form in a page has a NavigationFlow pointing to an Action
- * 2. The Action contains a Login operation
- * 3. The Login operation has success and error flows
- * 4. The Action's output ports are connected to navigation flows leading to
- * other pages
- * 
- * The pattern structure is:
- * Form (page) -> NavigationFlow -> Action SignIn -> InputPort
- * -> Login Operation
- * -> SuccessPort -> NavigationFlow -> Success Page
- * -> ErrorPort -> NavigationFlow -> Error Page
- */
-public class LoginFunctionalPattern extends FunctionalPatternInterface {
-
-    public LoginFunctionalPattern() {
-        this.name = "Login Functional Pattern";
+public class RegisterFunctionalPattern extends FunctionalPatternInterface {
+    public RegisterFunctionalPattern() {
+        this.name = "Register Functional Pattern";
     }
 
+    @Override
     public void detect(IFMLGraph pageGraph, ActionRegistry actionRegistry) {
 
         matches.clear();
@@ -44,25 +34,27 @@ public class LoginFunctionalPattern extends FunctionalPatternInterface {
             }
 
             String actionId = edge.getTargetId();
+
             ActionDefinition action = actionRegistry.getAction(actionId);
 
             if (action == null) {
                 continue;
             }
 
-            // Check if this action is a login action
-            if (!isLoginAction(action)) {
+            // Check if this action is a register action
+            if (!isRegisterAction(action)) {
                 continue;
             }
 
-            // Try to construct the full login pattern
+            // Try to construct the full register pattern
             GraphNode sourceNode = pageGraph.getNode(edge.getSourceId());
+
             if (sourceNode == null || !sourceNode.getType().equals(NodeType.FORM)) {
-                continue; // Login pattern should be triggered from a Form
+                continue; // register pattern should be triggered from a Form component
             }
 
             // Check if pattern matches
-            if (validateLoginPattern(pageGraph, action, sourceNode, edge)) {
+            if (validateRegisterPattern(pageGraph, action, sourceNode, edge)) {
                 matched.add(edge);
                 FunctionalPatternMatch match = new FunctionalPatternMatch(
                         getName(),
@@ -72,16 +64,9 @@ public class LoginFunctionalPattern extends FunctionalPatternInterface {
         }
     }
 
-    /**
-     * Check if an action is a login action
-     * An action is considered a login action if it contains a Login operation
-     * 
-     * @param action The ActionDefinition to check
-     * @return true if the action contains a Login operation
-     */
-    private boolean isLoginAction(ActionDefinition action) {
+    private boolean isRegisterAction(ActionDefinition action) {
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("Login".equals(op.getType())) {
+            if ("Register".equals(op.getType())) {
                 return true;
             }
         }
@@ -89,23 +74,23 @@ public class LoginFunctionalPattern extends FunctionalPatternInterface {
     }
 
     /**
-     * Validate that the login pattern is complete
+     * Validate that the change password pattern is complete
      * - The action has input parameters for username/password
-     * - The action has a Login operation
-     * - The Login operation has success and error flows
+     * - The action has a ChangePassword operation
+     * - The ChangePassword operation has success and error flows
      * - Both flows lead to output ports
      * 
      * @param pageGraph        The page graph
      * @param action           The action definition
-     * @param formNode         The form node that triggers login
+     * @param formNode         The form node that triggers change password
      * @param formToActionEdge The edge from form to action
      * @return true if the pattern is valid
      */
-    private boolean validateLoginPattern(IFMLGraph pageGraph, ActionDefinition action,
+    private boolean validateRegisterPattern(IFMLGraph pageGraph, ActionDefinition action,
             GraphNode formNode, Edge formToActionEdge) {
 
-        // Check: Action has at least 2 input parameters (username, password)
-        if (action.getInputParameters().size() < 2) {
+        // Check: Action has at least 5 input parameters (email, username, name, lastname, password)
+        if (action.getInputParameters().size() < 5) {
             return false;
         }
 
@@ -114,32 +99,32 @@ public class LoginFunctionalPattern extends FunctionalPatternInterface {
             return false;
         }
 
-        // Check: Action contains Login operation
-        OperationComponent loginOp = null;
+        // Check: Action contains Register operation
+        OperationComponent registerOP = null;
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("Login".equals(op.getType())) {
-                loginOp = op;
+            if ("Register".equals(op.getType())) {
+                registerOP = op;
                 break;
             }
         }
 
-        if (loginOp == null) {
+        if (registerOP == null) {
             return false;
         }
 
-        // Check: Login operation has both success and error flows
+        // Check: Register operation has both success and error flows
         boolean hasSuccessFlow = false;
-        int errorFlowCounter = 0;
+        boolean hasErrorFlow = false;
 
-        for (ComponentFlow flow : loginOp.getFlows()) {
+        for (ComponentFlow flow : registerOP.getFlows()) {
             if ("SuccessFlow".equals(flow.getType())) {
                 hasSuccessFlow = true;
             } else if ("ErrorFlow".equals(flow.getType())) {
-                errorFlowCounter++;
+                hasErrorFlow = true;
             }
         }
 
-        if (!hasSuccessFlow || errorFlowCounter < 3) {
+        if (!hasSuccessFlow || !hasErrorFlow) {
             return false;
         }
 
@@ -148,17 +133,17 @@ public class LoginFunctionalPattern extends FunctionalPatternInterface {
             return false;
         }
 
-        // Check that the Error flows of the action leads to a message component or an
-        List<Edge> errorEventFlows = action.getErrorEvents() != null ? action.getErrorEvents().values().stream()
+        // Check that the flows of the action leads to a message component
+        List<Edge> eventFlows = action.getAllEvents() != null ? action.getAllEvents().stream()
                 .flatMap(event -> event.getNavigationFlows().stream())
                 .toList() : List.of();
 
-        if (errorEventFlows.size() < 1) {
+        if (eventFlows.size() < 1) {
             return false;
         }
 
-        for (Edge errorFlow : errorEventFlows) {
-            GraphNode targetNode = pageGraph.getNode(errorFlow.getTargetId());
+        for (Edge flow : eventFlows) {
+            GraphNode targetNode = pageGraph.getNode(flow.getTargetId());
             if (targetNode != null && !targetNode.getType().equals(NodeType.MESSAGE)) {
                 return false;
             }

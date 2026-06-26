@@ -136,10 +136,9 @@ public class Main {
                 ProjectPatternsJson allFunctionalReports = new ProjectPatternsJson();
                 List<FunctionalPatternInterface> functionalPatterns = List.of(new LoginFunctionalPattern(),
                         new LogoutFunctionalPattern(),
-                        new ChangePasswordFunctionalPattern()
-                        /* new ForgotPasswordFunctionalPattern(),
-                        new RegistrationFunctionalPattern(),
-                        new UpdateProfileFunctionalPattern() */);
+                        new ChangePasswordFunctionalPattern(),
+                        new RegisterFunctionalPattern(),
+                        new UpdateProfileFunctionalPattern());
 
                 WebViewPatternProcessor processor = new WebViewPatternProcessor(projectDir, actionRegistry,
                         pageGraph);
