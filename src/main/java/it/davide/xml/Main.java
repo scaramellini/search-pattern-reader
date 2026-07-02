@@ -138,7 +138,10 @@ public class Main {
                         new LogoutFunctionalPattern(),
                         new ChangePasswordFunctionalPattern(),
                         new RegisterFunctionalPattern(),
-                        new UpdateProfileFunctionalPattern());
+                        new UpdateProfileFunctionalPattern(),
+                        new DeleteFunctionalPattern(),
+                        new CreateFunctionalPattern(),
+                        new UpdateFunctionalPattern());
 
                 WebViewPatternProcessor processor = new WebViewPatternProcessor(projectDir, actionRegistry,
                         pageGraph);

@@ -13,6 +13,7 @@ import globalGraph.OperationComponent;
 import it.davide.xml.ActionRegistry;
 import it.davide.xml.FunctionalPatternInterface;
 import it.davide.xml.FunctionalPatternMatch;
+import it.davide.xml.utilityTools;
 
 public class RegisterFunctionalPattern extends FunctionalPatternInterface {
     public RegisterFunctionalPattern() {
@@ -53,8 +54,12 @@ public class RegisterFunctionalPattern extends FunctionalPatternInterface {
                 continue; // register pattern should be triggered from a Form component
             }
 
+            if (!utilityTools.checkFields(sourceNode)) {
+                continue;
+            }
+
             // Check if pattern matches
-            if (validateRegisterPattern(pageGraph, action, sourceNode, edge)) {
+            if (validateRegisterPattern(pageGraph, action, actionId, sourceNode, edge)) {
                 matched.add(edge);
                 FunctionalPatternMatch match = new FunctionalPatternMatch(
                         getName(),
@@ -82,14 +87,16 @@ public class RegisterFunctionalPattern extends FunctionalPatternInterface {
      * 
      * @param pageGraph        The page graph
      * @param action           The action definition
+     * @param actionId         The ID of the action
      * @param formNode         The form node that triggers change password
      * @param formToActionEdge The edge from form to action
      * @return true if the pattern is valid
      */
-    private boolean validateRegisterPattern(IFMLGraph pageGraph, ActionDefinition action,
+    private boolean validateRegisterPattern(IFMLGraph pageGraph, ActionDefinition action, String actionId,
             GraphNode formNode, Edge formToActionEdge) {
 
-        // Check: Action has at least 5 input parameters (email, username, name, lastname, password)
+        // Check: Action has at least 5 input parameters (email, username, name,
+        // lastname, password)
         if (action.getInputParameters().size() < 5) {
             return false;
         }
@@ -128,19 +135,14 @@ public class RegisterFunctionalPattern extends FunctionalPatternInterface {
             return false;
         }
 
-        // Check: Form has parameter bindings that map to action input parameters
-        if (formToActionEdge.getBindings().isEmpty()) {
+        if(!utilityTools.checkInputPortBindings(formToActionEdge, action)) {
             return false;
         }
 
         // Check that the flows of the action leads to a message component
-        List<Edge> eventFlows = action.getAllEvents() != null ? action.getAllEvents().stream()
+        List<Edge> eventFlows = action.getAllEvents(actionId) != null ? action.getAllEvents(actionId).stream()
                 .flatMap(event -> event.getNavigationFlows().stream())
                 .toList() : List.of();
-
-        if (eventFlows.size() < 1) {
-            return false;
-        }
 
         for (Edge flow : eventFlows) {
             GraphNode targetNode = pageGraph.getNode(flow.getTargetId());

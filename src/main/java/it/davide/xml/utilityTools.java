@@ -8,6 +8,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import globalGraph.ActionDefinition;
 import globalGraph.Edge;
 import globalGraph.EdgeBinding;
 import globalGraph.GraphNode;
@@ -33,7 +34,7 @@ public class utilityTools {
 
     public static boolean hasMatchingCondition(Edge edge, GraphNode targetNode) {
 
-        if(edge == null || targetNode == null || targetNode.getConditionalExpressions() == null) {
+        if (edge == null || targetNode == null || targetNode.getConditionalExpressions() == null) {
             return false;
         }
 
@@ -51,7 +52,8 @@ public class utilityTools {
             if (bindingConditionId == null)
                 continue;
 
-            // on econdition is enough, but we check all the conditions of the target node to be sure
+            // on econdition is enough, but we check all the conditions of the target node
+            // to be sure
             for (String condId : targetConditions) {
 
                 if (condId.contains("#") &&
@@ -104,8 +106,10 @@ public class utilityTools {
             return false;
 
         // each condition has to be satisfied
-        /* if (!satisfiedConditions.containsAll(conditions))
-            return false; */
+        /*
+         * if (!satisfiedConditions.containsAll(conditions))
+         * return false;
+         */
 
         return true;
     }
@@ -203,5 +207,55 @@ public class utilityTools {
         return fields.stream()
                 .map(GraphNode.FieldInfo::getId)
                 .collect(Collectors.toSet());
+    }
+
+    public static boolean checkFields(GraphNode node) {
+        Set<GraphNode.FieldInfo> fields = new HashSet<>();
+
+        if (node != null && node.getFieldElementIds() != null) {
+            for (Set<GraphNode.FieldInfo> set : node.getFieldElementIds().values()) {
+                if (set != null) {
+                    fields.addAll(set);
+                }
+            }
+        }
+
+        Set<String> fieldIds = utilityTools.extractAllFields(node);
+
+        if (fieldIds.size() > 1)
+            return true;
+
+        return false;
+    }
+
+    public static boolean checkInputPortBindings(Edge edge, ActionDefinition action) {
+        List<EdgeBinding> bindings = edge.getBindings();
+
+        // Check: edge has parameter bindings that map to action input parameters
+        if (bindings.isEmpty()) {
+            return false;
+        }
+        // Check that each binding's target attribute corresponds to an input parameter of the action
+        for (EdgeBinding binding : bindings) {
+            String targetParamId = binding.getTargetAttribute();
+
+            boolean targetParamExists = action.getInputParameters().stream()
+                    .anyMatch(param -> utilityTools.extractId(targetParamId).equals(utilityTools.extractId(param.getId())));
+
+            if (!targetParamExists) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static String extractId(String value) {
+        int lastHash = value.lastIndexOf('#');
+        int lastDollar = value.lastIndexOf('$');
+        int lastSeparator = Math.max(lastHash, lastDollar);
+
+        return lastSeparator == -1
+                ? value
+                : value.substring(lastSeparator + 1);
     }
 }

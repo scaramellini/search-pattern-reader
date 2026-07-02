@@ -1,11 +1,17 @@
 package functionalPatternClasses;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
 
 import globalGraph.ActionDefinition;
 import globalGraph.ComponentFlow;
 import globalGraph.Edge;
+import globalGraph.EdgeBinding;
 import globalGraph.FlowType;
 import globalGraph.GraphNode;
 import globalGraph.IFMLGraph;
@@ -16,28 +22,65 @@ import it.davide.xml.FunctionalPatternInterface;
 import it.davide.xml.FunctionalPatternMatch;
 import it.davide.xml.utilityTools;
 
-public class UpdateProfileFunctionalPattern extends FunctionalPatternInterface {
-    public UpdateProfileFunctionalPattern() {
-        this.name = "Update Profile Functional Pattern";
+public class UpdateFunctionalPattern extends FunctionalPatternInterface {
+    public UpdateFunctionalPattern() {
+        this.name = "Update Functional Pattern";
     }
 
-    @Override
     public void detect(IFMLGraph pageGraph, ActionRegistry actionRegistry) {
-        List<GraphNode> components = pageGraph.getNodesByType(NodeType.MYPROFILE);
+        List<GraphNode> components = pageGraph.getNodesByType(NodeType.LIST);
 
-        for (GraphNode myProfileComponent : components) {
+        for (GraphNode listComponent : components) {
 
             List<Edge> matched = new ArrayList<>();
 
-            for (Edge myProfileEdge : pageGraph.getOutgoing(myProfileComponent.getId())) {
+            for (Edge listEdge : pageGraph.getOutgoing(listComponent.getId())) {
 
-                if (myProfileEdge.getType() != FlowType.NAVIGATION)
+                if (listEdge.getType() != FlowType.NAVIGATION)
                     continue;
 
-                GraphNode formComponent = pageGraph.getNode(myProfileEdge.getTargetId());
+                GraphNode formComponent = pageGraph.getNode(listEdge.getTargetId());
 
                 if (formComponent == null || formComponent.getType() != NodeType.FORM)
                     continue;
+
+                Set<GraphNode.FieldInfo> fields = new HashSet<>();
+
+                if (formComponent != null && formComponent.getFieldElementIds() != null) {
+                    for (Set<GraphNode.FieldInfo> set : formComponent.getFieldElementIds().values()) {
+                        if (set != null) {
+                            fields.addAll(set);
+                        }
+                    }
+                }
+
+                if (!utilityTools.checkFields(formComponent)) {
+                    continue;
+                }
+                
+                List<EdgeBinding> bindings = listEdge.getBindings();
+
+                // Check: edge has parameter bindings that map to action input parameters
+                if (bindings.isEmpty()) {
+                    continue;
+                }
+
+                // Check that each binding's target attribute corresponds to target conditional
+                // expressions of the form component
+                for (EdgeBinding binding : bindings) {
+                    String targetParamId = utilityTools.extractConditionId(binding.getTargetAttribute());
+
+                    boolean targetParamExists = Optional.ofNullable(formComponent.getConditionalExpressions())
+                            .orElse(Collections.emptyMap())
+                            .values().stream()
+                            .filter(Objects::nonNull)
+                            .flatMap(Set::stream)
+                            .anyMatch(targetParamId::contains);
+
+                    if (!targetParamExists) {
+                        continue;
+                    }
+                }
 
                 for (Edge formEdge : pageGraph.getOutgoing(formComponent.getId())) {
                     if (!formEdge.pointsToAction()) {
@@ -56,19 +99,9 @@ public class UpdateProfileFunctionalPattern extends FunctionalPatternInterface {
                         continue;
                     }
 
-                    // Try to construct the full update profile pattern
-                    GraphNode sourceNode = pageGraph.getNode(formEdge.getSourceId());
-                    if (sourceNode == null || !sourceNode.getType().equals(NodeType.FORM)) {
-                        continue; // Update profile pattern should be triggered from a Form
-                    }
-
-                    if (!utilityTools.checkFields(sourceNode)) {
-                        continue;
-                    }
-
                     // Check if pattern matches
-                    if (validateUpdateProfilePattern(pageGraph, action, actionId, sourceNode, formEdge)) {
-                        matched.add(myProfileEdge);
+                    if (validateUpdateProfilePattern(pageGraph, action, actionId, formComponent, formEdge)) {
+                        matched.add(listEdge);
                         matched.add(formEdge);
                         FunctionalPatternMatch match = new FunctionalPatternMatch(
                                 getName(),
@@ -82,8 +115,11 @@ public class UpdateProfileFunctionalPattern extends FunctionalPatternInterface {
     }
 
     private boolean isUpdateProfileAction(ActionDefinition action) {
+
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("UpdateProfile".equals(op.getType())) {
+            // to update an object you use a create component that has a conditional
+            // expression that identifies the object to update
+            if ("Create".equals(op.getType())) {
                 return true;
             }
         }
@@ -91,9 +127,9 @@ public class UpdateProfileFunctionalPattern extends FunctionalPatternInterface {
     }
 
     private boolean validateUpdateProfilePattern(IFMLGraph pageGraph, ActionDefinition action, String actionId,
-            GraphNode formNode, Edge formToActionEdge) {
-        // Check: Action has at least 3 input parameters (email, name, lastname)
-        if (action.getInputParameters().size() < 3) {
+            GraphNode formNode, Edge edge) {
+        // Check: Action has at least 1 input parameters
+        if (action.getInputParameters().size() < 1) {
             return false;
         }
 
@@ -105,7 +141,7 @@ public class UpdateProfileFunctionalPattern extends FunctionalPatternInterface {
         // Check: Action contains update profile operation
         OperationComponent updateProfileOp = null;
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("UpdateProfile".equals(op.getType())) {
+            if ("Create".equals(op.getType())) {
                 updateProfileOp = op;
                 break;
             }
@@ -131,7 +167,7 @@ public class UpdateProfileFunctionalPattern extends FunctionalPatternInterface {
             return false;
         }
 
-        if(!utilityTools.checkInputPortBindings(formToActionEdge, action)) {
+        if(!utilityTools.checkInputPortBindings(edge, action)) {
             return false;
         }
 
@@ -142,7 +178,8 @@ public class UpdateProfileFunctionalPattern extends FunctionalPatternInterface {
 
         for (Edge flow : eventFlows) {
             GraphNode targetNode = pageGraph.getNode(flow.getTargetId());
-            if (targetNode != null && !targetNode.getType().equals(NodeType.MESSAGE)) {
+            if (targetNode != null && !(targetNode.getType().equals(NodeType.MESSAGE)
+                    || targetNode.getType().equals(NodeType.DETAILS) || targetNode.getType().equals(NodeType.LIST))) {
                 return false;
             }
         }

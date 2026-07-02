@@ -65,7 +65,7 @@ public abstract class FunctionalPatternInterface {
 
                 ActionDefinition action = actionNode.getActionDefinition();
                 if (action != null) {
-                    for (ActionEvent event : action.getAllEvents()) {
+                    for (ActionEvent event : action.getAllEvents(actionNode.getId())) {
                         for (Edge eventFlow : event.getNavigationFlows()) {
                             GraphNode targetNode = graph.getNode(eventFlow.getTargetId());
                             boolean isPage = eventFlow.getTargetId().contains("page");

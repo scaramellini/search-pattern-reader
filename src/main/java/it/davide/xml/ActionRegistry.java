@@ -39,15 +39,19 @@ public class ActionRegistry {
         List<String> allPropertiesFilePaths = new ArrayList<>();
         allPropertiesFilePaths.addAll(findWVPropertiesFiles(rootPath));
         allPropertiesFilePaths.addAll(findHMDPropertiesFiles(rootPath));
-        System.out.println("Found " + propertiesFilePaths.size() + " Properties.wr files");
 
         for (String filePath : propertiesFilePaths) {
             try {
+                if (filePath.contains("ada2ai")) {
+                    System.out
+                            .println("Debug: Found Properties.wr file containing 'ada2ai' in mapActionDefinitionToId: "
+                                    + filePath);
+                }
                 ActionDefinition actionDef = parseActionDefinition(filePath);
                 if (actionDef != null) {
-                    mapActionDefintionToId(actionDef, allPropertiesFilePaths);
+                    mapActionDefinitionToId(actionDef, allPropertiesFilePaths);
                     actions.add(actionDef);
-                    System.out.println("Loaded action: " + actionDef.getId());
+                    System.out.println("Loaded action: " + actionDef.getDefinition());
                 }
             } catch (Exception e) {
                 System.err.println("Failed to parse action from " + filePath + ": " + e.getMessage());
@@ -158,7 +162,7 @@ public class ActionRegistry {
         );
     }
 
-    private void mapActionDefintionToId(ActionDefinition actionDef, List<String> allPropertiesFilePaths)
+    private void mapActionDefinitionToId(ActionDefinition actionDef, List<String> allPropertiesFilePaths)
             throws Exception {
         for (String propertiesFilePath : allPropertiesFilePaths) {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -179,13 +183,12 @@ public class ActionRegistry {
                     Element actionNode = (Element) node;
 
                     String actionId = actionNode.getAttribute("id");
-                    String actionDefinition = actionNode.getAttribute("definition");
+                    String actionDefinition = (actionNode.getAttribute("definition") != null
+                            && !actionNode.getAttribute("definition").isEmpty())
+                                    ? actionNode.getAttribute("definition")
+                                    : actionNode.getAttribute("actionServiceRes");
 
-                    if (actionDefinition.equals(actionDef.getDefinition())) {
-
-                        if (actionId.contains("act2w")) {
-                            System.out.println("Debug: Found actionId containing 'act2w' in mapActionDefintionToId");
-                        }
+                    if (utilityTools.extractId(actionDefinition).equals(utilityTools.extractId(actionDef.getDefinition()))) {
 
                         NodeList eventsList = actionNode.getElementsByTagNameNS("*", "Events");
 
@@ -203,9 +206,9 @@ public class ActionRegistry {
                                         eventElement.getNodeName());
 
                                 if (eventElement.getNodeName().equals("SuccessEvent")) {
-                                    actionDef.getSuccessEvents().put(eventId, actionEvent);
+                                    actionDef.getSuccessEventsMap().put(eventId, actionEvent);
                                 } else if (eventElement.getNodeName().equals("ErrorEvent")) {
-                                    actionDef.getErrorEvents().put(eventId, actionEvent);
+                                    actionDef.getErrorEventsMap().put(eventId, actionEvent);
                                 }
 
                                 // Parse navigation flows from events

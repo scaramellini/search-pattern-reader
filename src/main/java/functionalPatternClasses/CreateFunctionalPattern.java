@@ -15,12 +15,11 @@ import it.davide.xml.FunctionalPatternInterface;
 import it.davide.xml.FunctionalPatternMatch;
 import it.davide.xml.utilityTools;
 
-public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface {
-    public ChangePasswordFunctionalPattern() {
-        this.name = "Change Password Functional Pattern";
+public class CreateFunctionalPattern extends FunctionalPatternInterface {
+    public CreateFunctionalPattern() {
+        this.name = "Create Functional Pattern";
     }
 
-    @Override
     public void detect(IFMLGraph pageGraph, ActionRegistry actionRegistry) {
 
         matches.clear();
@@ -35,23 +34,21 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
             }
 
             String actionId = edge.getTargetId();
-
             ActionDefinition action = actionRegistry.getAction(actionId);
 
             if (action == null) {
                 continue;
             }
 
-            // Check if this action is a change password action
-            if (!isChangePasswordAction(action)) {
+            // Check if this action is a create action
+            if (!isCreateAction(action)) {
                 continue;
             }
 
-            // Try to construct the full change password pattern
+            // Try to construct the full create pattern
             GraphNode sourceNode = pageGraph.getNode(edge.getSourceId());
-
             if (sourceNode == null || !sourceNode.getType().equals(NodeType.FORM)) {
-                continue; // change password pattern should be triggered from a Form component
+                continue; // Create pattern should be triggered from a Form
             }
 
             if (!utilityTools.checkFields(sourceNode)) {
@@ -59,7 +56,7 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
             }
 
             // Check if pattern matches
-            if (validateChangePasswordPattern(pageGraph, action, actionId, sourceNode, edge)) {
+            if (validateCreatePattern(pageGraph, action, actionId, sourceNode, edge)) {
                 matched.add(edge);
                 FunctionalPatternMatch match = new FunctionalPatternMatch(
                         getName(),
@@ -69,9 +66,16 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
         }
     }
 
-    private boolean isChangePasswordAction(ActionDefinition action) {
+    /**
+     * Check if an action is a create action
+     * An action is considered a create action if it contains a Create operation
+     * 
+     * @param action The ActionDefinition to check
+     * @return true if the action contains a Create operation
+     */
+    private boolean isCreateAction(ActionDefinition action) {
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("ChangePassword".equals(op.getType())) {
+            if ("Create".equals(op.getType())) {
                 return true;
             }
         }
@@ -79,23 +83,23 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
     }
 
     /**
-     * Validate that the change password pattern is complete
-     * - The action has input parameters for username/password
-     * - The action has a ChangePassword operation
-     * - The ChangePassword operation has success and error flows
+     * Validate that the create pattern is complete
+     * - The action has input parameters for the item to create
+     * - The action has a Create operation
+     * - The Create operation has success and error flows
      * - Both flows lead to output ports
      * 
      * @param pageGraph        The page graph
      * @param action           The action definition
-     * @param formNode         The form node that triggers change password
+     * @param formNode         The form node that triggers create
      * @param formToActionEdge The edge from form to action
      * @return true if the pattern is valid
      */
-    private boolean validateChangePasswordPattern(IFMLGraph pageGraph, ActionDefinition action, String actionId,
-            GraphNode formNode, Edge formToActionEdge) {
+    private boolean validateCreatePattern(IFMLGraph pageGraph, ActionDefinition action, String actionId,
+            GraphNode formNode, Edge edge) {
 
-        // Check: Action has at least 2 input parameters (new password, old password)
-        if (action.getInputParameters().size() < 2) {
+        // Check: Action has at least 1 input parameter (the item to create)
+        if (action.getInputParameters().size() < 1) {
             return false;
         }
 
@@ -104,24 +108,24 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
             return false;
         }
 
-        // Check: Action contains ChangePassword operation
-        OperationComponent changePasswordOp = null;
+        // Check: Action contains Create operation
+        OperationComponent createOp = null;
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("ChangePassword".equals(op.getType())) {
-                changePasswordOp = op;
+            if ("Create".equals(op.getType())) {
+                createOp = op;
                 break;
             }
         }
 
-        if (changePasswordOp == null) {
+        if (createOp == null) {
             return false;
         }
 
-        // Check: ChangePassword operation has both success and error flows
+        // Check: Create operation has both success and error flows
         boolean hasSuccessFlow = false;
         boolean hasErrorFlow = false;
 
-        for (ComponentFlow flow : changePasswordOp.getFlows()) {
+        for (ComponentFlow flow : createOp.getFlows()) {
             if ("SuccessFlow".equals(flow.getType())) {
                 hasSuccessFlow = true;
             } else if ("ErrorFlow".equals(flow.getType())) {
@@ -133,7 +137,7 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
             return false;
         }
 
-        if(!utilityTools.checkInputPortBindings(formToActionEdge, action)) {
+        if (!utilityTools.checkInputPortBindings(edge, action)) {
             return false;
         }
 
@@ -144,7 +148,8 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
 
         for (Edge flow : eventFlows) {
             GraphNode targetNode = pageGraph.getNode(flow.getTargetId());
-            if (targetNode != null && !targetNode.getType().equals(NodeType.MESSAGE)) {
+            if (targetNode != null && !(targetNode.getType().equals(NodeType.MESSAGE)
+                    || targetNode.getType().equals(NodeType.DETAILS) || targetNode.getType().equals(NodeType.LIST))) {
                 return false;
             }
         }

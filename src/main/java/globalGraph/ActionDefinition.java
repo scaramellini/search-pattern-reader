@@ -21,6 +21,7 @@ public class ActionDefinition {
     private final Map<String, List<PortParameter>> successOutputPorts;
     private final Map<String, List<PortParameter>> errorOutputPorts;
     private final List<OperationComponent> operationComponents;
+    // Maps to hold events associated with this action, categorized by success and error events, with action IDs as keys
     private final Map<String, ActionEvent> successEvents;
     private final Map<String, ActionEvent> errorEvents;
 
@@ -97,21 +98,37 @@ public class ActionDefinition {
         return operationComponents;
     }
 
-    public Map<String, ActionEvent> getSuccessEvents() {
+    public Map<String, ActionEvent> getSuccessEventsMap() {
         return successEvents;
     }
 
-    public Map<String, ActionEvent> getErrorEvents() {
-        return errorEvents  ;
+    public List<ActionEvent> getSuccessEvents(String actionID) {
+        return successEvents.values().stream()
+                    .filter(event -> event.getId().contains(actionID))
+                    .toList();
     }
 
-    public List<ActionEvent> getAllEvents() {
+    public Map<String, ActionEvent> getErrorEventsMap() {
+        return errorEvents;
+    }
+
+    public List<ActionEvent> getErrorEvents(String actionID) {
+        return errorEvents.values().stream()
+                    .filter(event -> event.getId().contains(actionID))
+                    .toList();
+    }
+
+    public List<ActionEvent> getAllEvents(String actionID) {
         List<ActionEvent> allEvents = new ArrayList<>();
         if(successEvents != null) {
-            allEvents.addAll(successEvents.values());
+            allEvents.addAll(successEvents.values().stream()
+                    .filter(event -> event.getId().contains(actionID))
+                    .toList());
         }
         if(errorEvents != null) {
-            allEvents.addAll(errorEvents.values());
+            allEvents.addAll(errorEvents.values().stream()
+                    .filter(event -> event.getId().contains(actionID))
+                    .toList());
         }
         return allEvents;
     }

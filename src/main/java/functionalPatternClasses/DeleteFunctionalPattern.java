@@ -15,12 +15,11 @@ import it.davide.xml.FunctionalPatternInterface;
 import it.davide.xml.FunctionalPatternMatch;
 import it.davide.xml.utilityTools;
 
-public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface {
-    public ChangePasswordFunctionalPattern() {
-        this.name = "Change Password Functional Pattern";
+public class DeleteFunctionalPattern  extends FunctionalPatternInterface {
+    public DeleteFunctionalPattern() {
+        this.name = "Delete Functional Pattern";
     }
 
-    @Override
     public void detect(IFMLGraph pageGraph, ActionRegistry actionRegistry) {
 
         matches.clear();
@@ -35,31 +34,25 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
             }
 
             String actionId = edge.getTargetId();
-
             ActionDefinition action = actionRegistry.getAction(actionId);
 
             if (action == null) {
                 continue;
             }
 
-            // Check if this action is a change password action
-            if (!isChangePasswordAction(action)) {
+            // Check if this action is a delete action
+            if (!isDeleteAction(action)) {
                 continue;
             }
 
-            // Try to construct the full change password pattern
+            // Try to construct the full delete pattern
             GraphNode sourceNode = pageGraph.getNode(edge.getSourceId());
-
-            if (sourceNode == null || !sourceNode.getType().equals(NodeType.FORM)) {
-                continue; // change password pattern should be triggered from a Form component
-            }
-
-            if (!utilityTools.checkFields(sourceNode)) {
-                continue;
+            if (sourceNode == null || !(sourceNode.getType().equals(NodeType.LIST) || sourceNode.getType().equals(NodeType.DETAILS))) {
+                continue; // Delete pattern should be triggered from a List or Detail
             }
 
             // Check if pattern matches
-            if (validateChangePasswordPattern(pageGraph, action, actionId, sourceNode, edge)) {
+            if (validateDeletePattern(pageGraph, action, actionId, sourceNode, edge)) {
                 matched.add(edge);
                 FunctionalPatternMatch match = new FunctionalPatternMatch(
                         getName(),
@@ -69,9 +62,16 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
         }
     }
 
-    private boolean isChangePasswordAction(ActionDefinition action) {
+    /**
+     * Check if an action is a delete action
+     * An action is considered a delete action if it contains a Delete operation
+     * 
+     * @param action The ActionDefinition to check
+     * @return true if the action contains a Delete operation
+     */
+    private boolean isDeleteAction(ActionDefinition action) {
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("ChangePassword".equals(op.getType())) {
+            if ("Delete".equals(op.getType())) {
                 return true;
             }
         }
@@ -79,23 +79,23 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
     }
 
     /**
-     * Validate that the change password pattern is complete
-     * - The action has input parameters for username/password
-     * - The action has a ChangePassword operation
-     * - The ChangePassword operation has success and error flows
+     * Validate that the delete pattern is complete
+     * - The action has input parameters for the item to delete
+     * - The action has a Delete operation
+     * - The Delete operation has success and error flows
      * - Both flows lead to output ports
      * 
      * @param pageGraph        The page graph
      * @param action           The action definition
-     * @param formNode         The form node that triggers change password
+     * @param formNode         The form node that triggers delete
      * @param formToActionEdge The edge from form to action
      * @return true if the pattern is valid
      */
-    private boolean validateChangePasswordPattern(IFMLGraph pageGraph, ActionDefinition action, String actionId,
-            GraphNode formNode, Edge formToActionEdge) {
+    private boolean validateDeletePattern(IFMLGraph pageGraph, ActionDefinition action, String actionId,
+            GraphNode formNode, Edge edge) {
 
-        // Check: Action has at least 2 input parameters (new password, old password)
-        if (action.getInputParameters().size() < 2) {
+        // Check: Action has at least 1 input parameter (the item to delete)
+        if (action.getInputParameters().size() < 1) {
             return false;
         }
 
@@ -104,24 +104,24 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
             return false;
         }
 
-        // Check: Action contains ChangePassword operation
-        OperationComponent changePasswordOp = null;
+        // Check: Action contains Delete operation
+        OperationComponent deleteOp = null;
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("ChangePassword".equals(op.getType())) {
-                changePasswordOp = op;
+            if ("Delete".equals(op.getType())) {
+                deleteOp = op;
                 break;
             }
         }
 
-        if (changePasswordOp == null) {
+        if (deleteOp == null) {
             return false;
         }
 
-        // Check: ChangePassword operation has both success and error flows
+        // Check: Delete operation has both success and error flows
         boolean hasSuccessFlow = false;
         boolean hasErrorFlow = false;
 
-        for (ComponentFlow flow : changePasswordOp.getFlows()) {
+        for (ComponentFlow flow : deleteOp.getFlows()) {
             if ("SuccessFlow".equals(flow.getType())) {
                 hasSuccessFlow = true;
             } else if ("ErrorFlow".equals(flow.getType())) {
@@ -133,12 +133,12 @@ public class ChangePasswordFunctionalPattern extends FunctionalPatternInterface 
             return false;
         }
 
-        if(!utilityTools.checkInputPortBindings(formToActionEdge, action)) {
+        if(!utilityTools.checkInputPortBindings(edge, action)) {
             return false;
         }
 
         // Check that the flows of the action leads to a message component
-        List<Edge> eventFlows = action.getAllEvents(actionId) != null ? action.getAllEvents(actionId).stream()
+        List<Edge> eventFlows = action.getErrorEvents(actionId) != null ? action.getErrorEvents(actionId).stream()
                 .flatMap(event -> event.getNavigationFlows().stream())
                 .toList() : List.of();
 

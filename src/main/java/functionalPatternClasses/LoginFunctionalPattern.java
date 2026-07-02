@@ -4,6 +4,7 @@ import globalGraph.*;
 import it.davide.xml.ActionRegistry;
 import it.davide.xml.FunctionalPatternInterface;
 import it.davide.xml.FunctionalPatternMatch;
+import it.davide.xml.utilityTools;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +60,10 @@ public class LoginFunctionalPattern extends FunctionalPatternInterface {
             GraphNode sourceNode = pageGraph.getNode(edge.getSourceId());
             if (sourceNode == null || !sourceNode.getType().equals(NodeType.FORM)) {
                 continue; // Login pattern should be triggered from a Form
+            }
+
+            if (!utilityTools.checkFields(sourceNode)) {
+                continue;
             }
 
             // Check if pattern matches
@@ -143,19 +148,14 @@ public class LoginFunctionalPattern extends FunctionalPatternInterface {
             return false;
         }
 
-        // Check: Form has parameter bindings that map to action input parameters
-        if (formToActionEdge.getBindings().isEmpty()) {
+        if(!utilityTools.checkInputPortBindings(formToActionEdge, action)) {
             return false;
         }
 
         // Check that the Error flows of the action leads to a message component or an
-        List<Edge> errorEventFlows = action.getErrorEvents() != null ? action.getErrorEvents().values().stream()
+        List<Edge> errorEventFlows = action.getErrorEventsMap() != null ? action.getErrorEventsMap().values().stream()
                 .flatMap(event -> event.getNavigationFlows().stream())
                 .toList() : List.of();
-
-        if (errorEventFlows.size() < 1) {
-            return false;
-        }
 
         for (Edge errorFlow : errorEventFlows) {
             GraphNode targetNode = pageGraph.getNode(errorFlow.getTargetId());

@@ -79,11 +79,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "wv1#page2#frm1#fld2",
+      "fieldId" : "wv1#page2#frm1#fld1",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "wv1#page2#frm1#fld1",
+      "fieldId" : "wv1#page2#frm1#fld2",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -167,11 +167,11 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "wv1#page2#frm1#fld2",
+      "fieldId" : "wv1#page2#frm1#fld1",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "wv1#page2#frm1#fld1",
+      "fieldId" : "wv1#page2#frm1#fld2",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -229,22 +229,6 @@
         "isInDialogPage" : false
       },
       "bindings" : [ ]
-    }, {
-      "from" : {
-        "id" : "wv1#act4w#scce5w",
-        "type" : "SuccessEvent",
-        "pageId" : "",
-        "dataBinding" : "wv1#act2a",
-        "isInDialogPage" : false
-      },
-      "to" : {
-        "id" : "wv1#page1",
-        "type" : "PAGE",
-        "pageId" : "",
-        "dataBinding" : null,
-        "isInDialogPage" : false
-      },
-      "bindings" : [ ]
     } ],
     "fields" : [ ]
   }, {
@@ -260,22 +244,6 @@
       "to" : {
         "id" : "wv1w#act7w",
         "type" : "ACTION",
-        "pageId" : "",
-        "dataBinding" : null,
-        "isInDialogPage" : false
-      },
-      "bindings" : [ ]
-    }, {
-      "from" : {
-        "id" : "wv1#act4w#scce5w",
-        "type" : "SuccessEvent",
-        "pageId" : "",
-        "dataBinding" : "wv1w#act7w",
-        "isInDialogPage" : false
-      },
-      "to" : {
-        "id" : "wv1#page1",
-        "type" : "PAGE",
         "pageId" : "",
         "dataBinding" : null,
         "isInDialogPage" : false
@@ -347,15 +315,15 @@
       "bindings" : [ ]
     } ],
     "fields" : [ {
+      "fieldId" : "wv1#page8#frm4#fld4",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "wv1#page8#frm4#fld5",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
       "fieldId" : "wv1#page8#frm4#fld7",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "wv1#page8#frm4#fld4",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -423,11 +391,7 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "wv1#page5#frm3#fld24",
-      "valueAttribute" : null,
-      "valueAssociationRole" : null
-    }, {
-      "fieldId" : "wv1#page5#frm3#fld6",
+      "fieldId" : "wv1#page5#frm3#fld17",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -435,11 +399,15 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
+      "fieldId" : "wv1#page5#frm3#fld6",
+      "valueAttribute" : null,
+      "valueAssociationRole" : null
+    }, {
       "fieldId" : "wv1#page5#frm3#fld8",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "wv1#page5#frm3#fld17",
+      "fieldId" : "wv1#page5#frm3#fld24",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
@@ -531,7 +499,7 @@
       } ]
     } ],
     "fields" : [ {
-      "fieldId" : "wv1#page7#dpg1w#frm3w#fld4w",
+      "fieldId" : "wv1#page7#dpg1w#frm3w#fld5w",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
@@ -539,9 +507,117 @@
       "valueAttribute" : null,
       "valueAssociationRole" : null
     }, {
-      "fieldId" : "wv1#page7#dpg1w#frm3w#fld5w",
+      "fieldId" : "wv1#page7#dpg1w#frm3w#fld4w",
       "valueAttribute" : null,
       "valueAssociationRole" : null
     } ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1#page4#lst2",
+        "type" : "LIST",
+        "pageId" : "page4.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#act3",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_pdp3z",
+        "target" : "wv1#act3.MarketPlaceData$pdp3"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1#act3#scce4",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1#act3",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#page4#msg2w",
+        "type" : "MESSAGE",
+        "pageId" : "page4.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "Product removed from cart",
+        "target" : "messages"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1#act3w#erre1w",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1#act3",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#page3#msg3w",
+        "type" : "MESSAGE",
+        "pageId" : "page3.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "remove-from-cart-error",
+        "target" : "messages"
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1#page7#lst5",
+        "type" : "LIST",
+        "pageId" : "page7.wr",
+        "dataBinding" : "MarketPlaceData$cls17",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#act7",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att117",
+        "target" : "wv1#act7.MarketPlaceData$pdp4"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1#act7#scce6",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1#act7",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1#page7#msg3",
+        "type" : "MESSAGE",
+        "pageId" : "page7.wr",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "Address sucessfully deleted",
+        "target" : "messages"
+      } ]
+    } ],
+    "fields" : [ ]
   } ]
 }

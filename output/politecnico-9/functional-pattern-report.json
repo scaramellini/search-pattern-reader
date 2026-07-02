@@ -103,5 +103,837 @@
       "bindings" : [ ]
     } ],
     "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "tlmds0#hmda8b#page83b#dtl81b",
+        "type" : "DETAILS",
+        "pageId" : "page83b.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls12d",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "tlmds0#hmda8b#act165l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att111d",
+        "target" : "tlmds0#hmda8b#act165l.PortaleRisorseUmaneDS$pdp325t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "tlmds0#hmda8b#act165l#scce191l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "tlmds0#hmda8b#act165l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "tlmds0#hmda8b#page83b",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp326t",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "tlmds0#hmda8b#act165l#erre229l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "tlmds0#hmda8b#act165l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "tlmds0#hmda8b#page83b",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp327t",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area13d#page128d#lst1d",
+        "type" : "LIST",
+        "pageId" : "page128d.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls41a",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area13d#act19d",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att603a",
+        "target" : "wv1b#area1l#area13d#act19d.PortaleRisorseUmaneDS$pdp65a"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area13d#act19d#scce20d",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area13d#act19d",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area13d#page128d",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area13d#act19d#erre25d",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area13d#act19d",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area13d#page128d",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp66a",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page50l#lst61l",
+        "type" : "LIST",
+        "pageId" : "page50l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls15t",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act137l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att86t",
+        "target" : "wv1b#area1l#area5l#act137l.PortaleRisorseUmaneDS$pdp89t"
+      }, {
+        "automaticCoupling" : false,
+        "source" : "wv1b#area1l#area5l#page50l#prd3k",
+        "target" : "wv1b#area1l#area5l#act137l.PortaleRisorseUmaneDS$pdp3k"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act137l#scce160l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act137l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page50l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp91t",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act137l#erre185l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act137l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page50l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp90t",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page52l#lst64l",
+        "type" : "LIST",
+        "pageId" : "page52l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls2t",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act96l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4t",
+        "target" : "wv1b#area1l#area5l#act96l.PortaleRisorseUmaneDS$pdp32t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act96l#scce118l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act96l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page52l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "success.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act96l#erre144l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act96l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page52l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "error.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page56l#lst71l",
+        "type" : "LIST",
+        "pageId" : "page56l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls2t",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act114l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att4t",
+        "target" : "wv1b#area1l#area5l#act114l.PortaleRisorseUmaneDS$pdp32t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act114l#scce136l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act114l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page56l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "success.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act114l#erre162l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act114l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page56l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "error.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page59l#lst76l",
+        "type" : "LIST",
+        "pageId" : "page59l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls3u",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act123l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att7u",
+        "target" : "wv1b#area1l#area5l#act123l.PortaleRisorseUmaneDS$pdp120d"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act123l#scce145l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act123l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page59l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp118d",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act123l#erre171l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act123l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page59l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp119d",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page68l#lst84l",
+        "type" : "LIST",
+        "pageId" : "page68l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls6t",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act117l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att21t",
+        "target" : "wv1b#area1l#area5l#act117l.PortaleRisorseUmaneDS$pdp41t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act117l#scce139l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act117l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page68l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "success.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act117l#erre165l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act117l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page68l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "error.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page69l#lst86l",
+        "type" : "LIST",
+        "pageId" : "page69l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls2u",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act124l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att2u",
+        "target" : "wv1b#area1l#area5l#act124l.PortaleRisorseUmaneDS$pdp115d"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act124l#scce146l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act124l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page69l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp116d",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act124l#erre172l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act124l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page69l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp117d",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page70l#lst87l",
+        "type" : "LIST",
+        "pageId" : "page70l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls3t",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act101l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att14t",
+        "target" : "wv1b#area1l#area5l#act101l.PortaleRisorseUmaneDS$pdp59t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act101l#scce123l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act101l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page70l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp186d",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act101l#erre149l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act101l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page70l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp185d",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page74l#lst90l",
+        "type" : "LIST",
+        "pageId" : "page74l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls5u",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act127l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att16u",
+        "target" : "wv1b#area1l#area5l#act127l.PortaleRisorseUmaneDS$pdp138d"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act127l#scce149l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act127l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page74l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp139d",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act127l#erre175l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act127l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page74l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp140d",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page76l#lst92l",
+        "type" : "LIST",
+        "pageId" : "page76l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls6t",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act102l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att21t",
+        "target" : "wv1b#area1l#area5l#act102l.PortaleRisorseUmaneDS$pdp41t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act102l#scce124l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act102l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page76l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "success.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act102l#erre150l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act102l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page76l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "error.disassociazioneConoscenza",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page77l#dpg53l#lst95l",
+        "type" : "LIST",
+        "pageId" : "page77l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls4u",
+        "isInDialogPage" : true
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act130l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att13u",
+        "target" : "wv1b#area1l#area5l#act130l.PortaleRisorseUmaneDS$pdp73t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act130l#scce153l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act130l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page77l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "success.eliminazioneComportamento",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act130l#erre178l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act130l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page77l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "error.eliminazioneComportamento",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
+  }, {
+    "patternType" : "Delete Functional Pattern",
+    "flows" : [ {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#page80l#lst99l",
+        "type" : "LIST",
+        "pageId" : "page80l.wr",
+        "dataBinding" : "PortaleRisorseUmaneDS$cls1t",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#act94l",
+        "type" : "ACTION",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "data._be_att1t",
+        "target" : "wv1b#area1l#area5l#act94l.PortaleRisorseUmaneDS$pdp5t"
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act94l#scce116l",
+        "type" : "SuccessEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act94l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page80l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp74t",
+        "target" : null
+      } ]
+    }, {
+      "from" : {
+        "id" : "wv1b#area1l#area5l#act94l#erre142l",
+        "type" : "ErrorEvent",
+        "pageId" : "",
+        "dataBinding" : "wv1b#area1l#area5l#act94l",
+        "isInDialogPage" : false
+      },
+      "to" : {
+        "id" : "wv1b#area1l#area5l#page80l",
+        "type" : "PAGE",
+        "pageId" : "",
+        "dataBinding" : null,
+        "isInDialogPage" : false
+      },
+      "bindings" : [ {
+        "automaticCoupling" : false,
+        "source" : "PortaleRisorseUmaneDS$pdp190d",
+        "target" : null
+      } ]
+    } ],
+    "fields" : [ ]
   } ]
 }
