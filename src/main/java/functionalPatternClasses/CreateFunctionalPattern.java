@@ -36,6 +36,10 @@ public class CreateFunctionalPattern extends FunctionalPatternInterface {
             String actionId = edge.getTargetId();
             ActionDefinition action = actionRegistry.getAction(actionId);
 
+            if (actionId.contains("act6")) {
+                System.out.println("Debug: Found action with ID act6");
+            }
+
             if (action == null) {
                 continue;
             }
@@ -75,7 +79,8 @@ public class CreateFunctionalPattern extends FunctionalPatternInterface {
      */
     private boolean isCreateAction(ActionDefinition action) {
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("Create".equals(op.getType())) {
+            if ("Save".equals(op.getType())
+                    && ("create".equals(op.getOperationActionType()) || "save".equals(op.getOperationActionType()))) {
                 return true;
             }
         }
@@ -111,7 +116,8 @@ public class CreateFunctionalPattern extends FunctionalPatternInterface {
         // Check: Action contains Create operation
         OperationComponent createOp = null;
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("Create".equals(op.getType())) {
+            if ("Save".equals(op.getType())
+                    && ("create".equals(op.getOperationActionType()) || "save".equals(op.getOperationActionType()))) {
                 createOp = op;
                 break;
             }
@@ -121,19 +127,16 @@ public class CreateFunctionalPattern extends FunctionalPatternInterface {
             return false;
         }
 
-        // Check: Create operation has both success and error flows
+        // Check: Create operation has both success
         boolean hasSuccessFlow = false;
-        boolean hasErrorFlow = false;
 
         for (ComponentFlow flow : createOp.getFlows()) {
             if ("SuccessFlow".equals(flow.getType())) {
                 hasSuccessFlow = true;
-            } else if ("ErrorFlow".equals(flow.getType())) {
-                hasErrorFlow = true;
             }
         }
 
-        if (!hasSuccessFlow || !hasErrorFlow) {
+        if (!hasSuccessFlow) {
             return false;
         }
 

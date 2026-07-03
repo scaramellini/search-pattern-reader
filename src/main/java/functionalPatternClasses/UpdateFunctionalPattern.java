@@ -29,6 +29,7 @@ public class UpdateFunctionalPattern extends FunctionalPatternInterface {
 
     public void detect(IFMLGraph pageGraph, ActionRegistry actionRegistry) {
         List<GraphNode> components = pageGraph.getNodesByType(NodeType.LIST);
+        components.addAll(pageGraph.getNodesByType(NodeType.DETAILS));
 
         for (GraphNode listComponent : components) {
 
@@ -57,7 +58,7 @@ public class UpdateFunctionalPattern extends FunctionalPatternInterface {
                 if (!utilityTools.checkFields(formComponent)) {
                     continue;
                 }
-                
+
                 List<EdgeBinding> bindings = listEdge.getBindings();
 
                 // Check: edge has parameter bindings that map to action input parameters
@@ -119,7 +120,8 @@ public class UpdateFunctionalPattern extends FunctionalPatternInterface {
         for (OperationComponent op : action.getOperationComponents()) {
             // to update an object you use a create component that has a conditional
             // expression that identifies the object to update
-            if ("Create".equals(op.getType())) {
+            if ("Save".equals(op.getType())
+                    && ("update".equals(op.getOperationActionType()) || "save".equals(op.getOperationActionType()))) {
                 return true;
             }
         }
@@ -141,7 +143,8 @@ public class UpdateFunctionalPattern extends FunctionalPatternInterface {
         // Check: Action contains update profile operation
         OperationComponent updateProfileOp = null;
         for (OperationComponent op : action.getOperationComponents()) {
-            if ("Create".equals(op.getType())) {
+            if ("Save".equals(op.getType())
+                    && ("update".equals(op.getOperationActionType()) || "save".equals(op.getOperationActionType()))) {
                 updateProfileOp = op;
                 break;
             }
@@ -151,23 +154,20 @@ public class UpdateFunctionalPattern extends FunctionalPatternInterface {
             return false;
         }
 
-        // Check: UpdateProfile operation has both success and error flows
+        // Check: UpdateProfile operation has both success
         boolean hasSuccessFlow = false;
-        boolean hasErrorFlow = false;
 
         for (ComponentFlow flow : updateProfileOp.getFlows()) {
             if ("SuccessFlow".equals(flow.getType())) {
                 hasSuccessFlow = true;
-            } else if ("ErrorFlow".equals(flow.getType())) {
-                hasErrorFlow = true;
             }
         }
 
-        if (!hasSuccessFlow || !hasErrorFlow) {
+        if (!hasSuccessFlow) {
             return false;
         }
 
-        if(!utilityTools.checkInputPortBindings(edge, action)) {
+        if (!utilityTools.checkInputPortBindings(edge, action)) {
             return false;
         }
 

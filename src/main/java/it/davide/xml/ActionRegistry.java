@@ -183,12 +183,26 @@ public class ActionRegistry {
                     Element actionNode = (Element) node;
 
                     String actionId = actionNode.getAttribute("id");
-                    String actionDefinition = (actionNode.getAttribute("definition") != null
-                            && !actionNode.getAttribute("definition").isEmpty())
-                                    ? actionNode.getAttribute("definition")
-                                    : actionNode.getAttribute("actionServiceRes");
 
-                    if (utilityTools.extractId(actionDefinition).equals(utilityTools.extractId(actionDef.getDefinition()))) {
+                    String definition = actionNode.getAttribute("definition");
+                    String actionServiceRes = actionNode.getAttribute("actionServiceRes");
+
+                    String actionDefinition;
+                    boolean checkDefinition;
+
+                    if (definition != null && !definition.isEmpty()) {
+                        actionDefinition = definition;
+                        checkDefinition = true;
+                    } else {
+                        actionDefinition = actionServiceRes;
+                        checkDefinition = false;
+                    }
+
+                    if ((checkDefinition && utilityTools.extractId(actionDefinition)
+                            .equals(utilityTools.extractId(actionDef.getDefinition())))
+                            || (!checkDefinition && utilityTools.extractId(actionDefinition)
+                                    .equals(utilityTools.extractId(actionDef.getDefinition()))
+                                    && isProjectInPathSafe(actionDefinition, actionDef.getFilePath()))) {
 
                         NodeList eventsList = actionNode.getElementsByTagNameNS("*", "Events");
 
@@ -247,6 +261,23 @@ public class ActionRegistry {
             }
         }
 
+    }
+
+    public static String extractProjectName(String value) {
+        if (value == null)
+            return null;
+
+        int pos = value.lastIndexOf('$');
+        return (pos == -1) ? value : value.substring(0, pos);
+    }
+
+    public static boolean isProjectInPathSafe(String actionServiceRes, String filePath) {
+        if (actionServiceRes == null || filePath == null)
+            return false;
+
+        String projectName = extractProjectName(actionServiceRes);
+
+        return filePath.contains(projectName);
     }
 
     /**
@@ -334,12 +365,14 @@ public class ActionRegistry {
                 String componentType = element.getNodeName();
                 String componentName = element.getAttribute("name");
                 String actionDefRef = element.getAttribute("definition");
+                String operationActionType = element.getAttribute("action");
 
                 if (componentId != null && !componentId.isEmpty()) {
                     OperationComponent component = new OperationComponent(
                             componentId,
                             componentType,
                             componentName,
+                            operationActionType,
                             actionDefRef);
 
                     // Parse flows (SuccessFlow, ErrorFlow, DataFlow)
@@ -424,12 +457,10 @@ public class ActionRegistry {
     }
 
     public ActionDefinition getAction(String actionId) {
-        for (ActionDefinition action : actions) {
-            if (action.getIds().contains(actionId)) {
-                return action;
-            }
-        }
-        return null;
+        return actions.stream()
+                .filter(action -> action.getIds().contains(actionId))
+                .findFirst()
+                .orElse(null);
     }
 
     /**
