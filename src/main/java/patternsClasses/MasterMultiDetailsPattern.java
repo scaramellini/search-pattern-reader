@@ -16,6 +16,10 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
         this.name = "Master MultiDetails Pattern";
     }
 
+    private void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public List<PatternInstance> matches(IFMLGraph graph, GraphNode startNode) {
 
@@ -82,7 +86,8 @@ public class MasterMultiDetailsPattern extends GenericGraphPattern {
                 continue;
 
             if (!current.getPageId().equals(target.getPageId()))
-                continue;
+                //continue;
+                setName("Master Multi Detail Multipage Variant Pattern");
 
             if (target.getType() != NodeType.LIST &&
                     target.getType() != NodeType.DETAILS)

@@ -13,6 +13,10 @@ public class MasterDetailPattern extends GenericGraphPattern {
         this.name = "Master Detail Pattern";
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     /**
      * @param graph
      * @param startNode
@@ -40,6 +44,10 @@ public class MasterDetailPattern extends GenericGraphPattern {
             if (startNode.getObjectId() == null || target.getObjectId() == null
                     || !startNode.getObjectId().equals(target.getObjectId()))
                 continue;
+
+            if (!startNode.getPageId().equals(target.getPageId()))
+                //continue;
+                setName("Multi Detail Multipage Variant Pattern");
 
             if (target.getType() == NodeType.DETAILS) {
 

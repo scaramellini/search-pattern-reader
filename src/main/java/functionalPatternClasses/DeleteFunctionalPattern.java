@@ -144,7 +144,7 @@ public class DeleteFunctionalPattern  extends FunctionalPatternInterface {
 
         for (Edge flow : eventFlows) {
             GraphNode targetNode = pageGraph.getNode(flow.getTargetId());
-            if (targetNode != null && !targetNode.getType().equals(NodeType.MESSAGE)) {
+            if (targetNode != null && !(targetNode.getType().equals(NodeType.MESSAGE) || targetNode.getType().equals(NodeType.LIST))) {
                 return false;
             }
         }

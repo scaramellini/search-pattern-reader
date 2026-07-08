@@ -15,6 +15,10 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
         this.name = "Multilevel Master Detail Pattern";
     }
 
+    private void setName(String name) {
+        this.name = name;
+    }
+
     /**
      * @param graph
      * @param startNode
@@ -44,7 +48,8 @@ public class MultiLevelMasterDetailPattern extends GenericGraphPattern {
 
             // considering only single page patterns
             if (isMultiPage(path))
-                continue;
+                //continue;
+                setName("Multilevel Master Detail Multipage Variant Pattern");
 
             List<Edge> edges = extractEdgesFromPath(graph, path);
 
